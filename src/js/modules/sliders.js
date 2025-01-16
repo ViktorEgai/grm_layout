@@ -55,7 +55,14 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					infinite: true,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
 					dots: true,
 				},
 			},
