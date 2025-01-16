@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ГРМ</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			<header class="header front-page-header">
+	<div class="container">
+		<div class="header-wrapper d-flex align-items-center justify-content-between">
+			<a href="/" class="header-logo">
+				<img src="img/logo-white.svg" alt="" class="logo-white" />
+				<img src="img/logo-black.svg" alt="" class="logo-black" />
+			</a>
+			<nav class="header-nav">
+				<ul class="header-menu">
+					<li class="header-menu__item"><a href="#" class="header-menu__link">О Гильдии</a></li>
+					<li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
+					<li class="header-menu__item"><a href="#" class="header-menu__link">Агентам</a></li>
+					<li class="header-menu__item"><a href="#" class="header-menu__link">Клиентам</a></li>
+					<li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="d-flex align-items-center header-right">
+				<button class="header-search d-lg-none">
+					<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0 4.87549C0 7.56774 2.18947 9.7502 4.92632 9.7502C6.02105 9.7502 7.03759 9.36883 7.89774 8.72827C7.89774 8.79405 7.97594 8.85513 7.97594 8.90995L11.8857 12.8097C12.1203 13.0634 12.5895 13.0634 12.8241 12.8097C13.0586 12.556 13.0586 12.1441 12.8241 11.8904L8.91429 7.9906C8.83609 7.93579 8.83609 7.8935 8.75789 7.86218C9.38346 7.0368 9.77444 6.00078 9.77444 4.87549C9.77444 2.18246 7.58496 0 4.92632 0C2.18947 0 0 2.18246 0 4.87549ZM1.32812 4.88025C1.32812 2.90531 2.89203 1.30469 4.92512 1.30469C6.88 1.30469 8.44391 2.90531 8.44391 4.88025C8.44391 6.85441 6.88 8.45504 4.92512 8.45504C2.89203 8.45504 1.32812 6.85441 1.32812 4.88025Z"
+							fill="white"
+						/>
+					</svg>
+				</button>
+				<button class="header-menu-btn d-lg-none">
+					<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="2" width="2" height="20" rx="1" transform="rotate(-90 0 2)" fill="white" />
+						<rect y="7" width="2" height="20" rx="1" transform="rotate(-90 0 7)" fill="white" />
+						<rect y="12" width="2" height="20" rx="1" transform="rotate(-90 0 12)" fill="white" />
+					</svg>
+				</button>
+				<a href="#" class="header__btn btn btn--white d-none d-lg-flex"> <svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--user" />
+</svg>
+ Личный кабинет</a>
+				<a href="#" class="header__btn btn btn--white d-lg-none"> Войти</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+			<!-- main -->
+			<main class="main d-flex flex-column">
+				<section class="hero">
+					<div class="container">
+						<div class="hero-wrapper">
+							<div class="hero-left">
+								<h1 class="hero__title">ГИЛЬДИЯ РИЭЛТОРОВ МОСКВЫ</h1>
+								<div class="hero__text">Объединение усилий и интересов риэлторского сообщества города Москвы, заинтересовонного в развитии цивилизовонного рынка недвижимости.</div>
+								<a href="#popup" class="hero__btn btn" data-fancybox>Вступить</a>
+
+								<div class="hero-social social-dark social">
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/tg.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/vk.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/yt.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/wa.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/dzen.svg" alt="" data-svg /> </a>
+</div>
+
+								<a href="#" data-fancybox class="hero__video video">
+									<img src="img/front-page/video.png" alt="" />
+									<span class="play"> <svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--play" />
+</svg>
+ </span>
+								</a>
+							</div>
+							<div class="hero-right">
+								<div class="hero-nums">
+									<div class="hero-nums__item">
+										<div class="hero-nums__item-num"><span class="num">2009</span></div>
+										<div class="hero-nums__item-text">
+											Год основания <br />
+											Гильдии
+										</div>
+									</div>
+									<div class="hero-nums__item">
+										<div class="hero-nums__item-num"><span class="num">99</span></div>
+										<div class="hero-nums__item-text">
+											Агентств <br />
+											недвижимости
+										</div>
+									</div>
+									<div class="hero-nums__item">
+										<div class="hero-nums__item-num"><span class="num">100</span>+</div>
+										<div class="hero-nums__item-text">
+											Партнеров <br />
+											Гильдии
+										</div>
+									</div>
+								</div>
+								<div class="hero-right__text">
+									<p>Членами ГРМ могут быть компании, работающие на рынке недвижимости, в том числе непрофильные организации, формирующие инфраструктуру рынка (банки, страховые и оценочные компании)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="stories">
+					<div class="container">
+						<div class="stories-slider">
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">Объединение усилий и интересов</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">Объединение усилий и интересов</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">Объединение усилий и интересов</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">Объединение усилий и интересов</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">Объединение усилий и интересов</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="info">
+					<div class="container">
+						<div class="info-grid">
+							<div class="info-item info-item-services">
+								<h2 class="section-title info-item__title">Наши сервисы</h2>
+								<form action="#" class="search-form d-none d-xl-flex">
+									<input type="search" name="" id="" class="input search-input" placeholder="Поиск по сайту" />
+									<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
+								</form>
+								<div class="services">
+									<div class="services__image d-none d-xl-block">
+										<img src="img/front-page/services.jpg" alt="" />
+									</div>
+									<div class="services-slider">
+										<div class="services-slider__item">
+											<img src="img/services/1.jpeg" alt="" />
+										</div>
+										<div class="services-slider__item">
+											<img src="img/services/vtb.svg" alt="" />
+										</div>
+										<div class="services-slider__item">
+											<img src="img/services/m2.svg" alt="" />
+										</div>
+										<div class="services-slider__item">
+											<img src="img/services/sber.svg" alt="" />
+										</div>
+										<div class="services-slider__item">
+											<img src="img/services/5.jpeg" alt="" />
+										</div>
+									</div>
+								</div>
+								<!-- /.services -->
+							</div>
+
+							<div class="info-item">
+								<h2 class="section-title info-item__title">Новость недели</h2>
+								<div class="info-news">
+									<div class="info-news__title">Набиуллина назвала ключевые шаги для роста доступности жилья</div>
+									<div class="info-news__text content">
+										<p>
+											Для роста доступности жилья в России необходимо предпринять несколько шагов, в том числе остудить рынок недвижимости. Такое условие назвала глава Центробанка  Эльвира Набиуллина, передает РИА Новости. «Выход рынка жилья из состояния перегрева — это первый шаг к тому, чтобы доступность жилья снова стала расти, ведь для этого рост доходов граждан должен опережать рост цен на
+											жилье», — заявила Набиуллина. По ее словам, вторым шагом должно стать возвращение доступной рыночной ипотеки. Для роста доступности жилья в России необходимо предпринять несколько шагов, в том числе остудить рынок недвижимости.
+										</p>
+									</div>
+									<a href="#" class="info-news__link">Читать все новости</a>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<h2 class="section-title info-item__title">Календарь мероприятий</h2>
+								<div id="small-calendar" class="info-calendar"></div>
+								<div class="info-calendar-date">
+									<div class="info-calendar-date__day">
+										<p>27</p>
+										<span>ноября</span>
+									</div>
+									<div class="info-calendar-date__text">
+										Московский Международный <br />
+										жилищный конгресс 2024
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- about -->
+				<div class="about">
+					<div class="container">
+						<h2 class="section-title about__title">О гильдии</h2>
+						<div class="about-slider">
+							<div class="about-item">
+								<div class="row gy-4 align-items-center gx-5">
+									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+										<div class="about-item__image">
+											<img src="img/front-page/about.jpg" alt="" />
+										</div>
+									</div>
+									<div class="col">
+										<div class="about-item__title">История</div>
+										<div class="about-item__text">
+											<p>Гильдия риэлторов Москвы основана в 2009 году. Это профессиональная организация, которая объединяет агентства недвижимости и индивидуальных риэлторов Москвы в единое сообщество.</p>
+
+											<p>Сделать процесс работы риэлторов понятным и безопасным для всех участников сделки. Разрабатывая и улучшая единый стандарт оказания риэлторских услуг на столичном рынке недвижимости.</p>
+											<p>Развитие и продвижение риэлторской деятельности, обеспечение высокого уровня услуг для клиентов, защиту интересов риэлторов и представление их интересов в государственных органах.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-item">
+								<div class="row gy-4 align-items-center gx-5">
+									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+										<div class="about-item__image">
+											<img src="img/front-page/about.jpg" alt="" />
+										</div>
+									</div>
+									<div class="col">
+										<div class="about-item__title">История</div>
+										<div class="about-item__text">
+											<p>Гильдия риэлторов Москвы основана в 2009 году. Это профессиональная организация, которая объединяет агентства недвижимости и индивидуальных риэлторов Москвы в единое сообщество.</p>
+
+											<p>Сделать процесс работы риэлторов понятным и безопасным для всех участников сделки. Разрабатывая и улучшая единый стандарт оказания риэлторских услуг на столичном рынке недвижимости.</p>
+											<p>Развитие и продвижение риэлторской деятельности, обеспечение высокого уровня услуг для клиентов, защиту интересов риэлторов и представление их интересов в государственных органах.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-item">
+								<div class="row gy-4 align-items-center gx-5">
+									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+										<div class="about-item__image">
+											<img src="img/front-page/about.jpg" alt="" />
+										</div>
+									</div>
+									<div class="col">
+										<div class="about-item__title">История</div>
+										<div class="about-item__text">
+											<p>Гильдия риэлторов Москвы основана в 2009 году. Это профессиональная организация, которая объединяет агентства недвижимости и индивидуальных риэлторов Москвы в единое сообщество.</p>
+
+											<p>Сделать процесс работы риэлторов понятным и безопасным для всех участников сделки. Разрабатывая и улучшая единый стандарт оказания риэлторских услуг на столичном рынке недвижимости.</p>
+											<p>Развитие и продвижение риэлторской деятельности, обеспечение высокого уровня услуг для клиентов, защиту интересов риэлторов и представление их интересов в государственных органах.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- cards -->
+				<div class="cards">
+					<div class="container">
+						<div class="row gy-2 gx-2 gx-lg-4">
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner">
+											<div class="cards-item__title">
+												Общее <br />собрание <br />
+												членов ГРМ
+											</div>
+											<div class="cards-item__text">Высший орган управления Гильдии риэлторов Москвы</div>
+											<div class="cards-item__subtitle">Основная задача:</div>
+											<div class="cards-item__text">Контролировать выполнение целей Партнерства.</div>
+											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
+										</div>
+									</div>
+									<div class="cards-item-back">
+										<img src="img/front-page/cards.jpeg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner">
+											<div class="cards-item__title">
+												Банников <br />
+												Андрей <br />Григорьевич
+											</div>
+											<div class="cards-item__text">Председатель Совета Партнерства</div>
+											<div class="cards-item__subtitle">Основная задача:</div>
+											<div class="cards-item__text">Контролировать выполнение целей Партнерства.</div>
+											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
+										</div>
+									</div>
+									<div class="cards-item-back">
+										<img src="img/front-page/cards.jpeg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner">
+											<div class="cards-item__title">
+												Векшина <br />
+												Екатерина <br />
+												Сергеевна
+											</div>
+											<div class="cards-item__text">Президент Гильдии риэлторов Москвы</div>
+											<div class="cards-item__subtitle">Представляет Гильдию во внешних организациях, включая, политические партии и органы власти.</div>
+											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
+										</div>
+									</div>
+									<div class="cards-item-back">
+										<img src="img/front-page/cards.jpeg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner">
+											<div class="cards-item__title">
+												Федулаева <br />
+												Юлия <br />Николаевна
+											</div>
+											<div class="cards-item__text">Исполнительный директор НП «ГРМ»  </div>
+											<div class="cards-item__subtitle">Основная задача:</div>
+											<div class="cards-item__text">Исполнительный директор руководит текущей деятельностью НП «ГРМ».</div>
+											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
+										</div>
+									</div>
+									<div class="cards-item-back">
+										<img src="img/front-page/cards.jpeg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- dropdown -->
+				<div class="dropdown">
+					<div class="container">
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Инструменты для риэлторов</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Закрытое бизнес-сообщество</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">В курсе последних новостей  </div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Аттестация и Сертификация</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Продвижение и PR </div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="dropdown__btn btn mx-auto">Вступить в Гильдию</a>
+					</div>
+				</div>
+				<!-- news -->
+				<section class="news">
+					<div class="container">
+						<h2 class="news__title section-title">Новости</h2>
+						<div class="news-slider">
+							<div class="news-slider__item">
+								<div class="news-item">
+									<a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+									<div class="news-item__content">
+										<div class="news-item-info">
+											<p>09.12</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--eye" />
+</svg>
+ 123</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--clock" />
+</svg>
+ 5 мин</p>
+										</div>
+										<a href="#" class="news-item__title">Оформлено ДДУ</a>
+										<div class="news-item__excerpt">
+											<p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+										</div>
+										<a href="#" class="news-item__link link">Читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-slider__item">
+								<div class="news-item">
+									<a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+									<div class="news-item__content">
+										<span class="news-item__label">NEW</span>
+										<div class="news-item-info">
+											<p>09.12</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--eye" />
+</svg>
+ 123</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--clock" />
+</svg>
+ 5 мин</p>
+										</div>
+										<a href="#" class="news-item__title">Оформлено ДДУ</a>
+										<div class="news-item__excerpt">
+											<p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+										</div>
+										<a href="#" class="news-item__link link">Читать</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-slider__item">
+								<div class="news-item">
+									<a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+									<div class="news-item__content">
+										<div class="news-item-info">
+											<p>09.12</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--eye" />
+</svg>
+ 123</p>
+											<p><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--clock" />
+</svg>
+ 5 мин</p>
+										</div>
+										<a href="#" class="news-item__title">Оформлено ДДУ</a>
+										<div class="news-item__excerpt">
+											<p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+										</div>
+										<a href="#" class="news-item__link link">Читать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="map-block">
+					<div id="map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3d8f3a5b7b6852707afd07204edce94017d8f7490bf53f4e930830cceaad5b3&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+					<div class="map-block__form">
+						<form action="" class="form">
+							<div class="form__top">
+								<div class="form__title">Остались вопросы?</div>
+								<div class="form__subtitle">Оставляйте заявку и мы свяжемся с вами!</div>
+							</div>
+							<label class="form__field"><input type="text" class="form__input" placeholder="Имя" /></label>
+							<label class="form__field"><input type="email" class="form__input" placeholder="Почта" /></label>
+							<label class="form__field"><input type="tel" class="form__input" placeholder="Телефон" /></label>
+							<button class="form__btn btn">Отправить</button>
+							<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+						</form>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			<div class="popup" id="buy-popup">
+	<div class="popup-title">Купить билет</div>
+	<div class="popup-text">Чтобы купить билет заполните необходимые поля</div>
+	<form class="form popup__form">
+		<div class="form__field d-flex">
+			<select name="" id="tarif" class="form__input">
+				<option value="ФОРУМ">ФОРУМ</option>
+				<option value="VIP">VIP</option>
+				<option value="ГАЛА-УЖИН">ГАЛА-УЖИН</option>
+			</select>
+			<div class="qty">
+				<span class="qty__minus qty__btn">-</span>
+				<input type="text" class="qty-field" readonly min="1" step="1" value="1" />
+				<span class="qty__plus qty__btn">+</span>
+			</div>
+		</div>
+		<div class="form__field">
+			<input type="text" class="form__input" required id="popup_username" name="username" placeholder="Введите ваше имя" />
+		</div>
+		<div class="form__field">
+			<input type="tel" class="form__input" required id="popup_phone" name="phone" placeholder="Введите номер телефона" />
+		</div>
+		<div class="form__field">
+			<input type="email" class="form__input" required id="popup_phone" name="phone" placeholder="Введите почту" />
+		</div>
+
+		<button class="btn form-btn" type="submit">Купить билет</button>
+	</form>
+</div>
+<div class="popup speaker-popup" id="speaker-popup">
+	<div class="speaker-popup__title">Подробнее о программе спикера</div>
+	<div class="speaker-popup-body">
+		<h2 class="speaker-popup__name">Имя Фамилия</h2>
+		<div class="speaker-popup__position">Должность</div>
+		<div class="speaker-popup-descr">
+			<div class="speaker-popup-descr__title">О чем лекция</div>
+			<div class="speaker-popup-descr__text">
+				<ul>
+					<li>Далеко-далеко за словесными горами в стране.</li>
+					<li>Далеко-далеко за словесными горами в стране.</li>
+					<li>Далеко-далеко за словесными горами в стране.</li>
+					<li>Далеко-далеко за словесными горами в стране.</li>
+					<li>Далеко-далеко за словесными горами в стране.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<a href="#buy-popup" data-fancybox class="speaker-popup__btn btn">Купить билет</a>
+</div>
+
+			<!-- footer -->
+			<footer class="footer">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row gy-4">
+				<div class="col-lg-3">
+					<a href="/" class="footer-logo">
+						<img src="img/logo-white.svg" alt="" />
+					</a>
+				</div>
+				<div class="col-xl-6 col-lg-5" id="footer-menu-container">
+					<nav class="footer-nav">
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Главная</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Аттестация</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Единый реестр</a></li>
+						</ul>
+						<ul class="footer-menu ms-xxl-5">
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнеры</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">База знаний</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Сервисы</a></li>
+						</ul>
+						<ul class="footer-menu">
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Прием обращений</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Мероприятия</a></li>
+							<li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-3 col-lg-4"><a href="#" class="footer__btn btn btn--white ms-lg-auto"> <svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--user" />
+</svg>
+ Личный кабинет</a></div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="footer-icons">
+				<a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-1" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-2" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-3" />
+</svg>
+</a
+				><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-4" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-5" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-6" />
+</svg>
+</a
+				><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-7" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-8" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-9" />
+</svg>
+</a
+				><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-10" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-11" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-12" />
+</svg>
+</a
+				><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-13" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-14" />
+</svg>
+</a><a href="#" class="footer-icons__link"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--footer-icon-15" />
+</svg>
+</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row gy-4">
+				<div class="col-xxl-3 col-lg-4">
+					<div class="footer-info">
+						<p class="text-grey">Некоммерческое партнерство по&nbsp;содействию развитию рынка недвижимости</p>
+						<p>
+							«ГИЛЬДИЯ РИЭЛТОРОВ МОСКВЫ» <br />
+							ИНН 7708237546
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4">
+					<div class="footer-address">
+						119049 г. Москва, <br />
+						Калужская площадь, 1к2, <br />
+						БЦ "Европа", 2й этаж
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4">
+					<div class="footer-contacts">
+						<p class="text-grey">Дирекция ГРМ</p>
+
+						<p><a href="mailto:info@grmos.ru">info@grmos.ru</a>, <a href="mailto:id@grmos.ru">id@grmos.ru</a></p>
+						<p><a href="tel:+74993220164">+7 (499) 322−01−64</a></p>
+						<p><a href="tel:+79689797808">+7 (968) 979−78−08 </a>whatsapp/telegram</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 align-items-center gy-3">
+				<div class="col-xxl-3 col-lg-4"><div class="footer-social social">
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/tg.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/vk.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/yt.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/wa.svg" alt="" data-svg /> </a>
+	<a href="#" class="social-item" target="_blank"> <img src="img/icons/dzen.svg" alt="" data-svg /> </a>
+</div>
+</div>
+				<div class="col-xl-3 col-lg-5">
+					<a href="#" class="footer-privacy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="widget">
+	<a href="#" class="widget__logo widget__item">
+		<svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--grm" />
+</svg>
+
+		<span> <svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--grm-logo" />
+</svg>
+ </span>
+	</a>
+	<a href="#" class="widget__item"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--bubble-chat" />
+</svg>
+ <span>Написать</span></a>
+	<a href="#" class="widget__item"><svg class="@@class">
+	<use class="use" xlink:href="img/sprite.svg#sprite--calling" />
+</svg>
+ <span>Позвонить</span></a>
+</div>
+
+			<!-- scripts -->
+		</div>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="js/libs.min.js?v=1.0.12"></script>
+<script src="js/main.min.js?v=1.0.12"></script>
+
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.map-block
+  overflow: hidden
+  display: grid
+  grid-template-columns: 6fr 4fr
+  &__form
+    padding: 60px 43px
+    background-color: #f5f6f8
+  iframe
+    height: 100%
+@media screen and ( max-width: 1400px )
+  .map-block__form
+    padding: 40px
+@media screen and ( max-width: 992px )
+  .map-block
+    flex-direction: column-reverse
+    display: flex
+    iframe
+      height: 390px
+@media screen and ( max-width: 768px )
+  .map-block__form
+    padding: 48px 10px 38px

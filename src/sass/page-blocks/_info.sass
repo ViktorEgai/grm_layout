@@ -1,0 +1,159 @@
+.info
+  padding: 92px 0
+
+  &-grid
+    display: grid
+    grid-template-columns: 6fr 7fr 6fr
+    gap: 20px
+    width: 100%
+    max-width: 100%
+  &-item
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    gap: 20px
+    justify-content: flex-start
+  &-item__title
+    margin-bottom: 42px
+  &-news
+    padding: 25px 42px 40px
+    border: 3px solid #504D50
+    border-radius: 26px
+    flex-grow: 1
+  &-news__title
+    @include font(35px, 1.2, 500 )
+    margin-bottom: 33px
+  &-news__text
+    font-size: 21px
+    margin-bottom: 52px
+    color: rgba(#000, .7)
+
+    a
+      color: $accent-color
+  &-news__link
+    @include font (35px, 1.2)
+    color: $accent-color
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      bottom: -5px
+      left: 0
+      width: 44px
+      height: 3px
+      background-color: $accent-color
+
+  &-calendar
+    border: 3px solid #504D50
+    border-radius: 26px
+    padding: 25px 48px
+    flex-grow: 1
+    flex-shrink: 0
+
+  &-calendar-date
+    border: 3px solid #504D50
+    border-radius: 26px
+    display: flex
+    align-items: center
+    gap: 20px
+  &-calendar-date__day
+    border: 3px solid #504D50
+    border-radius: 26px
+    background: linear-gradient(0deg, rgba(245,245,245,1) -100%, rgba(0,164,138,1) 74%, rgba(0,93,98,1) 100%)
+    color: #fff
+    text-align: center
+    padding: 45px 30px 38px
+    margin: -2px
+    p
+      line-height: 0.7
+      font-size: 116px
+
+    span
+      display: block
+      margin-top: 20px
+      font-size: 21px
+      line-height: 1
+      font-weight: 500
+  &-calendar-date__text
+    font-size: 21px
+  .services
+    flex-grow: 1
+@media screen and ( max-width: 1600px)
+  .info
+    &-news__title
+      font-size: 24px
+    &-news__text
+      font-size: 16px
+      margin-bottom: 30px
+
+    &-news__link
+      font-size: 20px
+    &-calendar-date__day p
+      font-size: 60px
+    &-calendar-date__day span
+      font-size: 18px
+    &-calendar-date__text
+      font-size: 18px
+@media screen and ( max-width: 1400px)
+  .info
+    &-grid
+      // grid-template-columns: repeat(2,1fr)
+    &-calendar, &-news
+      padding: 25px
+    &-calendar-date__day
+      padding: 30px 20px
+@media screen and ( max-width: 1200px )
+  .info
+    padding: 20px 0
+    &-grid
+      grid-template-columns: repeat(2,1fr)
+      gap: 40px 20px
+    &-item-services
+      grid-column: 1/span 2
+    &-item__title
+      margin-bottom: 0
+@media screen and ( max-width: 992px )
+  .info
+    &-news
+      padding: 20px 15px
+      border-radius: 10px
+      border-width: 2px
+    &-news__title
+      font-size: 16px
+    &-news__text
+      font-size: 12px
+      margin-bottom: 20px
+    &-news__link
+      font-size: 16px
+      &::before
+        width: 23px
+        height: 2px
+        border-radius: 4px
+    &-calendar
+      border-width: 2px
+      border-radius: 10px
+      padding: 20px 15px
+    &-calendar-date
+      border-radius: 10px
+      border-width: 2px
+    &-calendar-date__day
+      border-width: 2px
+      border-radius: 10px
+      margin: -1px
+      padding: 15px 10px
+      p
+        font-size: 35px
+      span
+        font-size: 10px
+        margin-top: 10px
+    &-calendar-date__text
+      font-size: 14px
+@media screen and ( max-width: 768px )
+  .info
+    &-grid
+      display: flex
+      flex-direction: column
+
+      gap: 40px
+    &-item-services

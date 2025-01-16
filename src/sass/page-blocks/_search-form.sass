@@ -1,0 +1,22 @@
+.search-form
+  border-radius: 26px
+  border: 3px solid #504D50
+  display: flex
+  align-items: center
+  padding: 0 20px
+  input
+    font-size: 21px
+    background-color: transparent
+    padding: 18px 20px
+    border: none
+    flex-grow: 1
+    &::placeholder
+      color: rgba(#000, .7)
+  &__btn
+    flex-shrink: 0
+    display: block
+    width: 20px
+@media screen and ( max-width: 1600px)
+  .search-form
+    input
+      font-size: 18px

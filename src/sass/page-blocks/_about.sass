@@ -1,0 +1,79 @@
+.about
+  padding: 92px 0
+  &__title
+    margin-bottom: 42px
+  &-slider
+    counter-reset: item
+    .slick-list
+      margin: 0 -20px
+    .slick-dots
+      margin-top: 54px
+  &-item
+    margin: 0 20px
+    color: #fff
+    padding: 42px 46px
+    border-radius: 26px
+    overflow: hidden
+    background: linear-gradient(8deg, rgba(245,245,245,1) 0%, rgba(0,164,138,1) 31%, rgba(0,93,98,1) 71%)
+    position: relative
+    z-index: 1
+    &::after
+      content: "0" counter(item)
+      counter-increment: item
+      position: absolute
+      bottom: 0
+      right: 10px
+      font-size: 363px
+      transform: translateY(40%)
+      z-index: -1
+  &-item__image
+    border-radius: 26px
+    overflow: hidden
+  &-item__title
+    @include font(35px, 1.2,500)
+    margin-bottom: 1em
+  &-item__text
+    font-size: 21px
+    font-weight: 500
+    max-width: 75%
+    p,ul,ol
+      margin-bottom: 1em
+@media screen and ( max-width: 1600px )
+  .about
+    &-item__text
+      font-size: 18px
+    &-item
+      padding-bottom: 80px
+      &::after
+        font-size: 220px
+@media screen and ( max-width: 1200px )
+  .about
+    &__title
+      margin-bottom: 30px
+    &-slider
+      counter-reset: item
+      .slick-dots
+        margin-top: 20px
+    &-item__text
+      max-width: 100%
+@media screen and ( max-width: 992px )
+  .about
+    padding: 25px 0
+
+@media screen and ( max-width: 768px )
+  .about
+    padding: 0
+    &__title
+      margin-bottom: 13px
+    &-item
+      margin: 0 10px
+      border-radius: 10px
+      padding: 18px 15px 60px
+      background: linear-gradient(8deg, rgba(245,245,245,1) 0%, rgba(0,164,138,1) 31%, rgba(0,93,98,1) 90%)
+
+      &::after
+        font-size: 111px
+    &-item__title
+      font-size: 16px
+    &-item__text
+      font-size: 12px

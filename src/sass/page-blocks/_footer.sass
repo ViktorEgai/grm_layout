@@ -1,0 +1,104 @@
+
+.footer
+  background-color: $sec-bg-color
+  color: #fff
+  font-size: 21px
+  &-top
+    padding: 73px 0 60px
+  &-logo
+    max-width: 200px
+    display: block
+  &-nav
+    display: flex
+    gap: 50px
+  &-menu
+    line-height: 1.7
+  &-menu__item
+    margin-bottom: 4px
+  &-menu__link
+    position: relative
+    transition: .3s
+    &::before
+      content: ''
+      position: absolute
+      background-color: #fff
+      width: 0
+      height: 3px
+      bottom: -5px
+      border-radius: 10px
+      left: 0
+      transition: .3s
+  &__btn
+    gap: 22px
+    max-width: 310px
+    border-radius: 20px
+    svg
+      width: 21px
+      height: 21px
+  &-middle
+    padding: 79px 0
+    border-top: 3px solid rgba(#fff,.1)
+    border-bottom: 3px solid rgba(#fff,.1)
+  &-icons
+    display: flex
+    flex-wrap: wrap
+    gap: 27px
+  &-icons__link
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    background-color: #476064
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s
+    svg
+      width: 50%
+      height: 50%
+
+  &-bottom
+    padding: 69px 0 65px
+  &-info
+  &-address
+  &-contacts
+  &-social
+
+  &-privacy
+    text-decoration: underline
+@media  ( hover: hover  )
+  .footer-menu__link:hover
+    color: #fff
+    &::before
+      width: 44px
+  .footer-contacts a:hover
+    text-decoration: underline
+  .footer-icons__link:hover
+    background-color: $accent-color
+@media screen and ( max-width: 1400px )
+  .footer
+    font-size: 16px
+    &-icons
+      gap: 10px
+    &-icons__link
+      width: 54px
+      height: 54px
+    &__btn
+      font-size: 16px
+    &-top, &-middle, &-bottom
+      padding: 40px 0
+    &-privacy
+      font-size: 21px
+@media screen and ( max-width: 992px )
+  .footer
+    &-menu__item
+      margin-bottom: 20px
+    &__btn
+      border-radius: 10px
+    &-info
+      p
+        margin-bottom: 8px
+@media screen and ( max-width: 576px )
+  .footer
+    font-size: 16px
+    &-info
+      font-size: 12px

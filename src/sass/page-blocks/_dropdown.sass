@@ -1,0 +1,71 @@
+.dropdown
+  padding: 60px 0 120px
+  counter-reset: item
+
+  &-item
+    color: #fff
+    border-radius: 26px
+    background: linear-gradient(62deg, rgba(0,164,138,1) 47%, rgba(0,93,98,1) 94%)
+    padding: 25px 100px
+    &:not(:last-child)
+      margin-bottom: 23px
+  &-item__title
+    font-size: 35px
+    font-weight: 600
+    position: relative
+    cursor: pointer
+    &::before
+      content: '0' counter(item) '.'
+      counter-increment: item
+      position: absolute
+      top: 0
+      left: -60px
+      font-size: 21px
+      font-weight: 400
+  &-item__content
+    font-size: 21px
+    font-weight: 400
+    margin-top: 14px
+    margin-bottom: 40px
+    display: none
+  &__btn
+    max-width: 420px
+    margin-top: 78px
+@media screen and ( max-width: 1400px )
+  .dropdown
+    &-item
+      padding: 25px 80px
+
+    &-item__title
+      font-size: 24px
+      &::before
+        left: -40px
+        font-size: 18px
+    &-item__content
+      font-size: 18px
+@media screen and ( max-width: 1200px )
+  .dropdown
+    &-item
+      border-radius: 10px
+@media screen and ( max-width: 992px )
+  .dropdown
+    padding: 20px 0
+    &-item
+      padding: 12px 40px
+      &:not(:last-child)
+        margin-bottom: 10px
+    &-item__title
+      font-size: 16px
+      &::before
+        left: -26px
+        font-size: 12px
+    &-item__content
+      font-size: 12px
+    &__btn
+      max-width: 180px
+      margin-top: 23px
+      padding: 12px
+      border: 2px solid $accent-color
+      background: #fff
+      color: #316067
+      font-size: 12px

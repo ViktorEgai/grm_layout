@@ -1,0 +1,41 @@
+.social
+  display: flex
+  align-items: center
+  gap: 7px
+  &-item
+    border-radius: 50%
+    width: 54px
+    height: 54px
+    background-color: #fff
+    border: 1px solid #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s
+    svg
+      max-width: 31px
+      max-height: 23px
+      path
+        transition: .3s
+.social-dark .social
+  &-item
+    background-color: #316067
+    border: 1px solid #316067
+    path
+      fill: #fff
+@media  ( hover: hover  )
+  .social-item:hover
+    background-color: #213030
+    path
+      fill: #fff
+  .social-dark .social-item:hover
+    background-color: #fff
+    path
+      fill: #316067
+
+@media screen and ( max-width: 1200px )
+  .social
+    gap: 10px
+    &-item
+      width: 53px
+      height: 53px

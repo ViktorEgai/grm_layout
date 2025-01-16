@@ -1,0 +1,28 @@
+.front-page-header
+
+  .header
+    &-logo
+      .logo-white
+        display: none
+      .logo-black
+        display: block
+    &-menu
+      color: rgba(#000,.5)
+    &-menu__link
+      &::before
+        background-color: $accent-color
+    &-search path
+      fill: $light-green
+    &-menu-btn rect
+      fill: $light-green
+
+@media  ( hover:  hover )
+  .header-menu__link:hover
+    color: $accent-color
+@media screen and ( max-width: 992px )
+  .front-page-header
+    .header
+      &__btn
+        color: $dark-green
+        border-color: rgba($accent-color, .3)
+        background: rgba($accent-color, .3)

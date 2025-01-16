@@ -1,0 +1,99 @@
+.widget
+  position: fixed
+  z-index: 20
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  border: 2px solid rgba(49, 96, 103, 1)
+  border-top-right-radius: 16px
+  border-bottom-right-radius: 16px
+  background-color: #fff
+  width: 82px
+  transition: .3s
+  svg
+    width: 45px
+    height: 45px
+    flex-shrink: 0
+  &__logo
+    position: relative
+    &::before
+      opacity: 0 !important
+    &>svg
+      transition: .3s
+    span
+      padding: 18px 0
+      display: flex
+      justify-content: flex-start
+      position: absolute
+      top: 0
+      background-color: #fff
+      svg
+        width: 145px
+        height: 45px
+  &__item
+    padding: 18px
+    display: flex
+    align-items: center
+    gap: 10px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 5px
+      left: 5px
+      bottom: 5px
+      right: 5px
+      background-color: rgba(#1CAB98,.3)
+      border-radius: 12px
+      opacity: 0
+      transition: .3s
+    &:not(:last-child)
+      border-bottom: 2px solid rgba(49, 96, 103, 1)
+    span
+      opacity: 0
+      font-size: 21px
+      transform: translateX(-50%) scale(0)
+      transition: .3s
+@media  ( min-width: 992px  )
+  .widget:hover
+    width: 220px
+    span
+      transform: translateX(0) scale(1)
+      opacity: 1
+    .widget__logo > svg
+      opacity: 0
+
+  .widget__item:hover
+    &::before
+      opacity: 1
+@media screen and ( max-width: 992px )
+  .widget
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+    top: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    width: auto
+    height: auto
+    border-radius: 10px
+    border: none
+    &__item
+      padding: 13px 22px
+      border: none !important
+      span
+        display: none
+
+      &:last-child
+        order: 3
+      svg
+        width: 20px
+        height: 20px
+    &__logo
+      order: 2
+      transform: scale(1.7)
+
+      border-radius: 50%
+      background-color: #fff
+      padding: 11px

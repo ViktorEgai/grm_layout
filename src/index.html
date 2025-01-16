@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'front-page-header' })
+			<!-- main -->
+			<main class="main">
+				<style>
+					.main {
+						padding: 200px 0;
+					}
+					.main ul {
+						margin-top: 200px;
+					}
+				</style>
+				<div class="container">
+					<ul>
+						<li><a href="/front-page.html" target="_blank">Главная страница</a></li>
+					</ul>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
