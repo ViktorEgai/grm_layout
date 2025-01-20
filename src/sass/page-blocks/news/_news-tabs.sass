@@ -1,0 +1,93 @@
+.news-tabs
+  padding: 11.2rem 0
+  &-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 2rem
+    margin-bottom: 7.7rem
+    flex-wrap: wrap
+  &-nav__item
+    font-size: 1.8rem
+    padding: 2.8rem 7.8rem
+    border: .3rem solid $light-green
+    border-radius: 2rem
+    transition: .3s
+    color: $light-green
+    transition: .3s
+    &.active
+      background-color: $light-green
+      color: #fff
+  &-content-list
+    display: none
+    padding: 0 10rem !important
+    &.active
+      display: block
+  &-content-list__item
+    display: flex
+    gap: 4rem
+    // align-items: center
+    margin-bottom: 2rem
+  &-content-list__thumb
+    overflow: hidden
+    border-radius: 2.6rem
+    width: 53rem
+    flex-shrink: 0
+    img
+      width: 100%
+      aspect-ratio: 53/36
+      object-fit: cover
+  &-content-list__content
+    font-size: 2.1rem
+    align-self: center
+  &-content-list__top
+    display: flex
+    align-items: center
+    gap: 2.7rem
+    color: $accent-color
+  &-content-list__title
+    font-size: 3.5rem
+    font-weight: 500
+    color: #4B8ECC
+    margin-top: 2.8rem
+    margin-bottom: 2.3rem
+    display: block
+  &-content-list__text
+    color: rgba(#060606,.7)
+@media screen and ( max-width: 992px )
+  .news-tabs
+    padding: 40px 0
+    &-nav
+      gap: 10px
+      margin-bottom: 13px
+    &-nav__item
+      font-size: 12px
+      padding: 13px
+      border-width: 2px
+      border-radius: 10px
+      font-weight: 700
+    &-content-list
+      padding: 0 !important
+    &-content-list__item
+      gap: 17px
+      margin-bottom: 20px
+      align-items: center
+    &-content-list__thumb
+      border-radius: 10px
+      width: 30%
+      img
+        height: 100%
+    &-content-list__content
+      font-size: 12px
+    &-content-list__top
+      gap: 10px
+    &-content-list__title
+      font-size: 16px
+      margin-top: 12px
+      margin-bottom: 6px
+@media screen and ( max-width: 576px )
+  .news-tabs
+    &-content-list__item
+      flex-direction: column
+    &-content-list__thumb
+      width: 100%
