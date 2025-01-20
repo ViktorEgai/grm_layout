@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	$(".btn").css("--deg", "68deg");
+
 	$(".btn:not([disabled])").on("mouseenter", function () {
 		const btn = $(this);
 

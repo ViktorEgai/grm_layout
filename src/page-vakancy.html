@@ -4,16 +4,12 @@
 	<body>
 		<div class="wrapper">
 			<!-- header -->
-			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			@@include('components/page-blocks/_header.html', { "class" : ' ' })
 			<!-- main -->
 			<main class="main">
 				<!-- page-top -->
-				<div class="top">
-					<div class="container">
-						<h1 class="page-title top__title">Вакансии агентств</h1>
-						<div class="top__text">Вакансии агентств недвижимости – членов Гильдии риэлторов Москвы</div>
-					</div>
-				</div>
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Вакансии агентств', "text" : 'Вакансии агентств недвижимости – членов Гильдии риэлторов Москвы' })
+
 				<!-- breadcrumbs -->
 				<div class="breadcrumbs">
 					<div class="container">
@@ -30,22 +26,32 @@
 									<div class="vakancy-banner__title">Для размещения вакансии вашего агентства обратитесь в Исполнительную дирекцию ГРМ:</div>
 								</div>
 								<div class="col-lg-6">
-									<div class="row g-3">
-										<div class="col-6">
+									<div class="row g-4">
+										<div class="col-md-6">
 											<a href="tel:+74993220164" class="vakancy-banner__btn btn">+7 499 322 01 64</a>
 										</div>
-										<div class="col-6">
+										<div class="col-md-6">
 											<a href="mailto:id@grmos.ru" class="vakancy-banner__btn btn">id@grmos.ru</a>
 										</div>
-										<div class="col-6">
+										<div class="col-md-6">
 											<a href="tel:+79689797808" class="vakancy-banner__btn btn">+7 968 979 78 08</a>
 										</div>
-										<div class="col-6">
+										<div class="col-md-6">
 											<a href="mailto:web@grmos.ru" class="vakancy-banner__btn btn">web@grmos.ru</a>
 										</div>
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vakancy-cards">
+					<div class="container">
+						<div class="row g-4">
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
 						</div>
 					</div>
 				</div>

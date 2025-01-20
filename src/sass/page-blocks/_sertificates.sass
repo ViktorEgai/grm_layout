@@ -1,0 +1,92 @@
+.sertificates
+  padding-bottom: 11.2rem
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: 2rem
+  &-grid-item
+    border-radius: 2.6rem
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: .3s
+
+    &:nth-child(5n+1) ,&:nth-child(6n+8), &:nth-child(6n+3)
+      height: 59.4rem
+    &:nth-child(5n+2),
+    &:nth-child(5n+5),
+    &:nth-child(9n+4)
+      height: 29.5rem
+    &:nth-child(8n+6),
+    &:nth-child(8n+8)
+      margin-top: -30rem
+@media  (hover: hover  )
+  .sertificates-grid-item:hover img
+    transform: scale(1.1)
+@media screen and ( max-width: 992px )
+  .sertificates
+    padding-bottom: 40px
+    &-grid
+      gap: 5px 10px
+    &-grid-item
+      border-radius: 10px
+      &:nth-child(5n+1), &:nth-child(6n+8), &:nth-child(6n+3)
+        height: 240px
+      &:nth-child(5n+2),
+      &:nth-child(5n+5),
+      &:nth-child(9n+4)
+        height: 120px
+      &:nth-child(8n+6),
+      &:nth-child(8n+8)
+        margin-top: -120px
+@media screen and ( max-width: 768px )
+  .sertificates-grid
+    grid-template-columns: repeat(2,1fr)
+    &-item
+      &:nth-child(12n+1)
+        height: 194px
+        margin: 0
+        grid-column: 1/2
+      &:nth-child(12n+2)
+        height: 306px
+        margin: 0
+      &:nth-child(12n+3)
+        height: 104px
+        margin-top: -109px
+      &:nth-child(12n+4)
+        height: 218px
+        margin: 0 -50px 0 0
+        grid-column: 1/2
+
+      &:nth-child(12n+6),
+      &:nth-child(12n+5)
+        height: 104px
+        margin: 0 0 0 50px
+      &:nth-child(12n+6)
+        margin-top: -109px
+        grid-column: 2/3
+      &:nth-child(12n+7)
+        height: 306px
+        margin: 0
+        gap: 1/2
+      &:nth-child(12n+8)
+        height: 194px
+        margin: 0
+        grid-column: 2/3
+      &:nth-child(12n+9)
+        grid-column: 2/3
+        margin-top: -109px
+
+        height: 104px
+      &:nth-child(12n+10)
+        height: 104px
+        margin: 0 50px 0 0
+      &:nth-child(12n+11)
+        height: 218px
+        margin: 0 0 0 -50px
+      &:nth-child(12n+12)
+        margin-top: -109px
+        margin-right: 50px
+        height: 104px

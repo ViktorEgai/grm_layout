@@ -32,15 +32,21 @@ jQuery(document).ready(function ($) {
 	});
 
 	function AOSAnimation() {
-		$(".section-title, .dropdown-item").attr("data-aos", "fade-right");
+		$(".section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text ").attr("data-aos", "fade-right");
 		$(".hero-left, #map").attr("data-aos", "fade-right");
 		$(".map-block__form").attr("data-aos", "fade-left");
-		$(".stories, .about-slider").attr("data-aos", "fade-down");
-
+		$(".sertificates-grid-item").attr("data-aos", "fade-up");
+		$(".vakancy-card").each(function (index, item) {
+			if (index % 2 == 0) {
+				$(this).parent().attr("data-aos", "fade-right");
+			} else {
+				$(this).parent().attr("data-aos", "fade-left");
+			}
+		});
 		setTimeout(function () {
 			AOS.init({
 				once: true,
-				duration: 1000,
+				duration: 1600,
 			});
 		}, 200);
 	}

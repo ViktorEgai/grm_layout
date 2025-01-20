@@ -1,0 +1,67 @@
+.vakancy-card
+  padding: 4.3rem 3.6rem 5.7rem
+  background-color: #f9f9f9
+  border-radius: 2.6rem
+  position: relative
+  overflow: hidden
+  font-size: 2.1rem
+  color: rgba(#000,.7)
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    background-image: url(../img/circle.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 46.5rem
+    height: 45.2rem
+    transform: translate(28%, -28%)
+    z-index: -1
+  &__title
+    @include font(3.5rem, 1.2,600)
+    margin-bottom: 0.6rem
+    color: #000
+  &__info
+    margin-bottom: 2rem
+    display: flex
+    align-items: center
+    gap: 1rem
+  &__price
+    font-size: 6rem
+    font-weight: 700
+    margin-bottom: 4rem
+    color: #000
+  &__text
+    margin-bottom: 7.3rem
+    max-width: 56rem
+    p,ul,ol
+      margin-bottom: 1em
+    & *:last-child
+      margin: 0
+    strong
+      color: #000
+  &__btn
+@media screen and ( max-width: 992px )
+  .vakancy-card
+    padding: 16px 14px
+    border-radius: 10px
+    font-size: 12px
+    &::before
+      width: 265px
+      height: 258px
+      transform: translate(50%, -10%)
+    &__title
+      font-size: 16px
+      margin-bottom: 0
+    &__info
+      gap: 5px
+      margin-bottom: 12px
+    &__price
+      font-size: 25px
+      margin-bottom: 10px
+    &__btn
+      border: 2px solid $accent-color
+      color: $sec-accent-color

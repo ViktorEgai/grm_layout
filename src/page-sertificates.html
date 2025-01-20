@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : ' ' })
+			<!-- main -->
+			<main class="main">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Награды и Сертификаты', "text" : 'Дипломы, сертификаты, почетные грамоты и благодарности от наших партнеров' })
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Вакансии</a>⭢
+						<span>Награды и Сертификаты</span>
+					</div>
+				</div>
+				<div class="sertificates">
+					<div class="container">
+						<div class="sertificates-grid">
+							@@for (var i = 0; i < 16; i++) {
+							<a class="sertificates-grid-item" href="img/gallery/1.png" data-fancybox="sertificates">
+								<img src="img/gallery/1.png" alt="" />
+							</a>
+							}
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

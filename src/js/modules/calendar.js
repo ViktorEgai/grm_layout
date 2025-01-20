@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const calendarEl = document.getElementById("small-calendar");
-	if (calendarEl !== undefined || calendarEl !== null) {
+
+	if (calendarEl !== undefined && calendarEl !== null) {
 		const calendar = new FullCalendar.Calendar(calendarEl, {
 			initialView: "dayGridMonth",
 			locale: "ru",
