@@ -6,14 +6,15 @@
 			<!-- header -->
 			@@include('components/page-blocks/_header.html', { "class" : 'front-page-header' })
 			<!-- main -->
-			<main class="main d-flex flex-column">
+			<main class="main  ">
+				<!-- hero -->
 				<section class="hero">
 					<div class="container">
 						<div class="hero-wrapper">
 							<div class="hero-left">
 								<h1 class="hero__title">ГИЛЬДИЯ РИЭЛТОРОВ МОСКВЫ</h1>
 								<div class="hero__text">Объединение усилий и интересов риэлторского сообщества города Москвы, заинтересовонного в развитии цивилизовонного рынка недвижимости.</div>
-								<a href="#popup" class="hero__btn btn" data-fancybox>Вступить</a>
+								<a href="#popup" class="hero__btn btn" data-fancybox style="--deg: 68deg">Вступить</a>
 
 								@@include('components/bem-blocks/_social.html', { "class": "hero-social social-dark" })
 								<a href="#" data-fancybox class="hero__video video">
@@ -52,6 +53,7 @@
 						</div>
 					</div>
 				</section>
+				<!-- stories -->
 				<div class="stories">
 					<div class="container">
 						<div class="stories-slider">
@@ -78,6 +80,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- info -->
 				<div class="info">
 					<div class="container">
 						<div class="info-grid">
@@ -88,7 +91,7 @@
 									<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
 								</form>
 								<div class="services">
-									<div class="services__image d-none d-xl-block">
+									<div class="services__image d-none d-lg-block">
 										<img src="img/front-page/services.jpg" alt="" />
 									</div>
 									<div class="services-slider">
@@ -118,7 +121,7 @@
 									<div class="info-news__title">Набиуллина назвала ключевые шаги для роста доступности жилья</div>
 									<div class="info-news__text content">
 										<p>
-											Для роста доступности жилья в России необходимо предпринять несколько шагов, в том числе остудить рынок недвижимости. Такое условие назвала глава Центробанка  Эльвира Набиуллина, передает РИА Новости. «Выход рынка жилья из состояния перегрева — это первый шаг к тому, чтобы доступность жилья снова стала расти, ведь для этого рост доходов граждан должен опережать рост цен на
+											Для роста доступности жилья в России необходимо предпринять несколько шагов, в том числе остудить рынок недвижимости. Такое условие назвала глава ЦентробанкаЭльвира Набиуллина, передает РИА Новости. «Выход рынка жилья из состояния перегрева — это первый шаг к тому, чтобы доступность жилья снова стала расти, ведь для этого рост доходов граждан должен опережать рост цен на
 											жилье», — заявила Набиуллина. По ее словам, вторым шагом должно стать возвращение доступной рыночной ипотеки. Для роста доступности жилья в России необходимо предпринять несколько шагов, в том числе остудить рынок недвижимости.
 										</p>
 									</div>
@@ -128,7 +131,9 @@
 
 							<div class="info-item">
 								<h2 class="section-title info-item__title">Календарь мероприятий</h2>
-								<div id="small-calendar" class="info-calendar"></div>
+								<div class="info-calendar">
+									<div id="small-calendar"></div>
+								</div>
 								<div class="info-calendar-date">
 									<div class="info-calendar-date__day">
 										<p>27</p>
@@ -150,7 +155,7 @@
 						<div class="about-slider">
 							<div class="about-item">
 								<div class="row gy-4 align-items-center gx-5">
-									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+									<div class="col-lg-3 d-none d-lg-block">
 										<div class="about-item__image">
 											<img src="img/front-page/about.jpg" alt="" />
 										</div>
@@ -168,7 +173,7 @@
 							</div>
 							<div class="about-item">
 								<div class="row gy-4 align-items-center gx-5">
-									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+									<div class="col-lg-3 d-none d-lg-block">
 										<div class="about-item__image">
 											<img src="img/front-page/about.jpg" alt="" />
 										</div>
@@ -186,7 +191,7 @@
 							</div>
 							<div class="about-item">
 								<div class="row gy-4 align-items-center gx-5">
-									<div class="col-xxl-3 col-lg-4 d-none d-xl-block">
+									<div class="col-lg-3 d-none d-lg-block">
 										<div class="about-item__image">
 											<img src="img/front-page/about.jpg" alt="" />
 										</div>
@@ -208,7 +213,7 @@
 				<!-- cards -->
 				<div class="cards">
 					<div class="container">
-						<div class="row gy-2 gx-2 gx-lg-4">
+						<div class="row gy-3">
 							<div class="col-xl-3 col-6">
 								<div class="cards-item">
 									<div class="cards-item-front">
@@ -219,12 +224,13 @@
 											</div>
 											<div class="cards-item__text">Высший орган управления Гильдии риэлторов Москвы</div>
 											<div class="cards-item__subtitle">Основная задача:</div>
-											<div class="cards-item__text">Контролировать выполнение целей Партнерства.</div>
+											<div class="cards-item__text mb-4 mb-lg-0">Контролировать выполнение целей Партнерства.</div>
 											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
 										</div>
 									</div>
 									<div class="cards-item-back">
 										<img src="img/front-page/cards.jpeg" alt="" />
+										<span class="cards-item-close d-lg-none">Свернуть</span>
 									</div>
 								</div>
 							</div>
@@ -238,12 +244,13 @@
 											</div>
 											<div class="cards-item__text">Председатель Совета Партнерства</div>
 											<div class="cards-item__subtitle">Основная задача:</div>
-											<div class="cards-item__text">Контролировать выполнение целей Партнерства.</div>
+											<div class="cards-item__text mb-4 mb-lg-0">Контролировать выполнение целей Партнерства.</div>
 											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
 										</div>
 									</div>
 									<div class="cards-item-back">
 										<img src="img/front-page/cards.jpeg" alt="" />
+										<span class="cards-item-close d-lg-none">Свернуть</span>
 									</div>
 								</div>
 							</div>
@@ -257,12 +264,13 @@
 												Сергеевна
 											</div>
 											<div class="cards-item__text">Президент Гильдии риэлторов Москвы</div>
-											<div class="cards-item__subtitle">Представляет Гильдию во внешних организациях, включая, политические партии и органы власти.</div>
+											<div class="cards-item__subtitle">Представляет Гильдию во внешни mb-4 mb-lg-0х организациях, включая, политические партии и органы власти.</div>
 											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
 										</div>
 									</div>
 									<div class="cards-item-back">
 										<img src="img/front-page/cards.jpeg" alt="" />
+										<span class="cards-item-close d-lg-none">Свернуть</span>
 									</div>
 								</div>
 							</div>
@@ -276,12 +284,13 @@
 											</div>
 											<div class="cards-item__text">Исполнительный директор НП «ГРМ»  </div>
 											<div class="cards-item__subtitle">Основная задача:</div>
-											<div class="cards-item__text">Исполнительный директор руководит текущей деятельностью НП «ГРМ».</div>
+											<div class="cards-item__text mb-4 mb-lg-0">Исполнительный директор руководит текущей деятельностью НП «ГРМ».</div>
 											<a href="#" class="cards-item__link link d-lg-none">Развернуть</a>
 										</div>
 									</div>
 									<div class="cards-item-back">
 										<img src="img/front-page/cards.jpeg" alt="" />
+										<span class="cards-item-close d-lg-none">Свернуть</span>
 									</div>
 								</div>
 							</div>
@@ -296,11 +305,11 @@
 							<div class="dropdown-item__content content">
 								<ul>
 									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
-									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
 									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
-									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
-									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
-									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
 								</ul>
 							</div>
 						</div>
@@ -309,11 +318,11 @@
 							<div class="dropdown-item__content content">
 								<ul>
 									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
-									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
 									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
-									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
-									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
-									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
 								</ul>
 							</div>
 						</div>
@@ -322,11 +331,11 @@
 							<div class="dropdown-item__content content">
 								<ul>
 									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
-									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
 									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
-									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
-									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
-									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
 								</ul>
 							</div>
 						</div>
@@ -335,11 +344,11 @@
 							<div class="dropdown-item__content content">
 								<ul>
 									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
-									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
 									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
-									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
-									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
-									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
 								</ul>
 							</div>
 						</div>
@@ -348,11 +357,11 @@
 							<div class="dropdown-item__content content">
 								<ul>
 									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
-									<li>  Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
 									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
-									<li>  Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
-									<li>  Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
-									<li>  Перечень и памятки для оформления и ведения деятельности.  </li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
 								</ul>
 							</div>
 						</div>
@@ -419,6 +428,7 @@
 						</div>
 					</div>
 				</section>
+				<!-- map-block -->
 				<div class="map-block">
 					<div id="map">
 						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3d8f3a5b7b6852707afd07204edce94017d8f7490bf53f4e930830cceaad5b3&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>

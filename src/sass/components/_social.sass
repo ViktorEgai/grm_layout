@@ -1,20 +1,20 @@
 .social
   display: flex
   align-items: center
-  gap: 7px
+  gap: .7rem
   &-item
     border-radius: 50%
-    width: 54px
-    height: 54px
+    width: 5.4rem
+    height: 5.4rem
     background-color: #fff
-    border: 1px solid #fff
+    border: .1rem solid #fff
     display: flex
     align-items: center
     justify-content: center
     transition: .3s
     svg
-      max-width: 31px
-      max-height: 23px
+      max-width: 3.1rem
+      height: 2.3rem
       path
         transition: .3s
 .social-dark .social
@@ -33,9 +33,12 @@
     path
       fill: #316067
 
-@media screen and ( max-width: 1200px )
+@media screen and ( max-width: 992px )
   .social
     gap: 10px
     &-item
       width: 53px
       height: 53px
+      svg
+        max-width: 31px
+        height: 23px

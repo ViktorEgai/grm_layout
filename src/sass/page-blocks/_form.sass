@@ -1,39 +1,39 @@
 .form
   &__top
     position: relative
-    padding-left: 40px
-    margin-bottom: 53px
+    padding-left: 4.0rem
+    margin-bottom: 5.3rem
     &::before
       content: ''
       position: absolute
       top: 0
       left: 0
-      width: 3px
+      width: .3rem
       height: 100%
       background-color: $accent-color
   &__field
-    margin-bottom: 20px
+    margin-bottom: 2.0rem
     position: relative
     display: block
   &__title
-    @include font (35px, 120%, 600)
+    @include font (3.5rem, 120%, 600)
     color: #060606
   &__subtitle
-    font-size: 21px
+    font-size: 2.1rem
   &-notice
-    @include font (18px, 140%)
-    margin-bottom: 16px
+    @include font (1.8rem, 140%)
+    margin-bottom: 1.6rem
     text-align: center
   &-label
-    @include font (20px, 140%)
-    margin-bottom: 8px
+    @include font (2.0rem, 140%)
+    margin-bottom: .8rem
     display: block
   &__input
-    padding: 24px 34px
+    padding: 2.4rem 3.4rem
     width: 100%
-    border-radius: 26px
+    border-radius: 2.6rem
     background-color: #EFEFEF
-    font-size: 21px
+    font-size: 2.1rem
     font-weight: 300
     position: relative
     border: none
@@ -41,20 +41,20 @@
       color: rgba(#000,.2)
 
   &__radio
-    border: 1px solid #5F5F5F
-    padding: 23px 20px
-    border-radius: 20px
+    border: .1rem solid #5F5F5F
+    padding: 2.3rem 2.0rem
+    border-radius: 2.0rem
     display: block
     color: #fff
     display: flex
     align-items: center
-    gap: 13px
-    margin-bottom: 30px
+    gap: 1.3rem
+    margin-bottom: 3.0rem
     input
-      width: 20px
-      height: 20px
+      width: 2.0rem
+      height: 2.0rem
       border-radius: 50%
-      border: 1px solid #C1C1C1
+      border: .1rem solid #C1C1C1
       margin: 0
       position: relative
       &::before
@@ -65,8 +65,8 @@
         transform: translate(-50%,-50%)
         background-color: #fff
         border-radius: 50%
-        width: 14px
-        height: 14px
+        width: 1.4rem
+        height: 1.4rem
         opacity: 0
       &:checked
         &::before
@@ -84,26 +84,26 @@
   &-acceptance
     display: flex
     align-items: center
-    margin-top: 30px
-    // margin-left: 20px
+    margin-top: 3.0rem
+    // margin-left: 2.0rem
     cursor: pointer
-    // max-width: 285px
+    // max-width: 28.5rem
     width: 100%
-    font-size: 13px
+    font-size: 1.3rem
     text-align: center
     input
       appearance: none
       flex-shrink: 0
-      width: 24px
-      height: 24px
-      border-radius: 4px
-      margin-right: 10px
+      width: 2.4rem
+      height: 2.4rem
+      border-radius: .4rem
+      margin-right: 1.0rem
       position: relative
       display: flex
       align-items: center
       justify-content: center
 
-      margin: 0 8px 0 0
+      margin: 0 .8rem 0 0
       &::before
         content: ''
         position: absolute
@@ -112,7 +112,7 @@
         width: 100%
         height: 100%
         background-image: url(../img/check.svg)
-        background-size: 12px 8px
+        background-size: 1.2rem .8rem
         background-repeat: no-repeat
         background-position: center
         opacity: 0
@@ -123,36 +123,22 @@
 
     span
       display: block
-      // max-width: 265px
+      // max-width: 26.5rem
     a
       text-decoration: underline
   &-small-text
-    font-size: 12px
-    margin-bottom: 12px
+    font-size: 1.2rem
+    margin-bottom: 1.2rem
   &-response
     text-align: center
     color: #fff
     font-weight: 500
-    margin-top: 20px
+    margin-top: 2.0rem
   &__btn
     width: 100%
-    margin-top: 44px
+    margin-top: 4.4rem
 
-@media screen and ( max-width: 1400px )
-  .form
-    &__top
-      margin-bottom: 40px
-      padding-left: 20px
-    &__title
-      font-size: 28px
-    &__subtitle
-      font-size: 18px
-
-    &__input
-      font-size: 18px
-    &__btn
-      margin-top: 20px
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 992px )
   .form
     &__title
       font-size: 16px

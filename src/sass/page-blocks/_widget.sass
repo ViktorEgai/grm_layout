@@ -4,15 +4,15 @@
   left: 0
   top: 50%
   transform: translateY(-50%)
-  border: 2px solid rgba(49, 96, 103, 1)
-  border-top-right-radius: 16px
-  border-bottom-right-radius: 16px
+  border: .2rem solid rgba(49, 96, 103, 1)
+  border-top-right-radius: 1.6rem
+  border-bottom-right-radius: 1.6rem
   background-color: #fff
-  width: 82px
+  width: 8.2rem
   transition: .3s
   svg
-    width: 45px
-    height: 45px
+    width: 3.8rem
+    height: 3.8rem
     flex-shrink: 0
   &__logo
     position: relative
@@ -21,42 +21,42 @@
     &>svg
       transition: .3s
     span
-      padding: 18px 0
+      padding: 1.8rem 0
       display: flex
       justify-content: flex-start
       position: absolute
       top: 0
       background-color: #fff
       svg
-        width: 145px
-        height: 45px
+        width: 14.5rem
+        height: 3.8rem
   &__item
-    padding: 18px
+    padding: 1.8rem
     display: flex
     align-items: center
-    gap: 10px
+    gap: 1.0rem
     position: relative
     &::before
       content: ''
       position: absolute
-      top: 5px
-      left: 5px
-      bottom: 5px
-      right: 5px
+      top: .5rem
+      left: .5rem
+      bottom: .5rem
+      right: .5rem
       background-color: rgba(#1CAB98,.3)
-      border-radius: 12px
+      border-radius: 1.2rem
       opacity: 0
       transition: .3s
     &:not(:last-child)
-      border-bottom: 2px solid rgba(49, 96, 103, 1)
+      border-bottom: .2rem solid rgba(49, 96, 103, 1)
     span
       opacity: 0
-      font-size: 21px
+      font-size: 2.1rem
       transform: translateX(-50%) scale(0)
       transition: .3s
 @media  ( min-width: 992px  )
   .widget:hover
-    width: 220px
+    width: 22rem
     span
       transform: translateX(0) scale(1)
       opacity: 1

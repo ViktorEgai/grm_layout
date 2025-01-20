@@ -2,19 +2,21 @@
 .footer
   background-color: $sec-bg-color
   color: #fff
-  font-size: 21px
+  font-size: 2.1rem
   &-top
-    padding: 73px 0 60px
+    padding: 7.3rem 0 6.0rem
   &-logo
-    max-width: 200px
+    max-width: 20.0rem
     display: block
   &-nav
     display: flex
-    gap: 50px
+    gap: 5.0rem
   &-menu
     line-height: 1.7
-  &-menu__item
-    margin-bottom: 4px
+    display: flex
+    flex-direction: column
+    gap: .4rem
+
   &-menu__link
     position: relative
     transition: .3s
@@ -23,29 +25,29 @@
       position: absolute
       background-color: #fff
       width: 0
-      height: 3px
-      bottom: -5px
-      border-radius: 10px
+      height: .3rem
+      bottom: -.5rem
+      border-radius: 1.0rem
       left: 0
       transition: .3s
   &__btn
-    gap: 22px
-    max-width: 310px
-    border-radius: 20px
+    gap: 2.2rem
+    max-width: 31.0rem
+    border-radius: 2.0rem
     svg
-      width: 21px
-      height: 21px
+      width: 2.1rem
+      height: 2.1rem
   &-middle
-    padding: 79px 0
-    border-top: 3px solid rgba(#fff,.1)
-    border-bottom: 3px solid rgba(#fff,.1)
+    padding: 7.9rem 0
+    border-top: .3rem solid rgba(#fff,.1)
+    border-bottom: .3rem solid rgba(#fff,.1)
   &-icons
     display: flex
     flex-wrap: wrap
-    gap: 27px
+    gap: 2.7rem
   &-icons__link
-    width: 90px
-    height: 90px
+    width: 9.0rem
+    height: 9.0rem
     border-radius: 50%
     background-color: #476064
     display: flex
@@ -57,7 +59,7 @@
       height: 50%
 
   &-bottom
-    padding: 69px 0 65px
+    padding: 6.9rem 0 6.5rem
   &-info
   &-address
   &-contacts
@@ -69,36 +71,34 @@
   .footer-menu__link:hover
     color: #fff
     &::before
-      width: 44px
+      width: 4.4rem
   .footer-contacts a:hover
     text-decoration: underline
   .footer-icons__link:hover
     background-color: $accent-color
-@media screen and ( max-width: 1400px )
+@media screen and ( max-width: 992px )
   .footer
     font-size: 16px
+    &-menu
+      gap: 20px
+    &-logo
+      max-width: 200px
+      margin-bottom: 34px
     &-icons
       gap: 10px
     &-icons__link
       width: 54px
       height: 54px
     &__btn
-      font-size: 16px
+      font-size: 12px
     &-top, &-middle, &-bottom
       padding: 40px 0
     &-privacy
       font-size: 21px
-@media screen and ( max-width: 992px )
-  .footer
-    &-menu__item
-      margin-bottom: 20px
+
     &__btn
       border-radius: 10px
     &-info
+      font-size: 12px
       p
         margin-bottom: 8px
-@media screen and ( max-width: 576px )
-  .footer
-    font-size: 16px
-    &-info
-      font-size: 12px

@@ -1,15 +1,15 @@
 .news-item
   background-color: #fff
-  border-radius: 26px
+  border-radius: 2.6rem
   overflow: hidden
   height: 100%
   display: flex
   flex-direction: column
 
   &__image
-    padding: 3px
+    padding: .3rem
     display: block
-    margin: -3px
+    margin: -.3rem
     position: relative
     z-index: 1
     &::before
@@ -21,15 +21,15 @@
       height: 100%
       background: linear-gradient(0deg, rgba(28,171,152,1) 0%, rgba(43,40,38,1) 100%)
       z-index: -1
-      border-radius: 26px
+      border-radius: 2.6rem
     img
       width: 100%
       object-fit: cover
-      border-radius: 26px
-      height: 380px
+      border-radius: 2.6rem
+      height: 38.0rem
   &__content
-    padding: 40px 43px 52px
-    font-size: 21px
+    padding: 4.0rem 4.3rem 5.2rem
+    font-size: 2.1rem
     position: relative
     flex-grow: 1
     display: flex
@@ -38,67 +38,74 @@
     display: flex
     color: $accent-color
     align-items: center
-    gap: 19px
+    gap: 1.9rem
     svg
       width: 1em
       height: 1em
     p
       display: flex
       align-items: center
-      gap: 5px
+      gap: .5rem
   &__title
-    margin: 28px 0 23px
-    font-size: 35px
+    margin: 2.8rem 0 2.3rem
+    font-size: 3.5rem
     font-weight: 500
     display: block
     width: fit-content
   &__excerpt
     color: rgba(#060606,.7 )
-    margin-bottom: 38px
+    margin-bottom: 3.8rem
   &__link
-    font-size: 35px
+    font-size: 3.5rem
     margin-top: auto
   &__label
     position: absolute
-    padding: 4px 14px
-    top: 34px
-    right: 43px
+    padding: .4rem 1.4rem
+    top: 3.4rem
+    right: 4.3rem
     z-index: 2
     background: linear-gradient(0deg, rgba(28,170,152,1) 0%, rgba(3,101,103,1) 100%)
-    border-radius: 46px
+    border-radius: 4.6rem
     text-transform: uppercase
     display: block
     color: #fff
-@media screen and ( max-width: 1600px )
-  .news-item
-    &__image
-      padding: 2px
-      img
-        height: 300px
-      &::before
-        border-radius: 10px
-    &__content
-      padding: 35px
-      font-size: 18px
-    &__title
-      font-size: 28px
-      margin: 20px 0
-    &__link
-      font-size: 24px
+// @media screen and ( max-width: 1600px )
+//   .news-item
+//     &__image
+//       padding: 2px
+//       img
+//         height: 300px
+//       &::before
+//         border-radius: 10px
+//     &__content
+//       padding: 35px
+//       font-size: 18px
+//     &__title
+//       font-size: 28px
+//       margin: 20px 0
+//     &__link
+//       font-size: 24px
 @media screen and ( max-width: 992px )
   .news-item
     border-radius: 10px
     &__image
+      padding: 2px
+      margin: -2px
       img
         border-radius: 10px
-
+        height: 190px
+      &::before
+        border-radius: 10px
+    &-info
+      gap: 9px
+      p
+        gap: 2px
     &__content
-      padding: 16px
+      padding: 16px 16px 28px
       font-size: 12px
-      margin-bottom: 12px
     &__title
       font-size: 16px
-      margin: 15px 0 6px
+      margin: 12px 0 6px
     &__label
       top: 16px
       right: 16px
@@ -108,8 +115,3 @@
       font-size: 16px
     &__excerpt
       margin-bottom: 12px
-@media screen and ( max-width: 768px )
-  .news-item
-    &__image
-      img
-        height: 190px

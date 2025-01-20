@@ -1,16 +1,20 @@
 .stories
-  padding: 92px 0
+  padding: 9.2rem 0
   &-slider
     .slick-list
-      margin: 0 -10px
+      margin: 0 -1.0rem
     .slick-dots
-      margin-top: 20px
+      margin-top: 2.0rem
+    .slick-arrow
+      opacity: 0
+      visibility: hidden
+      transition: .3s
   &-slider__item
-    border-radius: 26px
-    border: 3px solid $accent-color
+    border-radius: 2.6rem
+    border: .3rem solid $accent-color
     overflow: hidden
     position: relative
-    margin: 0 10px
+    margin: 0 1.0rem
     &::before
       content: ''
       position: absolute
@@ -25,30 +29,29 @@
       aspect-ratio: 42/27
   &-slider__item-title
     position: absolute
-    bottom: 44px
-    left: 41px
-    right: 41px
+    bottom: 4.4rem
+    left: 4.1rem
+    right: 4.1rem
     z-index: 2
-    @include font(21px, 1.2, 600)
+    @include font(2.1rem, 1.2, 600)
     color: #f5f5f5
-@media screen and ( max-width: 1600px )
-  .stories
-    &-slider__item-title
-      bottom: 20px
-      left: 20px
-      right: 20px
-      font-size: 18px
-@media screen and ( max-width: 1200px )
-  .stories
-    padding: 25px 0 20px
+@media  ( hover: hover  )
+  .stories-slider:hover
+    .slick-arrow
+      opacity: 1
+      visibility: visible
+
 @media screen and ( max-width: 992px )
   .stories
+    padding: 25px 0 20px
+
     &-slider
       img
         aspect-ratio: 1
 
     &-slider__item
       border-radius: 16px
+      border-width: 2px
     &-slider__item-title
       font-size: 14px
       bottom: 16px
@@ -61,5 +64,4 @@
     .slick-list
       margin: 0 -5px
   .stories-slider__item
-
     margin: 0 5px

@@ -1,18 +1,18 @@
 .about
-  padding: 92px 0
+  padding: 9.2rem 0
   &__title
-    margin-bottom: 42px
+    margin-bottom: 4.2rem
   &-slider
     counter-reset: item
     .slick-list
-      margin: 0 -20px
+      margin: 0 -2.0rem
     .slick-dots
-      margin-top: 54px
+      margin-top: 5.4rem
   &-item
-    margin: 0 20px
+    margin: 0 2.0rem
     color: #fff
-    padding: 42px 46px
-    border-radius: 26px
+    padding: 4.2rem 4.6rem
+    border-radius: 2.6rem
     overflow: hidden
     background: linear-gradient(8deg, rgba(245,245,245,1) 0%, rgba(0,164,138,1) 31%, rgba(0,93,98,1) 71%)
     position: relative
@@ -22,57 +22,51 @@
       counter-increment: item
       position: absolute
       bottom: 0
-      right: 10px
-      font-size: 363px
+      right: 1.0rem
+      font-size: 36.3rem
       transform: translateY(40%)
       z-index: -1
   &-item__image
-    border-radius: 26px
+    border-radius: 2.6rem
     overflow: hidden
   &-item__title
-    @include font(35px, 1.2,500)
+    @include font(3.5rem, 1.2,500)
     margin-bottom: 1em
   &-item__text
-    font-size: 21px
+    font-size: 2.1rem
     font-weight: 500
     max-width: 75%
     p,ul,ol
       margin-bottom: 1em
-@media screen and ( max-width: 1600px )
+// @media screen and ( max-width: 1600px )
+//   .about
+//     &-item__text
+//       font-size: 18px
+//     &-item
+//       padding-bottom: 80px
+//       &::after
+//         font-size: 220px
+@media screen and ( max-width: 992px )
   .about
-    &-item__text
-      font-size: 18px
-    &-item
-      padding-bottom: 80px
-      &::after
-        font-size: 220px
-@media screen and ( max-width: 1200px )
-  .about
+    padding: 0
+
     &__title
-      margin-bottom: 30px
+      margin-bottom: 13px
+
     &-slider
       counter-reset: item
       .slick-dots
         margin-top: 20px
     &-item__text
       max-width: 100%
-@media screen and ( max-width: 992px )
-  .about
-    padding: 25px 0
-
-@media screen and ( max-width: 768px )
-  .about
-    padding: 0
-    &__title
-      margin-bottom: 13px
     &-item
       margin: 0 10px
       border-radius: 10px
       padding: 18px 15px 60px
       background: linear-gradient(8deg, rgba(245,245,245,1) 0%, rgba(0,164,138,1) 31%, rgba(0,93,98,1) 90%)
-
       &::after
         font-size: 111px
+
     &-item__title
       font-size: 16px
     &-item__text

@@ -1,19 +1,30 @@
 $(document).ready(function () {
+	const arrowRight = `<button class="next"><img src="img/icons/arrow-right.svg" data-src></button>`;
+	const arrowLeft = `<button class="prev"><img src="img/icons/arrow-left.svg" data-src></button>`;
+
 	$(".stories-slider").slick({
 		dots: true,
 		infinite: true,
 		speed: 300,
-		arrows: false,
+
+		arrows: true,
+		prevArrow: arrowLeft,
+		nextArrow: arrowRight,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		responsive: [
 			{
-				breakpoint: 1200,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
 					infinite: true,
 					dots: true,
+					speed: 1000,
+					autoplaySpeed: 4000,
+					autoplay: true,
+					arrows: false,
+					cssEase: "linear",
 				},
 			},
 		],
@@ -21,20 +32,22 @@ $(document).ready(function () {
 	$(".services-slider").slick({
 		dots: false,
 		infinite: true,
-		speed: 300,
-		autoplaySpeed: 3000,
+		speed: 2000,
+		autoplaySpeed: 10,
 		autoplay: true,
 		arrows: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true,
+		cssEase: "linear",
 	});
 	$(".about-slider").slick({
 		dots: true,
 		infinite: false,
 		speed: 300,
 		arrows: false,
+		fade: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
@@ -51,7 +64,7 @@ $(document).ready(function () {
 				settings: "unslick",
 			},
 			{
-				breakpoint: 1200,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,

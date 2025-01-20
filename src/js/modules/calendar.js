@@ -12,20 +12,27 @@ document.addEventListener("DOMContentLoaded", function () {
 			showNonCurrentDates: false,
 			events: [
 				{
-					groupId: "1", // Объединяет два диапазона в одно событие
 					start: "2025-01-06",
-					end: "2025-01-12",
+
 					title: "", // Название отображается здесь
-					className: "start",
+					className: "event-day",
 					display: "background",
 				},
-				{
-					groupId: "1", // Та же группа, чтобы логически объединить
-					start: "2025-01-12",
-					end: "2025-01-17",
-					display: "background", // Фон, чтобы не показывать название второй раз
-					className: "end",
-				},
+				// {
+				// 	groupId: "1", // Объединяет два диапазона в одно событие
+				// 	start: "2025-01-06",
+				// 	end: "2025-01-12",
+				// 	title: "", // Название отображается здесь
+				// 	className: "start",
+				// 	display: "background",
+				// },
+				// {
+				// 	groupId: "1", // Та же группа, чтобы логически объединить
+				// 	start: "2025-01-12",
+				// 	end: "2025-01-17",
+				// 	display: "background", // Фон, чтобы не показывать название второй раз
+				// 	className: "end",
+				// },
 			],
 		});
 

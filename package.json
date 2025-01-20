@@ -58,6 +58,7 @@
     "intl-tel-input": "^18.3.3",
     "jquery.nicescroll": "^3.7.6",
     "sweetalert2": "^10.13.0",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "wowjs": "^1.1.3"
   }
 }

@@ -10,6 +10,16 @@ $(document).ready(function () {
 				const $svg = $(svgData).find("svg"); // Извлечь <svg> из ответа
 
 				if ($svg.length) {
+					// Если у SVG нет атрибута viewBox, создать его из width и height
+					if (!$svg.attr("viewBox")) {
+						const width = parseFloat($svg.attr("width")) || 0;
+						const height = parseFloat($svg.attr("height")) || 0;
+
+						if (width > 0 && height > 0) {
+							$svg.attr("viewBox", `0 0 ${width} ${height}`);
+						}
+					}
+
 					// Скопировать атрибуты <img> в <svg>, кроме src и data-svg
 					$.each($img[0].attributes, function () {
 						if (this.name !== "src" && this.name !== "data-svg") {

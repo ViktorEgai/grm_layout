@@ -1,7 +1,7 @@
 .hero
   min-height: 100vh
-  padding-top: 170px
-  margin-bottom: 93px
+  padding-top: 17.0rem
+  margin-bottom: 9.3rem
   position: relative
   z-index: 1
   &::before
@@ -12,7 +12,7 @@
     width: 31%
     height: 100%
     background-color: rgba(#060606,.6)
-    border-bottom-left-radius: 26px
+    border-bottom-left-radius: 2.6rem
   &::after
     content: ''
     position: absolute
@@ -25,36 +25,36 @@
     background-repeat: no-repeat
     background-position: center
     z-index: -1
-    border-bottom-left-radius: 26px
+    border-bottom-left-radius: 2.6rem
   &-wrapper
     display: flex
     justify-content: space-between
-    gap: 62px
+    gap: 6.2rem
   &-left
     flex-shrink: 0
     position: relative
     z-index: 2
     max-width: 69%
   &__title
-    font-size: 116px
+    font-size: 11.6rem
     font-weight: 600
     line-height: 1.05
     color: #316067
-    margin-bottom: 23px
+    margin-bottom: 2.3rem
   &__text
     color: rgba(#060606,.6)
-    font-size: 21px
-    margin-bottom: 96px
-    max-width: 550px
+    font-size: 2.1rem
+    margin-bottom: 9.6rem
+    max-width: 55.0rem
   &__btn
-    max-width: 420px
-    margin-bottom: 100px
+    max-width: 42.0rem
+    margin-bottom: 10.0rem
   &__video
     position: absolute
     bottom: 0
     right: 0
-    max-width: 420px
-    border-radius: 26px
+    max-width: 42.0rem
+    border-radius: 2.6rem
     overflow: hidden
     &::before
       content: ''
@@ -66,14 +66,14 @@
       background-color: rgba(#060606,.4)
 
   &-right
-    max-width: calc(31% - 62px)
+    max-width: calc(31% - 6.2rem)
     width: 100%
     flex-shrink: 0
-    padding-bottom: 62px
+    padding-bottom: 6.2rem
     color: #f5f5f5
     position: relative
     z-index: 2
-    font-size: 21px
+    font-size: 2.1rem
     font-weight: 600
     display: flex
     flex-direction: column
@@ -81,43 +81,43 @@
   &-nums
     display: flex
     flex-wrap: wrap
-    gap: 58px 43px
+    gap: 5.8rem 4.3rem
   &-nums__item
   &-nums__item-text
   &-nums__item-num
-    font-size: 36px
-    margin-bottom: 10px
+    font-size: 3.6rem
+    margin-bottom: 1.0rem
   &-right__text
 
-@media screen and ( min-width: 2000px )
-  .hero
-    &::after, &::before
+// @media screen and ( min-width: 200.0rem )
+//   .hero
+//     &::after, &::before
 
-      right: auto
-      left: calc(50% + 350px)
-      width: 50%
-@media screen and ( max-width: 1600px )
-  .hero
-    &::before,  &::after
-      width: 33%
-    &__title
-      font-size: 80px
-    &-nums
-      gap: 20px 30px
-      font-size: 18px
-@media screen and ( max-width: 1400px )
-  .hero
-    padding-top: 160px
-    margin-bottom: 60px
-    &__video
-      max-width: 300px
-    &__text
-      margin-bottom: 60px
-    &-right__text
-      font-size: 16px
-    &__btn
-      max-width: 360px
-@media screen and ( max-width: 1200px )
+//       right: auto
+//       left: calc(50% + 35.0rem)
+//       width: 50%
+// @media screen and ( max-width: 160.0rem )
+//   .hero
+//     &::before,  &::after
+//       width: 33%
+//     &__title
+//       font-size: 8.0rem
+//     &-nums
+//       gap: 2.0rem 3.0rem
+//       font-size: 1.8rem
+// @media screen and ( max-width: 140.0rem )
+//   .hero
+//     padding-top: 16.0rem
+//     margin-bottom: 6.0rem
+//     &__video
+//       max-width: 30.0rem
+//     &__text
+//       margin-bottom: 6.0rem
+//     &-right__text
+//       font-size: 1.6rem
+//     &__btn
+//       max-width: 36.0rem
+@media screen and ( max-width: 992px )
   .hero
     min-height: 0
     margin-bottom: 0
@@ -137,6 +137,7 @@
       justify-content: center
       padding: 42px 20px 30px
       gap: 37px
+      font-size: 16px
       &::before, &::after
         content: ''
         position: absolute
@@ -157,6 +158,8 @@
     &-nums
       justify-content: center
       text-align: center
+    &-nums__item-num
+      font-size: 36px
     &__text
       text-align: center
       font-size: 16px
@@ -164,6 +167,7 @@
       margin-bottom: 20px
     &__btn
       margin: 0 auto 30px
+      max-width: 300px
     &__video
       position: relative
       display: block
@@ -174,7 +178,7 @@
       display: none
     &-right__text
       text-align: center
-@media screen and ( max-width: 576px )
+@media screen and ( max-width: 768px )
   .hero
     padding-top: 87px
     &__title

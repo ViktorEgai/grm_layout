@@ -2,13 +2,14 @@
   --fc-border-color: transparent
   --fc-today-bg-color: transparent
   --fc-neutral-bg-color: transparent
+  --fc-bg-event-color: rgba(28,171,152,.35)
 #small-calendar
-  font-size: 21px
+  font-size: 2.1rem
   .fc-toolbar
     justify-content: center
   .fc-toolbar-title
-    @include font(35px, 1.2,500 )
-    margin: 0 10px
+    @include font(3.5rem, 1.2,500 )
+    margin: 0 1.0rem
   .fc-icon
     color: #000
     font-size: 2em
@@ -22,36 +23,54 @@
     border: none
   .fc-col-header-cell-cushion
     font-weight: 400
-    margin-bottom: 30px
+    margin-bottom: 3.0rem
   .fc-daygrid-day-top
     justify-content: center
     text-align: center
+    align-items: center
     a
       width: 2em
       height: 2em
+      display: flex
+      align-items: center
+      justify-content: center
   .fc-daygrid-body-unbalanced .fc-daygrid-day-events
     min-height: 0
   .fc-button-primary:focus
-    box-shadow: 0px 0px 0px 0.2rem $accent-color
+    box-shadow: .0rem .0rem .0rem 0.2rem $accent-color
   td,th
     border: none
     vertical-align: middle
   .start
-    border-top-left-radius: 26px
-    border-bottom-left-radius: 26px
+    border-top-left-radius: 2.6rem
+    border-bottom-left-radius: 2.6rem
   .end
-    border-top-right-radius: 26px
-    border-bottom-right-radius: 26px
+    border-top-right-radius: 2.6rem
+    border-bottom-right-radius: 2.6rem
   .fc-scroller-liquid-absolute
     inset: inherit
   .fc-daygrid-day.fc-day-today a
     border-radius: 50%
     background-color: rgba(28,171,152,.35)
-@media screen and ( max-width: 1600px )
-  #small-calendar
-    font-size: 16px
-    .fc-toolbar-title
-      font-size: 22px
+  .fc-daygrid-day-frame
+    min-height: 0
+  .event-day
+    background: none
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 2.2em
+      height: 2.2em
+      border-radius: 50%
+      background: var(--fc-bg-event-color)
+// @media screen and ( max-width: 1600px )
+//   #small-calendar
+//     font-size: 16px
+//     .fc-toolbar-title
+//       font-size: 22px
 @media screen and ( max-width: 992px )
   #small-calendar
     font-size: 12px

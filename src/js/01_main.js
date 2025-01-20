@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
 		$(".info").after($(".about"));
 	}
 	$(window).resize(function () {
-		if ($(window).width() < 768) {
+		if ($(window).width() < 992) {
 			$(".info-item-services").after($(".about"));
 		} else {
 			$(".info").after($(".about"));
@@ -20,17 +20,17 @@ jQuery(document).ready(function ($) {
 		e.preventDefault();
 
 		$(this).closest(".cards-item").toggleClass("active");
+	});
+	$(".cards-item-close").on("click", function (e) {
+		e.preventDefault();
 
-		if ($(this).closest(".cards-item").hasClass("active")) {
-			$(this).text("Свернуть");
-		} else {
-			$(this).text("Развернуть");
-		}
+		$(this).closest(".cards-item").toggleClass("active");
 	});
 
 	$(".dropdown-item__title").on("click", function () {
 		$(this).next().slideToggle();
 	});
+
 	function AOSAnimation() {
 		$(".section-title, .dropdown-item").attr("data-aos", "fade-right");
 		$(".hero-left, #map").attr("data-aos", "fade-right");
