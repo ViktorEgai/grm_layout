@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
 		$(".section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text ").attr("data-aos", "fade-right");
 		$(".hero-left, #map").attr("data-aos", "fade-right");
 		$(".map-block__form").attr("data-aos", "fade-left");
-		$(".sertificates-grid-item").attr("data-aos", "fade-up");
+		$(".sertificates-grid-item, .gallery-grid-item").attr("data-aos", "fade-up");
 		$(".vakancy-card, .documents-block").each(function (index, item) {
 			if (index % 2 == 0) {
 				$(this).parent().attr("data-aos", "fade-right");

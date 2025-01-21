@@ -47,7 +47,8 @@ a:not([class])
 	border-radius: 2.6rem
 .video
 	position: relative
-	.play
+	&::after
+		content: ""
 		position: absolute
 		display: flex
 		align-items: center
@@ -62,11 +63,11 @@ a:not([class])
 		border: 4px solid #ffff
 		background-color: rgba(#F5F5F5, .3)
 		transition: .3s
+		background-image: url(../img/icons/play.svg)
+		background-size: 20% 30%
+		background-repeat: no-repeat
+		background-position: center
 
-		svg
-			transform: translateX(20%)
-			height: 30%
-			width: 20%
 .link
 	color: $accent-color
 	position: relative
@@ -84,7 +85,8 @@ a:not([class])
 	background-color: #f9f9f9
 @media	( hover: hover )
 	.video:hover
-		.play
+		&::after
+
 			transform: translate(-50%,-50%) scale(1.1)
 
 @media screen and ( min-width: 1000px )
@@ -111,7 +113,8 @@ a:not([class])
 			height: 2px
 			background-color: $accent-color
 			border-radius: 2px
-	.video .play
+	.video:after
+		border-width: 2px
 		width: 60px
 		height: 60px
 @media screen and ( max-width: 768px )

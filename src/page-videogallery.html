@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Видеогалерея', "text" : 'Гильдии риэлторов Москвы' })
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Мероприятия</a>⭢
+						<span>Видеогалерея</span>
+					</div>
+				</div>
+				<div class="stories gallery-stories">
+					<div class="container">
+						<div class="stories-slider">
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title">
+									<span>156 видео</span>
+									Lorem ipsum dolor sit amet.
+								</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title"><span>156 видео</span> Lorem ipsum dolor sit amet.</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title"><span>156 видео</span> Lorem ipsum dolor sit amet.</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title"><span>156 видео</span> Lorem ipsum dolor sit amet.</div>
+							</a>
+							<a href="#" class="stories-slider__item">
+								<img src="img/front-page/strory.jpeg" alt="" />
+								<div class="stories-slider__item-title"><span>156 видео</span> Lorem ipsum dolor sit amet.</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- gallery -->
+				<div class="gallery">
+					<div class="container">
+						<div class="gallery-grid">
+							@@for (var i = 0; i < 24; i++) {
+							<a href="img/gallery/1.png" class="gallery-grid-item video" data-fancybox="gallery"><img src="img/gallery/1.png" alt="" /></a>
+							}
+						</div>
+						<a href="#" class="gallery__btn btn">Lorem, ipsum.</a>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
