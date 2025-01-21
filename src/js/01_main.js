@@ -36,13 +36,14 @@ jQuery(document).ready(function ($) {
 		$(".hero-left, #map").attr("data-aos", "fade-right");
 		$(".map-block__form").attr("data-aos", "fade-left");
 		$(".sertificates-grid-item").attr("data-aos", "fade-up");
-		$(".vakancy-card").each(function (index, item) {
+		$(".vakancy-card, .documents-block").each(function (index, item) {
 			if (index % 2 == 0) {
 				$(this).parent().attr("data-aos", "fade-right");
 			} else {
 				$(this).parent().attr("data-aos", "fade-left");
 			}
 		});
+
 		setTimeout(function () {
 			AOS.init({
 				once: true,

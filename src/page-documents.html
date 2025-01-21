@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : ' ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Документы НП «ГРМ»', "text" : 'Нормативные документы НП «Гильдия риэлторов Москвы»' })
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">О Гильдии</a>⭢
+						<span>Документы НП «ГРМ»</span>
+					</div>
+				</div>
+				<div class="documents">
+					<div class="container">
+						<div class="row g-4">
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/pdf.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link red" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/txt.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link blue" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

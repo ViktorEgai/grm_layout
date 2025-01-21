@@ -1,0 +1,79 @@
+.members
+  padding-bottom: 11.2rem
+  &-nav
+    display: flex
+    align-items: center
+    gap: 2rem
+  &-nav__item
+    font-size: 1.8rem
+    padding: 2.8rem 3.2rem
+    border: .3rem solid $light-green
+    border-radius: 2rem
+    transition: .3s
+    color: $light-green
+    transition: .3s
+    &.active
+      background-color: $light-green
+      color: #fff
+  &-content
+    display: none
+    margin: 7.8rem 0
+    &.active
+      display: block
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: 2rem
+  &-grid-item
+    background-color: #fff
+    border-radius: 2.6rem
+    padding: 10.7rem 6.4rem
+    position: relative
+    img
+      transition: .3s
+    span
+      position: absolute
+      bottom: 3.5rem
+      left: 3.5rem
+      z-index: 2
+      padding: 0.7rem 1.5rem
+      color: rgba(#000,.2)
+      border-radius: 4rem
+      border: 1px solid rgba(#000,.2)
+      text-transform: uppercase
+@media  ( hover: hover  )
+  .members-nav__item:hover
+    background-color: $light-green
+    color: #fff
+  .members-grid-item:hover
+    img
+      transform: scale(1.1)
+@media screen and ( max-width: 992px )
+  .members
+    padding-bottom: 40px
+    &-nav
+      gap: 10px
+      overflow-x: auto
+      padding-bottom: 10px
+    &-nav__item
+      white-space: nowrap
+      font-size: 12px
+      font-weight: 700
+      padding: 12px 22px
+      border-radius: 10px
+    &-content
+      margin: 12px 0
+    &-grid
+      grid-template-columns: repeat(3,1fr)
+      gap: 10px
+    &-grid-item
+      border-radius: 10px
+      padding: 22px 7px
+      position: relative
+      min-height: 96px
+      span
+        font-size: 8px
+        padding: 4px 8px
+        border-radius: 24px
+        bottom: 6px
+        left: 6px

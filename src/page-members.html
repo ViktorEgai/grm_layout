@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : ' ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'члены Гильдии Риэлторов Москвы', "text" : 'Агентства недвижимости Москвы и Московской области — члены Гильдии риэлторов Москвы' })
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Члены Гильдии Риэлторов Москвы</span>
+					</div>
+				</div>
+				<!-- members -->
+				<div class="members">
+					<div class="container">
+						<div class="members-nav members-nav-top">
+							<a href="#" class="members-nav__item">Список Действительных членов</a>
+							<a href="#" class="members-nav__item">Список Индивидуальных риэлторов</a>
+						</div>
+						@@for (var i = 0; i < 2; i++) {
+						<div class="members-content">
+							<div class="members-grid">
+								@@for (var i = 0; i < 24; i++) {
+								<a href="#" class="members-grid-item">
+									<img src="img/zip.png" alt="" />
+									<span>ZIP REALTY</span>
+								</a>
+								}
+							</div>
+						</div>
+						}
+						<div class="members-nav members-nav-bottom">
+							<a href="#" class="members-nav__item">Список Действительных членов</a>
+							<a href="#" class="members-nav__item">Список Индивидуальных риэлторов</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
