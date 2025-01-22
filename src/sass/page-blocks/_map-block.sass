@@ -2,16 +2,32 @@
   overflow: hidden
   display: grid
   grid-template-columns: 6fr 4fr
-  &__form
+  &-right
     padding: 6.0rem 4.3rem
     background-color: #f5f6f8
   iframe
     height: 100%
+.map-block-contacts
+  padding: 8rem 10.4rem
+  font-size: 2.1rem
+  &-item:not(:last-child)
+    margin-bottom: 3.8rem
+  &-item__title
+    color: rgba(#000000,.4)
+  &-item__text
+
+@media  ( hover: hover  )
+  .map-block-contacts a:hover
+    color: $accent-color
 
 @media screen and ( max-width: 992px )
   .map-block
     grid-template-columns: repeat(2,1fr)
-
+  .map-block-contacts
+    font-size: 12px
+    padding: 30px
+    &-item:not(:last-child)
+      margin-bottom: 30px
 @media screen and ( max-width: 768px )
   .map-block
     display: flex
@@ -20,3 +36,5 @@
       height: 390px
   .map-block__form
     padding: 48px 10px 38px
+  .map-block-contacts
+    order: -1

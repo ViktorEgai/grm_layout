@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
 	function AOSAnimation() {
 		$(".section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text ").attr("data-aos", "fade-right");
 		$(".hero-left, #map, .content-block-left").attr("data-aos", "fade-right");
-		$(".map-block__form, .sidebar").attr("data-aos", "fade-left");
+		$(".map-block-right, .map-block-contacts, .sidebar").attr("data-aos", "fade-left");
 		$(".sertificates-grid-item, .gallery-grid-item").attr("data-aos", "fade-up");
 		$(".vakancy-card:not(.skip), .documents-block").each(function (index, item) {
 			if (index % 2 == 0) {
