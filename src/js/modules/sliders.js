@@ -81,4 +81,27 @@ $(document).ready(function () {
 			},
 		],
 	});
+	$(".vakancy-cards-slider").slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 9999,
+				settings: "unslick",
+			},
+
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
+	});
 });

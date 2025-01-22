@@ -1,0 +1,73 @@
+.content-block
+  padding-bottom: 8.6rem
+  &-wrapper
+    display: flex
+    gap: 2rem
+  &-left
+    flex-grow: 1
+    max-width: 108rem
+  &__inner
+    font-size: 2.1rem
+    padding-right: 6rem
+    & *:first-child
+      margin-top: 0
+    & *:last-child
+      margin-bottom: 0
+    p,ul,ol, li
+      margin-bottom: 1em
+      color: rgba(#060606, .7)
+    h1,h2,h3,h4,h5
+      font-weight: 600
+      margin-top: 2em
+      margin-bottom: 0.75em
+    h1, h2
+      font-size: 3.5rem
+    h3
+      font-size: 3rem
+    h4
+      font-size: 2.3rem
+
+  &__btn
+    max-width: 42rem
+    margin-top: 7rem
+    margin-bottom: 4.7rem
+  &__date
+    font-size: 2.1rem
+    color: rgba(#000,.2)
+  .single-vakancy-card
+    .vakancy-card__text
+      font-weight: 600
+    &:before
+      width: 61.8rem
+      height: 60rem
+@media screen and ( max-width: 992px )
+  .content-block
+    padding-bottom: 20px
+    &-wrapper
+      flex-direction: column
+      gap: 37px
+    &-left
+      max-width: 100%
+    .single-vakancy-card
+      .vakancy-card__text
+        color: rgba(#000,.7)
+      .vakancy-card__btn
+        background: $btn-gradient
+        color: #fff
+        max-width: 245px
+    &__inner
+      font-size: 12px
+      padding-right: 0
+
+      h2
+        font-size: 16px
+      h3
+        font-size: 14px
+      h4
+        font-size: 13px
+    &__btn
+      max-width: 180px
+      margin: 36px auto 10px
+    &__date
+      font-size: 12px
+      text-align: center

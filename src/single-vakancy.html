@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Вакансии</a>⭢
+						<span>Главный юрисконсульт</span>
+					</div>
+				</div>
+				<!-- content-block -->
+				<div class="content-block">
+					<div class="container">
+						<div class="content-block-wrapper">
+							<div class="content-block-left">
+								<div class="vakancy-card single-vakancy-card skip">
+									<div class="vakancy-card__top">
+										<div class="vakancy-card__logo d-lg-none">
+											<img src="img/panda.png" alt="" />
+										</div>
+										<div>
+											<h1 class="vakancy-card__title">Главный юрисконсульт</h1>
+											<div class="vakancy-card__info">
+												<p>22.11.2024</p>
+												<p>Panda estate</p>
+											</div>
+										</div>
+									</div>
+									<div class="vakancy-card__price">от 100 000 ₽</div>
+									<div class="vakancy-card__text">
+										<p><strong>Обязанность:</strong> Ведение договорной базы, составление документов различной сложности</p>
+										<p><strong>Требования:</strong> До 40 лет, проживание в Москве</p>
+										<p><strong>Условия:</strong> Рабочий день с 10 до 19 (плавающий), редкие поездки</p>
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<a href="#popup" class="vakancy-card__btn btn" data-fancybox>Откликнуться</a>
+										</div>
+									</div>
+								</div>
+								<div class="content-block__inner">
+									<h2>Мы предлагаем:</h2>
+									<ul>
+										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
+										<li>Aenean massa um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+
+										<li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</li>
+
+										<li>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>
+									</ul>
+									<h2>Основные задачи:</h2>
+
+									<ul>
+										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
+										<li>Aenean massa um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+									</ul>
+									<h2>Что мы ждем:</h2>
+
+									<ul>
+										<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
+										<li>Aenean massa um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+										<li>Aenean massa um sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+									</ul>
+								</div>
+								<a href="#" class="content-block__btn btn btn-dark">Показать контакты</a>
+								<div class="content-block__date">Вакансия опубликована 29 декабря 2024</div>
+							</div>
+							<aside class="sidebar">
+								<div class="agent">
+									<div class="agent-icon">
+										<img src="img/panda.png" alt="" />
+									</div>
+									<div class="agent-info">
+										<div class="agent-info__title">Агентство недвижимости «Panda estate»</div>
+										<a href="https://grmos.ru/members/panda_estate" target="_blank" class="agent-info__link">https://grmos.ru/members/panda_estate</a>
+									</div>
+								</div>
+								<div class="sidebar-banner">
+									<div class="sidebar-banner__inner">
+										<div class="sidebar-banner__icon">
+											<img src="img/icons/email.svg" alt="" data-svg />
+										</div>
+										<div class="sidebar-banner__green-text">Напишите телефон,</div>
+										<div class="sidebar-banner__black-text">чтобы работодатель мог связаться с вами</div>
+										<form action="#" class="sidebar-form">
+											<label class="sidebar-form__field">
+												<input type="tel" name="phone" placeholder="Телефон" class="sidebar-form__input" />
+											</label>
+											<button class="sidebar-form__btn btn">Отправить</button>
+											<div class="sidebar-form-acceptance">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#"> политикой конфиденциальности</a></div>
+										</form>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+
+				<section class="vakancy-cards">
+					<div class="container">
+						<h2 class="vakancy-cards__title section-title">Дополнительные вакансии</h2>
+						<div class="row g-4 vakancy-cards-slider">
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+							<div class="col-md-6">@@include('components/bem-blocks/_vakancy-card.html')</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

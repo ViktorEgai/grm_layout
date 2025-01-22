@@ -1,19 +1,24 @@
 jQuery(document).ready(function ($) {
+	$("input[type=tel]").inputmask("+7 999 999 99 99");
 	$("[data-fancybox]").fancybox({
 		autoFocus: false,
 		touch: false,
 	});
 
-	if ($(window).width() < 768) {
+	if ($(window).width() < 992) {
 		$(".info-item-services").after($(".about"));
+		$(".single-vakancy-card").after($(".agent"));
 	} else {
 		$(".info").after($(".about"));
+		$(".sidebar-banner").before($(".agent"));
 	}
 	$(window).resize(function () {
 		if ($(window).width() < 992) {
 			$(".info-item-services").after($(".about"));
+			$(".single-vakancy-card").after($(".agent"));
 		} else {
 			$(".info").after($(".about"));
+			$(".sidebar-banner").before($(".agent"));
 		}
 	});
 	$(".cards-item__link").on("click", function (e) {
@@ -33,10 +38,10 @@ jQuery(document).ready(function ($) {
 
 	function AOSAnimation() {
 		$(".section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text ").attr("data-aos", "fade-right");
-		$(".hero-left, #map").attr("data-aos", "fade-right");
-		$(".map-block__form").attr("data-aos", "fade-left");
+		$(".hero-left, #map, .content-block-left").attr("data-aos", "fade-right");
+		$(".map-block__form, .sidebar").attr("data-aos", "fade-left");
 		$(".sertificates-grid-item, .gallery-grid-item").attr("data-aos", "fade-up");
-		$(".vakancy-card, .documents-block").each(function (index, item) {
+		$(".vakancy-card:not(.skip), .documents-block").each(function (index, item) {
 			if (index % 2 == 0) {
 				$(this).parent().attr("data-aos", "fade-right");
 			} else {
