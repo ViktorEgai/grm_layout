@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="mobile-bg-grey desktop-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- page-top -->
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">Карта лояльности Гильдии риэлторов Москвы</h1>
+
+						<div class="top__text">
+							Лучшие условия для наших клиентов. <br />
+							Карта лояльности ГРМ дает возможность получать выгодные предложения и скидки от наших партнеров.
+						</div>
+
+						<a href="#" class="top__btn btn">Стать партнером</a>
+					</div>
+				</div>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Партнеры</a>⭢
+						<span>Карта лояльности Гильдии риэлторов Москвы</span>
+					</div>
+				</div>
+				<div class="loyalty">
+					<div class="container">
+						<div class="loyalty-nav">
+							<button data-filter="*" class="loyalty-nav__item active">Все</button>
+							<button data-filter=".design" class="loyalty-nav__item">Дизайн и ремонт</button>
+							<button data-filter=".construct-filter" class="loyalty-nav__item">Стройка</button>
+							<button data-filter=".services-filter" class="loyalty-nav__item">Бытовые услуги</button>
+							<button data-filter=".security-filter" class="loyalty-nav__item">Охрана</button>
+							<button data-filter=".engineer-filter" class="loyalty-nav__item">Кадровые инженеры</button>
+							<button data-filter=".tax-filter" class="loyalty-nav__item">Налоги</button>
+							<button data-filter=".lawyer-filter" class="loyalty-nav__item">Юристы, Адвокаты</button>
+							<button data-filter=".furniture-filter" class="loyalty-nav__item">Мебель</button>
+						</div>
+						<div class="loyalty-grid">
+							<div class="grid">
+								<!-- design -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'design', 'tag': '#Дизайн и ремонт'}) }
+								<!-- construct-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'construct-filter', 'tag': '#Стройка'}) }
+								<!-- services-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'services-filter', 'tag': '#Бытовые услуги'}) }
+								<!-- security-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'security-filter', 'tag': '#Охрана'}) }
+								<!-- engineer-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'engineer-filter', 'tag': '#Кадровые инженеры'}) }
+								<!-- tax-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'tax-filter', 'tag': '#Налоги'}) }
+								<!-- lawyer-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'lawyer-filter', 'tag': '#Юристы, Адвокаты'}) }
+								<!-- furniture-filter -->
+								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'furniture-filter', 'tag': '#Мебель'}) }
+							</div>
+						</div>
+						<div class="loyalty-text">
+							<p>По всем вопросам свяжитесь с нами любым удобным способом:</p>
+							<br />
+							<p>E-mail: <a href="mailto:partner@grmos.ru">partner@grmos.ru</a></p>
+							<p>Телефон: <a href="tel:+74993220164">+7 499 322 01 64</a></p>
+							<p>Соцсети: <a href="#" target="_blank">VK</a> | <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> |<a href="#" target="_blank"> Youtube</a></p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

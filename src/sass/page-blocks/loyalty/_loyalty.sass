@@ -1,0 +1,42 @@
+.loyalty
+  padding-bottom: 11.3rem
+  &-nav
+    display: flex
+    gap: 2rem
+    flex-wrap: wrap
+  &-nav__item
+    font-size: 2.1rem
+    color: $light-green
+    border: .3rem solid $light-green
+    padding: 2.9rem 6.4rem
+    border-radius: 2.6rem
+    &.active
+      background-color: $accent-color
+      color: #fff
+  &-grid
+    padding: 7.8rem 0 6.4rem
+
+  &-text
+    text-align: center
+    font-size: 2.1rem
+    font-weight: 500
+@media ( hover:hover )
+  .loyalty-text a:hover
+    color: $accent-color
+@media screen and ( max-width: 992px )
+  .loyalty
+    padding-bottom: 34px
+    &-nav
+      flex-wrap: nowrap
+      overflow-x: auto
+      padding-bottom: 10px
+      gap: 9px
+    &-nav__item
+      font-size: 12px
+      padding: 13px 20px
+      border-radius: 10px
+      border-width: 2px
+      white-space: nowrap
+      font-weight: 700
+    &-grid
+      padding: 23px 0 32px

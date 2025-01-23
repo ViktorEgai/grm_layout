@@ -12,6 +12,11 @@
   &__text
     font-size: 2.1rem
     color: rgba(#fff,.7)
+  &__btn
+    max-width: 42rem
+    margin: 7.3rem auto 0
+  &:has(.btn)
+    padding-bottom: 7.6rem
 @media screen and ( max-width: 992px)
   .top
     padding: 120px 0 47px
@@ -24,3 +29,12 @@
 @media screen and ( max-width: 768px)
   .top
     text-align: left
+    &__btn
+      margin-left: 0
+      margin-top: 20px
+      color: #fff
+      border-color: #fff
+      background: rgba(255, 255, 255, 0.2)
+      max-width: 220px
+    &:has(.btn)
+      padding-bottom: 44px
