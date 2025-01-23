@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Прием обращений и жалоб', "text" : 'Комиссия ГРМ по этике и защите прав потребителей' })
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Клиентам </a>⭢
+						<span>Прием обращений и жалоб</span>
+					</div>
+				</div>
+				<!-- content-block -->
+				<div class="content-block">
+					<div class="container">
+						<div class="content-block-wrapper">
+							<div class="content-block-left">
+								<div class="content-block__inner">
+									<blockquote>
+										<p>Комиссия ГРМ по этике и защите прав потребителей принимает обращения граждан и профессиональных представителей рынка</p>
+									</blockquote>
+									<p class="text-grey">Гильдия Риэлторов Москвы напоминает, что в случае, если вы столкнулись с проявлениями непрофессионализма со стороны организаций или частных риэлторов, входящих в состав ГРМ, вы можете помочь нам, как организации, и рынку в целом стать лучше.</p>
+									<p>С помощью формы обращения вы можете оставить сообщение о деталях ситуации, которая, на ваш взгляд, является результатом непрофессиональных действий организации или частного риэлтора - участника ГРМ.</p>
+									<p>Мы обязательно рассмотрим ваше обращение, проведем анализ, решим, какие меры могут быть приняты для исправления ситуации, и направим ответ по указанным вами контактным данным в разумный срок.</p>
+									<p>Мы прикладываем все усилия, для того чтобы правильно и оперативно реагировать на проявления непрофессионализма, согласно утверждению «Систему характеризует не ошибка, а реакция на неё».</p>
+									<p>Уверены, что таких ошибок должно становиться как можно меньше, если Вы обратились к члену профессионального сообщества Гильдии риэлторов Москвы.Вы можете помочь нам в этом!</p>
+									<blockquote>
+										<p>Обращаем ваше внимание: в компетенции Комиссии входит рассмотрение обращений, связанных только с профессиональной деятельностью <u>Гильдии Риэлторов Москвы и её членов.</u></p>
+									</blockquote>
+								</div>
+							</div>
+							<aside class="sidebar">
+								<div class="sidebar-banner">
+									<div class="sidebar-banner__inner">
+										<div class="sidebar-banner__icon">
+											<img src="img/icons/email.svg" alt="" data-svg />
+										</div>
+										<div class="sidebar-banner__green-text">Lorem ipsum dolor sit amet</div>
+										<div class="sidebar-banner__black-text">Cum sociis natoque penatibus</div>
+										<a href="#" class="sidebar-banner__btn mt-4 btn">Для физических лиц</a>
+										<a href="#" class="sidebar-banner__btn mt-4 btn">Для юридических лиц</a>
+										<div class="sidebar-form-acceptance mt-4">Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных (<a href="#">Политика конфиденциальности</a>)</div>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
