@@ -1,0 +1,50 @@
+.agent-list
+  padding-bottom: 11.2rem
+  &-wrapper
+    column-count: 3
+    gap: 6rem
+  &-item
+    display: flex
+    flex-direction: column
+    margin-bottom: 5.3rem
+    break-inside: avoid
+  &-item__letter
+    font-size: 6rem
+    font-weight: 700
+    margin-bottom: 2rem
+  &-item__link
+    font-size: 2.1rem
+    line-height: 1.8
+    font-weight: 600
+  &-bottom
+    display: flex
+    align-items: center
+    gap: 2rem
+    margin-top: 6.8rem
+  &__btn
+@media screen and ( max-width: 992px)
+  .agent-list
+    padding-bottom: 34px
+    &-wrapper
+      column-count: 2
+      gap: 30px
+    &-item__link
+      font-size: 12px
+    &-item__letter
+      font-size: 20px
+      margin-bottom: 0
+    &-item
+      margin-bottom: 14px
+    &-bottom
+      margin-top: 40px
+      gap: 10px
+@media screen and ( max-width: 576px)
+  .agent-list
+    &-wrapper
+      column-count: 1
+    &-bottom
+      flex-direction: column
+      align-items: flex-start
+    &__btn
+      max-width: 100%
+      width: 100%
