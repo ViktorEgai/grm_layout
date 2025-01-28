@@ -8,9 +8,24 @@ jQuery(document).ready(function ($) {
 	if ($(window).width() < 992) {
 		$(".info-item-services").after($(".about"));
 		$(".single-vakancy-card").after($(".agent"));
+
+		// toggle widget
+		$(".widget__logo").on("click", function (e) {
+			e.preventDefault();
+			$(".widget-block").slideToggle();
+			$(".widget-block").toggleClass("active");
+		});
 	} else {
 		$(".info").after($(".about"));
 		$(".sidebar-banner").before($(".agent"));
+
+		// toggle widget
+		$(".widget__logo").on("mouseenter", function () {
+			$(".widget-block").slideDown();
+		});
+		$(".widget").on("mouseleave", function () {
+			$(".widget-block").slideUp();
+		});
 	}
 	$(window).resize(function () {
 		if ($(window).width() < 992) {
@@ -35,26 +50,4 @@ jQuery(document).ready(function ($) {
 	$(".dropdown-item__title").on("click", function () {
 		$(this).next().slideToggle();
 	});
-
-	function AOSAnimation() {
-		$(".section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text ").attr("data-aos", "fade-right");
-		$(".hero-left, #map, .content-block-left, .agent-list-item").attr("data-aos", "fade-right");
-		$(".map-block-right, .map-block-contacts, .sidebar").attr("data-aos", "fade-left");
-		$(".sertificates-grid-item, .gallery-grid-item").attr("data-aos", "fade-up");
-		$(".vakancy-card:not(.skip), .documents-block").each(function (index, item) {
-			if (index % 2 == 0) {
-				$(this).parent().attr("data-aos", "fade-right");
-			} else {
-				$(this).parent().attr("data-aos", "fade-left");
-			}
-		});
-
-		setTimeout(function () {
-			AOS.init({
-				once: true,
-				duration: 1600,
-			});
-		}, 200);
-	}
-	AOSAnimation();
 });

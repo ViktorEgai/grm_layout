@@ -1,0 +1,108 @@
+.service-hero
+  background-color: $sec-bg-color
+  padding-top: 25rem
+  padding-bottom: 15rem
+  &-wrapper
+    position: relative
+  &__title
+    font-size: 9rem
+    line-height: 1.05
+    text-transform: uppercase
+    font-weight: 600
+    color: #fff
+    max-width: 105rem
+    margin-bottom: 2.6rem
+  &__text
+    font-size: 2.1rem
+    color: rgba(#fff,.7)
+    margin-bottom: 7.3rem
+    max-width: 75rem
+  &-buttons
+    display: flex
+    max-width: 70rem
+    width: 100%
+  &__btn
+    max-width: 42rem
+    width: 100%
+  &-block
+    background-image: url(../img/service-hero-bg.svg)
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: bottom
+    padding-top: 30.5rem
+    position: relative
+    min-height: 71rem
+    padding-left: 7.3rem
+    padding-bottom: 7rem
+  &-block__title
+    font-size: 3.5rem
+    color: #fff
+    font-weight: 600
+    margin-bottom: 7rem
+    max-width: 50rem
+  &-block__btn
+    max-width: 31rem
+  &-sliders
+    position: absolute
+    bottom: 7.2rem
+    right: 0
+    z-index: 1
+    width: 126.5rem
+    display: flex
+    flex-direction: column
+    gap: 1.8rem
+  &-block__img
+    position: absolute
+    bottom: 0
+    right: 0
+    max-width: 130rem
+    img
+      width: 100%
+@media screen and ( max-width: 992px )
+  .service-hero
+    padding-top: 90px
+    padding-bottom: 40px
+    &__title
+      font-size: 35px
+      margin-bottom: 12px
+    &__text
+      font-size: 12px
+      margin-bottom: 20px
+      max-width: 330px
+    &__btn
+      background: transparent
+      color: #fff
+      border: 2px solid #fff
+    &-buttons
+      max-width: 275px
+      margin-bottom: 26px
+    &-block
+      padding-top: 90px
+      min-height: 265px
+      padding-left: 15px
+      padding-bottom: 20px
+      background-size: 100% 100%
+    &-block__title
+      font-size: 12px
+      margin-bottom: 10px
+      max-width: 110px
+    &-block__btn
+      max-width: 115px
+      background: rgba(#fff,.2)
+      color: #fff
+      border: 2px solid #fff
+      font-size: 10px
+      padding: 10px 12px
+    &-sliders
+      width: 100%
+      position: static
+      gap: 6px
+      margin-top: 17px
+    &-block__img
+      max-width: 252px
+      img
+        height: 100%
+        min-height: 410px
+
+        object-fit: cover
+        object-position: 20%

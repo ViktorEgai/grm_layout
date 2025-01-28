@@ -1,0 +1,259 @@
+.letter
+  padding: 9.2rem 0 0
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: flex-end
+  height: 92rem
+  &-bg
+    position: absolute
+    z-index: -5
+    width: 229.6rem
+    max-width: none
+    aspect-ratio: 1
+    top: 12rem
+    left: 50%
+    transform: translateX(-50%)
+    animation: rotation 80s infinite linear
+  &-wrapper
+    // display: flex
+    // flex-direction: column
+    // justify-content: flex-end
+    height: 92rem
+    // flex-grow: 1
+  &-form
+    // flex-grow: 1
+    // display: flex
+    // align-items: flex-end
+  &-form-block
+    max-width: 89.6rem
+    background-color: #fff
+    box-shadow: 0 .7rem 3rem rgba(#34578B, .25)
+    border-radius: 2.6rem
+    padding: 5rem 9rem 24rem
+    font-size: 2.1rem
+    position: absolute
+    top: 6rem
+    left: 50%
+    transform: translatex(-50%)
+    z-index: 2
+    transition: 1.5s
+  &-form-block__title
+    font-size: 3.5rem
+    font-weight: 500
+    margin-bottom: 1.4rem
+    text-align: center
+  &-form-block__text
+    text-align: center
+    margin-bottom: 3.2rem
+  &-form-block__row
+    display: flex
+    align-items: flex-start
+    gap: 2.9rem
+    margin-bottom: 2rem
+  &-form-block__label
+    display: block
+    flex-grow: 1
+  &-form-block__input
+    width: 100%
+    border: none
+    font-size: 1.6rem
+    padding: 1rem 0 1.5rem
+    border-bottom: 1px solid #232323
+    background: none
+    &::placeholder
+      color: rgba(#000,.2)
+    &.error
+      font-size: 1.6rem !important
+  &-form-block__select
+  &-form-block__file
+    margin-top: 2.5rem
+    margin-bottom: 3rem
+    cursor: pointer
+    display: flex
+    gap: 1.6rem
+    font-size: 1.6rem
+
+    &::before
+      content: ''
+      width: 2.5rem
+      height: 2.5rem
+      background-image: url(../img/icons/file.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      display: block
+    input
+      opacity: 0
+      position: absolute
+      width: 0
+      height: 0
+      visibility: hidden
+  &-form-block__acceptance
+    display: flex
+    align-items: center
+    gap: 2rem
+    font-size: 1.3rem
+    input
+      width: 2.4rem
+      height: 2.4rem
+      border: 1px solid #5BBEAF
+      border-radius: 0.4rem
+      margin: 0
+      position: relative
+      cursor: pointer
+      flex-shrink: 0
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: url(../img/icons/check.svg)
+        background-size: 1.2rem
+        background-position: center
+        background-repeat: no-repeat
+        opacity: 0
+      &:checked::before
+        opacity: 1
+
+  &-form-block__btn
+    // margin: 4.7rem auto 10rem
+    position: absolute
+    z-index: -10
+    opacity: 0
+    visibility: hidden
+  &-form__front
+    position: absolute
+    left: 50%
+    width: 113rem
+    z-index: 10
+    transform: translateX(-50%)
+    bottom: -17rem
+  &-form-back-top
+    position: absolute
+    top: 13.5rem
+    left: 50%
+    transform: translateX(-50%)
+    width: 108rem
+    transform-origin: bottom
+    transition: .5s
+    &.active
+      transform: translateX(-50%) translateY(-3%) rotateX(180deg)
+      z-index: 15
+      filter: drop-shadow(0 .7rem 3rem rgba(#071730,.6))
+  &-form-back-bottom
+    width: 114rem
+    max-width: none
+    bottom: -17rem
+
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    z-index: -1
+  &-form-btn
+    max-width: 28.7rem
+    width: 100%
+    position: absolute
+    bottom: 32%
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 12
+  .error
+    font-size: 1.2rem
+  &-form-logo
+    position: absolute
+    z-index: 20
+    bottom: 5rem
+    left: 50%
+    transform: translate(-50%,0)
+    width: 26.4rem
+    img
+      width: 100%
+.letter-form.sent
+  .letter-form-block
+    transform: translate(-50%, 100%)
+    // opacity: 0
+  .letter-form-btn
+    opacity: 0
+
+@keyframes rotation
+  0%
+    transform: translateX(-50%) rotate(0)
+  100%
+    transform: translateX(-50%) rotate(360deg)
+@media (hover: hover)
+  a:hover
+    color: $accent-color
+@media screen and ( max-width: 992px )
+  .letter
+    min-height: 665px
+    height: auto
+    margin-top: 20px
+    &-bg
+      width: 120%
+    &-wrapper
+      height: auto
+    &-form-block
+      max-width: 90%
+      width: 100%
+    &-form__front, &-form-back-bottom
+      width: 100%
+      bottom: -100px
+      height: 400px
+    &-form-back-bottom
+      bottom: -80px
+    &-form-back-top
+      width: 95%
+      height: 200px
+      top: auto
+      bottom: 300px
+    &-form-block
+      padding: 14px 30px 200px
+      max-width: 310px
+      border-radius: 10px
+      top: 0
+    &-form-block__title
+      font-size: 16px
+      margin-bottom: 10px
+    &-form-block__text
+      font-size: 12px
+      margin-bottom: 20px
+    &-form-block__row
+      flex-direction: column
+      gap: 10px
+    &-form-block__label
+      width: 100%
+    &-form-block__input
+      font-size: 12px
+      padding: 6px 0
+    &-form-block__file
+      margin: 10px 0
+      gap: 6px
+      font-size: 12px
+      align-items: center
+      &::before
+        width: 10px
+        height: 10px
+    &-form-block__acceptance
+      gap: 6px
+      font-size: 8px
+      input
+        width: 18px
+        height: 18px
+        border-radius: 2px
+
+        &::before
+          background-size: 9px
+      br
+        display: none
+    &-form-logo
+      width: 190px
+      bottom: 40px
+@media screen and ( max-width: 440px )
+  .letter
+    &-form__front, &-form-back-bottom
+      bottom: -50px
+    &-form-back-top
+      bottom: 350px

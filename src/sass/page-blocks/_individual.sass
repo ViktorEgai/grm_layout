@@ -1,0 +1,68 @@
+.individual
+  font-size: 2.1rem
+  padding-bottom: 11.2rem
+  &-text
+    text-align: center
+    max-width: 137rem
+    margin: 0 auto 10.5rem
+  &-nav
+    display: flex
+    align-items: center
+    gap: 9.7rem
+    margin-bottom: 7rem
+  &-nav__item
+    display: flex
+    align-items: center
+    gap: 2.2rem
+    img
+      width: 5rem
+      height: 5rem
+  &-grid
+    .grid-item
+      padding-bottom: 3rem
+      padding-top: 3rem
+  &-item
+    display: flex
+    align-items: center
+    gap: 2.2rem
+    img
+      width: 5rem
+      height: 5rem
+  &-item__text
+  &__btn
+    margin-top: 7rem
+    width: fit-content
+@media screen and ( max-width: 992px )
+  .individual
+    font-size: 12px
+    padding-bottom: 40px
+    &-grid .grid-item
+      width: 50%
+      padding-top: 5px
+      padding-bottom: 5px
+    &-text
+      font-size: 16px
+      max-width: 100%
+      margin-bottom: 36px
+      color: rgba(#060606,.7)
+    &-nav
+      flex-direction: column
+      align-items: flex-start
+      gap: 10px
+      margin-bottom: 40px
+    &-nav__item
+      font-size: 16px
+      text-align: left
+      gap: 20px
+      img
+        width: 44px
+        height: 44px
+    &-item
+      display: flex
+      align-items: center
+      gap: 6px
+      img
+        width: 30px
+        height: 30px
+    &__btn
+      margin-top: 15px

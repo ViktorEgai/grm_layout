@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- page-top -->
+				@@include('components/page-blocks/_page-top.html', { "title" : 'Секция Индивидуальных риэлторов', "text" : 'Члены Гильдии Риэлторов Москвы' })
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Секция Индивидуальных риэлторов</span>
+					</div>
+				</div>
+				<div class="individual">
+					<div class="container">
+						<div class="individual-text">Участниками Секции индивидуальных риэлторов НП «ГРМ» (СИР ГРМ) могут быть специалисты рынка недвижимости, зарегистрированные в установленном порядке в качестве индивидуальных предпринимателей, не имеющие наемных сотрудников и осуществляющие свою деятельность единолично.</div>
+						<div class="individual-nav">
+							<button data-filter=".member" class="individual-nav__item"><img src="img/grm.svg" alt="" />Член СИР ГРМ</button>
+							<button data-filter=".atestation" class="individual-nav__item"><img src="img/indiv.png" alt="" />Член СИР ГРМ, аттестованный Брокер по недвижимости</button>
+						</div>
+						<div class="individual-grid">
+							<div class="grid">
+								<!-- member -->
+								@@for (var i = 0; i < 16; i++) {
+								<div class="grid-item member">
+									<a href="#" class="individual-item">
+										<img src="img/grm.svg" alt="" />
+										<div class="individual-item__text">
+											<p>ИП Алексеева</p>
+											<p>Елена Александровна</p>
+										</div>
+									</a>
+								</div>
+								}
+								<!-- atestation -->
+								@@for (var i = 0; i < 16; i++) {
+								<div class="grid-item atestation">
+									<a href="#" class="individual-item">
+										<img src="img/indiv.png" alt="" />
+										<div class="individual-item__text">
+											<p>ИП Алексеева</p>
+											<p>Елена Александровна</p>
+										</div>
+									</a>
+								</div>
+								}
+							</div>
+						</div>
+						<a href="#" class="individual__btn btn">Страницы-визитки компаний – участников ГРМ</a>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

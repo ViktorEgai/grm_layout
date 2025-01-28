@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<h1 class="service-hero__title">
+								Ваша репутация — <br />
+								ваш успех
+							</h1>
+							<div class="service-hero__text">Присоединяйтесь к сообществу профессионалов рынка недвижимости. Членство в Гильдии риэлторов Москвы открывает доступ к новым возможностям для вашего бизнеса и карьеры.</div>
+							<div class="service-hero-buttons">
+								<a href="#popup" class="service-hero__btn btn btn--sec" data-fancybox>Получить консультацию</a>
+							</div>
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block">
+								<div class="service-hero-block__img">
+									<img src="img/service-hero/1.png" alt="" />
+								</div>
+
+								<div class="service-hero-block__title">Будьте среди лидеров рынка недвижимости</div>
+								<a href="#" class="service-hero-block__btn btn btn--white">Полный список</a>
+								<div class="service-hero-sliders">
+									@@for (var i = 0; i < 2; i++) {
+									<div class="service-hero-slider">
+										@@for (var i = 0; i < 8; i++) {
+										<div class="service-hero-slider__item">
+											<img src="img/logos/1.png" alt="" class="service-hero-slider__item-image" />
+											<div class="service-hero-slider__item-info">
+												<div class="service-hero-slider__item-title">ZIP REALTY</div>
+												<div class="service-hero-slider__item-text">Агентство недвижимости</div>
+											</div>
+										</div>
+										}
+									</div>
+									}
+								</div>
+							</div>
+							<div class="service-hero-bottom">
+								<div class="service-hero-bottom__left">
+									<div class="service-hero-bottom__title">
+										Члены Гильдии <br />
+										Риэлторов Москвы
+									</div>
+									<div class="service-hero-bottom__text">
+										Агентства недвижимости Москвы и Московской области — <br />
+										члены Гильдии риэлторов Москвы
+									</div>
+								</div>
+
+								<div class="service-hero-bottom__right"><a href="#" class="service-hero-bottom__btn btn btn--sec">Список Действительных членов</a><a href="#" class="service-hero-bottom__btn btn btn--sec">Список Индивидуальных риэлторов</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Членство</span>
+					</div>
+				</div>
+				<div class="arrow-block">
+					<div class="container">
+						<div class="arrow-block-wrapper">
+							<div class="arrow-block__inner">
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Индивидуальные кураторы банков</div>
+									<div class="arrow-block__item-text">
+										Доступ к закрытой базе с контактами более 30 <br />
+										кураторов банков и уникальными привилегиями
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Чат-бот ГРМ</div>
+									<div class="arrow-block__item-text">
+										С перечнем полезных сервисов: обучение,<br />
+										аналитика рынка, новости и обновления
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Партнерская сеть</div>
+									<div class="arrow-block__item-text">
+										Скидки для ваших клиентов. Партнерская сеть <br />
+										ГРМ, включает более 50 профильных и более <br />30 непрофильных партнеров
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">КРАН</div>
+									<div class="arrow-block__item-text">Клуб руководителей агентств недвижимости – <br />Обмен опытом. Повышение квалификации. <br />Сетевое взаимодействие. Устойчивое развитие</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Бизнес-бранч</div>
+									<div class="arrow-block__item-text">
+										Офлайн платформа внутри ГРМ, для обмена опытом <br />
+										и лучшими практиками в управлении агентствами.<br />
+										Установление деловых контактов и партнерств среди <br />руководителей. Изучение новых трендов и технологий <br />
+										в сфере недвижимости
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Стандартика</div>
+									<div class="arrow-block__item-text">
+										Формирование единого подхода к стандартам работы на<br />
+										Московском рынке недвижимости. Создание единой платформы <br />
+										для обмена знаниями и опытом среди профессионалов отрасли.<br />
+										Повышение качества услуг и обслуживания клиентов через <br />
+										внедрение общепринятых стандартов
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item">
+									<div class="arrow-block__item-title">Кейсориум</div>
+									<div class="arrow-block__item-text">
+										Офлайн-инструмент для профессионального роста, <br />
+										обмена опытом и решения нестандартных <br />задач в сфере недвижимости
+									</div>
+									<a href="#" class="arrow-block__item-link">Перейти</a>
+								</div>
+								<div class="arrow-block__item"></div>
+							</div>
+							<div class="arrow-block__bolt">
+								<img src="img/bolt.svg" alt="" />
+							</div>
+							<div class="arrow-block-bottom">
+								<div class="arrow-block__aim">
+									<img src="img/aim.svg" alt="" data-svg />
+								</div>
+							</div>
+							<div class="arrow-block-bottom-front">
+								<div class="arrow-block__aim-front">
+									<img src="img/aim-cutted.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="members-type">
+					<div class="container">
+						<div class="members-type-wrapper">
+							<div class="members-type-item members-type-item--big">
+								<h2 class="section-title members-type__title">Виды членства</h2>
+								<div class="members-type-item__inner">
+									<div class="members-type-item__title">
+										Действительный <br />
+										участники
+									</div>
+									<div class="members-type-item__text">Компании (юридические лица и индивидуальные предприниматели, зарегистрированные в установленном порядке), осуществляющие свою деятельность на рынке недвижимости, отвечающие требованиям, предъявляемым к компаниям — действительным членам НП «ГРМ».</div>
+								</div>
+								<img src="img/man.png" alt="" class="members-type-item__image" />
+							</div>
+							<div class="members-type-item">
+								<div class="members-type-item__inner members-type-item__inner--dark">
+									<div class="members-type-item__title">Ассоциированные участники</div>
+									<div class="members-type-item__text">Юридические лица и индивидуальные предприниматели, зарегистрированные в установленном порядке, ведущие деятельность, прямо или косвенно связанную с операциями с недвижимым имуществом или с созданием инфраструктуры рынка недвижимости, и заинтересованные в его развитии.</div>
+								</div>
+								<a href="#" class="members-type-item__btn btn">Оформить заявку на членство</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="steps">
+					<div class="container">
+						<h2 class="steps__title section-title">Порядок получения</h2>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="steps-wrapper">
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Направление</div>
+											<div class="steps-item-notice">
+												<div class="steps-item-notice__icon">
+													<img src="img/icons/notice.svg" alt="" />
+												</div>
+												<p>Направляется с помощью формы ниже или на адрес <a href="mailto:id@grmos.ru">id@grmos.ru</a></p>
+											</div>
+										</div>
+										<div class="steps-item__text">В Исполнительную дирекцию ГРМ заявления о приеме в члены и необходимого пакета документов.</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Рассмотрение</div>
+										</div>
+										<div class="steps-item__text">Заявления и пакета документов на ближайшем заседании Совета Партнерства.</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Принятие</div>
+										</div>
+										<div class="steps-item__text">Советом Партнерства решения о соответствии кандидата установленным требованиям.</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Внесение</div>
+										</div>
+										<div class="steps-item__text">Сведений в реестр членов ГРМ.</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Получение Свидетельства о членстве</div>
+										</div>
+										<div class="steps-item__text">Подключение к партнерским программам ГРМ, информационным чатам, рассылкам, доступ ко всем преимуществам и возможностям участников Гильдии.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-none d-lg-block">
+								<div class="steps-image">
+									<img src="img/steps-image.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="member-cards">
+					<div class="container">
+						<h2 class="member-cards__title section-title">Стоиомсть членства</h2>
+						<div class="row gy-4">
+							<div class="col-md-6">
+								<div class="member-cards-item">
+									<div class="member-cards-item__info">
+										<div class="member-cards-item__title">Вступительный взнос</div>
+										<div class="member-cards-item__text">Для участников НП «ГРМ», вступающих в Партнерство в течение 2025 года</div>
+										<div class="member-cards-item__descr">
+											<p>
+												<strong> Производится индивидуальный расчет </strong>
+												<br />
+												Ежегодного членского взноса по тарифу «Годовой»
+											</p>
+											<p>
+												<strong>На период</strong>
+												<br />
+												С даты вступления по 31 декабря 2025 года
+											</p>
+										</div>
+										<div class="member-cards-item__price">
+											<span class="member-cards-item__price-label">единорвременно</span>
+											<p class="member-cards-item__price-num">20 000 ₽</p>
+											<div class="member-cards-item__price-text">Для Действительных членов НП «ГРМ»</div>
+										</div>
+									</div>
+									<div class="member-cards-item__bottom"><a href="#" class="member-cards-item__btn btn">Оформить заявку на членство</a></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="member-cards-item">
+									<div class="member-cards-item__info">
+										<div class="member-cards-item__title">Вступительный взнос</div>
+										<div class="member-cards-item__text">Для участников НП «ГРМ», вступающих в Партнерство в течение 2025 года</div>
+										<div class="member-cards-item__descr">
+											<p>
+												<strong> Производится индивидуальный расчет </strong>
+												<br />
+												Ежегодного членского взноса по тарифу «Годовой»
+											</p>
+											<p>
+												<strong>На период</strong>
+												<br />
+												С даты вступления по 31 декабря 2025 года
+											</p>
+										</div>
+										<div class="member-cards-item__price">
+											<span class="member-cards-item__price-label">единорвременно</span>
+											<p class="member-cards-item__price-num">39 000 ₽</p>
+											<div class="member-cards-item__price-text">Для Действительных членов НП «ГРМ»</div>
+										</div>
+									</div>
+									<div class="member-cards-item__bottom"><a href="#" class="member-cards-item__btn btn">Оформить заявку на членство</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="member-cards-bottom">
+							ПОРЯДОК определения размеров <br />вступительного и ежегодного членских взносов утвержден Общим собранием <br />
+							членов НП «ГРМ» 18.11.2024.
+						</div>
+					</div>
+				</section>
+				<div class="letter">
+					<img class="letter-bg" src="img/letter-decor.svg" alt="" />
+					<div class="container">
+						<div class="letter-wrapper">
+							<form class="letter-form">
+								<div class="letter-form-back">
+									<img class="letter-form-back-top" src="img/letter-back-top.svg" alt="" />
+									<img class="letter-form-back-bottom" src="img/letter-back-bottom.svg" alt="" />
+								</div>
+
+								<div class="letter-form-block">
+									<div class="letter-form-block__title">Хотите стать частью Гильдии риэлторов Москвы?</div>
+									<div class="letter-form-block__text">Заполните форму, и мы свяжемся с вами, чтобы ответить на возникшие вопросы и помочь с оформлением</div>
+									<div class="letter-form-block__row">
+										<div class="letter-form-block__label">
+											<input type="text" name="username" placeholder="Имя" class="letter-form-block__input" />
+										</div>
+										<div class="letter-form-block__label">
+											<input type="email" name="email" placeholder="Почта" class="letter-form-block__input" />
+										</div>
+										<div class="letter-form-block__label">
+											<input type="tel" name="phone" placeholder="Телефон" class="letter-form-block__input" />
+										</div>
+									</div>
+									<select name="member-type" id="" class="letter-form-block__select letter-form-block__input">
+										<option hidden selected disabled>Выбор вида членства</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+									<label class="letter-form-block__file">
+										<input type="file" name="documents" id="file_input" multiple />
+										<span id="file-title">Прикрепить документы</span>
+									</label>
+									<label class="letter-form-block__acceptance">
+										<input type="checkbox" name="acceptance" id="acceptance" checked />
+										<span
+											>Нажимая кнопку «Отправить», вы даете согласие на обработку <br />
+											персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+										</span>
+									</label>
+								</div>
+								<img src="img/letter-front.svg" alt="" class="letter-form__front" />
+								<button class="letter-form-btn btn">Отправить</button>
+								<div class="letter-form-logo">
+									<img src="img/letter-logo.svg" alt="" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

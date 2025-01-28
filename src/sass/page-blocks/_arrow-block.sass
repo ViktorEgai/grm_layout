@@ -1,0 +1,166 @@
+.arrow-block
+  overflow: hidden
+  position: relative
+  padding-bottom: 25rem
+  &-wrapper
+    padding-bottom: 30rem
+    // height: 300vh
+    position: relative
+    padding-top: 32.6rem
+
+    // height: 200vh
+  &__inner
+    display: flex
+    flex-wrap: wrap
+    gap: 6rem 0
+    justify-content: center
+    align-items: flex-start
+    flex-direction: row-reverse
+    position: relative
+    z-index: 12
+
+  &__item
+    height: fit-content
+    font-size: 2.1rem
+    color: rgba(#000,.7)
+    width: calc((100% - 6rem) / 2)
+    &:nth-child(even)
+      padding-right: 11.4rem
+      text-align: right
+      transform: translateY(6rem)
+      .arrow-block__item-title::before
+        right: -11.4rem
+
+        transform: translateY(-50% ) rotate(180deg)
+      .arrow-block__item-link::before
+        left: auto
+        right: 0
+    &:nth-child(odd)
+      padding-left: 11.4rem
+      .arrow-block__item-title::before
+        left: -11.4rem
+  &__item-title
+    font-weight: 600
+    margin-bottom: 1.6rem
+    position: relative
+    &::before
+
+      content: ''
+      position: absolute
+      width: 9.4rem
+      height: 1.4rem
+      background-image: url(../img/icons/line.svg)
+      background-size: contain
+      background-repeat: no-repeat
+
+      top: 50%
+      transform: translateY(-50% )
+  &__item-text
+    margin-bottom: 3.4rem
+  &__item-link
+    color: $accent-color
+    font-weight: 600
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: -1rem
+      left: 0
+      width: 4rem
+      height: 0.3rem
+      background-color: $accent-color
+      border-radius: 0.9rem
+  &__aim,  &__aim-front
+
+    margin: auto
+    width: 130rem
+    img, svg
+      width: 100%
+      height: 100%
+  &__aim-front
+    z-index: 10
+    height: 37.4rem
+
+    // top: calc(37.4rem - 28.3rem)
+    padding-top: 9.2rem
+  &__bolt
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 2
+    width: 11.8rem
+    height: 150rem
+    z-index: 7
+    overflow: hidden
+    img
+      width: 100%
+
+  &-bottom,  &-bottom-front
+
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 5
+  &-bottom-front
+    z-index: 10
+@media screen and ( max-width: 992px )
+  .arrow-block
+    padding-bottom: 100px
+    &-wrapper
+      padding-bottom: 200px
+      padding-top: 150px
+
+    &__inner
+      display: flex
+      flex-wrap: wrap
+      gap: 25px 0
+      flex-direction: column
+
+    &__item
+      height: fit-content
+      font-size: 12px
+      width: 100%
+      &:nth-child(even)
+        padding-right: 0
+        padding-left: 20px
+
+        text-align: left
+        transform: none
+        .arrow-block__item-title::before
+          display: none
+        .arrow-block__item-link::before
+          left: 0
+          right: auto
+      &:nth-child(odd)
+        padding-left: 20px
+        .arrow-block__item-title::before
+          display: none
+    &__item-title
+      margin-bottom: 10px
+
+    &__item-text
+      margin-bottom: 12px
+    &__item-link
+      &::before
+        bottom: -6px
+        width: 26px
+        height: 2px
+    &__aim,  &__aim-front
+      width: 100%
+    &__aim-front
+      height: 200px
+      padding-top: 51px
+    &__bolt
+      left: 0
+      width: 65px
+      height: auto
+    &-bottom,  &-bottom-front
+
+      width: 720px
+      position: absolute
+      left: -360px
+      z-index: 5
+    &-bottom-front
+      z-index: 10

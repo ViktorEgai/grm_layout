@@ -32,6 +32,11 @@
     border-radius: 2.6rem
   &-dark
     background: $dark-green
+  &--sec
+    background: $sec-btn-gradient
+  &:disabled
+    opacity: 0.3
+    cursor: not-allowed
 @media  ( hover: hover  )
   .btn:not([disabled]):hover:before
     box-shadow: 0 0 10px $dark-green

@@ -1,0 +1,134 @@
+.member-cards
+  padding: 9.2rem 0
+  &__title
+    margin-bottom: 5.3rem
+  &-item
+    background-image: url(../img/border.svg)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 2.6rem
+    font-size: 2.1rem
+    position: relative
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 61.8rem
+      height: 60rem
+      background-image: url(../img/circle.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      transform: translate(40%, -12%)
+  &-item__info
+    padding: 4.9rem 3.9rem 6rem
+  &-item__bottom
+    padding: 6.4rem 0
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 70rem
+      border: .3rem dashed #e4e4e4
+  &-item__title
+    font-size: 3.5rem
+    font-weight: 600
+    margin-bottom: 1.6rem
+  &-item__text
+    max-width: 44.7rem
+    margin-bottom: 6.3rem
+  &-item__descr
+    color: rgba(#000,.7)
+    p,ul,ol
+      margin-bottom: 3.9rem
+    strong
+      font-weight: 600
+  &-item__price
+    margin-top: 9.3rem
+    position: relative
+    z-index: 1
+  &-item__price-label
+    display: block
+    transform: rotate(-3.75deg)
+
+    position: absolute
+    top: -.8em
+    left: -.2em
+
+    z-index: 15
+    color: #fff
+    background-color: $accent-color
+    border-radius: 3rem
+    padding: 0.5rem 1.5rem
+  &-item__price-num
+    font-size: 6rem
+    font-weight: 700
+    position: relative
+    z-index: 2
+  &-item__price-text
+    color: rgba(#000,.7)
+
+  &-item__btn
+
+    max-width: 53rem
+    margin: 0 auto
+  &-bottom
+    color: rgba(#000,.7)
+    font-size: 2.1rem
+    margin-top: 4.7rem
+    text-align: center
+@media screen and ( max-width: 992px )
+  .member-cards
+    padding: 20px 0
+    &__title
+      margin-bottom: 12px
+    &-item
+      border-radius: 10px
+      font-size: 12px
+      &::before
+        width: 265px
+        height: 258px
+        transform: translate(40%, -12%)
+    &-item__info
+      padding: 16px 14px 22px
+    &-item__bottom
+      padding: 23px 0 26px
+      position: relative
+      &::before
+        width: 80%
+        border: 2px dashed #e4e4e4
+    &-item__title
+      font-size: 16px
+      margin-bottom: 10px
+    &-item__text
+      max-width: 80%
+      margin-bottom: 22px
+    &-item__descr
+      color: rgba(#000,.7)
+      p,ul,ol
+        margin-bottom: 10px
+    &-item__price
+      margin-top: 30px
+    &-item__price-label
+      transform: rotate(-3.75deg)
+      font-size: 10px
+      top: -12px
+      border-radius: 12px
+      padding: 4px 8px
+    &-item__price-num
+      font-size: 25px
+    &-item__price-text
+
+    &-item__btn
+      font-weight: 700
+      max-width: 245px
+    &-bottom
+      font-size: 12px
+      margin-top: 4.7rem
+      text-align: center

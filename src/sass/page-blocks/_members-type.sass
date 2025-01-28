@@ -1,0 +1,73 @@
+.members-type
+  padding: 9.2rem 0
+  &-wrapper
+    display: grid
+    grid-template-columns: 119rem 53rem
+    gap: 2rem
+  &-item
+    position: relative
+    display: flex
+    flex-direction: column
+  &-item--big
+    background-image: url(../img/members-type-bg.svg)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    min-height: 74.3rem
+    .members-type-item__text
+      max-width: 66rem
+  &__title
+    margin-bottom: 20rem
+  &-item__inner
+    padding: 6.2rem 4.2rem
+    border-radius: 2.6rem
+  &-item__title
+    font-size: 3.5rem
+    margin-bottom: 3.2rem
+    font-weight: 600
+    color: #fff
+  &-item__text
+    font-size: 2.1rem
+    color: rgba(#fff,.7)
+
+  &-item__image
+    position: absolute
+    bottom: 0
+    right: -2rem
+    width: 46.8rem
+  &-item__inner--dark
+    background-color: $dark-green
+    flex-grow: 1
+    margin-bottom: 2rem
+  &-item__btn
+@media screen and ( max-width: 992px )
+  .members-type
+    padding: 20px 0
+    &-wrapper
+      grid-template-columns: auto
+      gap: 10px
+    &-item--big
+      background-image: url(../img/members-type-bg-mob.svg)
+
+      min-height: 0
+      .members-type-item__text
+        max-width: 50%
+    &__title
+      margin-bottom: 28px
+    &-item__inner
+      padding: 15px
+      border-radius: 10px
+    &-item__title
+      font-size: 16px
+      margin-bottom: 10px
+    &-item__text
+      font-size: 12px
+    &-item__image
+      position: absolute
+      bottom: 0
+      right: -2rem
+      width: 190px
+    &-item__inner--dark
+      margin-bottom: 10px
+    &-item__btn
+      max-width: 244px
+      margin: 0 auto

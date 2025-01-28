@@ -30,6 +30,9 @@
       svg
         width: 13.5rem
         height: 3.5rem
+  &-block
+    display: none
+    border-bottom: .2rem solid rgba(49, 96, 103, 1)
   &__item
     padding: 1.8rem
     display: flex
@@ -66,7 +69,7 @@
       transition: .3s
 @media  ( min-width: 992px  )
   .widget:hover
-    width: 19rem
+    width: 35rem
     span
       transform: translateX(0) scale(1)
       opacity: 1
@@ -74,6 +77,7 @@
       opacity: 0
 
   .widget__item:hover
+
     &::before
       opacity: 1
 @media screen and ( max-width: 992px )
@@ -97,9 +101,9 @@
 
       &:last-child
         order: 3
-      svg
-        width: 20px
-        height: 20px
+      p  svg
+        width: 20px !important
+        height: 20px !important
     &__logo
       order: 2
       transform: scale(1.7)
@@ -107,3 +111,31 @@
       border-radius: 50%
       background-color: #fff
       padding: 11px
+      svg
+        animation: pulse 1s infinite alternate
+    &-block
+      position: absolute
+      bottom: 140%
+      left: 50%
+      transform: translateX(-50%)
+      width: 39rem
+      background-color: #fff
+      border-radius: 10px
+      border: none
+      &.active
+
+        .widget__item
+          padding: 10px
+
+          span
+            font-size: 12px
+            display: block
+            opacity: 1
+            transform: translateX(0) scale(1)
+          &:not(:last-child)
+            border-bottom: 2px solid rgba(49, 96, 103, 1) !important
+@keyframes pulse
+  0%
+    transform: scale(1.4)
+  100%
+    transform: scale(1.7)

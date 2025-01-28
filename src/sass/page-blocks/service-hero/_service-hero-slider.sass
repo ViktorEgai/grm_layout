@@ -1,0 +1,75 @@
+.service-hero-slider
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    background: linear-gradient(270deg, rgba(115,202,188,0) 34%, rgba(0,164,138,1) 100%)
+    height: 100%
+    width: 28rem
+    z-index: 1
+    left: 0
+    top: 0
+    border-radius: 6.3rem
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+  .slick-list
+    margin: 0 -0.9rem
+  &__item
+    display: flex !important
+    align-items: center
+    gap: 2rem
+    border-radius: 6.3rem
+    background-color: #fff
+    padding: 1.4rem 1.3rem
+    width: 28.2rem
+    margin: 0 0.9rem
+  &__item-image
+    width: 5.2rem
+    height: 5.2rem
+    border-radius: 50%
+  &__item-info
+    font-family: $jakarta
+  &__item-title
+    font-size: 2.1rem
+    text-transform: uppercase
+
+  &__item-text
+    font-size: 1.2rem
+    color: rgba(#000,.4)
+  &:first-child
+    margin-left: 10rem
+  &:nth-child(even)
+    .service-hero-slider__item
+      direction: ltr
+@media screen and ( max-width: 992px )
+  .service-hero-slider
+    &::before
+      width: 87px
+      border-radius: 20px
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+    .slick-list
+      margin: 0 -3px
+    &__item
+      gap: 6.6px
+      border-radius: 24px
+      background-color: #fff
+      padding: 3.7px 4px
+      min-width: 87px
+      width: auto
+      margin: 0 3px
+    &__item-image
+      width: 16px
+      height: 16px
+    &__item-title
+      font-size: 6.5px
+      text-transform: uppercase
+
+    &__item-text
+      font-size: 4px
+      color: rgba(#000,.4)
+    &:first-child
+      margin-left: 25px
+    &:nth-child(even)
+      .service-hero-slider__item
+        direction: ltr

@@ -104,4 +104,25 @@ $(document).ready(function () {
 			},
 		],
 	});
+	$(".service-hero-slider").each(function (index) {
+		let $args = {
+			dots: false,
+			infinite: true,
+			speed: 5000,
+			autoplaySpeed: 10,
+			autoplay: true,
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			cssEase: "linear",
+		};
+		if (index % 2 !== 0) {
+			$args["rtl"] = true;
+			$(this).attr("dir", "rtl");
+		}
+
+		$(this).slick($args);
+	});
 });
