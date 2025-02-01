@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="desktop-bg-grey mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<h1 class="service-hero__title">Комитет по адаптации и сопровождению новых членов ГРМ</h1>
+							<div class="service-hero__text">Комитет по адаптации и сопровождению новых членов в Российской гильдии риэлторов (РГР) занимается поддержкой и интеграцией в профессиональное сообщество специалистов, недавно вступивших в организацию.</div>
+							<div class="service-hero-buttons align-items-center">
+								<div class="service-hero__icon">
+									<img src="img/icons/service-icon.svg" alt="" />
+								</div>
+								<a href="#" class="service-hero__btn service-hero__btn--half btn d-lg-none">Вступить в ГРМ</a>
+							</div>
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block service-hero-block--big">
+								<div class="service-hero-block__img">
+									<img src="img/service-hero/1.png" alt="" />
+								</div>
+
+								<div class="service-hero-block__info">
+									<p><strong>Цели комитета:</strong></p>
+									<ul>
+										<li>Помощь новым членам в освоении специфики работы в сфере недвижимости и понимании требований и стандартов гильдии.</li>
+									</ul>
+									<p><strong>Основные задачи комитета:</strong></p>
+									<ul>
+										<li>Прием новых членов в Гильдию риэлторов Москвы</li>
+
+										<li>Разработка нового программного обеспечения для автоматизации работы риэлтора</li>
+
+										<li>Интеграция специалистов в профессиональное сообщество</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Комитеты</a>⭢
+						<span>Комитет по адаптации и сопровождению новых членов ГРМ</span>
+					</div>
+				</div>
+				<!-- Члены комитета -->
+				<section class="comitet-members">
+					<div class="container">
+						<h2 class="comitet-members__title section-title">Члены комитета</h2>
+						<div class="comitet-members-slider">
+							@@for(var i = 0; i < 4; i++) {
+							<div class="comitet-members-slider__item">
+								<div class="comitet-members-item">
+									<div class="comitet-members-item-top">
+										<div class="comitet-members-item__top-info">
+											<div class="comitet-members-item__image">
+												<img src="img/thumb.png" alt="" />
+											</div>
+											<div class="comitet-members-item__info">
+												<div class="comitet-members-item__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+												<div class="comitet-members-item__text">Исполнительный директор НП «ГРМ»</div>
+											</div>
+										</div>
+										<div class="comitet-members-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam nihil quod amet dolorem perspiciatis eaque distinctio itaque animi magni.</div>
+										<div class="comitet-members-item__logo">
+											<img src="img/zip.png" alt="" />
+										</div>
+										<div class="social comitet-members-item__social d-lg-none">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+									<div class="comitet-members-item-bottom">
+										<a href="#" class="comitet-members-item__btn btn">Связаться с членов комитета</a>
+										<div class="social comitet-members-item__social d-none d-lg-flex">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							}
+						</div>
+					</div>
+				</section>
+				<!-- Орган по сертификации -->
+				<section class="calendar">
+					<div class="container">
+						<div class="calendar-top">
+							<h2 class="calendar__title section-title">Календарь мероприятий</h2>
+							<a href="#" class="calendar__btn btn">Подписаться на календарь</a>
+						</div>
+						<div class="calendar-wrapper">
+							<div class="calendar-left">
+								<div class="info-calendar">
+									<div class="small-calendar" id="small-calendar-2"></div>
+								</div>
+								<div class="info-calendar-date">
+									<div class="info-calendar-date__day">
+										<p>27</p>
+										<span>ноября</span>
+									</div>
+									<div class="info-calendar-date__text">
+										Московский Международный <br />
+										жилищный конгресс 2024
+									</div>
+								</div>
+								<div class="calendar-event-types">
+									<div class="calendar-event-types__item"><span class="green"></span>Офлайн</div>
+
+									<div class="calendar-event-types__item"><span class="dark-green"></span>Онлайн</div>
+								</div>
+							</div>
+							<div class="calendar-right">
+								<div id="calendar"></div>
+							</div>
+							<div class="calendar-event-block"></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- news -->
+				@@include('components/page-blocks/_news.html')
+				<!-- документы -->
+				<div class="documents pt">
+					<div class="container">
+						<div class="documents-top">
+							<h2 class="documents__title section-title">Документы Комитета – опционально <span>Список полезных документов, памяток и рекомендаций</span></h2>
+							<form action="#" class="search-form">
+								<input type="search" name="" id="" class="input search-input" placeholder="Поиск по документам" />
+								<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
+							</form>
+						</div>
+						<div class="row g-4">
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/pdf.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link red" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/txt.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link blue" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- letter -->
+				@@include('components/page-blocks/_letter.html', {'title' : "Есть вопросы к комитету по адаптации и сопровождению?"})
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

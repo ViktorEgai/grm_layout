@@ -1,0 +1,172 @@
+.comitet-org
+  padding: 9.2rem 0
+  overflow: hidden
+  &-wrapper
+    display: grid
+    grid-template-columns: 108rem 64rem
+    gap: 2rem
+    &--second
+
+  &-item
+    position: relative
+    display: flex
+    flex-direction: column
+    &--has-decor
+      overflow: hidden
+      z-index: 1
+      &::before
+        z-index: 0
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 61.8rem
+        height: 60rem
+        transform: translate(45%,-32% )
+        background-image: url(../img/circle-dark.svg)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+  &-item--big
+    background-image: url(../img/comitet-org-bg.svg)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    min-height: 66rem
+    .comitet-org-item__text
+      max-width: 62rem
+    .comitet-org-item__btn
+      max-width: 52.6rem
+      margin-top: 6.6rem
+
+  &__title
+    margin-bottom: 15rem
+    max-width: 58.5rem
+  &-item__inner
+    padding: 4rem 5.6rem 6rem
+    border-radius: 2.6rem
+    display: flex
+    flex-direction: column
+  &-item__title
+    font-size: 3.5rem
+    margin-bottom: 3.2rem
+    font-weight: 600
+    color: #fff
+  &-item__text
+    font-size: 2.1rem
+    color: rgba(#fff,.7)
+  &-item__btn
+    border-radius: 2rem
+  &-item__image
+    position: absolute
+    bottom: 0
+    right: 3rem
+    width: 35rem
+  &-item__inner--dark
+    background-color: $dark-green
+    flex-grow: 1
+
+  &-item__btn
+.comitet-org-bottom
+  display: grid
+  grid-template-columns: 75rem 97rem
+  gap: 2rem
+  margin-top: 2rem
+  &-item
+    background-color: #005D62
+    border-radius: 2.6rem
+    padding: 5rem 6rem 6rem
+    &:last-child
+      background-color: #1c3b40
+      position: relative
+      .comitet-org-item__text
+        max-width: 50rem
+    .comitet-org-item__title
+      margin-bottom: 1.6rem
+  &__btn
+    margin-top: 6.6rem
+    max-width: 31rem
+    border-radius: 2rem
+  &__image
+    position: absolute
+    bottom: 0
+    right: 5rem
+    width: 32rem
+@media screen and ( max-width: 992px )
+  .comitet-org
+    padding: 20px 0
+    &-wrapper
+      grid-template-columns: auto
+      gap: 10px
+    &-item--big
+      background-image: url(../img/comitet-org-bg-mob.svg)
+      min-height: 320px
+      .comitet-org-item__inner
+        max-width: 60%
+      .comitet-org-item__title
+        margin-right: -30%
+        br
+          display: none
+      .comitet-org-item__btn
+        max-width: 220px
+        width: 100%
+        margin: 20px 0 40px
+    &__title
+      margin-bottom: 13px
+      max-width: 200px
+    &-item__inner
+      padding: 15px
+      border-radius: 10px
+    &-item__title
+      font-size: 16px
+      margin-bottom: 10px
+      br
+        display: none
+    &-item__text
+      font-size: 12px
+      margin-bottom: 20px
+    &-item__image
+      right: -30px
+      width: 190px
+
+    &-item__btn
+      max-width: 244px
+      margin: 20px auto 0 0
+      background: rgba(#fff,.2)
+      color: #fff
+      border-radius: 10px
+      border: 2px solid #fff
+    &-item
+      &--has-decor
+      &::before
+        top: auto
+        bottom: 0
+        right: 0
+        width: 224px
+        height: 218px
+        transform: translate(45%,45% )
+  .comitet-org-bottom
+    grid-template-columns: auto
+    gap: 10px
+    margin-top: 10px
+    &-item
+      border-radius: 10px
+      padding: 16px 15px
+      &:last-child
+        background-color: #1c3b40
+        position: relative
+        .comitet-org-item__text
+          max-width: 50rem
+      .comitet-org-item__title
+        margin-bottom: 1.6rem
+    &__btn
+      margin-top: 20px
+      max-width: 244px
+      margin: 20px auto 0 0
+      background: rgba(#fff,.2)
+      color: #fff
+      border-radius: 10px
+      border: 2px solid #fff
+    &__image
+      position: static
+      width: 276px
+      margin: 20px auto -15px

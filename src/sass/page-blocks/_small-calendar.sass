@@ -3,13 +3,14 @@
   --fc-today-bg-color: transparent
   --fc-neutral-bg-color: transparent
   --fc-bg-event-color: rgba(28,171,152,.35)
-#small-calendar
+.small-calendar
   font-size: 2.1rem
   .fc-toolbar
     justify-content: center
   .fc-toolbar-title
     @include font(3.5rem, 1.2,500 )
     margin: 0 1.0rem
+    white-space: nowrap
   .fc-icon
     color: #000
     font-size: 2em
@@ -66,13 +67,19 @@
       height: 2.2em
       border-radius: 50%
       background: var(--fc-bg-event-color)
+  .fc-event-title, .event-content
+    display: none
 // @media screen and ( max-width: 1600px )
 //   #small-calendar
 //     font-size: 16px
 //     .fc-toolbar-title
 //       font-size: 22px
 @media screen and ( max-width: 992px )
-  #small-calendar
+  .small-calendar
     font-size: 12px
-  .fc-toolbar-title
-    font-size: 16px
+    .fc-toolbar-title
+      font-size: 16px
+    .fc-bg-event
+      z-index: 20
+    .fc-daygrid-day-number
+      z-index: 1

@@ -1,0 +1,219 @@
+.calendar
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 5rem
+  &__title
+  &__btn
+    max-width: 42rem
+    width: 100%
+  &-wrapper
+    gap: 2rem
+    display: flex
+
+  &-left
+    width: 42rem
+    .info-calendar
+      border: none
+      background-color: #fff
+      &-date
+        border: none
+        background-color: #fff
+        margin-top: 2.6rem
+      &-date__day
+        border: none
+        padding: 2rem
+        height: 10.5rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        p
+          font-size: 4rem
+        span
+          font-size: 1.2rem
+          margin-top: 1rem
+      &-date__text
+
+  &-right
+    width: 130rem
+  &-event-types
+    margin-top: 7rem
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+  &-event-types__item
+    display: flex
+    align-items: center
+    font-size: 2.1rem
+    gap: 1.4rem
+    span
+      display: block
+      width: 2.8rem
+      height: 2.8rem
+      border-radius: 50%
+      &.green
+        background-color: $light-green
+      &.dark-green
+        background-color: $sec-bg-color
+  &-event-block
+    display: none
+#calendar
+  min-height: 98rem
+  font-size: 1rem
+  background-color: #fff
+  border-radius: 2.6rem
+  overflow: hidden
+  .fc-daygrid-day-top
+    flex-direction: row
+    padding: 1.5rem
+    transition: .3s
+    &.active
+      position: relative
+      z-index: 15
+      font-size: 2.1rem
+  td, th
+    border: 1px solid #F6F6F6
+  .fc-col-header
+    td, th
+      border: none
+      padding: 1.5rem
+  .fc-day-other
+    background-color: #f9f9f9
+  .fc-scrollgrid-section-header
+    font-weight: 400
+  .fc-daygrid-day
+    position: relative
+    &:has(.event-day)
+      color: #fff
+  .fc-daygrid-day-events,  .fc-daygrid-event-harness, .fc-event-main
+    position: static
+  .fc-event
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #00A48A
+    border-radius: 2.6rem
+    padding: 5rem 1.5rem 2rem
+    transition: .3s
+    z-index: 1
+    display: flex
+    flex-direction: column
+    &.active
+      z-index: 5
+      width: 200%
+      height: 200%
+
+      .event-content
+        &__time
+          right: 2rem
+          font-size: 2.1rem
+
+        &__title
+          font-size: 1.8rem
+          margin-bottom: .6rem
+          transition: .3s
+
+        &__place
+          margin-top: 3.2rem
+          font-size: 1.2rem
+          margin-bottom: 3rem
+        &__description
+          display: block
+          font-size: 1.2rem
+        &__btn
+          display: flex
+  .fc-event-main
+    flex-grow: 1
+  .fc-daygrid-event
+    white-space: wrap
+  .fc-daygrid-day-number
+    padding: 0
+  .fc-scrollgrid-sync-table td
+    height: 19rem
+  .fc-scrollgrid-sync-table
+  .event-day
+    margin: 0
+  .event-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    transition: .3s
+    height: 100%
+    &__time
+      position: absolute
+      top: 1.5rem
+      right: 1.5rem
+      font-size: 1rem
+      transition: .3s
+
+    &__title
+      font-size: 1.2rem
+      font-weight: 600
+      margin-bottom: 2rem
+      transition: .3s
+
+    &__place
+      font-size: 1.2rem
+    &__description
+      display: none
+    &__btn
+      display: none
+@media screen and ( max-width: 992px )
+  .calendar
+    &-top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 5rem
+    &__title
+    &__btn
+      max-width: 370px
+      margin: 38px auto 0
+      width: 100%
+    &-wrapper
+      display: block
+
+    &-left
+      width: 100%
+      .info-calendar
+
+        &-date
+          display: none
+    &-right
+      display: none
+    &-event-types
+      display: none
+    &-event-block
+      margin-top: 12px
+      border-radius: 10px
+      background-color: #00A48A
+      color: #fff
+      padding: 14px
+  .event-content
+    font-size: 14px
+    font-weight: 500
+
+    &-top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 23px
+    &__description
+      font-size: 12px
+      font-weight: 400
+      margin-bottom: 13px
+    &__title
+      margin-bottom: 7px
+    &__place
+      margin-bottom: 35px
+    &__btn
+      max-width: 180px
+      background-color: rgba(#fff,.2)
+      color: #fff
+      border: 2px solid #fff
+      margin: 0 auto

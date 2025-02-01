@@ -4,6 +4,24 @@
   padding-bottom: 15rem
   &-wrapper
     position: relative
+  &__subtitle
+    padding-left: 7.8rem
+    position: relative
+    color: #fff
+    font-size: 2.1rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 1.4rem
+    &::before
+
+      content: ""
+      position: absolute
+      top: 50%
+      left: .5rem
+      transform: translateY(-50%)
+      background-color: #fff
+      width: 4.4rem
+      height: 0.4rem
   &__title
     font-size: 9rem
     line-height: 1.05
@@ -19,20 +37,28 @@
     max-width: 75rem
   &-buttons
     display: flex
+    flex-wrap: wrap
     max-width: 70rem
     width: 100%
+    gap: 2rem
   &__btn
     max-width: 42rem
     width: 100%
+    &--half
+      width: calc((100% - 2rem) / 2)
+    &--full
+      max-width: 100%
+
   &-block
     background-image: url(../img/service-hero-bg.svg)
-    background-size: 100%
+    background-size: 100% 100%
     background-repeat: no-repeat
     background-position: bottom
     padding-top: 30.5rem
     position: relative
+    z-index: 1
     min-height: 71rem
-    padding-left: 7.3rem
+    padding-left: 6rem
     padding-bottom: 7rem
   &-block__title
     font-size: 3.5rem
@@ -42,6 +68,15 @@
     max-width: 50rem
   &-block__btn
     max-width: 31rem
+  &-block__info
+    margin: -6rem 0
+    font-size: 2.1rem
+    color: #fff
+    max-width: 50rem
+    p,ul,ol, li
+      margin-bottom: 1em
+    ul, ol
+      padding-left: 1em
   &-sliders
     position: absolute
     bottom: 7.2rem
@@ -58,10 +93,39 @@
     max-width: 130rem
     img
       width: 100%
+  &-block__bg
+    position: absolute
+    overflow: hidden
+    height: 47.5rem
+    width: 118rem
+    bottom: 0
+    left: 5rem
+    z-index: -1
+    img
+      animation: rotate 30s infinite
+  &__icon
+    margin-bottom: -5rem
+    img
+      width: 15rem
+      height: 15rem
+@keyframes rotate
+  0%
+    rotate: 0
+  100%
+    rotate: 360deg
 @media screen and ( max-width: 992px )
   .service-hero
     padding-top: 90px
     padding-bottom: 40px
+    &__subtitle
+      font-size: 12px
+      padding-left: 32px
+      margin-bottom: 7px
+      &::before
+        transform: none
+        top: 5px
+        width: 20px
+        height: 2px
     &__title
       font-size: 35px
       margin-bottom: 12px
@@ -82,6 +146,12 @@
       padding-left: 15px
       padding-bottom: 20px
       background-size: 100% 100%
+      &--big
+        min-height: 400px
+        padding-top: 110px
+        background-image: url(../img/service-hero--mob-bg-big.svg)
+        .service-hero-block__img
+          height: 460px
     &-block__title
       font-size: 12px
       margin-bottom: 10px
@@ -106,3 +176,22 @@
 
         object-fit: cover
         object-position: 20%
+    &-block__bg
+      height: 185px
+      width: 374px
+      bottom: 0
+      left: 0
+      z-index: -1
+    &__icon
+      margin-bottom: 0
+      img
+        width: 60px
+        height: 60px
+    &-block__info
+      margin: 0
+      font-size: 12px
+      color: #fff
+      max-width: 238px
+@media screen and ( max-width: 440px )
+  .service-hero-block--big .service-hero-block__img img
+    object-position: -60%

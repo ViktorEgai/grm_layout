@@ -1,0 +1,165 @@
+.popup-list
+  padding: 9.2rem 0
+  &-item
+    margin-bottom: 2rem
+  &-item__link
+    font-size: 5rem
+    font-weight: 600
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 6.6rem 11.6rem
+    border-radius: 2.6rem
+    background-color: #fff
+    p
+      transition: .3s
+  &-item__icon
+    width: 8rem
+    height: 8rem
+  &-item__title
+    margin-bottom: 6.2rem
+    line-height: 1.1
+  &-item__popup
+    display: none
+    background-color: #f9f9f9
+    font-size: 2.1rem
+    width: 100%
+    max-width: 100%
+    &-block
+      background-color: #fff
+      border-radius: 2.6rem
+      padding: 3.5rem 3.4rem 5.8rem
+      margin-top: 2rem
+      .steps-wrapper
+        margin-top: 2rem
+    &-block-title
+      font-size: 3.5rem
+      font-weight: 600
+      margin-bottom: 3.8rem
+      width: fit-content
+      position: relative
+      .notice
+        transform: translate(100%,-40%)
+        p
+          font-size: 2.1rem
+          font-weight: 400
+          max-width: 30rem
+    &-block-text
+      margin-top: 4rem
+      strong
+        font-weight: 600
+      p,ul,ol
+        margin-bottom: 1em
+      .text-green
+        font-weight: 600
+    &-grid
+      border-radius: 2.6rem
+      background-color: #fff
+      overflow: hidden
+      text-align: center
+
+      &-item
+        min-height: 8.7rem
+        border: 1px solid #F6F6F6
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+      .small
+        font-size: 1.2rem
+        color: $light-green
+      .medium
+        font-size: 1.8rem
+    &-link
+      text-align: center
+      color: #fff
+      background-color: $accent-color
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 600
+      padding: 1.1rem
+      gap: 1.8rem
+      transition: .3s
+      svg
+        width: 1rem
+@media  ( hover: hover )
+  .popup-list-item__link:hover
+    color: $accent-color
+  .popup-list-item__popup-link:hover
+    background-color: $dark-green
+@media screen and ( max-width: 992px )
+  .popup-list
+    padding: 20px 0
+    &-item
+      margin-bottom: 10px
+    &-item__link
+      font-size: 16px
+      justify-content: space-between
+      padding: 0
+      border-radius: 0
+      background-color: transparent
+      gap: 10px
+      p
+        padding: 12px 15px
+        border-radius: 10px
+        background-color: #fff
+        flex-grow: 1
+
+    &-item__icon
+      width: 61px
+      height: auto
+      padding: 15px 27px
+      background: $btn-gradient
+      border: none
+      border-radius: 8px
+      svg
+        width: 7px
+        height: 13px
+    &-item__title
+      margin-bottom: 15px
+    &-item__popup
+      font-size: 12px
+      padding: 40px 10px
+
+      &-block
+        background-color: #fff
+        border-radius: 10px
+        padding: 26px 15px 30px
+        margin-top: 10px
+        .steps-wrapper
+          margin-top: 10px
+          &::before
+            height: 100%
+            margin-top: 6px
+        .steps-item
+          padding-left: 15px
+          font-weight: 700
+          &::before
+            transform: translateX(-3px)
+
+      &-block-title
+        font-size: 16px
+        margin-bottom: 20px
+        .notice
+          transform: translate(120%, -50%)
+          p
+            font-size: 12px
+            max-width: 300px
+      &-block-text
+        margin-top: 20px
+      &-grid
+        margin-top: 10px
+        border-radius: 10px
+
+        &-item
+          min-height: 34px
+        .small
+          font-size: 8px
+      &-link
+        padding: 8px
+        gap: 10px
+        font-size: 10px
+        svg
+          width: 6px

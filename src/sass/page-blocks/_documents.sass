@@ -1,8 +1,24 @@
 .documents
   padding-bottom: 11.2rem
+  &.pt
+    padding-top: 9.2rem
+  &-title
+    margin-bottom: 6.2rem
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 7rem
+  &__title
+    display: block
+    span
+      display: block
+      font-size: 2.1rem
+      font-weight: 500
   &-block
     border-radius: 2.6rem
     background-color: #fff
+    overflow: hidden
   &-item
     padding: 3rem 6.2rem
     font-size: 2.1rem
@@ -25,12 +41,30 @@
     width: 5.8rem
     object-fit: contain
     margin-right: 1.85rem
+  &-bottom-link
+    text-align: center
+    background-color: $light-green
+    font-size: 2.1rem
+    font-weight: 600
+    display: flex
+    align-items: center
+    gap: 1.6rem
+    justify-content: center
+    color: #fff
+    padding: 1rem
+    transition: .3s
+    img
+      width: 1rem
 @media  ( hover: hover  )
   .documents-item__link:hover
     text-decoration: underline
+  .documents-bottom-link:hover
+    background-color: $dark-green
 @media screen and ( max-width: 992px )
   .documents
     padding-bottom: 40px
+    &-title
+      margin-bottom: 15px
     &-block
       border-radius: 10px
     &-item
@@ -44,3 +78,21 @@
       height: 36px
       width: 28px
       margin-right: 30px
+    &-bottom-link
+      padding: 8px
+      font-size: 10px
+      gap: 9px
+      img
+        width: 6px
+    &.pt
+      padding-top: 20px
+    &-top
+      flex-direction: column
+      margin-bottom: 15px
+      align-items: flex-start
+    &__title
+      margin-bottom: 15px
+
+      span
+        font-size: 12px
+        font-weight: 400

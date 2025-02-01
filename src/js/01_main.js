@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 	if ($(window).width() < 992) {
 		$(".info-item-services").after($(".about"));
 		$(".single-vakancy-card").after($(".agent"));
-
+		$(".calendar-wrapper").after($(".calendar__btn"));
 		// toggle widget
 		$(".widget__logo").on("click", function (e) {
 			e.preventDefault();

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="desktop-bg-grey mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<div class="service-hero__subtitle">Только 30% риэлторов в Москве работают легально.</div>
+							<h1 class="service-hero__title">Будьте в числе лучших!</h1>
+							<div class="service-hero__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</div>
+							<div class="service-hero-buttons"><a href="#" class="service-hero__btn btn">Lorem, ipsum dolor.</a></div>
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block">
+								<div class="service-hero-block__img">
+									<img src="img/tos.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Комитеты</a>⭢
+						<span>Комитет по адаптации и сопровождению новых членов ГРМ</span>
+					</div>
+				</div>
+				<!-- Члены комитета -->
+				<section class="comitet-members">
+					<div class="container">
+						<h2 class="comitet-members__title section-title">Члены комитета</h2>
+						<div class="comitet-members-slider">
+							@@for(var i = 0; i < 4; i++) {
+							<div class="comitet-members-slider__item">
+								<div class="comitet-members-item">
+									<div class="comitet-members-item-top">
+										<div class="comitet-members-item__top-info">
+											<div class="comitet-members-item__image">
+												<img src="img/thumb.png" alt="" />
+											</div>
+											<div class="comitet-members-item__info">
+												<div class="comitet-members-item__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+												<div class="comitet-members-item__text">Исполнительный директор НП «ГРМ»</div>
+											</div>
+										</div>
+										<div class="comitet-members-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam nihil quod amet dolorem perspiciatis eaque distinctio itaque animi magni.</div>
+										<div class="comitet-members-item__logo">
+											<img src="img/zip.png" alt="" />
+										</div>
+										<div class="social comitet-members-item__social d-lg-none">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+									<div class="comitet-members-item-bottom">
+										<a href="#" class="comitet-members-item__btn btn">Связаться с членов комитета</a>
+										<div class="social comitet-members-item__social d-none d-lg-flex">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							}
+						</div>
+					</div>
+				</section>
+				<!-- Орган по сертификации -->
+				<section class="comitet-org">
+					<div class="container">
+						<div class="comitet-org-wrapper">
+							<div class="comitet-org-item comitet-org-item--big">
+								<h2 class="section-title comitet-org__title">Орган по сертификации ГРМ создан, чтобы:</h2>
+								<div class="comitet-org-item__inner">
+									<div class="comitet-org-item__title">
+										Обеспечить <br />
+										соответствие стандартам
+									</div>
+									<div class="comitet-org-item__text">Все риэлторские услуги проходят проверку на соответствие требованиям стандарта СТО РГР РОСС RU №И046.04 РН00, что обеспечивает высокий профессиональный уровень.</div>
+									<a href="#" class="comitet-org-item__btn btn btn--white d-none d-lg-flex">Обучение для риэлторов</a>
+								</div>
+								<img src="img/man.png" alt="" class="comitet-org-item__image" />
+							</div>
+							<div class="comitet-org-item comitet-org-item--has-decor">
+								<div class="comitet-org-item__inner comitet-org-item__inner--dark">
+									<div class="comitet-org-item__title">Повысить конкурентоспособность риэлторов</div>
+									<div class="comitet-org-item__text">Риэлторы, прошедшие сертификацию, получают преимущество перед конкурентами, подтверждая свою надежность и добросовестность.</div>
+									<a href="#" class="comitet-org-item__btn btn btn--white mt-auto">Узнать больше о сертификации</a>
+								</div>
+							</div>
+						</div>
+						<div class="comitet-org-bottom">
+							<div class="comitet-org-bottom-item">
+								<div class="comitet-org-item__title">
+									Содействовать <br />
+									потребителям в выборе
+								</div>
+								<div class="comitet-org-item__text">Помогаем клиентам пользоваться услугами более высокого качества, обеспечивая прозрачность рынка недвижимости.</div>
+								<a href="#" class="comitet-org-bottom__btn btn btn--white">Риэлтор</a>
+							</div>
+							<div class="comitet-org-bottom-item">
+								<div class="comitet-org-item__title">
+									Продвигать услуги <br />
+									высокого качества
+								</div>
+								<div class="comitet-org-item__text">Работаем над тем, чтобы услуги высшего качественные стали доступны всем на рынке недвижимости.</div>
+								<a href="#" class="comitet-org-bottom__btn btn btn--white">Аттестация</a>
+								<img src="img/phone.png" alt="" class="comitet-org-bottom__image d-none d-lg-block" />
+								<img src="img/phone-mob.png" alt="" class="comitet-org-bottom__image d-lg-none" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Список с инфой -->
+				<div class="popup-list">
+					<div class="container">
+						<div class="popup-list-item">
+							<a href="#item-1" class="popup-list-item__link" data-fancybox
+								><p>Специалист «Агент»</p>
+								<span class="popup-list-item__icon btn"> <img src="img/icons/dropdown-arrow.svg" alt="" data-svg /></span>
+							</a>
+							<div class="popup-list-item__popup" id="item-1">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="popup-list-item__title section-title">Специалист «Агент»</div>
+										<div class="popup-list-item__popup-block">
+											<div class="steps-wrapper">
+												<div class="steps-item">
+													<div class="steps-item__text">Физическое лицо, которое работает по трудовому договору или действует по гражданско-правовому договору</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Применяет специальный налоговый режим или является индивидуальным предпринимателем</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Выполняет действия по оказанию брокерских услуг при совершении операций на рынке недвижимости</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Прошел обучение или самостоятельную подготовку и аттестован по квалификации специалиста по недвижимости, агента в соответствии с Национальным стандартом «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования»</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Действует под руководством брокера, без права подписи договора на оказание брокерских услуг</div>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">
+												Квалификационные <br />
+												требования
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Не ниже среднего профессионального образования</p>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Повышение квалификации</p>
+												<p>Не реже 1 раза в 3 года</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 d-flex flex-column">
+										<div class="popup-list-item__title section-title d-none d-lg-flex">Прайс</div>
+										<div class="popup-list-item__popup-grid">
+											<div class="row g-0">
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 3 года</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 100 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 2 900</strong> ₽</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 1 год</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 900 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 800 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 600 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<a href="#" class="popup-list-item__popup-link">Скачать подробный прайс <img src="img/icons/download.svg" alt="" data-svg /></a>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">Порядок подачи документов</div>
+											<div class="popup-list-item__popup-block-text">
+												<p><i>Аттестация проводится комиссией ТОС ГРМ по предварительной заявке и согласованию с кандидатами и общим графиком аттестаций</i></p>
+
+												<p>1. <strong>Скачайте,</strong> заполните и подпишите Согласие на обработку персональных данных</p>
+
+												<p>
+													2. <strong>Подготовьте</strong> необходимые документы для загрузки: — Справка с места работы или сканы страниц трудовой книжки, подтверждающие работу в недвижимости; — Диплом об образовании; — Фотография (400х400, средний план, фото по пояс, деловая обстановка, название файла = фамилия специалиста); — Подписанное Согласие на обработку персональных данных (оригинал
+													необходимо принести на аттестацию)
+												</p>
+												<p>3. <strong>Заполните форму заявки,</strong> прикрепив копии подтверждающих документов</p>
+											</div>
+										</div>
+										<div class="row mt-auto">
+											<div class="col-5 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn">Подать заявку</a></div>
+											<div class="col-7 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn btn-dark">Скачать пакет документов</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-list-item">
+							<a href="#item-2" class="popup-list-item__link" data-fancybox
+								><p>Аттестация «Брокер»</p>
+								<span class="popup-list-item__icon btn"> <img src="img/icons/dropdown-arrow.svg" alt="" data-svg /></span>
+							</a>
+							<div class="popup-list-item__popup" id="item-2">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="popup-list-item__title section-title">Аттестация «Брокер»</div>
+										<div class="popup-list-item__popup-block">
+											<div class="steps-wrapper">
+												<div class="steps-item">
+													<div class="steps-item__text">Физическое лицо, которое работает по трудовому договору или действует по гражданско-правовому договору</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Применяет специальный налоговый режим или является индивидуальным предпринимателем</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Выполняет действия по оказанию брокерских услуг при совершении операций на рынке недвижимости</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Прошел обучение или самостоятельную подготовку и аттестован по квалификации специалиста по недвижимости, агента в соответствии с Национальным стандартом «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования»</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Действует под руководством брокера, без права подписи договора на оказание брокерских услуг</div>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">
+												Квалификационные <br />
+												требования
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Не ниже среднего профессионального образования</p>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Повышение квалификации</p>
+												<p>Не реже 1 раза в 3 года</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 d-flex flex-column">
+										<div class="popup-list-item__title section-title d-none d-lg-flex">Прайс</div>
+										<div class="popup-list-item__popup-grid">
+											<div class="row g-0">
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 3 года</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 100 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 2 900</strong> ₽</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 1 год</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 900 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 800 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 600 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<a href="#" class="popup-list-item__popup-link">Скачать подробный прайс <img src="img/icons/download.svg" alt="" data-svg /></a>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">Порядок подачи документов</div>
+											<div class="popup-list-item__popup-block-text">
+												<p><i>Аттестация проводится комиссией ТОС ГРМ по предварительной заявке и согласованию с кандидатами и общим графиком аттестаций</i></p>
+
+												<p>1. <strong>Скачайте,</strong> заполните и подпишите Согласие на обработку персональных данных</p>
+
+												<p>
+													2. <strong>Подготовьте</strong> необходимые документы для загрузки: — Справка с места работы или сканы страниц трудовой книжки, подтверждающие работу в недвижимости; — Диплом об образовании; — Фотография (400х400, средний план, фото по пояс, деловая обстановка, название файла = фамилия специалиста); — Подписанное Согласие на обработку персональных данных (оригинал
+													необходимо принести на аттестацию)
+												</p>
+												<p>3. <strong>Заполните форму заявки,</strong> прикрепив копии подтверждающих документов</p>
+											</div>
+										</div>
+										<div class="row mt-auto">
+											<div class="col-5 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn">Подать заявку</a></div>
+											<div class="col-7 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn btn-dark">Скачать пакет документов</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-list-item">
+							<a href="#item-3" class="popup-list-item__link" data-fancybox
+								><p>Аттестация «Эксперт»</p>
+								<span class="popup-list-item__icon btn"> <img src="img/icons/dropdown-arrow.svg" alt="" data-svg /></span>
+							</a>
+							<div class="popup-list-item__popup" id="item-3">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="popup-list-item__title section-title">Аттестация «Эксперт»</div>
+										<div class="popup-list-item__popup-block">
+											<div class="steps-wrapper">
+												<div class="steps-item">
+													<div class="steps-item__text">Физическое лицо, которое работает по трудовому договору или действует по гражданско-правовому договору</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Применяет специальный налоговый режим или является индивидуальным предпринимателем</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Выполняет действия по оказанию брокерских услуг при совершении операций на рынке недвижимости</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Прошел обучение или самостоятельную подготовку и аттестован по квалификации специалиста по недвижимости, агента в соответствии с Национальным стандартом «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования»</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Действует под руководством брокера, без права подписи договора на оказание брокерских услуг</div>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">
+												Квалификационные <br />
+												требования
+												<div class="notice">
+													<div class="notice__icon">
+														<img src="img/icons/notice-red.svg" alt="" />
+													</div>
+													<p>Наличие аттестата Агента обязательно</p>
+												</div>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Не ниже средне-специального и опыт работы по квалификации специалист по недвижимости - Агент не менее 3-х лет</p>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Образование высшее и опыт работы по квалификации Специалист по недвижимости - Агент не менее 2-х лет или обязательное обучение по программе «Специалист по недвижимости - Эксперт» в аккредитованном учебном заведении или направление от руководителя компании.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 d-flex flex-column">
+										<div class="popup-list-item__title section-title d-none d-lg-flex">Прайс</div>
+										<div class="popup-list-item__popup-grid">
+											<div class="row g-0">
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 3 года</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 100 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 2 900</strong> ₽</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 1 год</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 900 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 800 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 600 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<a href="#" class="popup-list-item__popup-link">Скачать подробный прайс <img src="img/icons/download.svg" alt="" data-svg /></a>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">Порядок подачи документов</div>
+											<div class="popup-list-item__popup-block-text">
+												<p><i>Аттестация проводится комиссией ТОС ГРМ по предварительной заявке и согласованию с кандидатами и общим графиком аттестаций</i></p>
+
+												<p>1. <strong>Скачайте,</strong> заполните и подпишите Согласие на обработку персональных данных</p>
+
+												<p>
+													2. <strong>Подготовьте</strong> необходимые документы для загрузки: — Справка с места работы или сканы страниц трудовой книжки, подтверждающие работу в недвижимости; — Диплом об образовании; — Фотография (400х400, средний план, фото по пояс, деловая обстановка, название файла = фамилия специалиста); — Подписанное Согласие на обработку персональных данных (оригинал
+													необходимо принести на аттестацию)
+												</p>
+												<p>3. <strong>Заполните форму заявки,</strong> прикрепив копии подтверждающих документов</p>
+											</div>
+										</div>
+										<div class="row mt-auto">
+											<div class="col-5 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn">Подать заявку</a></div>
+											<div class="col-7 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn btn-dark">Скачать пакет документов</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-list-item">
+							<a href="#item-4" class="popup-list-item__link" data-fancybox
+								><p>Аттестация «Ипотечный специалист»</p>
+								<span class="popup-list-item__icon btn"> <img src="img/icons/dropdown-arrow.svg" alt="" data-svg /></span>
+							</a>
+							<div class="popup-list-item__popup" id="item-4">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="popup-list-item__title section-title">Аттестация «Ипотечный специалист»</div>
+										<div class="popup-list-item__popup-block">
+											<div class="steps-wrapper">
+												<div class="steps-item">
+													<div class="steps-item__text">Физическое лицо, которое работает по трудовому договору или действует по гражданско-правовому договору</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Применяет специальный налоговый режим или является индивидуальным предпринимателем</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Выполняет действия по оказанию брокерских услуг при совершении операций на рынке недвижимости</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Прошел обучение или самостоятельную подготовку и аттестован по квалификации специалиста по недвижимости, агента в соответствии с Национальным стандартом «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования»</div>
+												</div>
+												<div class="steps-item">
+													<div class="steps-item__text">Действует под руководством брокера, без права подписи договора на оказание брокерских услуг</div>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">
+												Квалификационные <br />
+												требования
+												<div class="notice">
+													<div class="notice__icon">
+														<img src="img/icons/notice-red.svg" alt="" />
+													</div>
+													<p>Наличие аттестата Агента обязательно</p>
+												</div>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Не ниже средне-специального и опыт работы по квалификации специалист по недвижимости - Агент не менее 3-х лет</p>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Образование высшее и опыт работы по квалификации Специалист по недвижимости - Агент не менее 2-х лет или обязательное обучение по программе «Специалист по недвижимости - Эксперт» в аккредитованном учебном заведении или направление от руководителя компании.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 d-flex flex-column">
+										<div class="popup-list-item__title section-title d-none d-lg-flex">Прайс</div>
+										<div class="popup-list-item__popup-grid">
+											<div class="row g-0">
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 3 года</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 3 100 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 3 300 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 2 900</strong> ₽</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-12">
+															<div class="popup-list-item__popup-grid-item"><strong>Сроком на 1 год</strong></div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная</strong></div>
+																<div class="small">аттестация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 900 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">1-3 человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 800 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">4-9 человека –</div>
+																<p><strong>от 1 600 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 700 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="small">10+ человека –</div>
+																<p><strong>от 1 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<a href="#" class="popup-list-item__popup-link">Скачать подробный прайс <img src="img/icons/download.svg" alt="" data-svg /></a>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">Порядок подачи документов</div>
+											<div class="popup-list-item__popup-block-text">
+												<p><i>Аттестация проводится комиссией ТОС ГРМ по предварительной заявке и согласованию с кандидатами и общим графиком аттестаций</i></p>
+
+												<p>1. <strong>Скачайте,</strong> заполните и подпишите Согласие на обработку персональных данных</p>
+
+												<p>
+													2. <strong>Подготовьте</strong> необходимые документы для загрузки: — Справка с места работы или сканы страниц трудовой книжки, подтверждающие работу в недвижимости; — Диплом об образовании; — Фотография (400х400, средний план, фото по пояс, деловая обстановка, название файла = фамилия специалиста); — Подписанное Согласие на обработку персональных данных (оригинал
+													необходимо принести на аттестацию)
+												</p>
+												<p>3. <strong>Заполните форму заявки,</strong> прикрепив копии подтверждающих документов</p>
+											</div>
+										</div>
+										<div class="row mt-auto">
+											<div class="col-5 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn">Подать заявку</a></div>
+											<div class="col-7 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn btn-dark">Скачать пакет документов</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popup-list-item">
+							<a href="#item-5" class="popup-list-item__link" data-fancybox
+								><p>Сертифицирование агентства недвижимости</p>
+								<span class="popup-list-item__icon btn"> <img src="img/icons/dropdown-arrow.svg" alt="" data-svg /></span>
+							</a>
+							<div class="popup-list-item__popup" id="item-5">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="popup-list-item__title section-title">Сертифицирование агентства недвижимости</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-text">
+												<p>
+													Сертифицированное агентство недвижимости — Юридическое лицо или индивидуальный предприниматель, подтвердившие соответствие качества оказания брокерских (риэлторских) услуг установленным требованиям Системы сертификации. Получает Сертификат Соответствия с занесением соответствующей информации в Единый реестр сертифицированных компаний и аттестованных специалистов Системы
+													сертификации.
+												</p>
+
+												<p>Сертификация — процедура проведения экспертизы деятельности агентства недвижимости (брокерской компании) на соответствие брокерских (риэлторских) услуг требованиям, установленным Основным стандартом Системы сертификации «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования», а также нормативными документами Системы Сертификации.</p>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">
+												Квалификационные <br />
+												требования
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Образование</p>
+												<p>Не ниже среднего профессионального образования</p>
+											</div>
+											<div class="popup-list-item__popup-block-text">
+												<p class="text-green">Повышение квалификации</p>
+												<p>Не реже 1 раза в 3 года</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 d-flex flex-column">
+										<div class="popup-list-item__title section-title d-none d-lg-flex">Прайс</div>
+										<div class="popup-list-item__popup-grid">
+											<div class="row g-0">
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">сертификация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Первичная</strong></div>
+																<div class="small">
+																	сертификация одного <br />
+																	дополнительного офиса
+																</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<p><strong>7 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<p><strong>3 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="row g-0">
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная </strong></div>
+																<div class="small">сертификация</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<div class="medium"><strong>Повторная </strong></div>
+																<div class="small">
+																	сертификация одного <br />
+																	дополнительного офиса
+																</div>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<p><strong>7 500 ₽</strong></p>
+															</div>
+														</div>
+														<div class="col-6">
+															<div class="popup-list-item__popup-grid-item">
+																<p><strong>3 000 ₽</strong></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="popup-list-item__popup-grid-item">
+														<div class="medium"><strong> Тариф на проведение сертификации брокерских услуг агентств недвижимости, не являющихся участниками НП «ГРМ»</strong></div>
+														<div class="small">сроком на 1 год с выдачей сертификата в печатном виде</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="popup-list-item__popup-grid-item">
+														<p><strong>35 000 ₽</strong></p>
+													</div>
+												</div>
+												<div class="col-12">
+													<a href="#" class="popup-list-item__popup-link">Скачать подробный прайс <img src="img/icons/download.svg" alt="" data-svg /></a>
+												</div>
+											</div>
+										</div>
+										<div class="popup-list-item__popup-block">
+											<div class="popup-list-item__popup-block-title">Порядок подачи документов</div>
+											<div class="popup-list-item__popup-block-text">
+												<p><i>Аттестация проводится комиссией ТОС ГРМ по предварительной заявке и согласованию с кандидатами и общим графиком аттестаций </i></p>
+
+												<p>1.<strong> Подготовьте </strong>необходимые документы (скачать Перечень документов и требований)</p>
+												<p>2. <strong>Заполните</strong> форму заявки, прикрепив карточку компании с банковскими реквизитами</p>
+
+												<p>3. <strong>Направьте </strong>на адрес ТОС ГРМ tos@grmos.ru копии документов из Перечня (можно направить ссылку на папку с файлами, размещенную на вашем Яндекс-диске, Mail, Google и т.п.).</p>
+											</div>
+										</div>
+										<div class="row mt-auto">
+											<div class="col-5 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn">Подать заявку</a></div>
+											<div class="col-7 col-sm-6"><a href="#" class="popup-list-item__popup-btn btn btn-dark">Скачать пакет документов</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- документы -->
+				<div class="documents pt">
+					<div class="container">
+						<div class="row g-4">
+							<div class="col-md-6">
+								<div class="documents-title section-title">Нормативные документы</div>
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/pdf.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link red" target="_blank">Открыть PDF </a>
+									</div>
+									}
+									<a href="#" class="documents-bottom-link">Все нормативные документы Системы сертификации <img src="img/icons/download.svg" alt="" /></a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="documents-title section-title">Методические материалы РГР</div>
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/txt.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link blue" target="_blank">Открыть PDF </a>
+									</div>
+									}
+									<a href="#" class="documents-bottom-link">Все методические материалы РГР <img src="img/icons/download.svg" alt="" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- news -->
+				@@include('components/page-blocks/_news.html' , "class" : 'white')
+
+				<!-- letter -->
+				@@include('components/page-blocks/_letter.html', { 'title' : 'Хотите пройти аттестацию или сертификацию?'})
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

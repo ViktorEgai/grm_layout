@@ -106,26 +106,26 @@ $(document).ready(function () {
 						start: "top 70%",
 						end: "+=300px", // Пример динамической высоты
 					},
-					y: "-100%",
+					y: "-200%",
 					duration: 0.6,
 				});
 				// Анимация для линии
-				// gsap.fromTo(
-				// 	".arrow-block__bolt",
-				// 	{
-				// 		height: $arrowWrapper.innerHeight() * 0.48 + "px", // Начальная высота
-				// 	},
-				// 	{
-				// 		// height: "100%", // Конечная высота, включая padding
-				// 		height: $arrowWrapper.innerHeight() + "px", // Конечная высота, включая padding
-				// 		scrollTrigger: {
-				// 			trigger: $arrowWrapper[0],
-				// 			start: "top 80%", // Начало анимации
-				// 			end: () => "+=" + $arrowWrapper.innerHeight() + "px", // Конец анимации
-				// 			scrub: 0.2, // Скроллинг плавный
-				// 		},
-				// 	}
-				// );
+				gsap.fromTo(
+					".arrow-block__bolt",
+					{
+						height: $(".arrow-block__bolt").innerHeight() + "px", // Начальная высота
+					},
+					{
+						// height: "100%", // Конечная высота, включая padding
+						height: $arrowWrapper.innerHeight() + "px", // Конечная высота, включая padding
+						scrollTrigger: {
+							trigger: $arrowWrapper[0],
+							start: "top 80%", // Начало анимации
+							end: () => "+=" + $arrowWrapper.innerHeight() + "px", // Конец анимации
+							scrub: 0.2, // Скроллинг плавный
+						},
+					}
+				);
 				gsap.from(".shadow", {
 					scrollTrigger: {
 						trigger: $arrowBlock[0],
@@ -155,7 +155,7 @@ $(document).ready(function () {
 			console.error("Не удалось найти элементы для анимации.");
 		}
 
-		$(".service-hero__title, .section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text, .hero-left, #map, .content-block-left, .agent-list-item ").each(function () {
+		$(".service-hero__title, .section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text, .hero-left, #map, .content-block-left, .agent-list-item, .steps-item").each(function () {
 			let item = $(this);
 
 			gsap.fromTo(
