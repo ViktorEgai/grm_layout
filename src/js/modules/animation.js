@@ -238,6 +238,21 @@ $(document).ready(function () {
 				);
 			}
 		});
+
+		gsap.fromTo(
+			".circle",
+			{
+				opacity: 0,
+				scale: "0",
+			},
+			{
+				opacity: 1,
+				scale: "1",
+				scrollTrigger: ".circle",
+				duration: 1.2,
+			}
+		);
+
 		// Обновляем триггеры после загрузки
 		ScrollTrigger.refresh();
 	}, 200);

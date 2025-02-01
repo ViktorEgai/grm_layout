@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="desktop-bg-grey mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<div class="service-hero__subtitle">Обучение для риэлторов:</div>
+							<h1 class="service-hero__title">повышайте свою квалификацию и доверие клиентов</h1>
+							<div class="service-hero__text">Эксклюзивные программы обучения от Гильдии Риэлторов Москвы. Стройте фундамент, осваивайте новые навыки и становитесь лидером рынка недвижимости.</div>
+							<div class="service-hero-buttons align-items-center">
+								<a href="#" class="service-hero__btn btn">Выбрать курс</a>
+							</div>
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block service-hero-block--big">
+								<div class="service-hero-block__img">
+									<img src="img/obuchenie.png" alt="" class="desk" />
+									<img src="img/service-hero/1.png" alt="" class="mobile" />
+								</div>
+
+								<div class="service-hero-block__info service-hero-block__info--big">
+									<div class="service-hero-block__title">Зачем риэлторам повышать квалификацию?</div>
+									<p>70% клиентов выбирают риэлторов с подтвержденной квалификацией</p>
+									<p>Система сертификации повышает доверие и защищает вас от профессиональных рисков</p>
+									<p>Обучение у сильных экспертов дает вам уверенность в своих силах, актуальные знания и навыки</p>
+									<a href="#" class="service-hero-block__btn btn btn--white">Узнать больше о сертификации</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Обучение</a>⭢
+						<span>Пройти обучение в Гильдии риэлторов Москвы</span>
+					</div>
+				</div>
+				<!-- Члены комитета -->
+				<section class="comitet-members">
+					<div class="container">
+						<h2 class="comitet-members__title section-title">Члены комитета</h2>
+						<div class="comitet-members-slider">
+							@@for(var i = 0; i < 4; i++) {
+							<div class="comitet-members-slider__item">
+								<div class="comitet-members-item">
+									<div class="comitet-members-item-top">
+										<div class="comitet-members-item__top-info">
+											<div class="comitet-members-item__image">
+												<img src="img/thumb.png" alt="" />
+											</div>
+											<div class="comitet-members-item__info">
+												<div class="comitet-members-item__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+												<div class="comitet-members-item__text">Исполнительный директор НП «ГРМ»</div>
+											</div>
+										</div>
+										<div class="comitet-members-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam nihil quod amet dolorem perspiciatis eaque distinctio itaque animi magni.</div>
+										<div class="comitet-members-item__logo">
+											<img src="img/zip.png" alt="" />
+										</div>
+										<div class="social comitet-members-item__social d-lg-none">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+									<div class="comitet-members-item-bottom">
+										<a href="#" class="comitet-members-item__btn btn">Связаться с членов комитета</a>
+										<div class="social comitet-members-item__social d-none d-lg-flex">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							}
+						</div>
+					</div>
+				</section>
+
+				<!-- Программы -->
+				<section class="member-cards">
+					<div class="container">
+						<h2 class="member-cards__title section-title">Выберите программу, подходящую именно вам</h2>
+
+						<div class="member-cards-slider">
+							<div class="member-cards-slider__item">
+								<div class="member-cards-item">
+									<div class="member-cards-item__info">
+										<div class="member-cards-item__title">Вступительный взнос</div>
+										<div class="member-cards-item__text">Для участников НП «ГРМ», вступающих в Партнерство в течение 2025 года</div>
+										<div class="member-cards-item__descr">
+											<p>
+												<strong> Производится индивидуальный расчет </strong>
+												<br />
+												Ежегодного членского взноса по тарифу «Годовой»
+											</p>
+											<p>
+												<strong>На период</strong>
+												<br />
+												С даты вступления по 31 декабря 2025 года
+											</p>
+										</div>
+										<div class="member-cards-item__price">
+											<span class="member-cards-item__price-label">единорвременно</span>
+											<p class="member-cards-item__price-num">20 000 ₽</p>
+											<div class="member-cards-item__price-text">Для Действительных членов НП «ГРМ»</div>
+										</div>
+									</div>
+									<div class="member-cards-item__bottom"><a href="#" class="member-cards-item__btn btn">Оформить заявку на членство</a></div>
+								</div>
+							</div>
+
+							<div class="member-cards-slider__item">
+								<div class="member-cards-item">
+									<div class="member-cards-item__info">
+										<div class="member-cards-item__title">Вступительный взнос</div>
+										<div class="member-cards-item__text">Для участников НП «ГРМ», вступающих в Партнерство в течение 2025 года</div>
+										<div class="member-cards-item__descr">
+											<p>
+												<strong> Производится индивидуальный расчет </strong>
+												<br />
+												Ежегодного членского взноса по тарифу «Годовой»
+											</p>
+											<p>
+												<strong>На период</strong>
+												<br />
+												С даты вступления по 31 декабря 2025 года
+											</p>
+										</div>
+										<div class="member-cards-item__price">
+											<span class="member-cards-item__price-label">единорвременно</span>
+											<p class="member-cards-item__price-num">39 000 ₽</p>
+											<div class="member-cards-item__price-text">Для Действительных членов НП «ГРМ»</div>
+										</div>
+									</div>
+									<div class="member-cards-item__bottom"><a href="#" class="member-cards-item__btn btn">Оформить заявку на членство</a></div>
+								</div>
+							</div>
+							<div class="member-cards-slider__item">
+								<div class="member-cards-item">
+									<div class="member-cards-item__info">
+										<div class="member-cards-item__title">Вступительный взнос</div>
+										<div class="member-cards-item__text">Для участников НП «ГРМ», вступающих в Партнерство в течение 2025 года</div>
+										<div class="member-cards-item__descr">
+											<p>
+												<strong> Производится индивидуальный расчет </strong>
+												<br />
+												Ежегодного членского взноса по тарифу «Годовой»
+											</p>
+											<p>
+												<strong>На период</strong>
+												<br />
+												С даты вступления по 31 декабря 2025 года
+											</p>
+										</div>
+										<div class="member-cards-item__price">
+											<span class="member-cards-item__price-label">единорвременно</span>
+											<p class="member-cards-item__price-num">39 000 ₽</p>
+											<div class="member-cards-item__price-text">Для Действительных членов НП «ГРМ»</div>
+										</div>
+									</div>
+									<div class="member-cards-item__bottom"><a href="#" class="member-cards-item__btn btn">Оформить заявку на членство</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- блок с кругом -->
+				<section class="circle">
+					<div class="container">
+						<h2 class="circle__title">Почему нас выбирают?</h2>
+						<div class="circle-wrapper">
+							<div class="circle-items-list">
+								<div class="circle__item left" style="--x: 16%; --y: 102%">Актуальные знания: продажи, маркетинг, тренды, аналитика, законодательные изменения</div>
+								<div class="circle__item right" style="--x: 63%; --y: 102%">Подтверждение квалификации сертификатом / аттестатом и внесение в Единый реестр</div>
+								<div class="circle__item right" style="--x: 83%; --y: 76%">Обучение у экспертов с реальным опытом работы в сфере недвижимости</div>
+								<div class="circle__item left" style="--x: -3%; --y: 76%">Доступ к закрытым мероприятиям, вебинарам, форумам и кейсориуму</div>
+							</div>
+							<div class="circle-block"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Как проходит обучение -->
+				<section class="steps">
+					<div class="container">
+						<h2 class="steps__title section-title">Как проходит обучение?</h2>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="steps-wrapper steps-wrapper--full-line">
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Онлайн и офлайн форматы</div>
+										</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Индивидуальные и групповые занятия</div>
+										</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Сертификат после завершения курса</div>
+										</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Доступ к учебным материалам 24/7</div>
+										</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Поддержка наставника</div>
+										</div>
+									</div>
+									<div class="steps-item">
+										<div class="steps-item-top">
+											<div class="steps-item__title">Библиотека знаний, собранная наставниками</div>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="steps__btn btn">Узнать больше про обучение</a>
+							</div>
+							<div class="col-lg-6 d-none d-lg-block">
+								<div class="steps-image">
+									<img src="img/steps-image.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- reviews -->
+				<section class="reviews">
+					<div class="container">
+						<div class="reviews-wrapper">
+							<h2 class="reviews__title section-title">Что говорят наши выпускники? <span>Более 1000 специалистов уже получили квалификацию. Присоединяйтесь! </span></h2>
+							<div class="row">
+								@@for (var i = 0; i < 4; i++) {
+								<div class="col-md-3 col-6">
+									<div class="reviews-card">
+										<div class="reviews-card__title">ZIP REALTY</div>
+										<div class="reviews-card__text">Агентство недвижимости</div>
+										<div class="reviews-card__image">
+											<img src="img/indiv.png" alt="" />
+										</div>
+									</div>
+								</div>
+								}
+							</div>
+							<a href="#" class="reviews__btn btn">Смотреть все</a>
+						</div>
+					</div>
+				</section>
+				<!-- faq -->
+				<!-- dropdown -->
+				<div class="dropdown">
+					<div class="container">
+						<h2 class="dropdown__title section-title">Часто задаваемые вопросы</h2>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Как записаться на курс?</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Какие документы нужны для начала обучения?</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown-item">
+							<div class="dropdown-item__title">Могу ли я обучаться онлайн?</div>
+							<div class="dropdown-item__content content">
+								<ul>
+									<li>Доступ к базе кураторов банков с получением дополнительных преференций.</li>
+									<li>Чат-бот ГРМ с перечнем полезных сервисов: поиск недвижимости, аналитика рынка, новости и обновления.  </li>
+									<li>Скидки для ваших клиентов. Партнерская сеть ГРМ, включающая более 50 профильных и более 30 непрофильных партнеров.</li>
+									<li>Профильные чаты с кураторами банков: ЦИАН, Авито и других платформ для оперативного решения вопросов.  </li>
+									<li>Работа с застройщиками и страховыми компаниями напрямую через ГРМ.  </li>
+									<li>Перечень и памятки для оформления и ведения деятельности.  </li>
+								</ul>
+							</div>
+						</div>
+
+						<a href="#" class="dropdown__btn btn mx-auto">Задайте вопрос!</a>
+					</div>
+				</div>
+				<!-- letter -->
+				@@include('components/page-blocks/_letter.html', {'title' : "Начать обучение сейчас"})
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

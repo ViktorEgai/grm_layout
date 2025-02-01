@@ -1,0 +1,145 @@
+.circle
+  padding: 7.2rem 0
+  margin-bottom: 7.2rem
+  overflow: hidden
+  &__title
+    text-align: center
+    font-size: 5rem
+    font-weight: 600
+    margin-bottom: 10rem
+  &-wrapper
+    position: relative
+  &__item
+    position: absolute
+    bottom: var(--y)
+    left: var(--x)
+    font-size: 2.1rem
+    padding-bottom: 3rem
+    width: fit-content
+    max-width: 36rem
+    font-weight: 600
+    z-index: 2
+    &::before
+      content: ''
+      position: absolute
+      top: 100%
+      width: 31rem
+      height: 5.7rem
+      background-size: contain
+      background-repeat: no-repeat
+    &.left
+      text-align: right
+      &::before
+        right: -7rem
+        background-image: url(../img/bottom-line-left.svg)
+    &.right
+      &::before
+        left: -7rem
+        background-image: url(../img/bottom-line-right.svg)
+  &-block
+    position: relative
+    margin: 0 auto
+    height: 114rem
+    width: 114rem
+    margin-bottom: -65rem
+    overflow: hidden
+    margin-top: 26rem
+    z-index: -1
+    img
+      aspect-ratio: 1
+
+      &:nth-child(1)
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        width: 67.3rem
+        animation: rotate-2 20s infinite linear reverse
+      &:nth-child(2)
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        width: 83rem
+        animation: rotate-2 15s infinite linear
+      &:nth-child(3)
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        animation: rotate-2 30s infinite linear reverse
+        width: 98.5rem
+      &:nth-child(4)
+        position: absolute
+        width: 100%
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        animation: rotate-2 40s infinite linear
+
+@keyframes rotate-2
+  0%
+
+    transform: translate(-50%,-50%) rotate(0)
+    transform-origin: center
+
+  100%
+    transform: translate(-50%,-50%) rotate(360deg)
+    transform-origin: center
+@media screen and ( max-width: 992px )
+  .circle
+    padding: 20px 0
+    margin-bottom: 20px
+    &__title
+      font-size: 25px
+      margin-bottom: 37px
+    &__item
+      position: relative
+      bottom: auto
+      left: auto
+      font-size: 12px
+      padding-bottom: 7px
+      max-width: 100%
+      width: 100%
+      text-align: center !important
+      margin-bottom: 8px
+      &::before
+        content: ''
+        position: absolute
+        top: 100%
+        width: 385px
+        height: 14px
+        background-size: 100%
+        background-repeat: no-repeat
+      &:nth-child(odd)
+        &::before
+          background-image: url(../img/bottom-line-left-mob.svg)
+          right: auto
+          left: -15px
+      &:nth-child(even)
+        &::before
+          background-image: url(../img/bottom-line-right-mob.svg)
+          left: auto
+          right: -15px
+    &-block
+      height: 75rem
+      width: 75rem
+      margin-top: 10rem
+      margin-bottom: -45rem
+      z-index: -1
+      left: 50%
+      transform: translateX(-50% )
+      img
+        aspect-ratio: 1
+
+        &:nth-child(1)
+          width: 55%
+        &:nth-child(2)
+          width: 70%
+        &:nth-child(3)
+          width: 85%
+@media screen and ( max-width: 576px )
+  .circle-block
+    height: 100rem
+    width: 100rem
+    margin-bottom: -55rem

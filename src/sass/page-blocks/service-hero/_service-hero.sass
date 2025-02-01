@@ -77,6 +77,15 @@
       margin-bottom: 1em
     ul, ol
       padding-left: 1em
+    .service-hero-block__title
+      margin-bottom: 3.4rem
+      max-width: 100%
+    .service-hero-block__btn
+      max-width: 100%
+      margin-top: 7.3rem
+    &--big
+      max-width: 51rem
+      margin: 0
   &-sliders
     position: absolute
     bottom: 7.2rem
@@ -90,9 +99,13 @@
     position: absolute
     bottom: 0
     right: 0
-    max-width: 130rem
+    width: 118rem
+
     img
       width: 100%
+      min-height: 128rem
+    .mobile
+      display: none
   &-block__bg
     position: absolute
     overflow: hidden
@@ -176,6 +189,10 @@
 
         object-fit: cover
         object-position: 20%
+      .desk
+        display: none
+      .mobile
+        display: block
     &-block__bg
       height: 185px
       width: 374px
@@ -192,6 +209,14 @@
       font-size: 12px
       color: #fff
       max-width: 238px
-@media screen and ( max-width: 440px )
+      .service-hero-block__title
+        margin-bottom: 15px
+      .service-hero-block__btn
+        max-width: 100%
+        margin-top: 20px
+      &--big
+        max-width: 200px
+        margin: 0
+@media screen and ( max-width: 576px )
   .service-hero-block--big .service-hero-block__img img
     object-position: -60%
