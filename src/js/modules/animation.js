@@ -155,7 +155,7 @@ $(document).ready(function () {
 			console.error("Не удалось найти элементы для анимации.");
 		}
 
-		$(".service-hero__title, .section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text, .hero-left, #map, .content-block-left, .agent-list-item, .steps-item").each(function () {
+		$(".service-hero__title, .section-title, .dropdown-item, .stories, .about-slider, .top__title, .top__text, .hero-left, #map, .content-block-left, .agent-list-item, .steps-item, .fade-right").each(function () {
 			let item = $(this);
 
 			gsap.fromTo(
@@ -172,7 +172,7 @@ $(document).ready(function () {
 				}
 			);
 		});
-		$(".map-block-right, .map-block-contacts, .sidebar, .service-hero-block__img").each(function () {
+		$(".map-block-right, .map-block-contacts, .sidebar, .service-hero-block__img, .fade-left").each(function () {
 			let item = $(this);
 			gsap.fromTo(
 				item[0],

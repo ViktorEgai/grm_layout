@@ -32,7 +32,7 @@
 				</ul>
 			</nav>
 			<div class="d-flex align-items-center header-right">
-				<button class="header-search d-none">
+				<button class="header-search" data-src="#search-popup" data-fancybox>
 					<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							fill-rule="evenodd"
@@ -57,6 +57,55 @@
 			</div>
 		</div>
 	</div>
+	<nav class="header-mobile-nav">
+		<ul class="header-mobile-menu">
+			<li class="header-mobile-menu__item">
+				<a href="#" class="header-mobile-menu__link">Главная</a>
+			</li>
+			<li class="header-mobile-menu__item">
+				<a href="#" class="header-mobile-menu__link">Аттестация</a>
+				<ul class="header-mobile-submenu">
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">Партнеры</a>
+					</li>
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">База знаний</a>
+					</li>
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">Мероприятия</a>
+					</li>
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">Партнеры</a>
+					</li>
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">База знаний</a>
+					</li>
+					<li class="header-mobile-menu__item">
+						<a href="#" class="header-mobile-menu__link">Мероприятия</a>
+					</li>
+				</ul>
+			</li>
+			<li class="header-mobile-menu__item">
+				<a href="#" class="header-mobile-menu__link">Партнеры</a>
+			</li>
+			<li class="header-mobile-menu__item">
+				<a href="#" class="header-mobile-menu__link">База знаний</a>
+			</li>
+			<li class="header-mobile-menu__item">
+				<a href="#" class="header-mobile-menu__link">Мероприятия</a>
+			</li>
+		</ul>
+		<div class="header-mobile-nav-bottom">
+			<div class="header-mobile-nav-bottom__image">
+				<img src="img/gallery/1.png" alt="" />
+			</div>
+			<div class="header-mobile-nav-bottom__info">
+				<div class="header-mobile-nav-bottom__title">Lorem, ipsum</div>
+				<div class="header-mobile-nav-bottom__text">Lorem ipsum dolor sit amet consectetur.</div>
+				<a href="#" class="header-mobile-nav-bottom__link">Перейти</a>
+			</div>
+		</div>
+	</nav>
 </header>
 
 			<!-- main -->
@@ -78,54 +127,60 @@
 				</div>
 			</main>
 			<!-- popup -->
-			<div class="popup" id="buy-popup">
-	<div class="popup-title">Купить билет</div>
-	<div class="popup-text">Чтобы купить билет заполните необходимые поля</div>
-	<form class="form popup__form">
-		<div class="form__field d-flex">
-			<select name="" id="tarif" class="form__input">
-				<option value="ФОРУМ">ФОРУМ</option>
-				<option value="VIP">VIP</option>
-				<option value="ГАЛА-УЖИН">ГАЛА-УЖИН</option>
-			</select>
-			<div class="qty">
-				<span class="qty__minus qty__btn">-</span>
-				<input type="text" class="qty-field" readonly min="1" step="1" value="1" />
-				<span class="qty__plus qty__btn">+</span>
-			</div>
-		</div>
-		<div class="form__field">
-			<input type="text" class="form__input" required id="popup_username" name="username" placeholder="Введите ваше имя" />
-		</div>
-		<div class="form__field">
-			<input type="tel" class="form__input" required id="popup_phone" name="phone" placeholder="Введите номер телефона" />
-		</div>
-		<div class="form__field">
-			<input type="email" class="form__input" required id="popup_phone" name="phone" placeholder="Введите почту" />
-		</div>
-
-		<button class="btn form-btn" type="submit">Купить билет</button>
-	</form>
-</div>
-<div class="popup speaker-popup" id="speaker-popup">
-	<div class="speaker-popup__title">Подробнее о программе спикера</div>
-	<div class="speaker-popup-body">
-		<h2 class="speaker-popup__name">Имя Фамилия</h2>
-		<div class="speaker-popup__position">Должность</div>
-		<div class="speaker-popup-descr">
-			<div class="speaker-popup-descr__title">О чем лекция</div>
-			<div class="speaker-popup-descr__text">
-				<ul>
-					<li>Далеко-далеко за словесными горами в стране.</li>
-					<li>Далеко-далеко за словесными горами в стране.</li>
-					<li>Далеко-далеко за словесными горами в стране.</li>
-					<li>Далеко-далеко за словесными горами в стране.</li>
-					<li>Далеко-далеко за словесными горами в стране.</li>
-				</ul>
-			</div>
+			<div class="search-popup" id="search-popup">
+	<div class="search-popup-logo"><img src="img/logo-black.svg" alt="" /></div>
+	<div class="search-popup-form">
+		<form action="#" class="search-form">
+			<input type="search" name="" id="" class="input search-input" placeholder="Поиск по сайту" />
+			<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
+			<span class="search-form__clear"
+				><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L7 7M13 13L7 7M7 7L13 1L1 13" stroke="#504D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</span>
+		</form>
+		<div class="search-popup-result" id="search-result">
+			<a href="#" class="search-popup-result-item">
+				<img src="img/icons/search.svg" alt="" />
+				<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+			</a>
+			<a href="#" class="search-popup-result-item">
+				<img src="img/icons/search.svg" alt="" />
+				<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+			</a>
+			<a href="#" class="search-popup-result-item">
+				<img src="img/icons/search.svg" alt="" />
+				<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+			</a>
+			<a href="#" class="search-popup-result-item">
+				<img src="img/icons/search.svg" alt="" />
+				<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+			</a>
+			<a href="#" class="search-popup-result-item">
+				<img src="img/icons/search.svg" alt="" />
+				<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+			</a>
 		</div>
 	</div>
-	<a href="#buy-popup" data-fancybox class="speaker-popup__btn btn">Купить билет</a>
+</div>
+
+<div class="popup" id="popup">
+	<div class="popup-title">Остались вопросы?</div>
+	<div class="popup-text">Оставляйте заявку и мы свяжемся с вами!</div>
+
+	<form class="popup-form form">
+		<div class="form__field">
+			<input class="form__input" type="text" placeholder="Имя" required name="username" />
+		</div>
+		<div class="form__field">
+			<input class="form__input" type="email" placeholder="Почта" required name="email" />
+		</div>
+		<div class="form__field">
+			<input class="form__input" type="tel" placeholder="Телефон" required name="phone" />
+		</div>
+		<button class="form__btn btn">Отправить</button>
+		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+	</form>
 </div>
 
 			<!-- footer -->

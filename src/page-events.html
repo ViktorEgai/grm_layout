@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="desktop-bg-grey mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<h1 class="service-hero__title">Будьте в центре главных событий рынка недвижимости</h1>
+							<div class="service-hero__text">Мероприятия, которые объединяют лидеров рынка, экспертов и профессионалов. Участие в наших встречах, форумах и мастер-классах — это возможность укрепить деловые связи, узнать о новых тенденциях и улучшить свои навыки.</div>
+
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block service-hero-block--overflow">
+								<div class="service-hero-block__img">
+									<img src="img/service-hero/1.png" alt="" />
+								</div>
+
+								<div class="service-hero-block__info">
+									<div class="service-hero-block__title">Не пропусти интересные и полезные мероприятия, подпишись на уведомления и будь в курсе всех анонсов!</div>
+									<a href="#" class="service-hero-block__btn btn btn--white">Подписаться на уведомления</a>
+								</div>
+							</div>
+							<div class="service-hero-members">
+								<h2 class="comitet-members__title section-title">Члены комитета</h2>
+								<div class="comitet-members-slider">
+									@@for(var i = 0; i < 4; i++) {
+									<div class="comitet-members-slider__item">
+										<div class="comitet-members-item">
+											<div class="comitet-members-item-top">
+												<div class="comitet-members-item__top-info">
+													<div class="comitet-members-item__image">
+														<img src="img/thumb.png" alt="" />
+													</div>
+													<div class="comitet-members-item__info">
+														<div class="comitet-members-item__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+														<div class="comitet-members-item__text">Исполнительный директор НП «ГРМ»</div>
+													</div>
+												</div>
+												<div class="comitet-members-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam nihil quod amet dolorem perspiciatis eaque distinctio itaque animi magni.</div>
+												<div class="comitet-members-item__logo">
+													<img src="img/zip.png" alt="" />
+												</div>
+												<div class="social comitet-members-item__social d-lg-none">
+													<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+													<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+													<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+												</div>
+											</div>
+											<div class="comitet-members-item-bottom">
+												<a href="#" class="comitet-members-item__btn btn">Связаться с членов комитета</a>
+												<div class="social comitet-members-item__social d-none d-lg-flex">
+													<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+													<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+													<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+												</div>
+											</div>
+										</div>
+									</div>
+									}
+								</div>
+							</div>
+							<div class="service-hero-bottom">
+								<div class="service-hero-bottom__left">
+									<div class="service-hero-bottom__title">
+										Посмотрите, как проходили <br />
+										мероприятия!
+									</div>
+								</div>
+
+								<div class="service-hero-bottom__right"><a href="#" class="service-hero-bottom__btn btn btn--sec">Фотогалерея</a><a href="#" class="service-hero-bottom__btn btn btn--sec">Видеогалерея</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Мероприятия Гильдии Риэлторов Москвы</span>
+					</div>
+				</div>
+				<!-- Календарь -->
+				@@include('components/page-blocks/_calendar.html')
+				<!-- блок с кругом -->
+				<section class="circle">
+					<div class="container">
+						<div class="circle__logo"><img src="img/fresh-up.svg" alt="" /></div>
+						<div class="circle__text">Ежегодное мероприятие Гильдии риэлторов Москвы, которое собирает лучших руководителей, управленцев, экспертов в одном месте!</div>
+						<div class="circle-wrapper">
+							<div class="circle-items-clear">
+								<div class="circle__item left" style="--x: -3.5%; --y: 89%">
+									<div class="circle__item-text">Эксклюзивный контент</div>
+									<div class="circle__item-text-small">Только проверенные стратегии и кейсы от ведущих риэлторов и аналитиков</div>
+								</div>
+								<div class="circle__item center" style="--x: 50%; --y: 104.5%">
+									<div class="circle__item-text">Доступ к сообществу Гильдии</div>
+									<div class="circle__item-text-small">Быть участником форума — значит быть частью профессионального сообщества, где поддерживают и развивают лучших.</div>
+								</div>
+								<div class="circle__item right" style="--x: 77%; --y: 89%">
+									<div class="circle__item-text">Живое общение</div>
+									<div class="circle__item-text-small">Познакомьтесь с десятками коллег, инвесторов и потенциальных партнеров</div>
+								</div>
+							</div>
+							<div class="circle-block"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+						</div>
+					</div>
+				</section>
+				<div class="bottom-banner">
+					<div class="container">
+						<div class="bottom-banner-wrapper">
+							<div class="bottom-banner__left">
+								<div class="bottom-banner__title">Готовы прокачать экспертизу, получить полезные контакты и попасть на ведущее событие в сфере Московской недвижимости?</div>
+								<a href="#" class="bottom-banner__btn btn btn-dark">Как было в 2023 году</a>
+								<div class="bottom-banner-gallery">
+									<a href="img/gallery/1.png" class="bottom-banner-gallery__item" data-fancybox="bottom-gallery">
+										<img src="img/gallery/1.png" alt="" />
+									</a>
+									<a href="img/gallery/1.png" class="bottom-banner-gallery__item" data-fancybox="bottom-gallery">
+										<img src="img/gallery/1.png" alt="" />
+									</a>
+									<a href="img/gallery/1.png" class="bottom-banner-gallery__item" data-fancybox="bottom-gallery">
+										<img src="img/gallery/1.png" alt="" />
+									</a>
+									<a href="img/gallery/1.png" class="bottom-banner-gallery__item" data-fancybox="bottom-gallery">
+										<img src="img/gallery/1.png" alt="" />
+									</a>
+									<a href="img/gallery/1.png" class="bottom-banner-gallery__item" data-fancybox="bottom-gallery">
+										<img src="img/gallery/1.png" alt="" />
+									</a>
+									<a href="#" class="bottom-banner-gallery__item">
+										<img src="img/icons/plus-white.png" alt="" />
+									</a>
+								</div>
+							</div>
+							<div class="bottom-banner__right">
+								<div class="bottom-banner-card">
+									<div class="bottom-banner-card-top">
+										<div class="bottom-banner-card__title">Lorem ipsum</div>
+										<div class="bottom-banner-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.</div>
+										<div class="bottom-banner-card__descr">
+											<p><strong>Локация: </strong><br />Уточняется</p>
+											<p><strong>Дата следующего форума </strong><br />Уточняется</p>
+										</div>
+									</div>
+									<div class="bottom-banner-card-bottom">
+										<a href="#" class="bottom-banner-card__btn btn">Оформить заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

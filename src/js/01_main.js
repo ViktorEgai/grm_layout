@@ -51,4 +51,20 @@ jQuery(document).ready(function ($) {
 	$(".dropdown-item__title").on("click", function () {
 		$(this).next().slideToggle();
 	});
+
+	$(".header-mobile-submenu").prev().append(`<span class="arrow"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.3333 1L5.66667 5.66667L1 1" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>`);
+	$(".header-menu-btn").on("click", function () {
+		$(".header-mobile-nav").slideToggle();
+		$(this).toggleClass("active");
+		$("body").toggleClass("overflow");
+	});
+	$(".header-mobile-menu__item .arrow").on("click", function (e) {
+		e.preventDefault();
+		$(this).closest(".header-mobile-menu__item").toggleClass("active");
+		$(this).parent().next().slideToggle();
+		$(this).toggleClass("active");
+	});
 });

@@ -1,0 +1,83 @@
+.header-mobile-nav
+  background-color: #fff
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  height: calc(100vh - 50px)
+  overflow: auto
+  z-index: 50
+  display: none
+  padding: 20px 10px
+.header-mobile-menu
+  font-size: 21px
+  display: flex
+  flex-direction: column
+  &__item
+    padding: 10px 20px
+    &.active
+      background-color: rgba(#00A48A,.1)
+      border-radius: 12px
+  &__link
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .arrow
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s
+      svg
+        width: 10px
+        height: 5px
+      path
+        stroke: #000
+      &.active
+        rotate: 180deg
+.header-mobile-submenu
+  font-size: 18px
+  display: none
+  column-count: 2
+  margin-top: 30px
+  gap: 30px
+  .header-mobile-menu__item
+    padding: 0
+    margin-bottom: 17px
+.header-mobile-nav-bottom
+  display: flex
+  align-items: center
+  gap: 10px
+  margin-top: 56px
+  &__image
+    width: 148px
+    height: 148px
+    border-radius: 10px
+    overflow: hidden
+    img
+      width: 100%
+      aspect-ratio: 1
+      object-fit: cover
+  &__info
+  &__title
+    font-size: 21px
+    font-weight: 600
+    margin-bottom: 9px
+  &__text
+    font-size: 18px
+    margin-bottom: 17px
+  &__link
+    font-weight: 600
+    color: $accent-color
+    font-size: 21px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: -5px
+      left: 0
+      border-radius: 9px
+      width: 44px
+      height: 3px
+      background-color: $accent-color

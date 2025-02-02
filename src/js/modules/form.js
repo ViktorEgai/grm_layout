@@ -26,35 +26,37 @@ $(document).ready(function () {
 			$("#file-title").text("Прикрепить документы");
 		}
 	});
-	$("form").validate({
-		rules: {
-			username: {
-				required: true,
-				minlength: 3,
+	$(".form").each(function () {
+		$(this).validate({
+			rules: {
+				username: {
+					required: true,
+					minlength: 3,
+				},
+				email: {
+					required: true,
+					email: true,
+				},
+				phone: {
+					required: true,
+					minlength: 15,
+				},
 			},
-			email: {
-				required: true,
-				email: true,
-			},
-			phone: {
-				required: true,
-				minlength: 15,
-			},
-		},
-		// submitHandler: function (form) {
-		// 	$.ajax({
-		// 		url: "submitHandler.php", // Ссылка на серверный обработчик
-		// 		type: "POST",
-		// 		data: $(form).serialize(),
-		// 		success: function (response) {
-		// 			swal;
-		// 		},
-		// 		error: function () {
-		// 			alert("Произошла ошибка при отправке данных.");
-		// 		},
-		// 	});
-		// 	return false; // Останавливаем стандартное поведение формы
-		// },
+			// submitHandler: function (form) {
+			// 	$.ajax({
+			// 		url: "submitHandler.php", // Ссылка на серверный обработчик
+			// 		type: "POST",
+			// 		data: $(form).serialize(),
+			// 		success: function (response) {
+			// 			swal;
+			// 		},
+			// 		error: function () {
+			// 			alert("Произошла ошибка при отправке данных.");
+			// 		},
+			// 	});
+			// 	return false; // Останавливаем стандартное поведение формы
+			// },
+		});
 	});
 
 	const customSwal = Swal.mixin({

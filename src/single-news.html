@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Блог></a>⭢
+						<span>Lorem ipsum dolor sit amet consectetur.</span>
+					</div>
+				</div>
+				<div class="single-news-top">
+					<div class="container">
+						<div class="single-news-top__image">
+							<img src="img/gallery/1.png" alt="" />
+						</div>
+						<div class="single-news-top__info">
+							<h1 class="single-news-top__title">Lorem ipsum dolor, consectetuer adipiscing elit.</h1>
+							<div class="single-news-top-person">
+								<div class="single-news-top-person__image"><img src="img/thumb.png" alt="" /></div>
+								<div class="single-news-top-person__info">
+									<div class="single-news-top-person__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+									<div class="single-news-top-person__descr">
+										<p>09.12</p>
+										<p><img src="img/icons/eye.svg" data-svg alt="" />123</p>
+										<p><img src="img/icons/clock.svg" data-svg alt="" />5 мин</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- content-block -->
+				<div class="content-block">
+					<div class="container">
+						<div class="content-block-wrapper">
+							<div class="content-block-left">
+								<div class="content-block__inner">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+									<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+
+									<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+									<blockquote>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Sociis natoque penatibus et magnis dis parturient montes.</p>
+									</blockquote>
+									<img src="img/gallery/1.png" alt="" />
+                  <p>
+                    orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+  <p>
+                  </p>
+  
+  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+</p>
+
+<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+
+<p>
+  Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+  Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+</p>
+
+<p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut</p>
+								</div>
+							</div>
+							<aside class="sidebar sidebar--static ">
+                <form action="#" class="search-form  ">
+									<input type="search" name="" id="" class="input search-input" placeholder="Поиск по статьям" />
+									<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
+								</form>
+                <div class="sidebar-news">
+                  	@@for (var i = 0; i < 4; i++) {
+                  <a href="#" class="sidebar-news-item">
+                    <div class="sidebar-news-item__img"><img src="img/front-page/news.jpeg" alt=""></div>
+                    <div class="sidebar-news-item__info">
+                      <div class="sidebar-news-item__info-top ">	<p>09.12</p>
+										<p><img src="img/icons/eye.svg" data-svg alt="" />123</p>
+										<p><img src="img/icons/clock.svg" data-svg alt="" />5 мин</p></div>
+                      <div class="sidebar-news-item__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+
+                    </div>
+                  </a>
+                }
+                </div>
+								<div class="sidebar-banner sidebar-banner--wide">
+									<div class="sidebar-banner__inner">
+										<div class="sidebar-banner__icon">
+											<img src="img/icons/email.svg" alt="" data-svg />
+										</div>
+										<div class="sidebar-banner__green-text">
+											Присоединяйтесь к нашей <br />
+											рассылке
+										</div>
+										<div class="sidebar-banner__black-text">для получения последних&nbsp;обновлений!</div>
+										<form action="#" class="sidebar-form">
+											<label class="sidebar-form__field">
+												<input type="tel" name="phone" placeholder="Телефон" class="sidebar-form__input" />
+											</label>
+											<button class="sidebar-form__btn btn">Отправить</button>
+											<div class="sidebar-form-acceptance">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#"> политикой конфиденциальности</a></div>
+										</form>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+        <!-- Новости -->
+      <section class="news  ">
+        <div class="container">
+            <div class="news-top">
+              <h2 class="news__title section-title">Новости</h2>
+               <a href="#" class="news__btn btn">Все новости</a>
+            </div>
+            <div class="news-slider">
+              <div class="news-slider__item">
+                <div class="news-item">
+                  <a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+                  <div class="news-item__content">
+                    <div class="news-item-info">
+                      <p>09.12</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "eye" }) 123</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "clock" }) 5 мин</p>
+                    </div>
+                    <a href="#" class="news-item__title">Оформлено ДДУ</a>
+                    <div class="news-item__excerpt">
+                      <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+                    </div>
+                    <a href="#" class="news-item__link link">Читать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <div class="news-item">
+                  <a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+                  <div class="news-item__content">
+                    <span class="news-item__label">NEW</span>
+                    <div class="news-item-info">
+                      <p>09.12</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "eye" }) 123</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "clock" }) 5 мин</p>
+                    </div>
+                    <a href="#" class="news-item__title">Оформлено ДДУ</a>
+                    <div class="news-item__excerpt">
+                      <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+                    </div>
+                    <a href="#" class="news-item__link link">Читать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="news-slider__item">
+                <div class="news-item">
+                  <a href="#" class="news-item__image"> <img src="img/front-page/news.jpeg" alt="" /> </a>
+                  <div class="news-item__content">
+                    <div class="news-item-info">
+                      <p>09.12</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "eye" }) 123</p>
+                      <p>@@include('components/bem-blocks/_sprite.html', { "id": "clock" }) 5 мин</p>
+                    </div>
+                    <a href="#" class="news-item__title">Оформлено ДДУ</a>
+                    <div class="news-item__excerpt">
+                      <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
+                    </div>
+                    <a href="#" class="news-item__link link">Читать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+        </div>
+      </section>
+
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

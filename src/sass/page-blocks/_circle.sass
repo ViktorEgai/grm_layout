@@ -7,6 +7,18 @@
     font-size: 5rem
     font-weight: 600
     margin-bottom: 10rem
+  &__logo
+    margin: 0 auto 2.4rem
+    width: 26.6rem
+    img
+      width: 100%
+  &__text
+    text-align: center
+    font-size: 3.5rem
+    font-weight: 600
+    max-width: 140rem
+    margin: 0 auto 9rem
+    color: #1c3c41
   &-wrapper
     position: relative
   &__item
@@ -36,6 +48,23 @@
       &::before
         left: -7rem
         background-image: url(../img/bottom-line-right.svg)
+    &.center
+      text-align: center
+      max-width: 76rem !important
+      transform: translateX(-50%)
+      &::before
+        left: 50%
+        transform: translateX(-50%)
+        background-image: url(../img/bottom-line-center.svg)
+        background-position: center
+  &-items-clear
+    .circle__item
+      max-width: 47.2rem
+      width: 100%
+  &__item-text-small
+    font-weight: 400
+    color: rgba(#000,.7)
+    margin-top: 0.7rem
   &__item-num
     color: $light-green
     font-size: 3.5rem
@@ -130,7 +159,7 @@
     &-block
       height: 75rem
       width: 75rem
-      margin-top: 10rem
+      margin-top: 6rem
       margin-bottom: -45rem
       z-index: -1
       left: 50%
@@ -160,6 +189,21 @@
           bm: 10px
           .big
             font-size: 35px
+    &-items-clear
+      .circle__item
+        margin: 0 0 20px
+        padding: 0
+        max-width: 100%
+        transform: none
+        &::before
+          display: none
+    &__logo
+      margin: 0 auto 12px
+      width: 135px
+    &__text
+      font-size: 16px
+      max-width: 100%
+      margin: 0 auto 26px
 @media screen and ( max-width: 576px )
   .circle-block
     height: 100rem
