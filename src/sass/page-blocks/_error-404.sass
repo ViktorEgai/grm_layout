@@ -1,0 +1,48 @@
+.error-404
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-left
+    flex-grow: 1
+  &__title
+    font-size: 7rem
+    font-weight: 600
+    margin-bottom: 3rem
+  &__text
+    font-size: 2.1rem
+    color: rgba(#000,.7)
+    margin-bottom: 7rem
+  &__btn
+    max-width: 31rem
+  &-right
+    flex-shrink: 0
+    img
+      width: 86rem
+@media screen and ( max-width: 992px )
+
+  .error-404
+    padding-top: 60px
+    padding-bottom: 30px
+    &-wrapper
+      flex-direction: column
+    &-left
+      text-align: center
+    &__title
+      font-size: 35px
+      margin-bottom: 12px
+    &__text
+      font-size: 12px
+      margin-bottom: 20px
+    &__btn
+      max-width: 180px
+      margin: 0 auto
+    &-right
+      flex-shrink: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      img
+        width: 120%
+        max-width: none

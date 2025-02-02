@@ -12,6 +12,10 @@
     transition: .3s
     color: $light-green
     transition: .3s
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
     &.active
       background-color: $light-green
       color: #fff
@@ -44,6 +48,22 @@
       border-radius: 4rem
       border: 1px solid rgba(#000,.2)
       text-transform: uppercase
+  &-block
+    padding: 9.2rem 0
+    .members-nav
+      flex-wrap: wrap
+    .members-nav__item
+      flex-grow: 1
+      min-width: 31rem
+      max-width: 42rem
+      height: 8rem
+
+    .members-grid-item
+      padding-top: 4.8rem
+      padding-bottom: 4.8rem
+  &__btn
+    max-width: 42rem
+    margin: 7.8rem auto 0
 @media  ( hover: hover  )
   .members-nav__item:hover
     background-color: $light-green
@@ -64,6 +84,8 @@
       font-weight: 700
       padding: 12px 22px
       border-radius: 10px
+
+      border-width: 2px
     &-content
       margin: 12px 0
     &-grid
@@ -80,3 +102,16 @@
         border-radius: 24px
         bottom: 6px
         left: 6px
+  .members-block
+    padding: 20px 0
+    .members-nav
+      flex-wrap: nowrap
+    .members-nav__item
+      max-width: none
+      display: block
+      min-width: 0
+      height: auto
+      flex-shrink: 0
+@media screen and ( max-width: 576px )
+  .members-block .members-grid
+    grid-template-columns: repeat(2,1fr)

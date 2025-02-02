@@ -140,6 +140,24 @@ $(document).ready(function () {
 			},
 		],
 	});
+	$(".tarif-slider").slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		arrows: false,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
+	});
 	$(".service-hero-slider").each(function (index) {
 		let $args = {
 			dots: false,
@@ -160,5 +178,19 @@ $(document).ready(function () {
 		}
 
 		$(this).slick($args);
+	});
+
+	$(".service-hero-partners-slider").slick({
+		dots: false,
+		infinite: true,
+		speed: 5000,
+		autoplaySpeed: 10,
+		autoplay: true,
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true,
+		cssEase: "linear",
 	});
 });

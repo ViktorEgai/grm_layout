@@ -1,0 +1,143 @@
+.tarif
+  padding: 9.2rem 0
+  &-slider
+    .slick-list
+      margin: 0 -1rem
+    .slick-track
+      display: flex !important
+    .slick-dots
+      display: none
+  &-slider__item
+    margin: 0 1rem
+    height: auto !important
+    display: flex !important
+    flex-direction: column
+  &__title
+    margin-bottom: 6.8rem
+  &-item
+    flex-grow: 1
+    background-image: url(../img/tarif-bg.svg)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    flex-direction: column
+    position: relative
+    overflow: hidden
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: -10rem
+      right: -23rem
+      z-index: -1
+      width: 61.8rem
+      height: 60rem
+      background-image: url(../img/circle.svg)
+      background-size: contain
+      background-repeat: no-repeat
+    &--small
+      background-image: url(../img/tarif-bg-small.svg)
+
+  &-item-top
+    padding: 4.6rem 4rem 5rem
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+  &-item__title
+    font-size: 3.5rem
+    font-weight: 600
+    margin-bottom: 5.8rem
+  &-item-list
+    margin-bottom: 6.5rem
+    padding-left: 3rem
+    font-weight: 600
+    font-size: 2.1rem
+    color: rgba(#000,.7)
+    li
+      margin-bottom: 1em
+    span
+      color: $light-green
+      font-size: 1.2rem
+      font-weight: 400
+      display: block
+  &-item__price
+    margin-top: auto
+    font-size: 8rem
+    font-weight: 700
+    position: relative
+    span
+      position: absolute
+      font-size: 2.1rem
+      background-color: #1cab98
+      color: #fff
+      border-radius: 2.9rem
+      padding: .9rem 1.5rem
+      line-height: 1
+      top: -1.2rem
+      left: -1rem
+      rotate: -3.75deg
+      font-weight: 400
+  &-item-bottom
+    padding: 3.3rem 0 3.5rem
+    position: relative
+    &::before
+      content: " "
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translatex(-50%)
+      border-top: .3rem dashed #E4E4E4
+      width: 90%
+
+  &-item__btn
+    max-width: 53rem
+    margin: 0 auto 0
+@media screen and ( max-width: 992px )
+  .tarif
+    padding: 20px 0
+    &-slider
+      .slick-list
+        margin: 0 -5px
+      .slick-dots
+        display: flex
+        margin-top: 20px
+    &-slider__item
+      margin: 0 5px
+    &__title
+      margin-bottom: 23px
+    &-item
+      &::before
+        top: -40px
+        right: -100px
+        width: 265px
+        height: 258px
+      &--small
+        background-image: url(../img/tarif-bg.svg)
+
+    &-item-top
+      padding: 20px 16px
+    &-item__title
+      font-size: 16px
+      margin-bottom: 23px
+    &-item-list
+      margin-bottom: 40px
+      padding-left: 15px
+      font-size: 12px
+      span
+        font-size: 10px
+    &-item__price
+      font-size: 26px
+      span
+        font-size: 9px
+        border-radius: 12px
+        padding: 4px 6px
+        top: -10px
+        left: -5px
+    &-item-bottom
+      padding: 14px 0
+      &::before
+        border-top: 2px dashed #E4E4E4
+
+    &-item__btn
+      max-width: 230px

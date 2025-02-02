@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body class="desktop-bg-grey mobile-bg-grey">
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main">
+				<!-- service-hero -->
+				<section class="service-hero">
+					<div class="container">
+						<div class="service-hero-wrapper">
+							<div class="service-hero__subtitle">Станьте партнером ГРМ</div>
+							<h1 class="service-hero__title">расширьте возможности вашего бизнеса!</h1>
+							<div class="service-hero__text">Сотрудничество с Гильдией Риэлторов Москвы — это партнерство, которое гарантирует вашему бизнесу прямой доступ к ключевым игрокам рынка недвижимости. Возможность продвигать свои услуги через проверенные каналы, выстраивать доверительные отношения с профессионалами и быть на шаг впереди остальных.</div>
+							<div class="service-hero-buttons align-items-center">
+								<a href="#" class="service-hero__btn btn">Получить консультацию</a>
+							</div>
+							<div class="service-hero-randomize">
+								<div class="service-hero-randomize__title">
+									Более 2000 пользоватлей <br />
+									доверились нам
+								</div>
+								<div class="service-hero-randomize-items">
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/1.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/2.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/3.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/4.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/logos/5.png" alt="" /></a>
+									</div>
+									<div class="service-hero-randomize-item">
+										<a href="#" class="service-hero-randomize__link"><img src="img/icons/plus.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-block">
+								<div class="service-hero-block__img">
+									<img src="img/partners.png" alt="" class="desk" />
+									<img src="img/service-hero/1.png" alt="" class="mobile" />
+								</div>
+
+								<div class="service-hero-block-nums">
+									<div class="service-hero-block-num">
+										<span class="service-hero-block-num__value"> 100+</span>
+										<span class="service-hero-block-num__text">Страховые компании</span>
+									</div>
+									<div class="service-hero-block-num">
+										<span class="service-hero-block-num__value">100+</span>
+										<span class="service-hero-block-num__text">Банки</span>
+									</div>
+									<div class="service-hero-block-num">
+										<span class="service-hero-block-num__value">100+</span>
+										<span class="service-hero-block-num__text">Порталы, застройщики</span>
+									</div>
+									<div class="service-hero-block-num">
+										<span class="service-hero-block-num__value">100+</span>
+										<span class="service-hero-block-num__text">Государственные и общественные организации</span>
+									</div>
+									<div class="service-hero-block-num">
+										<span class="service-hero-block-num__value">100+</span>
+										<span class="service-hero-block-num__text">Еще какая-то группа</span>
+									</div>
+								</div>
+							</div>
+							<div class="service-hero-partners">
+								<h2 class="service-hero-partners__title section-title">Наши партнеры</h2>
+								<div class="service-hero-partners-slider">
+									@@for(var i = 0; i < 10; i++) {
+									<div class="service-hero-partners-slider__item">
+										<a href="#" class="service-hero-partners-slider__link"
+											><img src="img/zip.png" />
+											<span> Zip realty </span>
+										</a>
+									</div>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Обучение</a>⭢
+						<span>Пройти обучение в Гильдии риэлторов Москвы</span>
+					</div>
+				</div>
+				<!-- Члены комитета -->
+				<section class="comitet-members">
+					<div class="container">
+						<h2 class="comitet-members__title section-title">Члены комитета</h2>
+						<div class="comitet-members-slider">
+							@@for(var i = 0; i < 4; i++) {
+							<div class="comitet-members-slider__item">
+								<div class="comitet-members-item">
+									<div class="comitet-members-item-top">
+										<div class="comitet-members-item__top-info">
+											<div class="comitet-members-item__image">
+												<img src="img/thumb.png" alt="" />
+											</div>
+											<div class="comitet-members-item__info">
+												<div class="comitet-members-item__title">ФЕДУЛАЕВА Юлия Николаевна</div>
+												<div class="comitet-members-item__text">Исполнительный директор НП «ГРМ»</div>
+											</div>
+										</div>
+										<div class="comitet-members-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ullam nihil quod amet dolorem perspiciatis eaque distinctio itaque animi magni.</div>
+										<div class="comitet-members-item__logo">
+											<img src="img/zip.png" alt="" />
+										</div>
+										<div class="social comitet-members-item__social d-lg-none">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+									<div class="comitet-members-item-bottom">
+										<a href="#" class="comitet-members-item__btn btn">Связаться с членов комитета</a>
+										<div class="social comitet-members-item__social d-none d-lg-flex">
+											<a href="#" class="social-item"><img src="img/icons/tg.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/vk.svg" alt="" data-svg /> </a>
+											<a href="#" class="social-item"><img src="img/icons/wa.svg" alt="" data-svg /> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							}
+						</div>
+					</div>
+				</section>
+
+				<!-- блок с кругом -->
+				<section class="circle">
+					<div class="container">
+						<h2 class="circle__title">Партнерство с Гильдией риэлторов Москвы – это:</h2>
+						<div class="circle-wrapper">
+							<div class="circle-items-grid">
+								<div class="circle__item right" style="--x: 57%; --y: 104%">
+									<div class="circle__item-num"><span class="big">ТОП 1</span></div>
+									<div class="circle__item-text">В выдаче по SEO</div>
+								</div>
+								<div class="circle__item left" style="--x: 21%; --y: 102%">
+									<div class="circle__item-num">284</div>
+									<div class="circle__item-text">Агентств недвижимости</div>
+								</div>
+								<div class="circle__item right" style="--x: 72%; --y: 96%">
+									<div class="circle__item-num">3446</div>
+									<div class="circle__item-text">Индивидуальных риэлторов</div>
+								</div>
+
+								<div class="circle__item left" style="--x: -2%; --y: 79%">
+									<div class="circle__item-num"><span class="big">15-35</span></div>
+									<div class="circle__item-text">Владельцев крупных агентств посещают закрытые встречи</div>
+								</div>
+								<div class="circle__item right" style="--x: 83%; --y: 75%">
+									<div class="circle__item-num">от <span class="big">2000</span></div>
+									<div class="circle__item-text">Человек на каждом мероприятии</div>
+								</div>
+								<div class="circle__item left" style="--x: 4%; --y: 58%">
+									<div class="circle__item-num">>3500</div>
+									<div class="circle__item-text">
+										Партнерских <br />
+										продаж в месяц
+									</div>
+								</div>
+								<div class="circle__item right" style="--x: 86%; --y: 58%">
+									<div class="circle__item-num">>100000</div>
+									<div class="circle__item-text">Клиентов по партнерской сети</div>
+								</div>
+							</div>
+							<div class="circle-block"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+						</div>
+					</div>
+				</section>
+
+				<div class="members members-block">
+					<div class="container">
+						<div class="members-nav members-nav-top">
+							<a href="#" class="members-nav__item">Банки</a>
+							<a href="#" class="members-nav__item">Страховые компании</a>
+							<a href="#" class="members-nav__item">Государственные и общественные организации</a>
+							<a href="#" class="members-nav__item">Порталы, застройщики</a>
+							<a href="#" class="members-nav__item">Еще какая-то группа</a>
+						</div>
+						@@for (var i = 0; i < 2; i++) {
+						<div class="members-content">
+							<div class="members-grid">
+								@@for (var i = 0; i < 12; i++) {
+								<a href="#" class="members-grid-item">
+									<img src="img/zip.png" alt="" />
+								</a>
+								}
+							</div>
+						</div>
+						}
+						<a href="#" class="members__btn btn">Смотреть всех</a>
+					</div>
+				</div>
+				<!-- тарифы -->
+				<section class="tarif">
+					<div class="container">
+						<div class="tarif-slider">
+							<div class="tarif-slider__item">
+								<h2 class="tarif__title section-title">Тарифы и условия</h2>
+								<div class="tarif-item tarif-item--small">
+									<div class="tarif-item-top">
+										<div class="tarif-item__title">Тариф «Участник»</div>
+										<ul class="tarif-item-list">
+											<li>Размещение на сайте ГРМ в блоке «Партнеры»</li>
+
+											<li>Две публикации в квартале в соцсетях, блогах и чатах ГРМ</li>
+
+											<li>Размещение в телеграм-боте и базе данных как партнера</li>
+
+											<li>
+												Проведение вебинара или прямого эфира
+												<span>(1 раз в полугодие)</span>
+											</li>
+											<li>Участие в открытых мероприятиях ГРМ</li>
+
+											<li>Доступ к партнерам сообщества для обмена опытом и рекомендациями</li>
+										</ul>
+
+										<div class="tarif-item__price">
+											50 000 ₽
+											<span>год</span>
+										</div>
+									</div>
+									<div class="tarif-item-bottom">
+										<a href="#" class="tarif-item__btn btn">Выбрать тариф</a>
+									</div>
+								</div>
+							</div>
+							<div class="tarif-slider__item">
+								<div class="tarif-item">
+									<div class="tarif-item-top">
+										<div class="tarif-item__title">Тариф «Эксперт»</div>
+										<ul class="tarif-item-list">
+											<li>
+												Размещение на сайте ГРМ в блоке «Партнеры»
+												<span>(в главном пуле на 1 квартале)</span>
+											</li>
+
+											<li>Четыре публикации в квартале в соцсетях, блогах и чатах ГРМ</li>
+
+											<li>Размещение в телеграм-боте и базе данных как партнера</li>
+
+											<li>
+												Проведение вебинара или прямого эфира
+												<span> (2 раза в полугодие)</span>
+											</li>
+
+											<li>Участие в открытых мероприятиях ГРМ</li>
+
+											<li>Доступ к партнерам сообщества</li>
+
+											<li>Участие в закрытых мероприятиях для нативного продвижения компании</li>
+
+											<li>
+												Посты в чатах руководителей ГРМ с рекомендациями от мужчин
+												<span> (1 раз в полугодие)</span>
+											</li>
+										</ul>
+
+										<div class="tarif-item__price">
+											100 000 ₽
+											<span>год</span>
+										</div>
+									</div>
+									<div class="tarif-item-bottom">
+										<a href="#" class="tarif-item__btn btn">Выбрать тариф</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- reviews -->
+				<section class="reviews">
+					<div class="container">
+						<div class="reviews-wrapper">
+							<h2 class="reviews__title section-title">Что говорят наши выпускники? <span>Более 1000 специалистов уже получили квалификацию. Присоединяйтесь! </span></h2>
+							<div class="row">
+								@@for (var i = 0; i < 4; i++) {
+								<div class="col-md-3 col-6">
+									<div class="reviews-card">
+										<div class="reviews-card__title">ZIP REALTY</div>
+										<div class="reviews-card__text">Агентство недвижимости</div>
+										<div class="reviews-card__image">
+											<img src="img/indiv.png" alt="" />
+										</div>
+									</div>
+								</div>
+								}
+							</div>
+							<a href="#" class="reviews__btn btn">Смотреть все</a>
+						</div>
+					</div>
+				</section>
+				<!-- контакты -->
+				<div class="map-block">
+					<div id="map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3d8f3a5b7b6852707afd07204edce94017d8f7490bf53f4e930830cceaad5b3&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+					<div class="map-block-right">
+						<form action="" class="form">
+							<div class="form__top">
+								<div class="form__title">Остались вопросы?</div>
+								<div class="form__subtitle">Оставляйте заявку и мы свяжемся с вами!</div>
+							</div>
+							<label class="form__field"><input type="text" class="form__input" placeholder="Имя" /></label>
+							<label class="form__field"><input type="email" class="form__input" placeholder="Почта" /></label>
+							<label class="form__field"><input type="tel" class="form__input" placeholder="Телефон" /></label>
+							<button class="form__btn btn">Отправить</button>
+							<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+						</form>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

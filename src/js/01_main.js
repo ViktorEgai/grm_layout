@@ -9,6 +9,7 @@ jQuery(document).ready(function ($) {
 		$(".info-item-services").after($(".about"));
 		$(".single-vakancy-card").after($(".agent"));
 		$(".calendar-wrapper").after($(".calendar__btn"));
+		$(".tarif-slider").before($(".tarif__title"));
 		// toggle widget
 		$(".widget__logo").on("click", function (e) {
 			e.preventDefault();

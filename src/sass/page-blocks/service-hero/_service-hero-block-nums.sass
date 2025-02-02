@@ -1,0 +1,31 @@
+.service-hero-block-nums
+  color: #fff
+  display: grid
+  grid-template-columns: repeat(2,1fr)
+  max-width: 36.5rem
+  gap: 4.3rem 2rem
+.service-hero-block-num
+  display: flex
+  flex-direction: column
+  font-weight: 600
+
+  &__value
+    font-size: 3.5rem
+    margin-bottom: 1rem
+  &__text
+    font-size: 1.8rem
+@media screen and ( max-width: 992px )
+  .service-hero-block-nums
+    max-width: 170px
+    gap: 10px 15px
+  .service-hero-block-num
+    font-weight: 600
+
+    &__value
+      font-size: 12px
+      margin-bottom: 8px
+    &__text
+      font-size: 10px
+    &:nth-child(4)
+      order: 1
+      grid-column: 1/3

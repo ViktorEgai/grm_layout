@@ -36,6 +36,12 @@
       &::before
         left: -7rem
         background-image: url(../img/bottom-line-right.svg)
+  &__item-num
+    color: $light-green
+    font-size: 3.5rem
+    margin-bottom: 0.8rem
+    .big
+      font-size: 8rem
   &-block
     position: relative
     margin: 0 auto
@@ -138,6 +144,22 @@
           width: 70%
         &:nth-child(3)
           width: 85%
+    &-items-grid
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+      gap: 24px
+      .circle__item:first-child
+        grid-column: 1/3
+      .circle__item
+        margin: 0
+        padding: 0
+        &::before
+          display: none
+        &-num
+          font-size: 35px
+          bm: 10px
+          .big
+            font-size: 35px
 @media screen and ( max-width: 576px )
   .circle-block
     height: 100rem

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<!-- breadcrumbs -->
+				<div class="error-404">
+					<div class="container">
+						<div class="error-404-wrapper">
+							<div class="error-404-left">
+								<h1 class="error-404__title">Произошла ошибка</h1>
+								<div class="error-404__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+								<a href="/" class="error-404__btn btn">На главную</a>
+							</div>
+							<div class="error-404-right">
+								<img src="img/404.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
