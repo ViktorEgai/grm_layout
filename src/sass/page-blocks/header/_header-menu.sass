@@ -8,7 +8,10 @@
     margin: 0 -2.5rem
   &-menu__item
     padding: 0 2.5rem
-
+    & ul
+      padding-top: 13rem
+      ul
+        padding-left: 7rem
   &-menu__link
     position: relative
     transition: .3s
@@ -32,7 +35,7 @@
     opacity: 0
     visibility: hidden
     transition: .3s
-    padding-top: 13rem !important
+    // padding-top: 13rem !important
     min-height: 50vh
     &__item
       margin-bottom: 3.7rem
@@ -58,7 +61,7 @@
       top: 0
       left: 42rem
       width: 80rem
-      padding-left: 7rem !important
+      // padding-left: 7rem !important
       .header-submenu__item
         font-weight: 400
         width: 100%
@@ -83,3 +86,83 @@
       width: 4.4rem
   .header-submenu__item .header-submenu__item a:hover
     text-decoration: underline !important
+@media screen and ( max-width: 992px )
+  .mobile-bg-grey
+    .header-nav
+      background-color: #f9f9f9
+  .header-nav
+    background-color: #fff
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    height: calc(100vh - 50px)
+    overflow: auto
+    z-index: 50
+    display: none
+    padding: 20px 10px
+    margin: 0
+    ul
+      padding: 0
+      ul
+        padding: 0
+  .header-menu
+    font-size: 21px
+    display: flex
+    flex-direction: column
+    text-align: center
+
+    &__item
+      padding: 10px 20px
+      transition: .3s
+      a
+        display: flex
+        align-items: center
+        justify-content: center
+      &.active
+        background-color: rgba(#00A48A,.1)
+        border-radius: 12px
+    &__link
+      display: flex
+      align-items: center
+      justify-content: space-between
+    .arrow
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s
+      svg
+        width: 10px
+        height: 5px
+      path
+        stroke: #000
+      &.active
+        rotate: 180deg
+  .header-submenu
+    font-size: 18px
+    display: none
+
+    margin-top: 30px
+    gap: 30px
+    position: static
+    transition: none
+    opacity: 1
+    visibility: visible
+    min-height: auto
+    .header-menu__item
+      padding: 0
+      margin-bottom: 17px
+    .header-submenu
+      width: 100%
+      opacity: 1
+      visibility: visible
+    &__item .arrow
+      width: 20px
+      height: 20px
+      rotate: 0deg
+      &.active
+        rotate: 180deg
+  .header-submenu__item path
+    stroke: #000

@@ -103,7 +103,7 @@
     .header-menu__link
       color: #000
     .header-search path
-      stroke: #504D50
+      fill: #504D50 !important
     &::before
       opacity: 1
       visibility: visible
@@ -162,3 +162,46 @@
         height: 13px
       path
         fill: #00A48A
+    &-user-block
+      position: static
+      opacity: 1
+      visibility: visible
+      width: 100%
+      display: flex
+      align-items: center
+      flex-direction: column
+      gap: 10px
+      margin-top: 56px
+      padding: 0
+    &-user
+      &__image
+        width: 148px
+        height: 148px
+        border-radius: 10px
+        overflow: hidden
+        img
+          width: 100%
+          aspect-ratio: 1
+          object-fit: cover
+      &__info
+      &__title
+        font-size: 21px
+        font-weight: 600
+        margin-bottom: 9px
+      &__text
+        font-size: 18px
+        margin-bottom: 17px
+      &__link
+        font-weight: 600
+        color: $accent-color
+        font-size: 21px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          bottom: -5px
+          left: 0
+          border-radius: 9px
+          width: 44px
+          height: 3px
+          background-color: $accent-color
