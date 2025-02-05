@@ -74,16 +74,17 @@ a:not([class])
 .link
 	color: $accent-color
 	position: relative
-
+	width: fit-content
 	&::before
 		content: ''
 		position: absolute
-		bottom: -5px
+		bottom: -.5rem
 		left: 0
-		width: 44px
-		height: 3px
+		width: 4.4rem
+		height: .3rem
 		background-color: $accent-color
 		border-radius: 9px
+		transition: .3s
 .main-grey
 	background-color: #f9f9f9
 .error
@@ -108,12 +109,17 @@ label.error
 	color: $light-green
 .fancybox-slide--html
 	padding: 0
+a.hover
+	width: fit-content
+	&:before
+		transition: .3s
 @media	( hover: hover )
 	.video:hover
 		&::after
 
 			transform: translate(-50%,-50%) scale(1.1)
-
+	a.hover:hover:before
+		width: 100%
 @media screen and ( min-width: 1000px )
 	.container
 		max-width: 177rem

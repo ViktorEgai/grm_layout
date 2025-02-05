@@ -11,34 +11,19 @@
     margin: 0 auto 6.4rem
     img
       width: 100%
-  &-form
+  .search-form
     width: 108rem
     margin: 0 auto
     background-color: #fff
     border-radius: 2.6rem
-    .search-form
-      border: none
-      background-color: transparent
-    .search-form__clear
-      display: none
-      svg
-        width: 1.9rem
-        height: 1.9rem
-  &-result
-    font-size: 2.1rem
-    position: absolute
 
-  &-result-item
-    display: flex
-    align-items: center
-    gap: 2.4rem
-    padding: 1.9rem 2.7rem
-    color: rgba(#000,.7)
-    transition: .3s
-    img,svg
-      width: 2.3rem
-      height: 2.3rem
-      opacity: 0.7
+    border: none
+
+    &-result
+      font-size: 2.1rem
+
+    &-result-item
+      font-size: 2.1rem
 @media  (hover:hover  )
   .search-popup-result-item:hover
     background-color: #f6f6f6
@@ -49,21 +34,11 @@
       display: none
       img
         width: 100%
-    &-form
+    .search-form
+      border: 2px solid #504D50
       width: 100%
       margin: 0 auto
       background-color: #fff
-      border-radius: 2.6rem
-      border: 2px solid #504D50
-      .search-form
-
-        background-color: transparent
-    &-result
-      font-size: 12px
-    &-result-item
-      gap: 17px
-      padding: 5px 15px
-      img,svg
-        width: 16px
-        height: 16px
-        opacity: 0.7
+      border-radius: 18px
+      &-result
+        font-size: 12px

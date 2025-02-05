@@ -6,11 +6,24 @@
   left: 0
   right: 0
   padding-top: 4.5rem
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    background-color: #fff
+    opacity: 0
+    visibility: hidden
+    transition: .3s
+    z-index: -1
   &-wrapper
   &-logo
     max-width: 21.6rem
     display: block
     flex-shrink: 0
+
     img
       width: 100%
     .logo-black
@@ -18,26 +31,7 @@
   &-nav
     margin-left: 6%
     margin-right: auto
-  &-menu
-    display: flex
-    align-items: center
-    gap: 5rem
-    color: rgba(#fff, .5)
-    font-weight: 500
-  &-menu__item
-  &-menu__link
-    position: relative
-    transition: .3s
-    &::before
-      content: ''
-      position: absolute
-      background-color: #fff
-      width: 0
-      height: .3rem
-      bottom: -.5rem
-      border-radius: 1rem
-      left: 0
-      transition: .3s
+
   &__btn
     gap: 2.2rem
     padding: 2.4rem
@@ -45,7 +39,81 @@
     svg
       width: 2.1rem
       height: 2.1rem
-
+  &-user-block
+    position: absolute
+    top: 20rem
+    right: 0
+    opacity: 0
+    visibility: hidden
+    width: 58rem
+    border-left: .2rem solid #D9D9D9
+    padding-left: 5.8rem
+    transition: .3s
+    color: #000
+  &-user
+    display: flex
+    align-items: center
+    gap: 2rem
+    &__image
+      width: 20rem
+      height: 20rem
+      border-radius: 2.6rem
+      overflow: hidden
+      flex-shrink: 0
+      img
+        width: 100%
+        aspect-ratio: 1
+        object-fit: cover
+    &__info
+    &__title
+      font-size: 2.1rem
+      font-weight: 500
+      margin-bottom: 1.7rem
+    &__text
+      font-size: 1.8rem
+      margin-bottom: 3rem
+      color: rgba(#060606,.7)
+    &__link
+      font-weight: 600
+      color: $accent-color
+      font-size: 2.1rem
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: -.5rem
+        left: 0
+        border-radius: .9rem
+        width: 4.4rem
+        height: .3rem
+        background-color: $accent-color
+  &__cabinet
+    margin-top: 4rem
+    max-width: 31rem
+    color: #1cab98
+    background: rgba($accent-color,.2)
+    border: .3rem solid $accent-color
+    path
+      stroke: #1CAB98
+  &-search
+    svg
+      width: 2rem
+      height: 2rem
+  &:has(.has-children:hover)
+    .header-menu__link
+      color: #000
+    .header-search path
+      stroke: #504D50
+    &::before
+      opacity: 1
+      visibility: visible
+    .header-user-block
+      opacity: 1
+      visibility: visible
+    .logo-white
+      display: none
+    .logo-black
+      display: block
 @media  ( hover:  hover )
   .header-menu__link:hover
     color: #fff
@@ -55,6 +123,8 @@
 @media screen and ( max-width: 992px )
   .header
     padding-top: 16px
+    &-wrapper
+      padding-bottom: 16px
     &-logo
       max-width: 133px
     &-nav
@@ -86,3 +156,9 @@
             opacity: 0
           &:nth-child(3)
             transform: translate(-6px, -10px) rotate(-45deg)
+    &-search
+      svg
+        width: 13px
+        height: 13px
+      path
+        fill: #00A48A

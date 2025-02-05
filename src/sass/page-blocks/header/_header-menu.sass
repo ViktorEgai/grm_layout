@@ -1,0 +1,85 @@
+.header
+
+  &-menu
+    display: flex
+    align-items: center
+    color: rgba(#fff, .5)
+    font-weight: 500
+    margin: 0 -2.5rem
+  &-menu__item
+    padding: 0 2.5rem
+
+  &-menu__link
+    position: relative
+    transition: .3s
+    &::before
+      content: ''
+      position: absolute
+      background-color: #fff
+      width: 0
+      height: .3rem
+      bottom: -.5rem
+      border-radius: 1rem
+      left: 0
+      transition: .3s
+    .arrow
+      display: none
+  &-submenu
+    position: absolute
+    top: 8rem
+    left: 8.6rem
+    right: 8.6rem
+    opacity: 0
+    visibility: hidden
+    transition: .3s
+    padding-top: 13rem !important
+    min-height: 50vh
+    &__item
+      margin-bottom: 3.7rem
+      font-weight: 600
+      width: 42rem
+
+      a
+        width: 100%
+        display: inline-flex
+        align-items: center
+        justify-content: space-between
+        color: #000
+      .arrow
+        rotate: -90deg
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        width: 2rem
+        height: 2rem
+      path
+        stroke: $accent-color
+    .header-submenu
+      top: 0
+      left: 42rem
+      width: 80rem
+      padding-left: 7rem !important
+      .header-submenu__item
+        font-weight: 400
+        width: 100%
+@media (hover: hover )
+  .header-menu__item:has(.header-submenu):hover
+
+    .header-submenu
+      opacity: 1
+      visibility: visible
+      .header-submenu
+        opacity: 0
+        visibility: hidden
+  .header-submenu__item:hover
+    & > a
+      color: $accent-color
+    .header-submenu
+      opacity: 1 !important
+      visibility: visible !important
+  .header-menu__item:hover  .header-menu__link
+
+    &::before
+      width: 4.4rem
+  .header-submenu__item .header-submenu__item a:hover
+    text-decoration: underline !important

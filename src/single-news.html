@@ -67,11 +67,59 @@
 <p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut</p>
 								</div>
 							</div>
-							<aside class="sidebar sidebar--static ">
-                <form action="#" class="search-form  ">
-									<input type="search" name="" id="" class="input search-input" placeholder="Поиск по статьям" />
-									<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
-								</form>
+							<aside class="sidebar  ">
+                <div class="search-form mb-5">
+									<form action="#">
+										<input type="text" name="" id="" class="input search-input" placeholder="Поиск по сайту" />
+										<button class="search-form__btn"><img src="img/icons/search.svg" alt="" /></button>
+										<span class="search-form__clear"
+											><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L7 7M13 13L7 7M7 7L13 1L1 13" stroke="#504D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</form>
+									<div class="search-form-result">
+										<a href="#" class="search-form-result-item">
+											<img src="img/icons/search.svg" alt="" />
+											<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+										</a>
+										<a href="#" class="search-form-result-item">
+											<img src="img/icons/search.svg" alt="" />
+											<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+										</a>
+										<a href="#" class="search-form-result-item">
+											<img src="img/icons/search.svg" alt="" />
+											<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+										</a>
+										<a href="#" class="search-form-result-item">
+											<img src="img/icons/search.svg" alt="" />
+											<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+										</a>
+										<a href="#" class="search-form-result-item">
+											<img src="img/icons/search.svg" alt="" />
+											<span>Новости ТОС ГРМ. Аттестация агентства «ТРИУМФАЛЬНАЯ АРКА»</span>
+										</a>
+									</div>
+								</div>
+									<div class="sidebar-banner sidebar-banner--wide">
+									<div class="sidebar-banner__inner">
+										<div class="sidebar-banner__icon">
+											<img src="img/icons/email.svg" alt="" data-svg />
+										</div>
+										<div class="sidebar-banner__green-text">
+											Присоединяйтесь к нашей <br />
+											рассылке
+										</div>
+										<div class="sidebar-banner__black-text">для получения последних&nbsp;обновлений!</div>
+										<form action="#" class="sidebar-form">
+											<label class="sidebar-form__field">
+												<input type="email" name="email" placeholder="E-mail" class="sidebar-form__input" />
+											</label>
+											<button class="sidebar-form__btn btn">Отправить</button>
+											<div class="sidebar-form-acceptance">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#"> политикой конфиденциальности</a></div>
+										</form>
+									</div>
+								</div>
                 <div class="sidebar-news">
                   	@@for (var i = 0; i < 4; i++) {
                   <a href="#" class="sidebar-news-item">
@@ -86,25 +134,7 @@
                   </a>
                 }
                 </div>
-								<div class="sidebar-banner sidebar-banner--wide">
-									<div class="sidebar-banner__inner">
-										<div class="sidebar-banner__icon">
-											<img src="img/icons/email.svg" alt="" data-svg />
-										</div>
-										<div class="sidebar-banner__green-text">
-											Присоединяйтесь к нашей <br />
-											рассылке
-										</div>
-										<div class="sidebar-banner__black-text">для получения последних&nbsp;обновлений!</div>
-										<form action="#" class="sidebar-form">
-											<label class="sidebar-form__field">
-												<input type="tel" name="phone" placeholder="Телефон" class="sidebar-form__input" />
-											</label>
-											<button class="sidebar-form__btn btn">Отправить</button>
-											<div class="sidebar-form-acceptance">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#"> политикой конфиденциальности</a></div>
-										</form>
-									</div>
-								</div>
+							
 							</aside>
 						</div>
 					</div>
@@ -130,7 +160,7 @@
                     <div class="news-item__excerpt">
                       <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
                     </div>
-                    <a href="#" class="news-item__link link">Читать</a>
+                    <a href="#" class="news-item__link link hover">Читать</a>
                   </div>
                 </div>
               </div>
@@ -148,7 +178,7 @@
                     <div class="news-item__excerpt">
                       <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
                     </div>
-                    <a href="#" class="news-item__link link">Читать</a>
+                    <a href="#" class="news-item__link link hover">Читать</a>
                   </div>
                 </div>
               </div>
@@ -165,7 +195,7 @@
                     <div class="news-item__excerpt">
                       <p>Всего с начала года в Москве оформлено 121 597 ДДУ в отношении жилья и нежилья, что на 17,6% меньше результата в рекордном 2023...</p>
                     </div>
-                    <a href="#" class="news-item__link link">Читать</a>
+                    <a href="#" class="news-item__link link hover">Читать</a>
                   </div>
                 </div>
               </div>
