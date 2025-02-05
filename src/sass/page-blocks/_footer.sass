@@ -55,10 +55,21 @@
     align-items: center
     justify-content: center
     transition: .3s
+    position: relative
     svg
       width: 50%
       height: 50%
-
+    span
+      position: absolute
+      bottom: 120%
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 1.2rem
+      text-align: center
+      width: max-content
+      opacity: 0
+      visibility: hidden
+      transition: .3s
   &-bottom
     padding: 6.9rem 0 6.5rem
   &-info
@@ -77,6 +88,9 @@
     text-decoration: underline
   .footer-icons__link:hover
     background-color: $accent-color
+    span
+      opacity: 1
+      visibility: visible
 @media screen and ( max-width: 992px )
   .footer
     font-size: 16px
@@ -89,10 +103,33 @@
       max-width: 200px
       margin-bottom: 34px
     &-icons
-      gap: 10px
+      gap: 20px
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+
     &-icons__link
-      width: 54px
-      height: 54px
+      justify-content: flex-start
+
+      display: flex
+      align-items: center
+      gap: 10px
+      width: 100%
+      height: auto
+      border-radius: 0
+      background: none
+      svg
+        width: 32px
+        height: 32px
+        flex-shrink: 0
+      span
+        position: static
+        transform: none
+        opacity: 1
+        visibility: visible
+        font-size: 12px
+        white-space: wrap
+        width: auto
+        text-align: left
     &__btn
       font-size: 12px
     &-top, &-middle, &-bottom
@@ -106,3 +143,9 @@
       font-size: 12px
       p
         margin-bottom: 8px
+    &-middle
+      border-top: 2px solid rgba(255,255,255,.1)
+      border-bottom: 2px solid rgba(255,255,255,.1)
+@media screen and ( max-width: 576px )
+  .footer-icons
+    grid-template-columns: auto

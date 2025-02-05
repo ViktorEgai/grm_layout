@@ -28,5 +28,5 @@ $(document).ready(function () {
 		}
 	}
 	tabs(".news-tabs-nav__item", ".news-tabs-content-list");
-	tabs(".members-nav-top .members-nav__item", ".members-content", true, ".members-nav-bottom .members-nav__item");
+	// tabs(".members-nav-top .members-nav__item", ".members-content", true, ".members-nav-bottom .members-nav__item");
 });
