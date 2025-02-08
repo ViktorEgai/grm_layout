@@ -391,6 +391,87 @@
 		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
 	</form>
 </div>
+<div class="popup" id="sertificate-feedback">
+	<div class="popup-title">Остались вопросы</div>
+	<div class="popup-text">О сертификации?</div>
+
+	<form class="popup-form form">
+		<div class="form__field">
+			<input class="form__input" type="text" placeholder="Представьтесь, пожалуйста" required name="username" />
+		</div>
+		<div class="form__field">
+			<input class="form__input" type="email" placeholder="Почта" required name="email" />
+		</div>
+		<div class="form__field">
+			<input class="form__input" type="tel" placeholder="Телефон" required name="phone" />
+		</div>
+		<div class="form__field">
+			<textarea class="form__input" placeholder="Ваш вопрос" required name="message"></textarea>
+		</div>
+		<button class="form__btn btn">Отправить</button>
+		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+	</form>
+</div>
+<div class="popup" id="vakancy-contacts">
+	<div class="popup-title">Lorem ipsum</div>
+	<div class="popup-text">Cum sociis natoque penatibus</div>
+
+	<div class="popup-contacts-info">
+		<p>Дирекция ГРМ</p>
+		<p><a href="#">info@grmos.ru</a>, <a href="#">id@grmos.ru</a></p>
+		<p><a href="#">+7 (499) 322−01−64</a></p>
+		<p><a href="#">+7 (968) 979−78−08</a></p>
+	</div>
+	<div class="popup-contacts-address">119049 г. Москва, Калужская площадь, 1к2, БЦ "Европа", 2й этаж</div>
+	<div class="popup-contacts-social social">
+		<a href="#" class="social-item" target="_blank"> <img src="img/icons/tg.svg" alt="" data-svg /> </a>
+		<a href="#" class="social-item" target="_blank"> <img src="img/icons/vk.svg" alt="" data-svg /> </a>
+		<a href="#" class="social-item" target="_blank"> <img src="img/icons/wa.svg" alt="" data-svg /> </a>
+	</div>
+</div>
+<div class="popup quiz-popup" id="quiz-popup">
+	<div class="quiz" data-quiz>
+		<div class="pagination"></div>
+
+		<div class="quiz-title">Пакетная заявка на аттестацию Специалистов компании</div>
+		<form class="quiz-form form">
+			<div class="step active">
+				<div class="row">
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Юридическое наименование компании" />
+						</div>
+						<label for="" class="form__checkbox">
+							<input type="checkbox" name="grm_member" id="" />
+							<span>Агенство является участником ГРМ</span>
+						</label>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="step">
+				<h3>Шаг 2: Введите email</h3>
+				<input type="email" name="email" placeholder="Ваш Email" required />
+				<div class="buttons">
+					<button type="button" class="prev">Назад</button>
+					<button type="button" class="next">Далее</button>
+				</div>
+			</div>
+			<div class="step">
+				<h3>Шаг 3: Введите возраст</h3>
+				<input type="number" name="age" placeholder="Ваш возраст" required min="18" />
+				<div class="buttons">
+					<button type="button" class="prev">Назад</button>
+					<button type="submit">Отправить</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
 			<!-- footer -->
 			<footer class="footer">

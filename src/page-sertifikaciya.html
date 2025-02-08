@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">СЕРТИФИКАЦИЯ</h1>
+
+						<div class="top__text">Это процесс, в рамках которого проводится экспертиза деятельности агентства недвижимости или брокерской компании на соответствие их услуг требованиям, установленным Национальным стандартом Системы сертификации «Риэлторская деятельность. Услуги брокерские на рынке недвижимости. Общие требования».</div>
+
+						<a href="#sertificate-feedback" data-fancybox class="top__btn btn">Получить консультацию</a>
+					</div>
+				</div>
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs breadcrumbs--white">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Сертификация</span>
+					</div>
+				</div>
+
+				<!-- блок с кругом -->
+				<section class="circle circle--white">
+					<div class="container">
+						<div class="circle-wrapper">
+							<div class="circle-items-clear">
+								<div class="circle__item left bottom" style="--x: -4%; --y: 65%">
+									<div class="circle__item-text">Прозрачная репутация</div>
+									<div class="circle__item-text-small circle__item-text-small--medium">Сертификация отражает приверженность агентства к соблюдению стандартов работы и законодательства</div>
+								</div>
+								<div class="circle__item left" style="--x: -3.5%; --y: 89%">
+									<div class="circle__item-text">Конкурентное преимущество</div>
+									<div class="circle__item-text-small circle__item-text-small--medium">Сертификация, предлагаемая агентством среди конкурентов, подчеркивает его приверженность стандартам качества</div>
+								</div>
+								<div class="circle__item center" style="--x: 50%; --y: 104.5%">
+									<div class="circle__item-text">Знак качества</div>
+									<div class="circle__item-text-small circle__item-text-small--medium">
+										Сертификат Гильдии — это знак качества, который помогает <br />
+										укрепить доверие клиентов и повышать их лояльность
+									</div>
+								</div>
+								<div class="circle__item right" style="--x: 77%; --y: 89%">
+									<div class="circle__item-text">Дополнительный канал рекламы</div>
+									<div class="circle__item-text-small circle__item-text-small--medium">Внесение в Единый Реестр (https://reestr.rgr.ru/) сертифицированных агентств предоставляет доступ к внешним каналам привлечения клиентов</div>
+								</div>
+								<div class="circle__item right bottom" style="--x: 85.3%; --y: 65%">
+									<div class="circle__item-text">Правовая защита</div>
+									<div class="circle__item-text-small circle__item-text-small--medium">Комитет по этике предоставляет возможность на бесплатную помощь в досудебном разрешении споров</div>
+								</div>
+							</div>
+							<div class="circle-block"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Список с инфой -->
+				@@include('components/page-blocks/_popup-list.html' )
+				<div class="documents">
+					<div class="container">
+						<div class="row g-4">
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/pdf.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link red" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="documents-block">
+									@@for (var i = 0; i < 6; i++) {
+									<div class="documents-item">
+										<img class="documents-item__image" src="img/icons/txt.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link blue" target="_blank">Открыть PDF </a>
+									</div>
+									}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- map-block -->
+				@@include('components/page-blocks/_map-block-form.html')
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

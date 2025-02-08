@@ -16,6 +16,27 @@
     font-weight: 500
   &-form
     margin-top: 6rem
+  &-contacts-info
+    text-align: center
+    font-size: 2.5rem
+    margin-top: 8rem
+  &-contacts-address
+    font-size: 2.5rem
+    text-align: center
+    margin-top: 9rem
+  &-contacts-social
+    margin-top: 6rem
+    justify-content: center
+    .social-item
+      background-color: #316067
+      path
+        fill: #fff
+@media  ( hover: hover  )
+  .popup
+    .social-item:hover
+      background-color: $light-green
+    &-contacts-info a:hover
+      color: $accent-color
 @media screen and ( max-width: 992px )
   .popup
     max-width: 370px

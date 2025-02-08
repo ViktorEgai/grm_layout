@@ -28,20 +28,6 @@ $(document).ready(function () {
 	});
 	$(".form").each(function () {
 		$(this).validate({
-			rules: {
-				username: {
-					required: true,
-					minlength: 3,
-				},
-				email: {
-					required: true,
-					email: true,
-				},
-				phone: {
-					required: true,
-					minlength: 15,
-				},
-			},
 			// submitHandler: function (form) {
 			// 	$.ajax({
 			// 		url: "submitHandler.php", // Ссылка на серверный обработчик
@@ -66,6 +52,8 @@ $(document).ready(function () {
 		},
 		buttonsStyling: false,
 	});
+
+	// Письмо
 	$(".letter-form").on("submit", function (e) {
 		e.preventDefault();
 		$(this).addClass("sent");
@@ -82,5 +70,49 @@ $(document).ready(function () {
 			});
 			$(".btn").css("--deg", "68deg");
 		}, 1800);
+	});
+
+	// квиз
+	$(".quiz").each(function () {
+		let quiz = $(this);
+		let form = quiz.find(".quiz-form");
+		let steps = quiz.find(".step");
+		let pagination = quiz.find(".pagination");
+		let currentStep = 0;
+		let totalSteps = steps.length;
+
+		form.validate({
+			errorElement: "div",
+			errorClass: "error",
+		});
+
+		function showStep(index) {
+			steps.removeClass("active");
+			$(steps[index]).addClass("active");
+			pagination.text(`  ${index + 1}/${totalSteps}`);
+		}
+
+		quiz.find(".next").click(function () {
+			if (form.valid()) {
+				currentStep++;
+				if (currentStep < totalSteps) {
+					showStep(currentStep);
+				}
+			}
+		});
+
+		quiz.find(".prev").click(function () {
+			currentStep--;
+			showStep(currentStep);
+		});
+
+		form.submit(function (e) {
+			e.preventDefault();
+			if (form.valid()) {
+				alert("Форма успешно отправлена!");
+			}
+		});
+
+		showStep(currentStep);
 	});
 });

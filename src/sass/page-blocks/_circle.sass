@@ -72,10 +72,14 @@
     .circle__item
       max-width: 47.2rem
       width: 100%
+      &.bottom
+        max-width: 33.8rem
   &__item-text-small
     font-weight: 400
     color: rgba(#000,.7)
     margin-top: 0.7rem
+    &--medium
+      font-size: 1.6rem
     &--extra
       font-size: 1.2rem
   &__item-num
@@ -216,12 +220,13 @@
       .circle__item
         margin: 0 0 20px
         padding: 0
-        max-width: 100%
+        max-width: 100% !important
         width: 100% !important
         transform: none
         font-size: 12px
         &::before
           display: none
+
     &__logo
       margin: 0 auto 12px
       width: 135px
