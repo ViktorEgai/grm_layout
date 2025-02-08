@@ -6,6 +6,10 @@
     transition: .3s
   span
     color: $accent-color
+  & +  section ,  & +  div
+    padding-top: 4rem
+  &--white
+    background-color: #fff
 @media  ( hover: hover)
   .breadcrumbs
     a:hover
@@ -14,3 +18,5 @@
   .breadcrumbs
     font-size: 12px
     padding: 30px 0 20px
+    & +  section ,  & +  div
+      padding-top: 0

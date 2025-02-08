@@ -1,5 +1,13 @@
 .cards
   padding: 9.2rem 0 27.0rem
+  &--white
+    background-color: #fff
+    padding: 10rem 0 7.6rem
+  &__title
+    text-align: center
+    font-size: 5rem
+    font-weight: 700
+    margin-bottom: 6.4rem
   &-item
     position: relative
     z-index: 6
@@ -170,6 +178,10 @@
 @media screen and ( max-width: 992px )
   .cards
     padding: 20px 0
+    &__title
+      text-align: left
+      font-size: 16px
+      margin-bottom: 30px
     &-item__title
       font-size: 20px
     &-item-front

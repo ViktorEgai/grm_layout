@@ -1,0 +1,136 @@
+.about-hero
+  background-color: #fff
+  padding-bottom: 13.8rem
+  &-image
+    background-image: url(../img/about-bg.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    img
+      margin-top: -2rem
+      width: 61rem
+  &-info
+    font-size: 2.5rem
+    font-weight: 600
+    margin: 0 auto
+    p,ul,ol
+      margin-bottom: 1em
+      span
+        color: $accent-color
+    & *:last-child
+      margin: 0
+    &--small
+      width: 64rem
+  &-info__title
+    font-size: 5rem
+    font-weight: 700
+    margin-bottom: 4rem
+  &-graphic
+    height: 59rem
+    position: relative
+    font-size: 1.8rem
+    display: flex
+    align-items: flex-end
+    width: 64rem
+    margin-top: 10rem
+  &-graphic-info
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    flex-direction: column
+    gap: 1.8rem
+    p
+      display: flex
+      align-items: center
+      gap: 3rem
+      color: #00a48a
+      font-weight: 600
+      span
+        display: block
+        width: 2.7rem
+        height: 2.7rem
+        border-radius: 50%
+      .dark-green
+        background-color: $dark-green
+      .light-green
+        background-color: $light-green
+  &-graphic-items
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    gap: 2rem
+    width: 100%
+    height: 100%
+  &-graphic-item
+    height: 100%
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    gap: 1rem
+    text-align: center
+    font-weight: 600
+  &-grapgic-item-col
+    display: flex
+    flex-direction: column
+    height: 100%
+    color: #fff
+    border-radius: 2.6rem
+    overflow: hidden
+  &-graphic-item__top
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    background-color: $light-green
+    flex-grow: 1
+  &-graphic-item__bottom
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    background-color: $dark-green
+    flex-grow: 1
+  &-graphic-item__date
+    color: #00a48a
+@media screen and ( max-width: 992px )
+  .about-hero
+    padding-bottom: 65px
+    &-image
+      background-position: bottom center
+      margin-top: 40px
+      background-size: 100% 100%
+      img
+        margin-top: -40px
+        width: 80%
+    &-info
+      font-size: 12px
+      &--small
+        width: 100%
+    &-info__title
+      font-size: 16px
+      margin-bottom: 5px
+    &-graphic
+      max-width: 370px
+      width: 100%
+      height: 340px
+      font-size: 12px
+      margin-top: 0
+      padding-top: 50px
+    &-graphic-info
+      gap: 10px
+      p
+        gap: 16px
+        span
+          width: 16px
+          height: 16px
+    &-graphic-items
+      gap: 10px
+    &-graphic-item
+      gap: 6px
+    &-grapgic-item-col
+      border-radius: 10px

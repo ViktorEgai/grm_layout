@@ -32,27 +32,27 @@ $(document).ready(function () {
 						start: "top 20%",
 						end: "+=" + $arrowBlock.innerHeight() / 2, // Пример динамической высоты
 					},
-					y: "-100%",
+					y: "-200%",
 					duration: 0.6,
 				});
 
-				// // Анимация для линии
-				// gsap.fromTo(
-				// 	".arrow-block__bolt",
-				// 	{
-				// 		height: $arrowWrapper.innerHeight() * 0.48 + "px", // Начальная высота
-				// 	},
-				// 	{
-				// 		height: "100%", // Конечная высота, включая padding
-				// 		// height: $arrowWrapper.innerHeight() + "px", // Конечная высота, включая padding
-				// 		scrollTrigger: {
-				// 			trigger: $arrowWrapper[0],
-				// 			start: "top 80%", // Начало анимации
-				// 			end: () => "+=" + $arrowWrapper.innerHeight() + "px", // Конец анимации
-				// 			scrub: 0.2, // Скроллинг плавный
-				// 		},
-				// 	}
-				// );
+				// Анимация для линии
+				gsap.fromTo(
+					".arrow-block__bolt",
+					{
+						height: $arrowWrapper.innerHeight() * 0.48 + "px", // Начальная высота
+					},
+					{
+						// height: "100%", // Конечная высота, включая padding
+						height: $arrowWrapper.innerHeight() + "px", // Конечная высота, включая padding
+						scrollTrigger: {
+							trigger: $arrowWrapper[0],
+							start: "top 80%", // Начало анимации
+							end: () => "+=" + $arrowWrapper.innerHeight() + "px", // Конец анимации
+							scrub: 0.2, // Скроллинг плавный
+						},
+					}
+				);
 
 				// Анимация для тени
 				gsap.from(".shadow", {

@@ -2,6 +2,8 @@
   padding: 7.2rem 0
   margin-bottom: 7.2rem
   overflow: hidden
+  &--white
+    background-color: #fff
   &__title
     text-align: center
     font-size: 5rem
@@ -57,6 +59,15 @@
         transform: translateX(-50%)
         background-image: url(../img/bottom-line-center.svg)
         background-position: center
+    &.inside
+      transform: translateX(-50%)
+      text-align: center
+      font-size: 1.8rem
+      width: 37rem !important
+
+  &__item-text-green
+    color: #00a48a
+
   &-items-clear
     .circle__item
       max-width: 47.2rem
@@ -65,6 +76,8 @@
     font-weight: 400
     color: rgba(#000,.7)
     margin-top: 0.7rem
+    &--extra
+      font-size: 1.2rem
   &__item-num
     color: $light-green
     font-size: 3.5rem
@@ -111,7 +124,17 @@
         top: 50%
         transform: translate(-50%,-50%)
         animation: rotate-2 40s infinite linear
-
+    span
+      position: absolute
+      left: 50%
+      bottom: 55%
+      transform: translateX(-50%)
+      width: 37rem
+      color: #00a48a
+      text-align: center
+      font-size: 1.8rem
+      font-weight: 600
+      z-index: 10
 @keyframes rotate-2
   0%
 
@@ -194,7 +217,9 @@
         margin: 0 0 20px
         padding: 0
         max-width: 100%
+        width: 100% !important
         transform: none
+        font-size: 12px
         &::before
           display: none
     &__logo
@@ -204,6 +229,12 @@
       font-size: 16px
       max-width: 100%
       margin: 0 auto 26px
+    &__item-text-small--extra
+      font-size: 12px
+
+    &__item-text-green
+      color: rgba(#000,.7)
+      font-weight: 400
 @media screen and ( max-width: 576px )
   .circle-block
     height: 100rem

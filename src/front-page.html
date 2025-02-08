@@ -377,24 +377,8 @@
 				@@include('components/page-blocks/_news.html')
 
 				<!-- map-block -->
-				<div class="map-block">
-					<div id="map">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3d8f3a5b7b6852707afd07204edce94017d8f7490bf53f4e930830cceaad5b3&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
-					</div>
-					<div class="map-block-right">
-						<form action="" class="form">
-							<div class="form__top">
-								<div class="form__title">Остались вопросы?</div>
-								<div class="form__subtitle">Оставляйте заявку и мы свяжемся с вами!</div>
-							</div>
-							<label class="form__field"><input type="text" class="form__input" placeholder="Имя" required name="username" /></label>
-							<label class="form__field"><input type="email" class="form__input" placeholder="Почта" required name="email" /></label>
-							<label class="form__field"><input type="tel" class="form__input" placeholder="Телефон" required name="phone" /></label>
-							<button class="form__btn btn">Отправить</button>
-							<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
-						</form>
-					</div>
-				</div>
+
+				@@include('components/page-blocks/_map-block-form.html')
 			</main>
 			<!-- popup -->
 			@@include('components/page-blocks/_popup.html')
