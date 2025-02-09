@@ -1,0 +1,88 @@
+.committee
+  padding-bottom: 4.5rem
+  background-color: #fff
+  &-item
+    background-color: #f9f9f9
+    border-radius: 2.6rem
+    padding: 4.4rem 3.8rem 5.6rem
+    font-size: 1.6rem
+    height: 100%
+  &-item__top
+    display: flex
+    align-items: center
+    gap: 3rem
+    font-size: 2.1rem
+    margin-bottom: 2.7rem
+  &-item__icon
+    background-color: #476064
+    width: 9rem
+    height: 9rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    flex-shrink: 0
+    img,svg
+      width: 4.5rem
+      height: 4.5rem
+      object-fit: contain
+  &-item__title
+    font-weight: 600
+  &-item__name
+    color: $light-green
+    font-weight: 600
+    font-size: 3.5rem
+  &-item__position
+    color: rgba(#000,.7)
+    margin-bottom: 3.3rem
+  &-item__descr
+    color: rgba(#000,.7)
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 5rem
+    font-weight: 600
+    background-color: #005d62
+    border-radius: 2.6rem
+    margin-top: 9rem
+    padding: 6.2rem 10rem
+    color: #fff
+  &__btn
+    width: 38.3rem
+@media screen and ( max-width: 992px )
+  .committee
+    padding-bottom: 20px
+    &-item
+      border-radius: 10px
+      padding: 25px 29px
+      font-size: 12px
+    &-item__top
+      gap: 20px
+      font-size: 12px
+      margin-bottom: 19px
+    &-item__icon
+      width: 58px
+      height: 58px
+      img,svg
+        width: 29px
+        height: 29px
+    &-item__name
+      font-size: 21px
+    &-item__position
+      margin-bottom: 20px
+    &-bottom
+      flex-direction: column
+      align-items: flex-start
+      font-size: 24px
+      border-radius: 10px
+      margin-top: 40px
+
+      padding: 17px 14px
+      color: #fff
+      gap: 24px
+    &__btn
+      width: 100%
+      max-width: 340px
+      background: $sec-btn-gradient
+      color: #fff
