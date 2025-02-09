@@ -6,13 +6,143 @@
     font-size: 3rem
     font-weight: 600
     margin-bottom: 4.7rem
+  &-text
+    color: $accent-color
+    font-size: 1.8rem
+    text-align: center
+    margin: -3.7rem auto 2.3rem
+    width: 42rem
+    font-weight: 300
   &-form
     font-size: 2.1rem
   .pagination
     text-align: center
     font-weight: 600
+    font-size: 2.1rem
     margin-bottom: 1.3rem
   .step
     display: none
     &.active
       display: block
+  .prev
+    width: 8rem
+    height: 8rem
+    margin-right: auto
+    img
+      rotate: 180deg
+  .next
+    margin-left: auto
+    width: 8rem
+    height: 8rem
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 4.4rem
+    gap: 2rem
+  .submit
+    flex-grow: 1
+  .file-name
+    display: none
+  .upload-status
+    display: none
+    &.active
+      display: flex
+      width: 100%
+      gap: 2.6rem
+      align-items: center
+      position: relative
+    .file-name
+      display: block
+      font-size: 2.1rem
+    .file-preview
+
+    .file-icon
+      width: 4.8rem
+      height: 6.3rem
+      object-fit: contain
+    .file-info
+      flex-grow: 1
+    .file-size
+      font-size: 1.4rem
+      margin-top: 0.7rem
+      margin-bottom: 1rem
+      display: block
+    .progress-bar
+      flex-grow: 1
+      width: 100%
+      background-color: #f3f3f3
+      height: 0.6rem
+      border-radius: 0.6rem
+      overflow: hidden
+    .progress
+      background-color: #005d62
+      display: block
+      height: 100%
+    .upload-percent
+      font-weight: 500
+      font-size: 1.4rem
+      margin-left: 1rem
+    .upload-clear
+      position: absolute
+      top: 1rem
+      right: 1rem
+      width: 1.3rem
+      height: 1.3rem
+  .send-email-notice
+    color: red
+    font-weight: 500
+@media screen and ( max-width: 992px )
+  .quiz
+    &-popup
+      max-width: 500px
+      padding: 20px 30px
+    &-title
+      font-size: 18px
+      font-weight: 600
+      margin-bottom: 30px
+    &-text
+      font-size: 12px
+      width: 100%
+      margin-bottom: 20px
+    &-form
+      font-size: 16px
+    .pagination
+      font-size: 16px
+      margin-bottom: 15px
+    .prev
+      width: 40px
+      height: 40px
+    .next
+      width: 40px
+      height: 40px
+    &-bottom
+      margin-top: 30px
+      gap: 10px
+    &__btn
+      background: $btn-gradient
+      height: 40px
+      border: none
+      color: #fff
+    .upload-status
+      &.active
+        gap: 10px
+      .file-name
+        font-size: 12px
+
+      .file-icon
+        width: 30px
+        height: 30px
+        object-fit: contain
+      .file-info
+        flex-grow: 1
+      .file-size
+        font-size: 14px
+        margin-top: 7px
+        margin-bottom: 10px
+      .progress-bar
+        height: 3px
+        border-radius: 3px
+      .upload-percent
+        font-size: 12px
+        margin-left: 10px
