@@ -2,6 +2,46 @@ document.addEventListener("DOMContentLoaded", function () {
 	const calendarEl = document.getElementById("small-calendar");
 
 	if (calendarEl !== undefined && calendarEl !== null) {
+		const infoDateEl = document.querySelector(".info-calendar-date__day p");
+		const infoMonthEl = document.querySelector(".info-calendar-date__day span");
+		const infoTextEl = document.querySelector(".info-calendar-date__text");
+
+		const monthCases = {
+			январь: "января",
+			февраль: "февраля",
+			март: "марта",
+			апрель: "апреля",
+			май: "мая",
+			июнь: "июня",
+			июль: "июля",
+			август: "августа",
+			сентябрь: "сентября",
+			октябрь: "октября",
+			ноябрь: "ноября",
+			декабрь: "декабря",
+		};
+		const events = [
+			{
+				start: "2025-02-14",
+				title: "День святого Валентина",
+				className: "event-day",
+				display: "background",
+			},
+			{
+				start: "2025-03-08",
+				title: "Международный женский день",
+				className: "event-day",
+				display: "background",
+			},
+			{
+				start: "2025-04-01",
+				title: "День смеха",
+				className: "event-day",
+				display: "background",
+			},
+		];
+
+		// Создаем календарь
 		const calendar = new FullCalendar.Calendar(calendarEl, {
 			initialView: "dayGridMonth",
 			locale: "ru",
@@ -11,33 +51,46 @@ document.addEventListener("DOMContentLoaded", function () {
 				end: "next",
 			},
 			showNonCurrentDates: false,
-			events: [
-				{
-					start: "2025-01-06",
+			events: events,
+			eventClick: function (info) {
+				console.log(info);
 
-					title: "", // Название отображается здесь
-					className: "event-day",
-					display: "background",
-				},
-				// {
-				// 	groupId: "1", // Объединяет два диапазона в одно событие
-				// 	start: "2025-01-06",
-				// 	end: "2025-01-12",
-				// 	title: "", // Название отображается здесь
-				// 	className: "start",
-				// 	display: "background",
-				// },
-				// {
-				// 	groupId: "1", // Та же группа, чтобы логически объединить
-				// 	start: "2025-01-12",
-				// 	end: "2025-01-17",
-				// 	display: "background", // Фон, чтобы не показывать название второй раз
-				// 	className: "end",
-				// },
-			],
+				updateEventInfo(info.event.start, info.event.title);
+			},
 		});
 
 		calendar.render();
+
+		// Функция для обновления блока с датой
+		function updateEventInfo(date, title) {
+			const eventDate = new Date(date);
+			const day = eventDate.getDate();
+			const month = eventDate.toLocaleString("ru", { month: "long" });
+			const monthGenitive = monthCases[month] || month; // Склоняем месяц
+
+			infoDateEl.textContent = day;
+			infoMonthEl.textContent = monthGenitive;
+			infoTextEl.innerHTML = title || "Событие без названия";
+		}
+
+		// Найти ближайшую дату события и обновить блок
+		function setNearestEvent() {
+			const today = new Date();
+			let nearestEvent = null;
+
+			events.forEach((event) => {
+				const eventDate = new Date(event.start);
+				if (eventDate >= today && (!nearestEvent || eventDate < new Date(nearestEvent.start))) {
+					nearestEvent = event;
+				}
+			});
+
+			if (nearestEvent) {
+				updateEventInfo(nearestEvent.start, nearestEvent.title);
+			}
+		}
+
+		setNearestEvent();
 	}
 	const smallCalendar = document.getElementById("small-calendar-2");
 	const bigCalendar = document.getElementById("calendar");

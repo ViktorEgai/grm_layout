@@ -56,6 +56,10 @@
     justify-content: center
     transition: .3s
     position: relative
+    &:first-child
+      span
+        left: 0
+        transform: none
     svg
       width: 50%
       height: 50%
@@ -76,7 +80,8 @@
   &-address
   &-contacts
   &-social
-
+    path
+      fill: #213030
   &-privacy
     text-decoration: underline
 @media  ( hover: hover  )

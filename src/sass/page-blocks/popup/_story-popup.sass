@@ -1,0 +1,50 @@
+.story-popup
+  padding: 0
+.story-item-slider
+  width: 60rem
+  .slick-dots
+    position: absolute
+    top: 2rem
+    left: 5rem
+    right: 5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: .5rem
+    li
+      flex-grow: 1
+      height: 0.4rem
+      background-color: #ababab
+      button
+        height: 100%
+        width: 0
+        border: none
+
+        border-radius: 0
+    .slick-active
+      button
+        background-color: #fff
+        animation: lineAnim 6s linear forwards
+  .slick-track
+    display: flex !important
+
+  &__item
+    height: auto !important
+    display: flex !important
+    align-items: center
+    justify-content: center
+
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    img,video,iframe
+      height: 100%
+      aspect-ratio: 9/16
+      object-fit: contain
+      backdrop-filter: blur(10px)
+      background-color: #000
+@keyframes lineAnim
+  0%
+    width: 0
+  100%
+    width: 100%
