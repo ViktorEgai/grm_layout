@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	const arrowRight = `<button class="next"><img src="img/icons/arrow-right.svg" data-src></button>`;
-	const arrowLeft = `<button class="prev"><img src="img/icons/arrow-left.svg" data-src></button>`;
+	const arrowRight = `<button class="next"><img src="/static/img/icons/arrow-right.svg" data-src></button>`;
+	const arrowLeft = `<button class="prev"><img src="/static/img/icons/arrow-left.svg" data-src></button>`;
 
 	$(".stories-slider").slick({
 		dots: true,

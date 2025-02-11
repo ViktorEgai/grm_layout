@@ -1,45 +1,72 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const calendarEl = document.getElementById("small-calendar");
 
+	const events = [
+		{
+			start: "2025-02-14",
+			title: "День святого Валентина",
+			className: "event-day offline",
+			display: "background",
+			extendedProps: {
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+			},
+		},
+		{
+			start: "2025-03-08",
+			title: "Международный женский день",
+			className: "event-day",
+			display: "background",
+			extendedProps: {
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+			},
+		},
+		{
+			start: "2025-04-01",
+			title: "День смеха",
+			className: "event-day",
+			display: "background",
+			extendedProps: {
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+			},
+		},
+		{
+			start: "2025-02-06",
+			title: "Московский Международный жилищный конгресс 2024 ", // Краткое название события
+			className: "event-day",
+			display: "background",
+
+			extendedProps: {
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+			},
+		},
+	];
+
+	const monthCases = {
+		январь: "января",
+		февраль: "февраля",
+		март: "марта",
+		апрель: "апреля",
+		май: "мая",
+		июнь: "июня",
+		июль: "июля",
+		август: "августа",
+		сентябрь: "сентября",
+		октябрь: "октября",
+		ноябрь: "ноября",
+		декабрь: "декабря",
+	};
 	if (calendarEl !== undefined && calendarEl !== null) {
 		const infoDateEl = document.querySelector(".info-calendar-date__day p");
 		const infoMonthEl = document.querySelector(".info-calendar-date__day span");
 		const infoTextEl = document.querySelector(".info-calendar-date__text");
-
-		const monthCases = {
-			январь: "января",
-			февраль: "февраля",
-			март: "марта",
-			апрель: "апреля",
-			май: "мая",
-			июнь: "июня",
-			июль: "июля",
-			август: "августа",
-			сентябрь: "сентября",
-			октябрь: "октября",
-			ноябрь: "ноября",
-			декабрь: "декабря",
-		};
-		const events = [
-			{
-				start: "2025-02-14",
-				title: "День святого Валентина",
-				className: "event-day",
-				display: "background",
-			},
-			{
-				start: "2025-03-08",
-				title: "Международный женский день",
-				className: "event-day",
-				display: "background",
-			},
-			{
-				start: "2025-04-01",
-				title: "День смеха",
-				className: "event-day",
-				display: "background",
-			},
-		];
 
 		// Создаем календарь
 		const calendar = new FullCalendar.Calendar(calendarEl, {
@@ -96,6 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	const bigCalendar = document.getElementById("calendar");
 
 	if (bigCalendar !== undefined && bigCalendar !== null && smallCalendar !== undefined && smallCalendar !== null) {
+		const infoDateEl = document.querySelector(".info-calendar-date__day p");
+		const infoMonthEl = document.querySelector(".info-calendar-date__day span");
+		const infoTextEl = document.querySelector(".info-calendar-date__text");
+
 		const smallCal = new FullCalendar.Calendar(smallCalendar, {
 			initialView: "dayGridMonth",
 			locale: "ru",
@@ -104,21 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				center: "title",
 				end: "next",
 			},
-			events: [
-				{
-					start: "2025-02-06",
-					title: "Московский Международный жилищный конгресс 2024 ", // Краткое название события
-					className: "event-day",
-					display: "background",
-					extendedProps: {
-						place: "Место: Aenean commodo ligula eget ",
-						time: "08:00",
-						date: "06.02",
-						status: "Офлайн",
-						description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-					},
-				},
-			],
+			events: events,
 			dateClick: function (info) {
 				bigCal.gotoDate(info.date); // Переключаем большой календарь на выбранную дату
 			},
@@ -144,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="event-content__title">${arg.event.title}</p>
 												<p class="event-content__description">${arg.event.extendedProps.description}</p>
                         <p class="event-content__place">${arg.event.extendedProps.place}</p>
-												<a href="#" class="event-content__btn btn btn--white">Зарегистрироваться</a>
+												<a href="#popup" data-fancybox class="event-content__btn btn btn--white">Зарегистрироваться</a>
                     </div>
 										
                 `,
@@ -168,18 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			fixedWeekCount: false,
 			contentHeight: "auto", // Устанавливаем авто-высоту
 			height: "auto",
-			events: [
-				{
-					start: "2025-02-06",
-					title: "Московский Международный жилищный конгресс 2024 ", // Краткое название события
-					className: "event-day",
-					extendedProps: {
-						place: "Место: Aenean commodo ligula eget ",
-						time: "08:00",
-						description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-					},
-				},
-			],
+			events: events,
 			eventContent: function (arg) {
 				return {
 					html: `
@@ -188,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="event-content__title">${arg.event.title}</p>
 												<p class="event-content__description">${arg.event.extendedProps.description}</p>
                         <p class="event-content__place">${arg.event.extendedProps.place}</p>
-												<a href="#" class="event-content__btn btn btn--white">Зарегистрироваться</a>
+												<a href="#popup" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
                     </div>
 										
                 `,
@@ -202,5 +208,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		smallCal.render();
 		bigCal.render();
+
+		// Функция для обновления блока с датой
+		function updateEventInfo(date, title) {
+			const eventDate = new Date(date);
+			const day = eventDate.getDate();
+			const month = eventDate.toLocaleString("ru", { month: "long" });
+			const monthGenitive = monthCases[month] || month; // Склоняем месяц
+
+			infoDateEl.textContent = day;
+			infoMonthEl.textContent = monthGenitive;
+			infoTextEl.innerHTML = title || "Событие без названия";
+		}
+
+		// Найти ближайшую дату события и обновить блок
+		function setNearestEvent() {
+			const today = new Date();
+			let nearestEvent = null;
+
+			events.forEach((event) => {
+				const eventDate = new Date(event.start);
+				if (eventDate >= today && (!nearestEvent || eventDate < new Date(nearestEvent.start))) {
+					nearestEvent = event;
+				}
+			});
+
+			if (nearestEvent) {
+				updateEventInfo(nearestEvent.start, nearestEvent.title);
+			}
+		}
+
+		setNearestEvent();
 	}
 });
