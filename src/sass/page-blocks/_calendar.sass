@@ -76,9 +76,10 @@
     padding: 1.5rem
     transition: .3s
     &.active
-      position: relative
-      z-index: 15
-      font-size: 2.1rem
+      opacity: 0
+      // position: relative
+      // z-index: 15
+      // font-size: 2.1rem
   td, th
     border: 1px solid #F6F6F6
   .fc-col-header
@@ -98,7 +99,7 @@
   .fc-event
     position: absolute
     top: 0
-    left: 0
+    right: 0
     width: 100%
     height: 100%
     background-color: #00A48A
@@ -117,9 +118,12 @@
       z-index: 5
       width: 200%
       height: 200%
-
+      left: -100%
       .event-content
-        &__time
+        &__date
+          opacity: 1
+        &-top
+          left: 2rem
           right: 2rem
           font-size: 2.1rem
 
@@ -156,12 +160,20 @@
     justify-content: space-between
     transition: .3s
     height: 100%
-    &__time
+    &-top
+      display: flex
+      align-items: center
+      justify-content: space-between
+      font-size: 1rem
       position: absolute
       top: 1.5rem
       right: 1.5rem
-      font-size: 1rem
+      left: 1.5rem
       transition: .3s
+    &__date
+      opacity: 0
+      transition: .3s
+    &__time
 
     &__title
       font-size: 1.2rem

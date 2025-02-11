@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
+				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day",
 			display: "background",
 			extendedProps: {
+				date: "8",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
@@ -30,18 +32,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day",
 			display: "background",
 			extendedProps: {
+				date: "1",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
 			},
 		},
 		{
-			start: "2025-02-06",
+			start: "2025-02-16",
 			title: "Московский Международный жилищный конгресс 2024 ", // Краткое название события
 			className: "event-day",
 			display: "background",
 
 			extendedProps: {
+				date: "6",
+
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
@@ -190,7 +195,10 @@ document.addEventListener("DOMContentLoaded", function () {
 				return {
 					html: `
                     <div class="event-content">
-										<p class="event-content__time"> ${arg.event.extendedProps.time}</p>
+										<div class="event-content-top">
+											<p class="event-content__date"> ${arg.event.extendedProps.date}</p>
+												<p class="event-content__time"> ${arg.event.extendedProps.time}</p>
+										</div>
                         <p class="event-content__title">${arg.event.title}</p>
 												<p class="event-content__description">${arg.event.extendedProps.description}</p>
                         <p class="event-content__place">${arg.event.extendedProps.place}</p>
