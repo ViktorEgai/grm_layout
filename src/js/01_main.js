@@ -79,4 +79,15 @@ jQuery(document).ready(function ($) {
 			$(this).parents(".has-children").removeClass("active");
 		}
 	});
+	let subMenuHeight = 0;
+	$(".header-submenu").each(function () {
+		if ($(this).outerHeight() > subMenuHeight) {
+			subMenuHeight = $(this).outerHeight();
+		}
+	});
+
+	$(".header").css("--mh", subMenuHeight + 150 + "px");
+	$(window).resize(function () {
+		$(".header").css("--mh", subMenuHeight + 150 + "px");
+	});
 });
