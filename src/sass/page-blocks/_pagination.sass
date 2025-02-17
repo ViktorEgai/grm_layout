@@ -1,0 +1,49 @@
+.pagination
+  padding: 5rem 0 3rem
+  &-list
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 1rem
+  &-item
+    font-size: 2.1rem
+    font-weight: 600
+    width: 4rem
+    height: 4rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 1rem
+    transition: .3s
+    &.prev, &.next
+
+      img,svg
+        width: 2rem
+        height: 2rem
+        object-fit: contain
+        path
+          stroke: #000
+          transition: .3s
+    &.prev img, &.prev svg
+      rotate: 180deg
+@media  ( hover: hover )
+  .pagination-item:hover
+    background-color: $accent-color
+    color: #fff
+    path
+      stroke: #fff !important
+@media screen and ( max-width: 992px )
+  .pagination
+    padding: 30px 0 10px
+    &-list
+      gap: 8px
+    &-item
+      font-size: 14px
+      width: 20px
+      height: 20px
+      border-radius: 4px
+      &.prev, &.next
+
+        img,svg
+          width: 15px
+          height: 15px
