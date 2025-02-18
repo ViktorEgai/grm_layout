@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Офлайн",
 			},
 		},
 		{
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Онлайн",
 			},
 		},
 		{
@@ -36,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Онлайн",
 			},
 		},
 		{
@@ -50,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Онлайн",
 			},
 		},
 	];
