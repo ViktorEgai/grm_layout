@@ -5,12 +5,17 @@ $(document).ready(function () {
 		const searchClear = $(this).parents(".search-form").find(".search-form__clear");
 		const searchResult = $(this).parents(".search-form").find(".search-form-result");
 		const searchForm = $(this).parents(".search-form");
+		let query = $(this).val().trim();
 
-		if ($(this).val() !== "") {
-			searchBtn.hide();
-			searchClear.show();
-			searchResult.show();
-			searchForm.addClass("active");
+		if (query.length > 2) {
+			$.ajax({
+				url: searchApiUrl,
+				dataType: "json",
+				success: function (data) {
+					let results = filterResults(data, query);
+					displayResults(results);
+				},
+			});
 		} else {
 			searchBtn.show();
 			searchClear.hide();
@@ -18,18 +23,34 @@ $(document).ready(function () {
 			searchForm.removeClass("active");
 		}
 
-		// if ($(this).val().length > 2) {
-		//   $.ajax({
-		// 	url: "/index.php" /* Куда отправить запрос */,
-		// 	method: "post" /* Метод запроса (post или get) */,
-		// 	dataType: "html" /* Тип данных в ответе (xml, json, script, html). */,
-		// 	data: { text: "Текст" } /* Данные передаваемые в массиве */,
-		// 	success: function (data) {
+		function filterResults(data, query) {
+			let regex = new RegExp(query, "i"); // Регулярное выражение для поиска
+			return data.filter((item) => regex.test(item.title)); // Фильтрация по заголовку
+		}
 
-		// 			searchResult.show();
-		// 	},
-		// });
-		// }
+		function displayResults(results) {
+			searchBtn.hide();
+			searchClear.show();
+			searchResult.show();
+			searchForm.addClass("active");
+			searchResult.html("").show();
+
+			if (results.length === 0) {
+				resultContainer.append("<p>Ничего не найдено</p>");
+				return;
+			}
+
+			results.forEach((item) => {
+				let resultItem = `
+							<a href="${item.url}" class="search-form-result-item">
+							<img src="/static/img/icons/search.svg" alt="" />
+							<span>${item.title}</span>
+						</a>
+                 
+            `;
+				searchResult.append(resultItem);
+			});
+		}
 	});
 
 	$(".search-form__clear").on("click", function () {
