@@ -91,8 +91,21 @@ jQuery(document).ready(function ($) {
 		$(".header").css("--mh", subMenuHeight + 150 + "px");
 	});
 
-	function filter() {
-		var $grid = $(".grid").isotope({
+	var individualGrid = $(".individual-grid .grid").isotope({
+		itemSelector: ".grid-item",
+		layoutMode: "fitRows",
+		fitRows: {
+			equalheight: true,
+		},
+	});
+	$(".individual-nav").on("click", "button", function () {
+		var filterValue = $(this).attr("data-filter");
+		individualGrid.isotope({
+			filter: filterValue,
+		});
+	});
+	function partnersFilter() {
+		var $grid = $(".loyalty-grid .grid").isotope({
 			itemSelector: ".grid-item",
 			layoutMode: "fitRows",
 			fitRows: {
@@ -100,7 +113,7 @@ jQuery(document).ready(function ($) {
 			},
 		});
 
-		$(".loyalty-nav, .individual-nav").on("click", "button", function () {
+		$(".loyalty-nav").on("click", "button", function () {
 			var filterValue = $(this).attr("data-filter");
 			$grid.isotope({
 				filter: filterValue,
@@ -128,7 +141,7 @@ jQuery(document).ready(function ($) {
 			});
 		});
 	}
-	filter();
+	// filter();
 	// загрузка партнеров по API
 
 	function loadPartners() {
@@ -173,7 +186,7 @@ jQuery(document).ready(function ($) {
 					});
 				});
 
-				filter();
+				partnersFilter();
 			},
 		});
 	}
