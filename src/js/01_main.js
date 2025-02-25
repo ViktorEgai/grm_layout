@@ -90,4 +90,52 @@ jQuery(document).ready(function ($) {
 	$(window).resize(function () {
 		$(".header").css("--mh", subMenuHeight + 150 + "px");
 	});
+
+	// загрузка партнеров по API
+
+	function loadPartners() {
+		const partnersAPI = "http://212.193.30.89:8000/api/logo_partners/";
+		const navBlock = $(".loyalty-nav");
+		const contentBlock = $(".loyalty .grid");
+
+		function getContentItem(item, data) {
+			// let link = item.link ? '<a href="#" class="loyalty-item__title">LIGALT</a>' : '';
+			// let description = '<div class="loyalty-item__text">Юридическая компания по спорам с застройщиками</div>';
+			let tag = `<a href="#" class="loyalty-item__tag" data-filter=".${data.translit}">#${data.name} </a>`;
+			let image = `	<div class="loyalty-item__image">
+			<img src="${item.img}" alt="" />
+		</div>`;
+			let categorySlug = "";
+			let html = `<div class="grid-item ${categorySlug}">
+				<div class="loyalty-item">					
+					${image}	
+					${tag}
+				</div>
+			</div>
+			`;
+			return html;
+		}
+
+		function getNavItem(item) {
+			let slug = item.translit,
+				name = item.name;
+			let html = `<button data-filter=".${slug}" class="loyalty-nav__item">${name}</button>`;
+			return html;
+		}
+		$.ajax({
+			url: partnersAPI,
+			dataType: "json",
+			success: function (data) {
+				console.log(data);
+
+				data.forEach((item) => {
+					navBlock.append(getNavItem(item));
+					item.kategoriya.forEach((element) => {
+						contentBlock.append(getContentItem(element, item));
+					});
+				});
+			},
+		});
+	}
+	loadPartners();
 });

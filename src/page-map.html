@@ -32,34 +32,17 @@
 					<div class="container">
 						<div class="loyalty-nav">
 							<button data-filter="*" class="loyalty-nav__item active">Все</button>
-							<button data-filter=".design" class="loyalty-nav__item">Дизайн и ремонт</button>
+							<!-- <button data-filter=".design" class="loyalty-nav__item">Дизайн и ремонт</button>
 							<button data-filter=".construct-filter" class="loyalty-nav__item">Стройка</button>
 							<button data-filter=".services-filter" class="loyalty-nav__item">Бытовые услуги</button>
 							<button data-filter=".security-filter" class="loyalty-nav__item">Охрана</button>
 							<button data-filter=".engineer-filter" class="loyalty-nav__item">Кадровые инженеры</button>
 							<button data-filter=".tax-filter" class="loyalty-nav__item">Налоги</button>
 							<button data-filter=".lawyer-filter" class="loyalty-nav__item">Юристы, Адвокаты</button>
-							<button data-filter=".furniture-filter" class="loyalty-nav__item">Мебель</button>
+							<button data-filter=".furniture-filter" class="loyalty-nav__item">Мебель</button> -->
 						</div>
 						<div class="loyalty-grid">
-							<div class="grid">
-								<!-- design -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'design', 'tag': '#Дизайн и ремонт'}) }
-								<!-- construct-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'construct-filter', 'tag': '#Стройка'}) }
-								<!-- services-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'services-filter', 'tag': '#Бытовые услуги'}) }
-								<!-- security-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'security-filter', 'tag': '#Охрана'}) }
-								<!-- engineer-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'engineer-filter', 'tag': '#Кадровые инженеры'}) }
-								<!-- tax-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'tax-filter', 'tag': '#Налоги'}) }
-								<!-- lawyer-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'lawyer-filter', 'tag': '#Юристы, Адвокаты'}) }
-								<!-- furniture-filter -->
-								@@for (var i = 0; i < 4; i++) { @@include('components/bem-blocks/_loyalty-item.html',{ 'class': 'furniture-filter', 'tag': '#Мебель'}) }
-							</div>
+							<div class="grid"></div>
 						</div>
 						<div class="loyalty-text">
 							<p>По всем вопросам свяжитесь с нами любым удобным способом:</p>
