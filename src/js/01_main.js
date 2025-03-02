@@ -156,7 +156,7 @@ jQuery(document).ready(function ($) {
 			let image = `	<div class="loyalty-item__image">
 			<img src="${item.img}" alt="" />
 		</div>`;
-			let categorySlug = "";
+			let categorySlug = data.translit;
 			let html = `<div class="grid-item ${categorySlug}">
 				<div class="loyalty-item">					
 					${image}	
