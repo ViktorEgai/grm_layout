@@ -158,6 +158,7 @@ $(document).ready(function () {
 			},
 		],
 	});
+	$(".service-hero-sliders").removeClass("d-none");
 	$(".service-hero-slider").each(function (index) {
 		let $args = {
 			dots: false,
