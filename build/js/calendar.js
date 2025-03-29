@@ -29,6 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		},
 		{
+			start: "2025-03-08",
+			title: "Международный женский день 2",
+			className: "event-day",
+			display: "background",
+			extendedProps: {
+				date: "8",
+				place: "Место: Aenean commodo ligula eget123123 ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Онлайн",
+			},
+		},
+		{
 			start: "2025-04-01",
 			title: "День смеха",
 			className: "event-day",
