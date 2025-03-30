@@ -1,5 +1,5 @@
 .section-title
-  @include font( 3.5rem, 1.3, 600)
+  @include font( 3.5rem, 1, 600)
   color: #000
   padding-left: 3.9rem
   min-height: 8.0rem
@@ -14,9 +14,13 @@
     width: .3rem
     height: 100%
     background-color: $accent-color
-
+  p
+    font-weight: 500
+    font-size: 2.1rem
 @media screen and ( max-width: 992px )
   .section-title
     font-size: 16px
     padding-left: 12px
     min-height: 40px
+    p
+      font-size: 14px
