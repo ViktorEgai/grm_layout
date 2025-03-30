@@ -1,0 +1,80 @@
+.realty
+  padding: 7.7rem 0 9.3rem
+  background-color: #fff
+  &-banner
+    background-color: $accent-color
+    border-radius: 2.6rem
+    padding: 7rem 11rem 7.8rem
+    margin-bottom: 2rem
+    position: relative
+    overflow: hidden
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      width: 67.2rem
+      height: 67.2rem
+      background-image: url(../img/circle-light.png)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      z-index: -1
+      top: 0
+      right: 0
+      transform: translate(40%,-50%) rotate(90deg)
+  &-banner__title
+    color: #fff
+    font-size: 5rem
+    font-weight: 700
+  &-banner__text
+    color: rgba(#fff,.8)
+    font-weight: 600
+    font-size: 4rem
+    max-width: 106.8rem
+  &-card
+    padding: 6.6rem 3.8rem 7.7rem
+    background-color: #f9f9f9
+    border-radius: 2.6rem
+    display: flex
+    flex-direction: column
+    height: 100%
+  &-card__title
+    font-size: 2.5rem
+    font-weight: 600
+    color: $accent-color
+    margin-bottom: 2.3rem
+  &-card__text
+    font-size: 1.6rem
+    color: rgba(#000,.7)
+    margin-bottom: 4.7rem
+  &-card__btn
+    margin-top: auto
+    width: 35.5rem
+@media screen and ( max-width: 992px )
+  .realty
+    padding: 30px 0
+    &-banner
+      border-radius: 10px
+      padding: 40px 20px
+      margin-bottom: 20px
+      &::before
+        width: 250px
+        height: 250px
+    &-banner__title
+      font-size: 35px
+      line-height: 1
+    &-banner__text
+      font-size: 16px
+    &-card
+      padding: 20px
+      border-radius: 10px
+    &-card__title
+      font-size: 16px
+      margin-bottom: 20px
+    &-card__text
+      font-size: 12px
+      margin-bottom: 40px
+    &-card__btn
+      margin-top: auto
+      width: 100%
+      max-width: 240px

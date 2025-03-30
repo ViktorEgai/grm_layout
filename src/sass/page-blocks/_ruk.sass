@@ -1,0 +1,60 @@
+.ruk
+  background-color: #fff
+  &-item
+    padding: 3.4rem 3.8rem 6.3rem
+    border-radius: 2.6rem
+    background-color: #f9f9f9
+  &-item-top
+    display: flex
+    align-items: center
+    gap: 3.7rem
+    margin-bottom: 4.2rem
+  &-item-top__image
+    width: 17.3rem
+    height: 17.3rem
+    border-radius: 50%
+    overflow: hidden
+    flex-shrink: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-item-top__title
+    font-size: 2.1rem
+    color: rgba(#000,.7)
+    font-weight: 600
+  &-item__title
+    font-size: 3.5rem
+    font-weight: 600
+    color: $accent-color
+
+  &-item__text
+    margin-top: 3.5rem
+    font-size: 1.6rem
+    color: rgba(#000,.7)
+  &-item__subtitle
+    margin-top: 1.1rem
+    font-size: 1.6rem
+    color: rgba(#000,.7)
+@media screen and ( max-width: 992px )
+  .ruk
+    &-item
+      padding: 30px 20px
+      border-radius: 10px
+    &-item-top
+      gap: 10px
+      margin-bottom: 30px
+    &-item-top__image
+      width: 80px
+      height: 80px
+    &-item-top__title
+      font-size: 14px
+    &-item__title
+      font-size: 16px
+
+    &-item__text
+      margin-top: 20px
+      font-size: 12px
+    &-item__subtitle
+      margin-top: 10px
+      font-size: 12px
