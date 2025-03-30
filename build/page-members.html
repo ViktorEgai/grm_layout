@@ -1166,6 +1166,215 @@
 		</form>
 	</div>
 </div>
+<div class="popup big-quiz-popup" id="statement">
+	<div class="row">
+		<div class="col-lg-5 col-md-4 order-md-1 order-2">
+			<div class="big-quiz-popup-info">
+				<p class="big-quiz-popup-info__title">Если у вас остались вопросы</p>
+				<p class="big-quiz-popup-info__contacts"><a href="#">web@grmos.ru</a> <br /><a href="#"> +7 499 322 01 64</a></p>
+				<p>Если вы испытываете сложности с заполнением формы, вы можете отправить Заявление и документы на id@grmos.ru</p>
+			</div>
+		</div>
+		<div class="col-lg-7 col-md-8 order-md-2 order-1">
+			<div class="quiz" data-quiz>
+				<div class="pagination"></div>
+
+				<form class="quiz-form form">
+					<div class="step active">
+						<div class="quiz-title">Подача заявления на вступление в Гильдию риэлторов Москвы</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form__field">
+									<div class="form__field-title">Выберите вид членства</div>
+									<div class="row">
+										<div class="col-12">
+											<label class="form__radio"> <input type="radio" name="vid_chlenstva" value="Действительный член ГРМ" /> <span>Действительный член ГРМ</span></label>
+										</div>
+										<div class="col-12">
+											<label class="form__radio"> <input type="radio" name="vid_chlenstva" value="Откуда узнали о ГРМ" /> <span>Откуда узнали о ГРМ</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-5">
+								<div class="form__field">
+									<div class="form__field-title">Откуда узнали о ГРМ</div>
+									<input class="form__input" type="text" required placeholder="Например, соцсети, форум FreshUp, коллеги и т.д" name="kak_uznali" />
+								</div>
+								<label for="" class="form__checkbox">
+									<input type="checkbox" name="drugie_chlenstva" id="" />
+									<span>Членство в иных объединениях</span>
+								</label>
+							</div>
+						</div>
+						<div class="quiz-bottom">
+							<button type="button" class="quiz__btn next btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+						</div>
+					</div>
+					<div class="step">
+						<div class="quiz-title">Информация о компании</div>
+						<div class="quiz-text">Заполните поля, прикрепите Карточку компании с реквизитами и заполненное Заявление на вступление с приложениями.</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="text" required placeholder="Юридическое наименование компании" name="uridicheskoe_imya" />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="text" required placeholder="ИНН" name="inn" />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<div class="form__field-title">Размер компании</div>
+									<div class="row">
+										<div class="col-sm-6">
+											<label class="form__radio"> <input type="radio" name="razmer_kompanii" value="Индивидуальные риэлторы - 1 чел." /> <span>Индивидуальные риэлторы - 1 чел.</span></label>
+										</div>
+										<div class="col-sm-6">
+											<label class="form__radio"> <input type="radio" name="razmer_kompanii" value="Крупные АН - 201+  " /> <span>Крупные АН - 201+ </span></label>
+										</div>
+										<div class="col-sm-6">
+											<label class="form__radio"> <input type="radio" name="razmer_kompanii" value="Малые АН - 2-30 человек" /> <span>Малые АН - 2-30 человек</span></label>
+										</div>
+										<div class="col-sm-6">
+											<label class="form__radio"> <input type="radio" name="razmer_kompanii" value="Франшиза" /> <span>Франшиза</span></label>
+										</div>
+										<div class="col-sm-6">
+											<label class="form__radio"> <input type="radio" name="razmer_kompanii" value="Средние АН - 31-200 " /> <span>Средние АН - 31-200 </span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row gy-4">
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="requisites_file" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Карточка с реквизитами</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="requisites_file" id="requisites_file" required />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="zayavlenie_file" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Заполненное Заявление с приложениями</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="zayavlenie_file" id="zayavlenie_file" required />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz-bottom">
+							<button type="button" class="quiz__btn prev btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+							<button type="button" class="quiz__btn next btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+						</div>
+					</div>
+					<div class="step">
+						<div class="quiz-title">Пакет документов</div>
+						<div class="quiz-text">Укажите ссылку на папку с документами, размещенную на Яндекс, Mail, Google и т.п., или загрузите необходимые документы.</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Ссылка на папку с файлами" name="document_link" />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field-title">Или загрузите документы</div>
+								<div class="row gy-4">
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="doc_file" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="doc_file" id="doc_file" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="doc_file_2" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="doc_file_2" id="doc_file_2" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="doc_file_3" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="doc_file_3" id="doc_file_3" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form__field">
+											<label for="doc_file_4" class="form__file"
+												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
+											</label>
+											<input type="file" name="doc_file_4" id="doc_file_4" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz-bottom">
+							<button type="button" class="quiz__btn prev btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+							<div class="quiz-bottom-text"> Не более 10 файлов для каждой загрузки. Допустимые форматы: DOC, PDF, JPEG</div>
+							<button type="button" class="quiz__btn next btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="quiz-title">Контактная информация</div>
+						<div class="quiz-text">Укажите контактную информацию лица, ответственного за взаимодействие с НП «ГРМ»</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Контактное лицо" name="contact_name" required="" />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="tel" placeholder="Телефон" name="contact_phone" required />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="email" placeholder="Почта" name="contact_email" required />
+								</div>
+							</div>
+						</div>
+						<div class="form-acceptance" style="text-align: left">
+							<p>
+								Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+								персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+							</p>
+						</div>
+						<div class="quiz-bottom">
+							<button type="button" class="quiz__btn prev btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+							<button type="submit" class="quiz__btn btn submit">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="popup" id="subscribe">
 	<div class="sidebar-banner__inner">
 		<div class="sidebar-banner__icon">

@@ -1,0 +1,71 @@
+.quiz-banner
+  padding: 9.2rem 0
+  &-wrapper
+    overflow: hidden
+    border-radius: 2.6rem
+    background: linear-gradient(0,#1cab98 0,#2b2826 100%)
+    border-radius: 2.6rem
+    padding: .3rem
+    height: 100%
+  &-inner
+    background-color: #fff
+    border-radius: 2.5rem
+    overflow: hidden
+  &-info
+    padding: 4.7rem 44rem 4.7rem 3.2rem
+    height: 100%
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 63.7rem
+      height: 63.7rem
+      background-image: url(../img/circle.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      transform: translate(-45%, -45%)
+  &__title
+    font-size: 3.5rem
+    font-weight: 600
+    margin-bottom: 1em
+  &__text
+    font-size: 2.1rem
+    margin-bottom: 7.3rem
+    a
+      text-decoration: underline
+  &__btn
+    width: 24.5rem
+  &-image
+
+  img
+    width: 100%
+    object-fit: cover
+    height: 79.5rem
+@media screen and ( max-width: 992px )
+  .quiz-banner
+    padding: 20px 0
+    &-wrapper
+      border-radius: 10px
+      padding: 3px
+      height: 100%
+    &-inner
+      border-radius: 10px
+    &-info
+      padding: 20px
+      min-height: 200px
+      &::before
+        width: 265px
+        height: 265px
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 12px
+      margin-bottom: 40px
+    &__btn
+      width: 240px
+    &-image
+      img
+        height: auto

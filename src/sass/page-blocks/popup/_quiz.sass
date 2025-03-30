@@ -28,19 +28,25 @@
     width: 8rem
     height: 8rem
     margin-right: auto
+    flex-shrink: 0
     img
       rotate: 180deg
   .next
     margin-left: auto
     width: 8rem
     height: 8rem
+    flex-shrink: 0
   &-bottom
     display: flex
     align-items: center
     justify-content: space-between
     margin-top: 4.4rem
     gap: 2rem
-  .submit
+  &-bottom-text
+    color: $accent-color
+    text-align: center
+    font-weight: 300
+    font-size: 1.8rem
     flex-grow: 1
   .file-name
     display: none

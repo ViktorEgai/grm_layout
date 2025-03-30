@@ -42,8 +42,27 @@
 
   &-item__text
     max-width: 73rem
-  &-image img
-    width: 100%
+  &-image
+    position: relative
+    z-index: 1
+    img
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      z-index: -1
+      left: 0
+      width: 100%
+  &-image-text
+
+    font-size: 2.5rem
+    color: #fff
+    font-style: italic
+    font-weight: 600
+
+    padding: 25.8rem 7.7rem 6.5rem 6rem
+    p,ul,ol
+      margin-bottom: 1em
   &__btn
     margin-top: 10rem
     max-width: 42rem
@@ -75,6 +94,23 @@
     &-item__text
       max-width: 73rem
     &-image
+      position: relative
+      z-index: 1
+      img
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        z-index: -1
+        left: 0
+        width: 100%
+        height: 100%
+    &-image-text
+
+      font-size: 14px
+
+      padding: 160px 40px 30px 30px
+
     &__btn
       margin: 40px auto 0
       max-width: 245px
