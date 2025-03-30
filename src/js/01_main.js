@@ -191,4 +191,13 @@ jQuery(document).ready(function ($) {
 		});
 	}
 	loadPartners();
+
+	if (!localStorage.getItem("cookiesAccepted")) {
+		$("#cookie-popup").fadeIn(500);
+	}
+
+	$("#accept-cookies").click(function () {
+		localStorage.setItem("cookiesAccepted", "true");
+		$("#cookie-popup").fadeOut(500);
+	});
 });
