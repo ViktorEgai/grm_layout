@@ -30,6 +30,9 @@
     color: #fff
     max-width: 105rem
     margin-bottom: 2.6rem
+  &__title--small
+    font-size: 7rem
+
   &__text
     font-size: 2.1rem
     color: rgba(#fff,.7)
@@ -91,6 +94,8 @@
     &--big
       max-width: 51rem
       margin: 0
+    &--25
+      font-size: 2.5rem
   &-sliders
     position: absolute
     bottom: 7.2rem
@@ -121,6 +126,10 @@
     z-index: -1
     img
       animation: rotate 30s infinite
+    &-behind
+      left: auto
+      right: 0
+      height: 66.5rem
   &__icon
     margin-bottom: -5rem
     img
@@ -152,6 +161,9 @@
     &__title
       font-size: 35px
       margin-bottom: 12px
+    &__title--small
+      font-size: 25px
+
     &__text
       font-size: 12px
       margin-bottom: 20px
@@ -225,7 +237,7 @@
         height: 60px
     &-block__info
       margin: 0
-      font-size: 12px
+      font-size: 12px !important
       color: #fff
       max-width: 238px
       .service-hero-block__title

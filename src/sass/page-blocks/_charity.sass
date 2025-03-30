@@ -1,0 +1,72 @@
+.charity
+  padding: 9.4rem 0
+  &-wrapper
+    background-color: $dark-green
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 10.3rem 0
+    text-align: center
+    color: #fff
+    gap: 4rem
+    border-radius: 2.6rem
+    position: relative
+    overflow: hidden
+    &::before, &::after
+
+      content: ''
+      position: absolute
+      width: 45rem
+      height: 39rem
+      background-image: url(../img/circle-light.png)
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+    &::before
+      top: 0
+      left: 0
+      transform: translate(-40%, -40%)
+
+    &::after
+      bottom: 0
+      right: 0
+      transform: translate(40%, 40%) rotate(180deg)
+  &__title
+    font-size: 5rem
+    text-transform: uppercase
+    font-weight: 700
+  &__text
+    font-size: 2.5rem
+    font-weight: 600
+    max-width: 113.9rem
+  &-buttons
+    margin-top: 4rem
+    display: flex
+    align-items: center
+    gap: 2rem
+  &__btn
+    width: 38.5rem
+@media screen and ( max-width: 992px )
+  .charity
+    padding: 30px 0
+    &-wrapper
+      padding: 40px 20px
+      gap: 20px
+      border-radius: 10px
+      &::before, &::after
+
+        width: 250px
+        height: 200px
+
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 12px
+      max-width: 100%
+    &-buttons
+      margin-top: 20px
+      gap: 10px
+      flex-direction: column
+    &__btn
+      width: 240px
