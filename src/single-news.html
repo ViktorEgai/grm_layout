@@ -14,12 +14,13 @@
 						<span>Lorem ipsum dolor sit amet consectetur.</span>
 					</div>
 				</div>
-				<div class="single-news-top">
+			 
+				<!-- content-block -->
+				<div class="content-block">
 					<div class="container">
-						<div class="single-news-top__image">
-							<img src="img/gallery/1.png" alt="" />
-						</div>
-						<div class="single-news-top__info">
+						<div class="content-block-wrapper">
+							<div class="content-block-left">
+									<div class="single-news-top__info">
 							<h1 class="single-news-top__title">Lorem ipsum dolor, consectetuer adipiscing elit.</h1>
 							<div class="single-news-top-person">
 								<div class="single-news-top-person__image"><img src="img/thumb.png" alt="" /></div>
@@ -33,13 +34,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<!-- content-block -->
-				<div class="content-block">
-					<div class="container">
-						<div class="content-block-wrapper">
-							<div class="content-block-left">
 								<div class="content-block__inner">
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 									<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
@@ -101,6 +95,20 @@
 										</a>
 									</div>
 								</div>
+								  <div class="sidebar-news">
+                  	@@for (var i = 0; i < 4; i++) {
+                  <a href="#" class="sidebar-news-item">
+                    <div class="sidebar-news-item__img"><img src="img/front-page/news.jpeg" alt=""></div>
+                    <div class="sidebar-news-item__info">
+                      <div class="sidebar-news-item__info-top ">	<p>09.12</p>
+										<p><img src="img/icons/eye.svg" data-svg alt="" />123</p>
+										<p><img src="img/icons/clock.svg" data-svg alt="" />5 мин</p></div>
+                      <div class="sidebar-news-item__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+
+                    </div>
+                  </a>
+                }
+                </div>
 									<div class="sidebar-banner sidebar-banner--wide">
 									<div class="sidebar-banner__inner">
 										<div class="sidebar-banner__icon">
@@ -120,20 +128,7 @@
 										</form>
 									</div>
 								</div>
-                <div class="sidebar-news">
-                  	@@for (var i = 0; i < 4; i++) {
-                  <a href="#" class="sidebar-news-item">
-                    <div class="sidebar-news-item__img"><img src="img/front-page/news.jpeg" alt=""></div>
-                    <div class="sidebar-news-item__info">
-                      <div class="sidebar-news-item__info-top ">	<p>09.12</p>
-										<p><img src="img/icons/eye.svg" data-svg alt="" />123</p>
-										<p><img src="img/icons/clock.svg" data-svg alt="" />5 мин</p></div>
-                      <div class="sidebar-news-item__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-
-                    </div>
-                  </a>
-                }
-                </div>
+              
 							
 							</aside>
 						</div>
