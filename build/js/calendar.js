@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const events = [
 		{
-			start: "2025-02-14",
-			title: "День святого Валентина",
+			start: "2025-04-14",
+			title: "Мероприятие 1",
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
@@ -13,60 +13,105 @@ document.addEventListener("DOMContentLoaded", function () {
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
 				status: "Офлайн",
+				statusClass: "offline",
 			},
 		},
 		{
-			start: "2025-03-08",
-			title: "Международный женский день",
-			className: "event-day",
+			start: "2025-04-14",
+			title: "Мероприятие 2",
+			className: "event-day online",
 			display: "background",
 			extendedProps: {
-				date: "8",
+				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-				status: "Онлайн",
+				status: "Офлайн",
+				statusClass: "online",
 			},
 		},
 		{
-			start: "2025-03-08",
-			title: "Международный женский день 2",
-			className: "event-day",
+			start: "2025-04-14",
+			title: "Мероприятие 2",
+			className: "event-day online",
 			display: "background",
 			extendedProps: {
-				date: "8",
-				place: "Место: Aenean commodo ligula eget123123 ",
-				time: "08:00",
-				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-				status: "Онлайн",
-			},
-		},
-		{
-			start: "2025-04-01",
-			title: "День смеха",
-			className: "event-day",
-			display: "background",
-			extendedProps: {
-				date: "1",
+				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-				status: "Онлайн",
+				status: "Офлайн",
+				statusClass: "online",
 			},
 		},
 		{
-			start: "2025-02-16",
-			title: "Московский Международный жилищный конгресс 2024 ", // Краткое название события
-			className: "event-day",
+			start: "2025-04-14",
+			title: "Мероприятие 2",
+			className: "event-day online",
 			display: "background",
-
 			extendedProps: {
-				date: "6",
-
+				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
 				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
-				status: "Онлайн",
+				status: "Офлайн",
+				statusClass: "online",
+			},
+		},
+		{
+			start: "2025-04-14",
+			title: "Мероприятие 2",
+			className: "event-day online",
+			display: "background",
+			extendedProps: {
+				date: "14",
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Офлайн",
+				statusClass: "online",
+			},
+		},
+		{
+			start: "2025-04-14",
+			title: "Мероприятие 2",
+			className: "event-day online",
+			display: "background",
+			extendedProps: {
+				date: "14",
+				place: "Место: Aenean commodo ligula eget ",
+				time: "08:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Офлайн",
+				statusClass: "online",
+			},
+		},
+		{
+			start: "2025-04-17",
+			title: "Мероприятие 4",
+			className: "event-day offline",
+			display: "background",
+			extendedProps: {
+				date: "14",
+				place: "Место: Aenean commodo ligula eget ",
+				time: "09:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Офлайн",
+				statusClass: "offline",
+			},
+		},
+		{
+			start: "2025-04-17",
+			title: "Мероприятие 3",
+			className: "event-day offline",
+			display: "background",
+			extendedProps: {
+				date: "14",
+				place: "Место: Aenean commodo ligula eget ",
+				time: "11:00",
+				description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+				status: "Офлайн",
+				statusClass: "online",
 			},
 		},
 	];
@@ -102,8 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			showNonCurrentDates: false,
 			events: events,
 			eventClick: function (info) {
-				console.log(info);
-
 				updateEventInfo(info.event.start, info.event.title);
 			},
 		});
@@ -129,6 +172,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			events.forEach((event) => {
 				const eventDate = new Date(event.start);
+
+				eventDate.setHours(0, 0, 0, 0);
+				today.setHours(0, 0, 0, 0);
 				if (eventDate >= today && (!nearestEvent || eventDate < new Date(nearestEvent.start))) {
 					nearestEvent = event;
 				}
@@ -136,6 +182,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (nearestEvent) {
 				updateEventInfo(nearestEvent.start, nearestEvent.title);
+			} else {
+				const today = new Date();
+				const day = today.getDate();
+				const month = today.toLocaleString("ru", { month: "long" });
+				const monthGenitive = monthCases[month] || month;
+				infoDateEl.textContent = day;
+				infoMonthEl.textContent = month;
+				infoTextEl.innerHTML = "Мероприятия на ближайшие даты отсутствуют.";
 			}
 		}
 
@@ -148,7 +202,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		const infoDateEl = document.querySelector(".info-calendar-date__day p");
 		const infoMonthEl = document.querySelector(".info-calendar-date__day span");
 		const infoTextEl = document.querySelector(".info-calendar-date__text");
-
+		const calendarEventBlock = document.querySelector(".calendar-event-block");
+		const calendarSection = document.querySelector(".calendar");
 		const smallCal = new FullCalendar.Calendar(smallCalendar, {
 			initialView: "dayGridMonth",
 			locale: "ru",
@@ -171,30 +226,10 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Синхронизируем с большим календарем
 				bigCal.gotoDate(new Date(currentYear, currentMonth, 1));
 			},
-			eventContent: function (arg) {
-				return {
-					html: `
-                    <div class="event-content">
-										<div class="event-content-top">
-										<p class="event-content__date"> ${arg.event.extendedProps.date}</p>
-										<p class="event-content__status"> ${arg.event.extendedProps.status}</p>
-										<p class="event-content__time"> ${arg.event.extendedProps.time}</p>
-										</div>
-                        <p class="event-content__title">${arg.event.title}</p>
-												<p class="event-content__description">${arg.event.extendedProps.description}</p>
-                        <p class="event-content__place">${arg.event.extendedProps.place}</p>
-												<a href="#popup" data-fancybox class="event-content__btn btn btn--white">Зарегистрироваться</a>
-                    </div>
-										
-                `,
-				};
-			},
+
 			eventClick: function (info) {
 				if ($(window).width() < 992) {
-					const eventContent = $(info.el).find(".event-content");
-
-					$(".calendar-event-block").html(eventContent.clone());
-					$(".calendar-event-block").toggle();
+					$(".calendar-event-block").show();
 				}
 			},
 		});
@@ -205,34 +240,75 @@ document.addEventListener("DOMContentLoaded", function () {
 			headerToolbar: false,
 			showNonCurrentDates: true,
 			fixedWeekCount: false,
-			contentHeight: "auto", // Устанавливаем авто-высоту
+			contentHeight: "auto",
 			height: "auto",
 			events: events,
 			eventContent: function (arg) {
+				const multipleEvents = arg.view.calendar.getEvents().filter((event) => event.startStr === arg.event.startStr);
+				const earliestTime = multipleEvents.reduce((min, event) => {
+					return event.extendedProps.time < min ? event.extendedProps.time : min;
+				}, multipleEvents[0].extendedProps.time);
+
+				const visibleEvents = multipleEvents.slice(0, 2); // Ограничиваем до двух мероприятий
+				const hiddenEventsCount = multipleEvents.length - visibleEvents.length;
+
 				return {
 					html: `
-                    <div class="event-content">
-										<div class="event-content-top">
-											<p class="event-content__date"> ${arg.event.extendedProps.date}</p>
-												<p class="event-content__time"> ${arg.event.extendedProps.time}</p>
-										</div>
-                        <p class="event-content__title">${arg.event.title}</p>
-												<p class="event-content__description">${arg.event.extendedProps.description}</p>
-                        <p class="event-content__place">${arg.event.extendedProps.place}</p>
-												<a href="#popup" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
-                    </div>
-										
-                `,
+                <div class="event-time-start"> ${earliestTime}</div>
+                ${visibleEvents.map((event) => `<p class="event-title">${event.title}</p>`).join("")}
+                 
+                <div class="event-total">${multipleEvents.length} мероприятий</div>
+
+            `,
 				};
 			},
-			eventClick: function (info) {
-				$(info.el).toggleClass("active");
-				$(info.el).parents(".fc-day").find(".fc-daygrid-day-top").toggleClass("active");
+			datesSet: function () {
+				document.querySelectorAll(".fc-daygrid-day").forEach((dayCell) => {
+					dayCell.addEventListener("click", function () {
+						const date = this.getAttribute("data-date");
+						const dayEvents = events.filter((event) => event.start === date);
+
+						if (dayEvents.length > 0) {
+							const eventListHtml = dayEvents
+								.map(
+									(event) => `
+                        <div class="event-content ${event.extendedProps.statusClass}">
+                            <div class="event-content-top">
+                                <p class="event-content__date">${event.extendedProps.date}</p>
+                                <p class="event-content__time">${event.extendedProps.time}</p>
+                            </div>
+                            <p class="event-content__title">${event.title}</p>
+                            <p class="event-content__description">${event.extendedProps.description}</p>
+                           <div class="event-content-bottom">
+                           	 <p class="event-content__place">${event.extendedProps.place}</p>
+	                            <a href="#event-popup" data-title="${event.title}" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
+                           </div>
+                        </div>
+                    `
+								)
+								.join("");
+
+							calendarEventBlock.innerHTML = eventListHtml;
+							calendarEventBlock.style.display = "block";
+						}
+					});
+				});
 			},
 		});
 
 		smallCal.render();
 		bigCal.render();
+
+		calendarSection.addEventListener("click", function (e) {
+			const t = e.target;
+
+			if (!t.closest(".calendar-event-block") && !t.closest(".fc-event")) {
+				calendarEventBlock.style.display = "none";
+				console.log(t);
+			} else {
+				calendarEventBlock.style.display = "block";
+			}
+		});
 
 		// Функция для обновления блока с датой
 		function updateEventInfo(date, title) {
@@ -245,14 +321,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			infoMonthEl.textContent = monthGenitive;
 			infoTextEl.innerHTML = title || "Событие без названия";
 		}
-
-		// Найти ближайшую дату события и обновить блок
-		function setNearestEvent() {
+		// // Найти ближайшую дату события и обновить блок
+		function setNearestEventForSmallCal() {
 			const today = new Date();
 			let nearestEvent = null;
 
 			events.forEach((event) => {
 				const eventDate = new Date(event.start);
+
+				eventDate.setHours(0, 0, 0, 0);
+				today.setHours(0, 0, 0, 0);
+
 				if (eventDate >= today && (!nearestEvent || eventDate < new Date(nearestEvent.start))) {
 					nearestEvent = event;
 				}
@@ -260,6 +339,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (nearestEvent) {
 				updateEventInfo(nearestEvent.start, nearestEvent.title);
+			} else {
+				const today = new Date();
+				const day = today.getDate();
+				const month = today.toLocaleString("ru", { month: "long" });
+				const monthGenitive = monthCases[month] || month;
+				infoDateEl.textContent = day;
+				infoMonthEl.textContent = month;
+				infoTextEl.innerHTML = "Мероприятия на ближайшие даты отсутствуют.";
+			}
+		}
+		setNearestEventForSmallCal();
+
+		// Функция для отображения мероприятий в блоке
+		function showEventsForDate(date) {
+			const dayEvents = events.filter((event) => event.start === date);
+			const calendarEventBlock = document.querySelector(".calendar-event-block");
+			console.log(dayEvents.length);
+
+			if (dayEvents.length > 0) {
+				const eventListHtml = dayEvents
+					.map(
+						(event) => `
+            <div class="event-content  ${event.extendedProps.statusClass}">
+                <div class="event-content-top">
+                    <p class="event-content__date">${event.extendedProps.date}</p>
+                    <p class="event-content__time">${event.extendedProps.time}</p>
+                </div>
+                <p class="event-content__title">${event.title}</p>
+                <p class="event-content__description">${event.extendedProps.description}</p>
+                <p class="event-content__place">${event.extendedProps.place}</p>
+                <a href="#popup" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
+            </div>
+        `
+					)
+					.join("");
+
+				calendarEventBlock.innerHTML = eventListHtml;
+				calendarEventBlock.style.display = "block";
+			}
+		}
+
+		// Найти ближайшую дату с мероприятиями и отобразить их при загрузке
+		function setNearestEvent() {
+			const today = new Date().toISOString().split("T")[0];
+			const futureEvents = events.filter((event) => event.start >= today);
+
+			if (futureEvents.length > 0) {
+				const nearestDate = futureEvents[0].start;
+				console.log(nearestDate);
+
+				showEventsForDate(nearestDate);
 			}
 		}
 

@@ -12,7 +12,7 @@
   &-wrapper
     gap: 2rem
     display: flex
-
+    position: relative
   &-left
     width: 42rem
     .info-calendar
@@ -65,6 +65,13 @@
         background-color: $sec-bg-color
   &-event-block
     display: none
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    height: 100%
+    z-index: 10
+    overflow: auto
 #calendar
   min-height: 98rem
   font-size: 1rem
@@ -119,28 +126,18 @@
       width: 200%
       height: 200%
       left: -100%
-      .event-content
-        &__date
-          opacity: 1
-        &-top
-          left: 2rem
-          right: 2rem
-          font-size: 2.1rem
-
-        &__title
-          font-size: 1.8rem
-          margin-bottom: .6rem
-          transition: .3s
-
-        &__place
-          margin-top: 3.2rem
-          font-size: 1.2rem
-          margin-bottom: 3rem
-        &__description
-          display: block
-          font-size: 1.2rem
-        &__btn
-          display: flex
+    .event-title, .event-total
+      font-size: 1.2rem
+      margin-bottom: 0.9rem
+      font-weight: 600
+    .event-total
+      margin: auto 0 0
+    .event-time-start
+      font-size: 1rem
+      position: absolute
+      top: 1.5rem
+      right: 1.4rem
+      z-index: 1
   .fc-event-main
     flex-grow: 1
   .fc-daygrid-event
@@ -154,39 +151,60 @@
   .event-day
     margin: 0
     cursor: pointer
-  .event-content
+
+.event-content
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transition: .3s
+  border-radius: 2.6rem
+  padding: 1.5rem 1.6rem 2rem
+  width: 37rem
+  color: #fff
+  margin-bottom: 2.3rem
+  // height: 100%
+  &.offline
+    background-color: $light-green
+  &.online
+    background-color: $dark-green
+  &-top
     display: flex
-    flex-direction: column
+    align-items: center
     justify-content: space-between
+    font-size: 2.1rem
+
+    top: 1.5rem
+
     transition: .3s
-    height: 100%
-    &-top
-      display: flex
-      align-items: center
-      justify-content: space-between
-      font-size: 1rem
-      position: absolute
-      top: 1.5rem
-      right: 1.5rem
-      left: 1.5rem
-      transition: .3s
-    &__date
-      opacity: 0
-      transition: .3s
-    &__time
 
-    &__title
-      font-size: 1.2rem
-      font-weight: 600
-      margin-bottom: 2rem
-      transition: .3s
+    font-size: 2.1rem
+  &__time
 
-    &__place
-      font-size: 1.2rem
-    &__description
-      display: none
-    &__btn
-      display: none
+  &__title
+    font-size: 1.8rem
+
+    font-weight: 600
+    margin-bottom: .6rem
+    transition: .3s
+
+  &__place
+    font-size: 1.2rem
+    font-weight: 600
+  &__btn
+    display: flex
+    font-size: 1.2rem
+    border-radius: 1.4rem
+    border-width: 1px
+    padding: 1.5rem 2.9rem
+  &__description
+    display: block
+    font-size: 1.2rem
+  &-bottom
+    margin-top: 2.6rem
+    gap: 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
 @media ( hover: hover )
   #calendar .event-day:hover
     box-shadow: 0 0 10px $light-green
@@ -216,31 +234,41 @@
     &-event-types
       display: none
     &-event-block
+      position: static
       margin-top: 12px
       border-radius: 10px
-      background-color: #00A48A
       color: #fff
       padding: 14px
   .event-content
-    font-size: 14px
     font-weight: 500
-
+    width: 100%
+    padding: 14px 14px 22px
     &-top
       display: flex
       align-items: center
       justify-content: space-between
       margin-bottom: 23px
+      font-size: 14px
     &__description
       font-size: 12px
       font-weight: 400
       margin-bottom: 13px
     &__title
       margin-bottom: 7px
+      font-size: 14px
+
     &__place
       margin-bottom: 35px
+      font-size: 12px
+      align-self: start
+
     &__btn
       max-width: 180px
       background-color: rgba(#fff,.2)
       color: #fff
       border: 2px solid #fff
       margin: 0 auto
+      font-size: 12px
+      padding: 12px 22px
+    &-bottom
+      flex-direction: column
