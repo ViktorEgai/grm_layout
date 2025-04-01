@@ -1,9 +1,11 @@
 $(document).ready(function () {
 	$(".search-form-result").hide();
+	$(".search-form-result").html('<div class="search-form-result-list"></div>');
 	$(".search-form input").on("input", function () {
 		const searchBtn = $(this).parents(".search-form").find(".search-form__btn");
 		const searchClear = $(this).parents(".search-form").find(".search-form__clear");
 		const searchResult = $(this).parents(".search-form").find(".search-form-result");
+		const searchResultList = $(this).parents(".search-form").find(".search-form-result .search-form-result-list");
 		const searchForm = $(this).parents(".search-form");
 		let query = $(this).val().trim();
 
@@ -33,10 +35,10 @@ $(document).ready(function () {
 			searchClear.show();
 			searchResult.show();
 			searchForm.addClass("active");
-			searchResult.html("").show();
+			searchResultList.html("").show();
 
 			if (results.length === 0) {
-				resultContainer.append("<p>Ничего не найдено</p>");
+				searchResultList.html("").append("<p>Ничего не найдено</p>");
 				return;
 			}
 
@@ -48,7 +50,7 @@ $(document).ready(function () {
 						</a>
                  
             `;
-				searchResult.append(resultItem);
+				searchResultList.append(resultItem);
 			});
 		}
 	});
