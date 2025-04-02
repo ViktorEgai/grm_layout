@@ -41,6 +41,9 @@
     margin-top: 6.8rem
     margin-bottom: 3.9rem
     color: rgba(#000, .7)
+    overflow: auto
+    height: 6em
+
   &-item__logo
     max-width: 15.4rem
     height: 8rem
@@ -93,6 +96,7 @@
       display: flex
       flex-direction: column
       position: relative
+      background-image: url(../img/comitet-member-bg-mob.png)
       &::before
         content: ''
         position: absolute
@@ -107,6 +111,7 @@
         transform: translate(40%, -12%)
     &-item-top
       padding: 20px 16px
+      height: auto
     &-item__top-info
       gap: 15px
     &-item__image
@@ -121,8 +126,10 @@
     &-item__descr
       font-size: 12px
       margin: 22px 0 18px
+      height: 54px
     &-item__logo
       max-width: 105px
+      height: 50px
 
     &-item-bottom
       padding: 15px 0
