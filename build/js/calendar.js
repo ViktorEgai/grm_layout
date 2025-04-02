@@ -304,9 +304,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (!t.closest(".calendar-event-block") && !t.closest(".fc-event")) {
 				calendarEventBlock.style.display = "none";
-				console.log(t);
-			} else {
-				calendarEventBlock.style.display = "block";
 			}
 		});
 
@@ -376,7 +373,9 @@ document.addEventListener("DOMContentLoaded", function () {
 					.join("");
 
 				calendarEventBlock.innerHTML = eventListHtml;
-				calendarEventBlock.style.display = "block";
+				if ($(window).width() < 992) {
+					calendarEventBlock.style.display = "block";
+				}
 			}
 		}
 
@@ -387,7 +386,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (futureEvents.length > 0) {
 				const nearestDate = futureEvents[0].start;
-				console.log(nearestDate);
 
 				showEventsForDate(nearestDate);
 			}
