@@ -181,26 +181,26 @@
     transform: rotate(0)
 @media  ( hover: hover )
 
-  .cards-item:has(.cards-item-back):hover
-    z-index: 10
-    .cards-item
-      &-front
-        animation: flipFront 1.2s
+  // .cards-item:has(.cards-item-back):hover
+  //   z-index: 10
+  //   .cards-item
+  //     &-front
+  //       animation: flipFront 1.2s
 
-        &::before
-          opacity: 0
-      &-front__inner
-        background: transparent
-        color: #fff
-      &__subtitle
-        color: #fff
-        &::before
-          background-color: #fff
-      &__title
-        color: #fff
-      &-back
-        animation: flipBack 1.2s
-        z-index: 2
+  //       &::before
+  //         opacity: 0
+  //     &-front__inner
+  //       background: transparent
+  //       color: #fff
+  //     &__subtitle
+  //       color: #fff
+  //       &::before
+  //         background-color: #fff
+  //     &__title
+  //       color: #fff
+  //     &-back
+  //       animation: flipBack 1.2s
+  //       z-index: 2
   .cards-item__link:hover:before
     width: 100%
 @media screen and ( max-width: 992px )

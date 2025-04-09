@@ -16,4 +16,20 @@ $(document).ready(function () {
 
 		$('[name="event_name"]').val(event_title);
 	});
+
+	$(".cards-item").each(function () {
+		$(this).data("hoverToggle", false);
+	});
+
+	$(".cards-item").on("mouseenter", function () {
+		let toggle = $(this).data("hoverToggle");
+
+		if (toggle) {
+			$(this).removeClass("active");
+		} else {
+			$(this).addClass("active");
+		}
+
+		$(this).data("hoverToggle", !toggle);
+	});
 });
