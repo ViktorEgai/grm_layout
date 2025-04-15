@@ -10,6 +10,7 @@ const plugins = [
 	"node_modules/gsap/dist/ScrollTrigger.min.js",
 	"node_modules/jquery-validation/dist/jquery.validate.min.js",
 	"node_modules/jquery-validation/dist/localization/messages_ru.min.js",
+	"node_modules/simplebar/dist/simplebar.min.js",
 ];
 const { src, dest } = require("gulp");
 const uglify = require("gulp-uglify-es").default;

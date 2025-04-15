@@ -1,0 +1,135 @@
+.rieltor-card
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    margin: 0 -9rem
+  &-col
+    padding: 7.2rem 9rem 9rem
+    display: flex
+    flex-direction: column
+    height: 100%
+    &:first-of-type
+      background-color: #f9f9f9
+  &__title
+    font-weight: 700
+    font-size: 5rem
+    color: $light-green
+    margin-bottom: 3rem
+  &__image
+    border-radius: 2.6rem
+    overflow: hidden
+    margin-bottom: 3.4rem
+    background-color: #fff
+    img
+      width: 100%
+    &-logo
+      padding: 40px
+      img
+        width: 100%
+        aspect-ratio: 1
+        object-fit: contain
+  &-contacts
+    margin-top: auto
+  &-contacts__item
+    display: flex
+    align-items: center
+    gap: 1.7rem
+    font-size: 2.1rem
+    margin-bottom: 2.7rem
+  &-contacts__icon
+    display: block
+    width: 2.4rem
+    height: 2.4rem
+  &-contacts-social
+    margin-top: 4rem
+    .social-item
+      background-color: #213030
+      path
+        fill: #fff
+  &-content
+    font-size: 2.1rem
+    margin-bottom: 2.6rem
+  &-content__title
+    color: rgba(#000,.3)
+  &-content__text
+    p,ul,ol, li
+      margin-bottom: 1em
+    ul,ol
+      padding-left: 1.2em
+  &-content__read-all
+    text-decoration: underline
+    color: $light-green
+    margin-top: 1.2em
+    cursor: pointer
+    display: block
+  &__btn
+  &-tags
+    display: flex
+    flex-wrap: wrap
+    row-gap: 1rem
+    margin-top: 2rem
+  &__tag
+    padding: 1.1rem 2.5rem
+    border: 1px solid rgba(#000,.3)
+    border-radius: 2.6rem
+  &-tags__more
+    font-weight: 600
+    background-color: $accent-color
+    border-radius: 2.6rem
+    padding: 1.1rem 2.5rem
+    color: #fff
+    cursor: pointer
+@media  (hover: hover)
+  .rieltor-card .social-item:hover
+    background-color: #fff
+    border: 1px solid #213030
+    path
+      fill: #213030
+  .rieltor-card-contacts__item a:hover
+    color: $accent-color
+@media screen and ( max-width: 992px )
+  .rieltor-card
+    padding-bottom: 40px
+    &-wrapper
+      grid-template-columns: auto
+      margin: 0 -15px
+    &-col
+      padding: 40px 15px 50px
+      &:not(:first-of-type)
+        padding: 30px 15px 0
+    &__title
+      font-weight: 700
+      font-size: 30px
+      margin-bottom: 30px
+    &__image
+      border-radius: 10px
+      margin-bottom: 3.4rem
+    &-contacts
+
+    &-contacts__item
+      gap: 13px
+      font-size: 16px
+      margin: 0 0 10px
+    &-contacts__icon
+      width: 18px
+      height: 18px
+    &-contacts-social
+      margin-top: 34px
+      .social-item
+        width: 40px
+        height: 40px
+
+    &-content
+      font-size: 16px
+      margin-bottom: 26px
+    &-tags
+      display: flex
+      flex-wrap: wrap
+      row-gap: 10px
+      margin-top: 20px
+    &__tag
+      padding: 11px 25px
+      border-radius: 26px
+    &-tags__more
+      border-radius: 26px
+      padding: 11px 25px

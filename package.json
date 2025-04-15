@@ -59,6 +59,7 @@
     "isotope-layout": "^3.0.6",
     "jquery-validation": "^1.21.0",
     "jquery.nicescroll": "^3.7.6",
+    "simplebar": "^6.3.0",
     "sweetalert2": "^10.13.0",
     "swiper": "^9.4.1",
     "wowjs": "^1.1.3"

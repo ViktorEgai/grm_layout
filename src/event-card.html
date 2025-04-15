@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<div class="breadcrumbs breadcrumbs--white">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Мероприятия</a>⭢
+						<span>Всероссийский жилищный конгресс в Сочи</span>
+					</div>
+				</div>
+				<div class="event-card">
+					<div class="container">
+						<div class="row g-5">
+							<div class="col-lg-6 order-2 order-lg-1">
+								<div class="event-card-content">
+									<h1 class="page-title event-card__title">Всероссийский жилищный конгресс в Сочи</h1>
+									<div class="event-card__info">
+										<p>11 апреля 2025</p>
+										<p>конгресс</p>
+									</div>
+									<p>Приглашаем вас принять участие во Всероссийском жилищном конгрессе 7-11 апреля 2025 году в Сириусе — в одном из самых масштабных и значимых событий рынкa недвижимости.</p>
+									<p>ТЕМА ГРЯДУЩЕГО ФОРУМА: «КОНГРЕСС — ЭТО БУДУЩЕЕ!»</p>
+									<p>Будущее девелоперского и риэлторского бизнеса, ипотечных продуктов, инвестиций. Лейтмотивом Жилищного конгресса в Сириусе также станут инновации и цифровизация в недвижимости.</p>
+									<p>
+										В мероприятии примут участие руководители федеральных органов власти, владельцы крупнейших девелоперских компаний России, агентств недвижимости, банков и агрегаторов. Вас ждут 5 насыщенных дней — мероприятия для девелоперов и риэлторов, темы которых подобраны на злобу дня, отвечают современным трендам и тенденциям первичного и вторичного рынков, инвестиционных проектов, ИЖС.
+									</p>
+									<p>Подробности по ссылке: <a href="https://russiacongress.ru/about/news/67243.html">https://russiacongress.ru/about/news/67243.html</a></p>
+									<p>Регистрация на Конгресс в Сириусе здесь: <a href="https://russiacongress.ru/congress/registration.html">https://russiacongress.ru/congress/registration.html</a></p>
+								</div>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-2">
+								<div class="event-card__image">
+									<img src="img/event.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

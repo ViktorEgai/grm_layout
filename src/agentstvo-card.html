@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<div class="breadcrumbs breadcrumbs--white">
+					<div class="container">
+						<a href="#">Главная</a>⭢ <a href="#">Агентства </a>⭢
+						<span>Старыгин и партнеры</span>
+					</div>
+				</div>
+				<div class="rieltor-card">
+					<div class="container">
+						<div class="rieltor-card-wrapper">
+							<div class="rieltor-card-col">
+								<div class="rieltor-card__image rieltor-card__image-logo">
+									<img src="img/starygin.png" alt="" />
+								</div>
+								<div class="rieltor-card-contacts">
+									<div class="rieltor-card-contacts__item">
+										<img src="img/icons/building.svg" alt="" class="rieltor-card-contacts__icon" />
+										<p>г.Москва</p>
+									</div>
+									<div class="rieltor-card-contacts__item">
+										<img src="img/icons/phone-call.svg" alt="" class="rieltor-card-contacts__icon" />
+										<a href="#">+7 (926) 647-26-96</a>
+									</div>
+									<div class="rieltor-card-contacts__item">
+										<img src="img/icons/envelope.svg" alt="" class="rieltor-card-contacts__icon" />
+										<a href="#">aoi.rieltor@gmail.com</a>
+									</div>
+									<div class="rieltor-card-contacts__item">
+										<img src="img/icons/globe.svg" alt="" class="rieltor-card-contacts__icon" />
+										<p>Данные отсутствуют</p>
+									</div>
+									<div class="rieltor-card-contacts-social social">
+										<a href="#" class="social-item" target="_blank"> <img src="img/icons/tg.svg" alt="" data-svg /> </a>
+										<a href="#" class="social-item" target="_blank"> <img src="img/icons/vk.svg" alt="" data-svg /> </a>
+									</div>
+								</div>
+							</div>
+							<div class="rieltor-card-col">
+								<h1 class="rieltor-card__title agent-title">Старыгин и Партнёры</h1>
+
+								<div class="rieltor-card-content">
+									<div class="rieltor-card-content__title">Описание компании:</div>
+									<div class="rieltor-card-content__text">
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+									</div>
+								</div>
+
+								<div class="rieltor-card-content">
+									<div class="rieltor-card-content__title">Ключевые преимущества:</div>
+									<div class="rieltor-card-content__text mt-3">
+										<ol>
+											<li>Aenean commodo ligula eget dolor. Aenean massa.</li>
+											<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</li>
+											<li>Aenean commodo ligula eget dolor. Aenean massa.</li>
+											<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</li>
+											<li>Aenean commodo ligula eget dolor. Aenean massa.</li>
+										</ol>
+									</div>
+								</div>
+								<div class="rieltor-card-content mt-auto">
+									<div class="rieltor-card-content__title">Год основания компании:</div>
+									<div class="rieltor-card-content__text">2020г</div>
+								</div>
+							</div>
+							<div class="rieltor-card-col">
+								<div class="rieltor-card-content">
+									<div class="rieltor-card-content__title">Специализация:</div>
+									<div class="rieltor-card-tags">
+										<div class="rieltor-card__tag">Квартиры</div>
+										<div class="rieltor-card__tag">Вторичный рынок</div>
+										<div class="rieltor-card__tag">Квартиры в новостройках</div>
+										<div class="rieltor-card__tag">Дачи</div>
+										<div class="rieltor-card__tag">Коттеджи</div>
+										<div class="rieltor-card__tag">Поселки</div>
+										<div class="rieltor-card__tag">Дома</div>
+										<div class="rieltor-card__tag">Поселки</div>
+										<div class="rieltor-card__tag">Оценка недвижимости</div>
+										<div class="rieltor-card__tag">Офисные помещения</div>
+										<div class="rieltor-card__tag">Складские помещения</div>
+										<div class="rieltor-card__tag">Помещения свободного назначения</div>
+									</div>
+								</div>
+								<div class="mt-auto">
+									<div class="rieltor-card-content">
+										<div class="rieltor-card-content__title">География работы:</div>
+										<div class="rieltor-card-content__text">Московская область</div>
+									</div>
+									<div class="rieltor-card-content">
+										<div class="rieltor-card-content__title">График работы:</div>
+										<div class="rieltor-card-content__text">Пн-чт: 09:00 - 18:00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
