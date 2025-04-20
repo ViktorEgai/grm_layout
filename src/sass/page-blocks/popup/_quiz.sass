@@ -48,56 +48,56 @@
     font-weight: 300
     font-size: 1.8rem
     flex-grow: 1
+.file-name
+  display: none
+.upload-status
+  display: none
+  &.active
+    display: flex
+    width: 100%
+    gap: 2.6rem
+    align-items: center
+    position: relative
   .file-name
-    display: none
-  .upload-status
-    display: none
-    &.active
-      display: flex
-      width: 100%
-      gap: 2.6rem
-      align-items: center
-      position: relative
-    .file-name
-      display: block
-      font-size: 2.1rem
-    .file-preview
+    display: block
+    font-size: 2.1rem
+  .file-preview
 
-    .file-icon
-      width: 4.8rem
-      height: 6.3rem
-      object-fit: contain
-    .file-info
-      flex-grow: 1
-    .file-size
-      font-size: 1.4rem
-      margin-top: 0.7rem
-      margin-bottom: 1rem
-      display: block
-    .progress-bar
-      flex-grow: 1
-      width: 100%
-      background-color: #f3f3f3
-      height: 0.6rem
-      border-radius: 0.6rem
-      overflow: hidden
-    .progress
-      background-color: #005d62
-      display: block
-      height: 100%
-    .upload-percent
-      font-weight: 500
-      font-size: 1.4rem
-      margin-left: 1rem
-    .upload-clear
-      position: absolute
-      top: 1rem
-      right: 1rem
-      width: 1.3rem
-      height: 1.3rem
-  .send-email-notice
-    color: red
+  .file-icon
+    width: 4.8rem
+    height: 6.3rem
+    object-fit: contain
+  .file-info
+    flex-grow: 1
+  .file-size
+    font-size: 1.4rem
+    margin-top: 0.7rem
+    margin-bottom: 1rem
+    display: block
+  .progress-bar
+    flex-grow: 1
+    width: 100%
+    background-color: #f3f3f3
+    height: 0.6rem
+    border-radius: 0.6rem
+    overflow: hidden
+  .progress
+    background-color: #005d62
+    display: block
+    height: 100%
+  .upload-percent
     font-weight: 500
+    font-size: 1.4rem
+    margin-left: 1rem
+  .upload-clear
+    position: absolute
+    top: 1rem
+    right: 1rem
+    width: 1.3rem
+    height: 1.3rem
+.send-email-notice
+  color: red
+  font-weight: 500
 @media screen and ( max-width: 992px )
   .quiz
     &-popup

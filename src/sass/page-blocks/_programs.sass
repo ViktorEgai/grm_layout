@@ -1,0 +1,85 @@
+.programs
+  padding: 9.2rem 0
+  &__title
+    margin-bottom: 5.2rem
+  &-slider
+    margin: 0 -0.8rem
+    .slick-dots
+      margin-top: 20px
+  &-slider__item
+    margin: 0 .8rem
+  &-card
+    border-radius: 2.6rem
+    overflow: hidden
+    min-height: 69rem
+    display: flex
+    flex-direction: column
+    &.await
+      opacity: 0.5
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 10
+
+  &-card__thumb
+    background-color: #00000033
+    height: 31rem
+    border-radius: 2.6rem
+    flex-shrink: 0
+  &-card-info
+    flex-grow: 1
+    background-color: #fff
+    padding: 3rem 4rem 4rem
+    display: flex
+    flex-direction: column
+  &-card__title
+    font-size: 3.5rem
+    font-weight: 500
+    color: rgba(#000, .7)
+    margin-bottom: 2.3rem
+    transition: .3s
+  &-card__text
+    font-size: 2.1rem
+    margin-bottom: 1em
+  &-card__link
+    margin-top: auto
+    font-size: 3.5rem
+    margin-bottom: 1rem
+@media  ( hover:hover  )
+  .programs-card__link:hover
+    &::before
+      width: 100%
+  .programs-card__title:hover
+    color: $accent-color
+@media screen and ( max-width: 992px )
+  .programs
+    padding: 20px 0
+    &__title
+      margin-bottom: 13px
+    &-slider
+      margin: 0 -8px
+
+    &-slider__item
+      margin: 0 8px
+    &-card
+      border-radius: 17px
+      min-height: 450px
+
+    &-card__thumb
+      height: 200px
+      border-radius: 17px
+    &-card-info
+      padding: 20px 26px 26px
+    &-card__title
+      font-size: 21px
+      margin-bottom: 17px
+    &-card__text
+      font-size: 14px
+    &-card__link
+      font-size: 22px
+      margin-bottom: 0

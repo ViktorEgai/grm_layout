@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">Библиотека уроков для&nbsp;риэлтора</h1>
+
+						<div class="top__text">Тут собраны самые топовые уроки, которые не теряют свою актуальность и позволят вам быстро освежить знания</div>
+					</div>
+				</div>
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs breadcrumbs--white">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span> Библиотека уроков для риэлтора</span>
+					</div>
+				</div>
+				<section class="library">
+					<div class="container">
+						<div class="row gy-4">
+							<div class="col-lg-4 col-sm-6">
+								<div class="library-item">
+									<div class="library-item__speaker">
+										Спикер: Иван Иванов – <br />
+										риэлтор со стажем 10 лет
+									</div>
+									<div class="library-item__title">Как продать квартиру за 7 дней: стратегии быстрого результата</div>
+									<div class="library-item__text">Урок о том, как правильно подготовить объект, выстроить позиционирование и выбрать эффективные каналы привлечения покупателей. Подходит как для новичков, так и для опытных агентов.</div>
+									<div class="library-item__tags">
+										<p><img src="img/icons/clock.svg" alt="" /> 45 минут</p>
+										•
+										<p>#продажи</p>
+									</div>
+									<div class="library-item__price">
+										900 ₽
+										<p>Для членов Гильдии</p>
+									</div>
+									<span class="line my-4"></span>
+									<div class="library-item__small-price">
+										1 500 ₽
+										<p>Без членства</p>
+									</div>
+									<a href="#popup" data-fancybox class="library-item__btn btn">Купить </a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="library-item">
+									<div class="library-item__speaker">
+										Спикер: Иван Иванов – <br />
+										риэлтор со стажем 10 лет
+									</div>
+									<div class="library-item__title">Психология покупателя: как читать между строк</div>
+									<div class="library-item__text">Разбираем поведенческие паттерны клиентов, типичные возражения и техники влияния, которые помогают закрывать сделки быстрее и легче. Максимум практики — минимум воды.</div>
+									<div class="library-item__tags">
+										<p><img src="img/icons/clock.svg" alt="" /> 1 час</p>
+										•
+										<p>#коммуникации</p>
+									</div>
+									<div class="library-item__price">
+										1 200 ₽
+										<p>Для членов Гильдии</p>
+									</div>
+									<span class="line my-4"></span>
+									<div class="library-item__small-price">
+										1 900 ₽
+										<p>Без членства</p>
+									</div>
+									<a href="#popup" data-fancybox class="library-item__btn btn">Купить </a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="library-item">
+									<div class="library-item__speaker">
+										Спикер: Иван Иванов – <br />
+										риэлтор со стажем 10 лет
+									</div>
+									<div class="library-item__title">Инстаграм для риэлтора: от сторис до заявок</div>
+									<div class="library-item__text">Пошаговый гайд по оформлению профиля, ведению контента и запуску прогревающих сторис. Как органически привлекать клиентов и превращать подписчиков в реальных покупателей.</div>
+									<div class="library-item__tags">
+										<p><img src="img/icons/clock.svg" alt="" /> 50 минут</p>
+										•
+										<p>#маркетинг</p>
+									</div>
+									<div class="library-item__price">
+										1 000 ₽
+										<p>Для членов Гильдии</p>
+									</div>
+									<span class="line my-4"></span>
+									<div class="library-item__small-price">
+										1 600 ₽
+										<p>Без членства</p>
+									</div>
+									<a href="#popup" data-fancybox class="library-item__btn btn">Купить </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- map-block -->
+				@@include('components/page-blocks/_map-block-form.html')
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

@@ -300,6 +300,16 @@
 						<span>Фотогалерея</span>
 					</div>
 				</div>
+
+				<div class="container">
+					<div class="gallery-nav">
+						<a href="#" class="gallery-nav__item active">2024</a>
+						<a href="#" class="gallery-nav__item">2023</a>
+						<a href="#" class="gallery-nav__item">2022</a>
+						<a href="#" class="gallery-nav__item">2021</a>
+						<a href="#" class="gallery-nav__item">2020</a>
+					</div>
+				</div>
 				<div class="stories gallery-stories">
 					<div class="container">
 						<div class="stories-slider">
@@ -1415,6 +1425,50 @@
 <div class="cookie-popup" id="cookie-popup">
 	<div class="cookie-popup-text">Использование сайта означает согласие с политикой конфиденциальности</div>
 	<button class="cookie-popup__btn btn" id="accept-cookies">ОК, больше не показывать</button>
+</div>
+<div class="popup" id="review-popup">
+	<div class="popup-title">Оставьте отзыв</div>
+	<div class="popup-text">расскажите, как прошло ваше обучение</div>
+
+	<form class="popup-form form">
+		<label class="form__checkbox mb-5"> <input type="checkbox" name="video_review" id="video_review" /> <span>Оставить видео отзыв</span></label>
+		<div class="form__field">
+			<input class="form__input" type="text" placeholder="Фамилия" required name="usersurname" />
+		</div>
+		<div class="form__field">
+			<input class="form__input" type="text" placeholder="Имя" required name="username" />
+		</div>
+
+		<div id="text_message">
+			<textarea name="review_message" id="" class="form__input form__textarea" placeholder="Текст" style="height: 15rem"></textarea>
+		</div>
+		<div id="video_message">
+			<div class="form__field">
+				<label for="video_file" class="form__file"
+					><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузить файл</span></span> <span class="file-name"></span>
+					<span class="upload-status">
+						<span class="file-preview">
+							<img src="img/icons/file.svg" alt="Файл" class="file-icon" />
+						</span>
+						<span class="file-info">
+							<span class="file-name"></span>
+							<span class="file-size"></span>
+							<span class="d-flex align-items-center">
+								<span class="progress-bar">
+									<span class="progress"></span>
+								</span>
+								<span class="upload-percent">0%</span>
+							</span>
+						</span>
+					</span>
+				</label>
+				<input type="file" name="video_file" class="file_excel" id="video_file" required />
+				<div class="form-acceptance green">Вертикальный ролик (без обрезки и рамок). Длина видео до 3 минут. <br />Максимальный размер: 1 Гбайт.</div>
+			</div>
+		</div>
+		<button class="form__btn btn">Отправить</button>
+		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+	</form>
 </div>
 
 			<!-- footer -->

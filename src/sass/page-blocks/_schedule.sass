@@ -1,0 +1,134 @@
+.schedule
+  padding: 15.6rem 0
+  background-color: #fff
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 6.6rem
+  &__title
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    span
+      display: block
+      font-size: 2.1rem
+  &-buttons
+    display: flex
+    align-items: center
+    gap: 2rem
+  &__btn
+    padding: 2.6rem 3.2rem
+  &-wrapper
+  &-item
+    padding: 6.5rem 0 6rem
+    border-bottom: 1px solid rgba(#000,.2)
+    &:first-child
+      border-top: 1px solid rgba(#000,.2)
+
+  &-item-info
+    gap: 4.5rem
+    font-weight: 600
+
+  &-item__image
+    width: 17.3rem
+    height: 17.3rem
+    border-radius: 50%
+    object-fit: cover
+  &-item__date
+    font-size: 3.5rem
+    color: $light-green
+  &-item__time
+    font-size: 2.5rem
+    text-transform: uppercase
+    margin-bottom: 2.4rem
+  &-item__name
+    font-size: 2.1rem
+    color: rgba(#000,.5)
+  &-item-content
+    display: flex
+    justify-content: space-between
+    gap: 9rem
+  &-item__title
+    margin-top: 2rem
+    font-size: 3.5rem
+    color: $light-green
+    font-weight: 600
+    margin-bottom: 0.7rem
+  &-item__text
+    font-size: 2.1rem
+    font-weight: 600
+    p,ul,ol
+      margin-bottom: 1em
+    & *:last-child
+      margin: 0
+    ul,ol
+      padding-left: 1.2em
+    span
+      color: $light-green
+  &-item-buttons
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+    flex-shrink: 0
+  &-item__btn
+    width: 20rem
+@media screen and ( max-width: 992px )
+  .schedule
+    padding: 30px 0
+    &-top
+      flex-direction: column
+      align-items: flex-start
+      gap: 10px
+    &__title
+
+      span
+        font-size: 12px
+        font-weight: 500
+    &-buttons
+      justify-content: center
+      width: 100%
+      gap: 10px
+    &__btn
+      padding: 13px
+    &-wrapper
+
+    &-item
+      padding: 30px 0
+
+    &-item-info
+      gap: 20px
+
+    &-item__image
+      width: 80px
+      height: 80px
+    &-item__date
+      font-size: 16px
+    &-item__time
+      font-size: 12px
+      margin-bottom: 20px
+    &-item__name
+      font-size: 12px
+    &-item-content
+      gap: 30px
+    &-item__title
+      margin-top: 0
+      font-size: 16px
+      margin-bottom: 10px
+    &-item__text
+      font-size: 12px
+    &-item-buttons
+      gap: 10px
+    &-item__btn
+      width: 160px
+@media screen and ( max-width: 576px )
+  .schedule-item
+    &-content
+      flex-direction: column
+    &-buttons
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+    &__btn
+      width: 100%

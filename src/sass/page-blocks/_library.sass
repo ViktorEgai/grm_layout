@@ -1,0 +1,86 @@
+.library
+  padding: 7.7rem 0
+  background-color: #fff
+  &-item
+    background-color: #F9F9F9
+    border-radius: 2.6rem
+    padding: 3.6rem 3.8rem 4.5rem
+    font-size: 2.1rem
+    height: 100%
+    display: flex
+    flex-direction: column
+  &-item__speaker
+    color: $light-green
+    margin-bottom: 2.5rem
+  &-item__title
+    font-weight: 500
+    font-size: 3rem
+    color: rgba(#000,.7)
+    margin-bottom: 2.3rem
+  &-item__text
+    color: rgba(#000,.7)
+    margin-bottom: 2.8rem
+    margin-top: auto
+  &-item__tags
+    display: flex
+    align-items: center
+    gap: 1rem
+    color: $light-green
+    margin-bottom: 3rem
+    p
+      display: flex
+      align-items: center
+      gap: .5rem
+      img,svg
+        width: 1.9rem
+  &-item__price
+    font-size: 7rem
+    color: $accent-color
+    p
+      color: $light-green
+      font-size: 2.1rem
+      margin-top: -.7em
+  &-item__small-price
+    color: $accent-color
+    font-size: 3.5rem
+    font-weight: 500
+    p
+      color: rgba(#000,.7)
+      font-size: 2.1rem
+      margin-top: -.3em
+      font-weight: 400
+  &-item__btn
+    margin-top: 4rem
+@media screen and ( max-width: 992px )
+  .library
+    padding: 40px 0
+    &-item
+      border-radius: 10px
+      padding: 20px 20px 30px
+      font-size: 12px
+    &-item__speaker
+      margin-bottom: 15px
+    &-item__title
+      font-size: 16px
+      margin-bottom: 15px
+    &-item__text
+      margin-bottom: 20px
+      margin-top: auto
+    &-item__tags
+      gap: 8px
+      margin-bottom: 20px
+      p
+        gap: 5px
+        img,svg
+          width: 12px
+    &-item__price
+      font-size: 40px
+      p
+        font-size: 12px
+    &-item__small-price
+      font-size: 20px
+      font-weight: 500
+      p
+        font-size: 12px
+    &-item__btn
+      margin-top: 30px

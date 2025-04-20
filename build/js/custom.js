@@ -26,15 +26,19 @@ $(document).ready(function () {
 	});
 
 	$(".cards-item").on("mouseenter", function () {
-		let toggle = $(this).data("hoverToggle");
+		if ($(this).find(".cards-item-back").length > 0) {
+			console.log($(this).find(".cards-item-back"));
 
-		if (toggle) {
-			$(this).removeClass("active");
-		} else {
-			$(this).addClass("active");
+			let toggle = $(this).data("hoverToggle");
+
+			if (toggle) {
+				$(this).removeClass("active");
+			} else {
+				$(this).addClass("active");
+			}
+
+			$(this).data("hoverToggle", !toggle);
 		}
-
-		$(this).data("hoverToggle", !toggle);
 	});
 
 	$(".baza-item-slider").slick({
@@ -117,4 +121,63 @@ $(document).ready(function () {
 		$(".rieltor-card-col:last-child").append($(".rieltor-card-buttons"));
 		$(".rieltor-card-col:first-child").prepend($(".agent-title"));
 	}
+	$(".await .programs-card__link").text("Ожидание");
+
+	$(".reviews-nav__item").on("click", function () {
+		$(".reviews-block.active .slick-slider").slick("setPosition", 0);
+	});
+
+	function toggleReviewMessage() {
+		if ($("#video_review").is(":checked")) {
+			$("#text_message").hide();
+			$("#video_message").show();
+			console.log(1);
+		} else {
+			$("#text_message").show();
+			$("#video_message").hide();
+		}
+	}
+	toggleReviewMessage();
+	$("#video_review").on("change", toggleReviewMessage);
+
+	$(".booking-btn").on("click", function () {
+		const parentBlock = $(this).parents(".schedule-item");
+		let name = parentBlock.find(".schedule-item__name").text();
+		let date = parentBlock.find(".schedule-item__date").text();
+		let week = parentBlock.find(".schedule-item__time .week").text();
+		let hours = parentBlock.find(".schedule-item__time .time").text();
+		let theme = parentBlock.find(".schedule-item__title").text();
+		let time = `${date} (${week}) ${hours}`;
+		$("#speaker-name").text(name);
+		$("#speaker-time").text(time);
+		$("#speaker-theme").text(theme);
+		$("[name='speaker-name']").val(name);
+		$("[name='speaker-time']").val(time);
+		$("[name='speaker-theme']").val(theme);
+	});
+
+	$(".speaker-btn").on("click", function () {
+		const data = $(this).data("speaker");
+		console.log(typeof data);
+
+		const html = `<div class="row">
+						<div class="col-sm-6">
+							<div class="speaker-popup__image">
+								<img src="${data.image}" alt="" />
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="speaker-popup-info">
+								<div class="speaker-popup__date">${data.date}</div>
+								<div class="speaker-popup__time">${data.time}</div>
+
+								<div class="speaker-popup-content">
+									<div class="speaker-popup__name">${data.name}</div>
+									${data.content}
+								</div>
+							</div>
+						</div>
+					</div>`;
+		$(".speaker-popup-wrapper").html(html);
+	});
 });

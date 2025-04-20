@@ -19,11 +19,14 @@
       display: none
     &-title
       margin-bottom: 2rem
+      font-size: 2.1rem
+      color: rgba(#000, .8)
   &__title
     @include font (3.5rem, 120%, 600)
     color: #060606
   &__subtitle
     font-size: 2.1rem
+
   &-notice
     @include font (1.8rem, 140%)
     margin-bottom: 1.6rem
@@ -55,7 +58,10 @@
     align-items: center
     gap: 1.5rem
     cursor: pointer
+    font-size: 2.1rem
+    color: rgba(#000,.8)
     input
+      margin: 0
       width: 2.5rem
       height: 2.5rem
       border: 1px solid #000
@@ -77,6 +83,7 @@
       &:checked
         &::before
           opacity: 1
+
   &__file
     color: #005d62
     font-size: 1.7rem
@@ -169,6 +176,7 @@
     width: 100%
     font-size: 1.3rem
     text-align: center
+    justify-content: center
     input
       appearance: none
       flex-shrink: 0
@@ -204,6 +212,9 @@
       // max-width: 26.5rem
     a
       text-decoration: underline
+    &.green
+      color: $light-green
+      font-weight: 600
   &-small-text
     font-size: 1.2rem
     margin-bottom: 1.2rem
@@ -267,6 +278,7 @@
     &__checkbox
       font-size: 12px
       align-items: flex-start
+      gap: 10px
       input
         width: 16px
         height: 16px

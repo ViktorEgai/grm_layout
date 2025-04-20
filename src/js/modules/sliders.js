@@ -194,4 +194,76 @@ $(document).ready(function () {
 		variableWidth: true,
 		cssEase: "linear",
 	});
+
+	$(".programs-slider").slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
+	});
+	$(".reviews-text-slider").slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		arrows: false,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
+	});
+	$(".reviews-video-slider").slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		arrows: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
+	});
 });

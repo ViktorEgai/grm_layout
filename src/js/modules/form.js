@@ -50,7 +50,6 @@ $(document).ready(function () {
 		// Получаем список выбранных файлов
 		const files = $(this)[0].files;
 		const input = $(this);
-		console.log(input.hasClass("file_excel"));
 
 		if (input.hasClass("file_excel")) {
 			if (files.length > 0) {
