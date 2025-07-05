@@ -1,8 +1,14 @@
 .gallery
   padding-bottom: 9.2rem
+  &__title
+    margin-bottom: 8rem
   &-stories
     padding: 0
     margin-bottom: 2rem
+  &-tab-item
+    display: none
+  &-tab-item.active
+    display: block
   &-grid
     display: grid
     grid-template-columns: repeat(12,1fr)
@@ -145,6 +151,8 @@
 @media screen and ( max-width: 992px )
   .gallery
     padding-bottom: 40px
+    &__title
+      margin-bottom: 40px
     &-nav
       margin-bottom: 20px
       gap: 10px

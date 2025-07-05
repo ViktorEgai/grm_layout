@@ -4,7 +4,7 @@
   overflow: hidden
   display: flex
   align-items: flex-end
-  height: 92rem
+  height: 102rem
   &-bg
     position: absolute
     z-index: -5
@@ -19,7 +19,7 @@
     // display: flex
     // flex-direction: column
     // justify-content: flex-end
-    height: 92rem
+    height: 102rem
     // flex-grow: 1
   &-form
     // flex-grow: 1
@@ -27,6 +27,7 @@
     // align-items: flex-end
   &-form-block
     max-width: 89.6rem
+    min-height: 80rem
     background-color: #fff
     box-shadow: 0 .7rem 3rem rgba(#34578B, .25)
     border-radius: 2.6rem
@@ -61,6 +62,7 @@
     padding: 1rem 0 1.5rem
     border-bottom: 1px solid #232323
     background: none
+    color: #000
     &::placeholder
       color: rgba(#000,.2)
     &.error
@@ -133,7 +135,7 @@
     bottom: -17rem
   &-form-back-top
     position: absolute
-    top: 13.5rem
+    top: 23rem
     left: 50%
     transform: translateX(-50%)
     width: 108rem
@@ -169,7 +171,7 @@
     left: 50%
     transform: translate(-50%,0)
     width: 26.4rem
-    img
+    img, svg
       width: 100%
 .letter-form.sent
   .letter-form-block
@@ -184,11 +186,12 @@
   100%
     transform: translateX(-50%) rotate(360deg)
 @media (hover: hover)
-  .letter-form-acceptance a:hover
+  .letter-form-block__acceptance a:hover
     color: $accent-color
+    text-decoration: underline
 @media screen and ( max-width: 992px )
   .letter
-    min-height: 665px
+    min-height: 700px
     height: auto
     margin-top: 20px
     &-bg
@@ -254,6 +257,11 @@
     &-form-btn
       max-width: 180px
       bottom: 260px
+select.letter-form-block__input
+  border-top: none
+  border-left: none
+  border-right: none
+  border-radius: 0
 @media screen and ( max-width: 440px )
   .letter
     &-form__front

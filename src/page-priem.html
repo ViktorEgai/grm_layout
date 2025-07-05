@@ -43,8 +43,8 @@
 										</div>
 										<div class="sidebar-banner__green-text">Lorem ipsum dolor sit amet</div>
 										<div class="sidebar-banner__black-text">Cum sociis natoque penatibus</div>
-										<a href="#" class="sidebar-banner__btn mt-4 btn">Для физических лиц</a>
-										<a href="#" class="sidebar-banner__btn mt-4 btn">Для юридических лиц</a>
+										<a href="#petition-fiz" data-fancybox class="sidebar-banner__btn mt-4 btn">Для физических лиц</a>
+										<a href="#petition-yur" data-fancybox class="sidebar-banner__btn mt-4 btn">Для юридических лиц</a>
 										<div class="sidebar-form-acceptance mt-4">Информация о персональных данных авторов обращений, направленных в электронном виде, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных (<a href="#">Политика конфиденциальности</a>)</div>
 									</div>
 								</div>
@@ -54,6 +54,206 @@
 				</div>
 			</main>
 			<!-- popup -->
+			<div class="popup quiz-popup" id="petition-fiz">
+				<div class="quiz" data-quiz>
+					<div class="pagination"></div>
+
+					<div class="quiz-title">Отправить обращение в комиссию грм по этике и защите прав потребителей</div>
+					<div class="quiz-text">*Заполните поля, прикрепите необходимые файлы и документы</div>
+					<form class="quiz-form form">
+						<div class="step active">
+							<div class="row">
+								<div class="col-12 mb-5">
+									<div class="form__field">
+										<input class="form__input" type="text" required placeholder="Фамилия" name="surname" />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form__field">
+										<input class="form__input" type="text" required placeholder="Имя" name="username" />
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form__field">
+										<input class="form__input" type="text" required placeholder="Отчество" name="father_name" />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<input class="form__input" type="email" placeholder="E-mail" name="email" />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+									</div>
+								</div>
+							</div>
+							<div class="quiz-bottom">
+								<button type="button" class="quiz__btn prev btn" style="opacity: 0">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+								<div class="quiz-bottom-text">
+									<a href="#" class="m-0">Политика конфиденциальности</a>
+								</div>
+								<button type="button" class="quiz__btn next btn">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+							</div>
+						</div>
+						<div class="step">
+							<div class="row">
+								<div class="col-12">
+									<div class="form__field">
+										<textarea name="message" placeholder="Текст обращения" class="form__input form__textarea no-resize"></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<div class="file-label mb-3">
+											<p>*Выберите файлы для загрузки</p>
+											<small>(Не более 5 файлов, максимальный размер каждого - 3 МБ. Допустимые форматы: DOC, PDF, JPEG) </small>
+										</div>
+										<label for="file_obrashenie" class="form__file"
+											><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файлы </span></span> <span class="file-name"></span>
+											<span class="upload-status">
+												<span class="file-preview">
+													<img src="img/icons/file.svg" alt="Файл" class="file-icon" />
+												</span>
+												<span class="file-info">
+													<span class="file-name"></span>
+													<span class="file-size"></span>
+													<span class="d-flex align-items-center">
+														<span class="progress-bar">
+															<span class="progress"></span>
+														</span>
+														<span class="upload-percent">0%</span>
+													</span>
+												</span>
+											</span>
+										</label>
+										<input type="file" name="file_obrashenie" class="file_excel" id="file_obrashenie" required />
+									</div>
+									<div class="form-acceptance">
+										<span class="mx-auto">
+											Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+											персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="quiz-bottom">
+								<button type="button" class="quiz__btn prev btn">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+								<button type="submit" class="quiz__btn btn submit">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="popup quiz-popup" id="petition-yur">
+				<div class="quiz" data-quiz>
+					<div class="pagination"></div>
+
+					<div class="quiz-title">Отправить обращение в комиссию грм по этике и защите прав потребителей</div>
+					<div class="quiz-text">*Заполните поля, прикрепите необходимые файлы и документы</div>
+					<form class="quiz-form form">
+						<div class="step active">
+							<div class="row">
+								<div class="col-12">
+									<div class="form__field">
+										<input class="form__input" type="text" required placeholder="Название вашей организации" name="organization_name" />
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div class="form__field">
+										<div class="form__field-title">Является ли ваша организация членом ГРМ?</div>
+										<label class="form__radio">
+											<input type="radio" name="grm_member" value="Да" id="" />
+											<span>Да </span>
+										</label>
+										<label class="form__radio">
+											<input type="radio" name="grm_member" value="Нет" id="" />
+											<span>Нет </span>
+										</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<input class="form__input" type="email" placeholder="E-mail" name="email" />
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+									</div>
+								</div>
+							</div>
+							<div class="quiz-bottom">
+								<button type="button" class="quiz__btn prev btn" style="opacity: 0">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+								<div class="quiz-bottom-text">
+									<a href="#" class="m-0">Политика конфиденциальности</a>
+								</div>
+								<button type="button" class="quiz__btn next btn">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+							</div>
+						</div>
+						<div class="step">
+							<div class="row">
+								<div class="col-12">
+									<div class="form__field">
+										<textarea name="message" placeholder="Текст обращения" class="form__input form__textarea no-resize"></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__field">
+										<div class="file-label mb-3">
+											<p>*Выберите файлы для загрузки</p>
+											<small>(Не более 5 файлов, максимальный размер каждого - 3 МБ. Допустимые форматы: DOC, PDF, JPEG) </small>
+										</div>
+										<label for="file_obrashenie" class="form__file"
+											><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файлы </span></span> <span class="file-name"></span>
+											<span class="upload-status">
+												<span class="file-preview">
+													<img src="img/icons/file.svg" alt="Файл" class="file-icon" />
+												</span>
+												<span class="file-info">
+													<span class="file-name"></span>
+													<span class="file-size"></span>
+													<span class="d-flex align-items-center">
+														<span class="progress-bar">
+															<span class="progress"></span>
+														</span>
+														<span class="upload-percent">0%</span>
+													</span>
+												</span>
+											</span>
+										</label>
+										<input type="file" name="file_obrashenie" class="file_excel" id="file_obrashenie" required />
+									</div>
+									<div class="form-acceptance">
+										<span class="mx-auto">
+											Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+											персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="quiz-bottom">
+								<button type="button" class="quiz__btn prev btn">
+									<img src="img/icons/next.svg" alt="" />
+								</button>
+								<button type="submit" class="quiz__btn btn submit">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 			@@include('components/page-blocks/_popup.html')
 			<!-- footer -->
 			@@include('components/page-blocks/_footer.html')

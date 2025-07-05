@@ -2,6 +2,7 @@ $(document).ready(function () {
 	$(".search-form-result").hide();
 	$(".search-form-result").html('<div class="search-form-result-list"></div>');
 	$(".search-form input").on("input", function () {
+		const input = $(this);
 		const searchBtn = $(this).parents(".search-form").find(".search-form__btn");
 		const searchClear = $(this).parents(".search-form").find(".search-form__clear");
 		const searchResult = $(this).parents(".search-form").find(".search-form-result");
@@ -16,6 +17,8 @@ $(document).ready(function () {
 				success: function (data) {
 					let results = filterResults(data, query);
 					displayResults(results);
+
+					enterHandle();
 				},
 			});
 		} else {
@@ -38,7 +41,7 @@ $(document).ready(function () {
 			searchResultList.html("").show();
 
 			if (results.length === 0) {
-				searchResultList.html("").append("<p>Ничего не найдено</p>");
+				searchResultList.html("").append("<p class=' mx-5 px-5' >Ничего не найдено</p>");
 				return;
 			}
 
@@ -53,6 +56,23 @@ $(document).ready(function () {
 				searchResultList.append(resultItem);
 			});
 		}
+		function enterHandle() {
+			$(document).off("keypress.enterHandler");
+
+			$(document).on("keypress.enterHandler", function (event) {
+				if (event.which === 13) {
+					const firstLink = $(".search-form-result-item").eq(0);
+					if (firstLink.length) {
+						const url = firstLink.attr("href");
+						if (url) {
+							event.preventDefault(); // Отменяем стандартное поведение
+							window.location.href = url; // Принудительный переход
+						}
+					}
+				}
+			});
+		}
+		enterHandle();
 	});
 
 	$(".search-form__clear").on("click", function () {

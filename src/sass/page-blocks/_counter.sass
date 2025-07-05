@@ -1,0 +1,101 @@
+.counter
+  padding: 0 0 9.2rem
+  &-wrapper
+    border: .3rem solid #504D50
+    border-radius: 2.6rem
+  &-top
+    padding: 4.8rem 0 6.5rem
+    border-bottom: 1px dashed #E4E4E4
+  &-top__title
+    text-align: center
+    font-size: 3.5rem
+    font-weight: 600
+    margin-bottom: 3.3rem
+  &-items
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 2rem
+  &-item
+
+    width: 20rem
+    height: 20rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: linear-gradient(180deg, #00A48A, #005D62 100%)
+    color: #fff
+    border-radius: 2.6rem
+    position: relative
+    text-align: center
+    &:not(:last-child)
+      &::before
+        content: ' : '
+        position: absolute
+        top: 50%
+        left: calc(100% + 1rem)
+        transform: translate(-50%, -50%)
+        color: #9c9c9c
+        font-size: 3rem
+  &-item__num
+    font-size: 6.8rem
+    line-height: 0.9
+    position: relative
+    &::before
+      content: attr(data-text)
+      position: absolute
+      font-size: 1.6rem
+      font-weight: 500
+      top: 100%
+      left: 50%
+      transform: translate(-50%, 0)
+  &-bottom
+    padding: 5rem 11rem
+  &-bottom__title
+    font-size: 3.5rem
+    font-weight: 600
+    color: $light-green
+    margin-bottom: 1rem
+  &-bottom__text
+    font-size: 2.1rem
+    max-width: 71.5rem
+    p,ul,ol
+      margin-bottom: 1em
+    & *:last-child
+      margin: 0
+  &__btn
+@media screen and ( max-width: 992px )
+  .counter
+    padding: 30px 0
+    &-wrapper
+      border: 2px solid #504D50
+      border-radius: 10px
+    &-top
+      padding: 30px 15px 20px
+    &-top__title
+      font-size: 16px
+      margin-bottom: 20px
+    &-items
+      gap: 10px
+    &-item
+
+      width: 70px
+      height: 70px
+      border-radius: 10px
+      &:not(:last-child)
+        &::before
+          left: calc(100% + 5px)
+          font-size: 16px
+    &-item__num
+      font-size: 30px
+      &::before
+        font-size: 12px
+    &-bottom
+      padding: 20px 15px 30px
+    &-bottom__title
+      font-size: 16px
+      margin-bottom: 10px
+    &-bottom__text
+      font-size: 12px
+      max-width: 100%

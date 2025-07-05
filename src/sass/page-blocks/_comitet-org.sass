@@ -86,19 +86,22 @@
     height: 100%
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: end
     padding: 6rem 0 6.6rem
   &-item__descr-image
     width: 32rem
     height: 32rem
     border-radius: 50%
-
+    position: absolute
+    top: 5rem
+    right: 3rem
   &-item__descr-text
     font-size: 2.1rem
     color: rgba(#fff,.7)
-  &-item__descr-name
+  &-item__descr-top
     color: #fff
     font-weight: 600
+    font-size: 2.1rem
 .comitet-org-bottom
   display: grid
   grid-template-columns: 75rem 97rem
@@ -141,6 +144,7 @@
     &-wrapper
       grid-template-columns: auto
       gap: 10px
+
     &-item--big
       background-image: url(../img/comitet-org-bg-mob.png)
       min-height: 320px
@@ -164,10 +168,11 @@
         margin: 0
       &.w-67
         width: 100%
-        max-width: 50%
-        padding-right: 0
+        max-width: 100%
+
+        padding-top: 0
         .comitet-org-item__title
-          margin-right: -100%
+          margin-right: 0
     &-item__title
       font-size: 16px
       margin-bottom: 10px
@@ -198,16 +203,32 @@
         transform: translate(45%,45% )
     &-item__descr
       height: 50%
-      right: 0
+      position: static
       gap: 10px
       max-width: 45%
-      padding: 15px 0
+      padding: 30px 15px 15px
+      width: 100%
+      height: auto
+      max-width: 100%
     &-item__descr-image
-      width: 80px
-      height: 80px
+      width: 46px
+      height: 46px
+      position: static
+
+    &-item__descr-top
+      position: absolute
+      top: 15px
+      right: 15px
+      max-width: 140px
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      gap: 8px
+      font-size: 10px
 
     &-item__descr-text
       font-size: 10px
+
   .comitet-org-bottom
     grid-template-columns: auto
     gap: 10px
@@ -243,13 +264,19 @@
         max-height: 80%
         top: auto
     &__btn
-  .comitet-org-item.vekshina .comitet-org-item__image
-    width: 60%
-    right: -10%
-    max-height: 90%
-    height: 100%
-    img
+  .comitet-org-item.vekshina
+    .comitet-org-item__inner
+      position: relative
+      z-index: 2
+    .comitet-org-item__image
+      width: 80%
+      right: -15%
+
       height: 100%
-      width: 100%
-      object-fit: contain
-      object-position: bottom
+      img
+        height: 100%
+        width: 100%
+        object-fit: contain
+        object-position: bottom
+  .comitet-org-item--big .comitet-org-item__text
+    max-width: 100%

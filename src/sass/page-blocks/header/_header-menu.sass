@@ -8,6 +8,9 @@
     margin: 0 -2.5rem
   &-menu__item
     padding: 0 2.5rem
+    display: flex
+    align-items: center
+    gap: 1rem
     & ul
       padding-top: 8rem
       ul
@@ -42,12 +45,13 @@
       margin-bottom: 2rem
       font-weight: 600
       width: 42rem
+      display: flex
+      align-items: center
+      justify-content: space-between
 
       a
-        width: 100%
-        display: inline-flex
-        align-items: center
-        justify-content: space-between
+        width: fit-content
+
         color: #000
       .arrow
         rotate: -90deg
@@ -118,12 +122,14 @@
       transition: .3s
       max-width: 75%
       width: 100%
+      flex-direction: column
       a
         display: flex
         align-items: center
         justify-content: center
         color: #000
         position: relative
+        width: 100%
       &.active
         background-color: rgba(#00A48A,.1)
         border-radius: 12px
@@ -162,11 +168,13 @@
     opacity: 1
     visibility: visible
     min-height: auto
+
     &__item
       padding: 0
       margin-bottom: 17px
       max-width: 100%
       width: 100%
+      display: block
     .header-submenu
       width: 100%
       opacity: 1

@@ -41,35 +41,6 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".baza-item-slider").slick({
-		speed: 300,
-		arrows: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					dots: true,
-				},
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots: true,
-				},
-			},
-		],
-	});
-	$(".playlist-video-descr-top__more ").on("click", function () {
-		$(this).parents(".playlist-video-descr").find(".playlist-video-descr__text").slideToggle();
-
-		$(this).hide();
-	});
 	$(".rieltor-card-content__text").each(function () {
 		// Находим все элементы внутри текущего контейнера
 		var elements = $(this).children();
@@ -126,12 +97,14 @@ $(document).ready(function () {
 	$(".reviews-nav__item").on("click", function () {
 		$(".reviews-block.active .slick-slider").slick("setPosition", 0);
 	});
+	$(".gallery-tab-nav .gallery-nav__item").on("click", function () {
+		$(".gallery-tab-item.active .slick-slider").slick("setPosition", 0);
+	});
 
 	function toggleReviewMessage() {
 		if ($("#video_review").is(":checked")) {
 			$("#text_message").hide();
 			$("#video_message").show();
-			console.log(1);
 		} else {
 			$("#text_message").show();
 			$("#video_message").hide();

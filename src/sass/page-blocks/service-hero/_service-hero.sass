@@ -85,6 +85,7 @@
       margin-bottom: 1em
     ul, ol
       padding-left: 1em
+
     .service-hero-block__title
       margin-bottom: 3.4rem
       max-width: 100%
@@ -248,13 +249,22 @@
       &--big
         max-width: 200px
         margin: 0
-
+    &-block--full
+      padding: 125px 15px 20px
+      .service-hero-block__img
+        display: none
+      .service-hero-block__info
+        max-width: 100%
 @media screen and ( max-width: 576px )
   .service-hero-block--big .service-hero-block__img img
     object-position: -60%
+  .service-hero-block--full
+    padding-top: 150px
 
 @media screen and ( max-width: 400px )
   .service-hero-block__img
     max-width: 50%
     img
       object-position: 10%
+  .service-hero__title
+    font-size: 28px

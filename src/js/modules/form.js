@@ -1,4 +1,23 @@
 $(document).ready(function () {
+	// Функция для получения CSRF-токена из куки
+	function getCookie(name) {
+		let cookieValue = null;
+		if (document.cookie && document.cookie !== "") {
+			const cookies = document.cookie.split(";");
+			for (let i = 0; i < cookies.length; i++) {
+				const cookie = cookies[i].trim();
+				if (cookie.substring(0, name.length + 1) === name + "=") {
+					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+					break;
+				}
+			}
+		}
+		return cookieValue;
+	}
+
+	// Установка CSRF-токена для AJAX-запросов
+	const csrftoken = getCookie("csrftoken");
+
 	if ($('[name="acceptance"]').is(":checked")) {
 		$('[name="acceptance"]').parents("form").find("button").attr("disabled", false);
 	} else {
@@ -127,16 +146,41 @@ $(document).ready(function () {
 	$(".form").each(function () {
 		$(this).validate({
 			submitHandler: function (form) {
-				console.log(form);
+				event.preventDefault();
 
-				successMessage();
+				if ($(form).parents(".popup").is("#booking-popup")) {
+					var data = {
+						usersurname: $(form).find('[name="usersurname"]').val(),
+						username: $(form).find('[name="username"]').val(),
+						phone: $(form).find('[name="phone"]').val(),
+						agentstvo: $(form).find('[name="agentstvo"]').val(),
+						grm_member: $(form).find('[name="grm_member"]:checked').val(),
+						event: $(form).find('[name="event"]').val(),
+					};
+					$.ajax({
+						url: "/api/obuchsred-registration/",
+						type: "POST",
+						contentType: "application/json",
+						data: JSON.stringify(data),
 
+						beforeSend: function (xhr) {
+							xhr.setRequestHeader("X-CSRFToken", csrftoken);
+						},
+						success: function (response) {
+							successMessage();
+						},
+						error: function (xhr) {
+							// Покажите ошибку
+							alert("Ошибка при отправке. Проверьте данные.");
+						},
+					});
+				}
 				// $.ajax({
 				// 	url: "submitHandler.php", // Ссылка на серверный обработчик
 				// 	type: "POST",
 				// 	data: $(form).serialize(),
 				// 	success: function (response) {
-				// 		swal;
+				// 		successMessage();
 				// 	},
 				// 	error: function () {
 				// 		alert("Произошла ошибка при отправке данных.");
@@ -145,6 +189,10 @@ $(document).ready(function () {
 				return false; // Останавливаем стандартное поведение формы
 			},
 		});
+	});
+	$(document).on("click", ".booking-btn", function () {
+		var eventId = $(this).data("event-id");
+		$("#popup-event-id").val(eventId);
 	});
 
 	// Письмо
@@ -202,6 +250,18 @@ $(document).ready(function () {
 		showStep(currentStep);
 	});
 
+	function toggleDocs() {
+		if ($('[name="vid_chlenstva"]:checked').val() == "Действительный член ГРМ") {
+			$(".quiz .doc-link").removeClass("active");
+			$("#doc-for-grm").addClass("active");
+		} else {
+			$(".quiz .doc-link").removeClass("active");
+			$("#doc-for-club").addClass("active");
+		}
+		console.log($('[name="vid_chlenstva"]:checked').val());
+	}
+	toggleDocs();
+	$('[name="vid_chlenstva"]').on("change", toggleDocs);
 	function successMessage() {
 		$.fancybox.close();
 		const customSwal = Swal.mixin({

@@ -215,10 +215,10 @@
 					</svg>
 				</button>
 				<button class="header-menu-btn d-lg-none">
-					<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect y="2" width="2" height="20" rx="1" transform="rotate(-90 0 2)" fill="white" />
-						<rect y="7" width="2" height="20" rx="1" transform="rotate(-90 0 7)" fill="white" />
-						<rect y="12" width="2" height="20" rx="1" transform="rotate(-90 0 12)" fill="white" />
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="6" width="2" height="20" rx="1" transform="rotate(-90 0 6)" fill="#00A48A" />
+						<rect y="11" width="2" height="20" rx="1" transform="rotate(-90 0 11)" fill="#00A48A" />
+						<rect y="16" width="2" height="20" rx="1" transform="rotate(-90 0 16)" fill="#00A48A" />
 					</svg>
 				</button>
 				<a href="#" class="header__btn btn btn--white d-none"> <svg class="@@class">
@@ -1356,6 +1356,42 @@
 						</div>
 					</div>
 					<div class="step">
+						<div class="quiz-title">Контактная информация</div>
+						<div class="quiz-text">Укажите контактную информацию лица, ответственного за взаимодействие с НП «ГРМ»</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Контактное лицо" name="contact_name" required="" />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="tel" placeholder="Телефон" name="contact_phone" required />
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form__field">
+									<input class="form__input" type="email" placeholder="Почта" name="contact_email" required />
+								</div>
+							</div>
+						</div>
+						<div class="form-acceptance justify-content-start" style="text-align: left">
+							<p>
+								Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+								персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+							</p>
+						</div>
+						<div class="quiz-bottom">
+							<button type="button" class="quiz__btn prev btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+
+							<button type="button" class="quiz__btn next btn">
+								<img src="img/icons/next.svg" alt="" />
+							</button>
+						</div>
+					</div>
+					<div class="step">
 						<div class="quiz-title">Информация о компании</div>
 						<div class="quiz-text">Заполните поля, прикрепите Карточку компании с реквизитами и заполненное Заявление на вступление с приложениями.</div>
 						<div class="row">
@@ -1416,6 +1452,12 @@
 							<button type="button" class="quiz__btn prev btn">
 								<img src="img/icons/next.svg" alt="" />
 							</button>
+							<div class="quiz-bottom-text">
+								<p> Не более 10 файлов для каждой загрузки. Допустимые форматы: DOC, PDF, JPEG</p>
+
+								<a href="#" class="doc-link" id="doc-for-grm"> Скачать бланки для заполнения</a>
+								<a href="#" class="doc-link" id="doc-for-club"> Скачать бланки для заполнения</a>
+							</div>
 							<button type="button" class="quiz__btn next btn">
 								<img src="img/icons/next.svg" alt="" />
 							</button>
@@ -1434,7 +1476,7 @@
 								<div class="form__field-title">Или загрузите документы</div>
 								<div class="row gy-4">
 									<div class="col-md-6">
-										<div class="form__field">
+										<div class="form__field m-0">
 											<label for="doc_file" class="form__file"
 												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
 											</label>
@@ -1442,7 +1484,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="form__field">
+										<div class="form__field m-0">
 											<label for="doc_file_2" class="form__file"
 												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
 											</label>
@@ -1450,7 +1492,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="form__field">
+										<div class="form__field m-0">
 											<label for="doc_file_3" class="form__file"
 												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
 											</label>
@@ -1458,7 +1500,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="form__field">
+										<div class="form__field m-0">
 											<label for="doc_file_4" class="form__file"
 												><span class="default"> <img src="img/icons/upload.svg" alt="" /> <span>Загрузите файл</span></span> <span class="file-name"></span>
 											</label>
@@ -1466,50 +1508,23 @@
 										</div>
 									</div>
 								</div>
+								<div class="quiz-bottom-text mt-4">
+									<p> Не более 10 файлов для каждой загрузки. Допустимые форматы: DOC, PDF, JPEG</p>
+								</div>
 							</div>
 						</div>
-						<div class="quiz-bottom">
-							<button type="button" class="quiz__btn prev btn">
-								<img src="img/icons/next.svg" alt="" />
-							</button>
-							<div class="quiz-bottom-text"> Не более 10 файлов для каждой загрузки. Допустимые форматы: DOC, PDF, JPEG</div>
-							<button type="button" class="quiz__btn next btn">
-								<img src="img/icons/next.svg" alt="" />
-							</button>
-						</div>
-					</div>
 
-					<div class="step">
-						<div class="quiz-title">Контактная информация</div>
-						<div class="quiz-text">Укажите контактную информацию лица, ответственного за взаимодействие с НП «ГРМ»</div>
-						<div class="row">
-							<div class="col-12">
-								<div class="form__field">
-									<input class="form__input" type="text" placeholder="Контактное лицо" name="contact_name" required="" />
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form__field">
-									<input class="form__input" type="tel" placeholder="Телефон" name="contact_phone" required />
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form__field">
-									<input class="form__input" type="email" placeholder="Почта" name="contact_email" required />
-								</div>
-							</div>
-						</div>
-						<div class="form-acceptance" style="text-align: left">
-							<p>
-								Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
-								персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
-							</p>
-						</div>
 						<div class="quiz-bottom">
 							<button type="button" class="quiz__btn prev btn">
 								<img src="img/icons/next.svg" alt="" />
 							</button>
 							<button type="submit" class="quiz__btn btn submit">Отправить</button>
+						</div>
+						<div class="form-acceptance mt-2">
+							<p>
+								Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+								персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+							</p>
 						</div>
 					</div>
 				</form>
@@ -1586,6 +1601,90 @@
 		<button class="form__btn btn">Отправить</button>
 		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
 	</form>
+</div>
+
+<div class="popup" id="event-keysorium-popup">
+	<div class="quiz" data-quiz>
+		<div class="pagination"></div>
+		<div class="quiz-title">
+			Регистрация на Кейсориум <br />
+			25 июня 2025, среда
+		</div>
+		<div class="quiz-text">Москва, Спартаковская улица, 5с1 (Банк ВТБ)</div>
+		<form class="quiz-form form">
+			<div class="step active">
+				<div class="row">
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Фамилия" name="surname" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Имя" name="username" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Отчество" name="father_name" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="email" required placeholder="E-mail" name="email" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Наименование компании/ИП" name="org_name" />
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<div class="quiz-bottom-text red">Вход в зал строго до 10:15. При себе иметь паспорт!</div>
+					<button type="button" class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="row">
+					<div class="col-12 mb-4">
+						<div class="form__field-text-red">Для допуска на мероприятие необходимо указать паспортные данные (требование площадки)</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Паспорт серия" name="passport_series" required="" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Паспорт номер" name="passport_number" required="" />
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form__checkbox">
+							<input type="checkbox" name="acceptance" required checked />
+							<span>Регистрируясь на мероприятие, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности.</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn prev btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+					<button type="submit" class="quiz__btn btn submit">Зарегистрироваться</button>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
 
 			<!-- footer -->

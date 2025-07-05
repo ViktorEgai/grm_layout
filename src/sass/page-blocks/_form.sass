@@ -21,6 +21,11 @@
       margin-bottom: 2rem
       font-size: 2.1rem
       color: rgba(#000, .8)
+  &__field-text-red
+    font-size: 3rem
+    color: $red
+    text-align: center
+
   &__title
     @include font (3.5rem, 120%, 600)
     color: #060606
@@ -55,7 +60,7 @@
     color: rgba(#000,.2)
   &__checkbox
     display: flex
-    align-items: center
+
     gap: 1.5rem
     cursor: pointer
     font-size: 2.1rem
@@ -67,6 +72,8 @@
       border: 1px solid #000
       border-radius: .5rem
       position: relative
+      flex-shrink: 0
+      margin-top: 0.3em
       &::before
         content: ''
         position: absolute
@@ -83,7 +90,9 @@
       &:checked
         &::before
           opacity: 1
-
+    a
+      color: $light-green
+      text-decoration: underline
   &__file
     color: #005d62
     font-size: 1.7rem
@@ -158,6 +167,9 @@
           opacity: 1
   &__textarea
     resize: vertical
+    &.no-resize
+      resize: none
+      height: 180px
   &__select
     background-color: #fff
     appearance: none

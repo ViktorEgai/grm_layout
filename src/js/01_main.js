@@ -44,9 +44,11 @@ jQuery(document).ready(function ($) {
 		}
 	});
 	$(".cards-item__link").on("click", function (e) {
-		e.preventDefault();
+		if (!$(this).parents(".cards-item-front__inner").hasClass("cards-item--no-back")) {
+			e.preventDefault();
 
-		$(this).closest(".cards-item").toggleClass("active");
+			$(this).closest(".cards-item").toggleClass("active");
+		}
 	});
 	$(".cards-item-close").on("click", function (e) {
 		e.preventDefault();
@@ -58,10 +60,21 @@ jQuery(document).ready(function ($) {
 		$(this).next().slideToggle();
 	});
 
-	$(".header-mobile-submenu, .header-submenu").prev().append(`<span class="arrow"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+	$(".header-mobile-submenu").prev().append(`<span class="arrow"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.3333 1L5.66667 5.66667L1 1" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </span>`);
+	if ($(window).width() > 992) {
+		$(".header-submenu").prev().after(`<span class="arrow"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.3333 1L5.66667 5.66667L1 1" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>`);
+	} else {
+		$(".header-submenu").prev().append(`<span class="arrow"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.3333 1L5.66667 5.66667L1 1" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>`);
+	}
 	$(".header-submenu").parents(".header-menu__item").addClass("has-children");
 
 	$(".header-menu-btn").on("click", function () {
@@ -200,4 +213,31 @@ jQuery(document).ready(function ($) {
 		localStorage.setItem("cookiesAccepted", "true");
 		$("#cookie-popup").fadeOut(500);
 	});
+
+	function toggleNominations() {
+		const items = $("#nominations .col-xl-3.col-6");
+		if (items.length > 8) {
+			$("#nominations .cards__btn").show();
+			for (let i = 8; i < items.length; i++) {
+				items.eq(i).addClass("d-none");
+			}
+		} else {
+			$("#nominations .cards__btn").hide();
+		}
+
+		$("#nominations .cards__btn").on("click", function (e) {
+			e.preventDefault();
+
+			if ($("#nominations .col-xl-3.col-6").hasClass("d-none")) {
+				$("#nominations .col-xl-3.col-6").removeClass("d-none");
+				$(this).text("Скрыть все");
+			} else {
+				for (let i = 8; i < items.length; i++) {
+					items.eq(i).addClass("d-none");
+				}
+				$(this).text("Показать все");
+			}
+		});
+	}
+	toggleNominations();
 });

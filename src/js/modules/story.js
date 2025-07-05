@@ -35,8 +35,8 @@ $(document).ready(function () {
 		$("#story-container").html(data); // Загружаем HTML
 
 		$.fancybox.close(); // Закрываем прошлый Fancybox
-		const arrowRight = `<button class="next"><img src="img/icons/arrow-right.svg" data-src></button>`;
-		const arrowLeft = `<button class="prev"><img src="img/icons/arrow-left.svg" data-src></button>`;
+		const arrowRight = `<button class="next"><img src="/static/img/icons/arrow-right.svg" data-src></button>`;
+		const arrowLeft = `<button class="prev"><img src="/static/img/icons/arrow-left.svg" data-src></button>`;
 		$.fancybox.open({
 			src: "#story-popup",
 			type: "inline",
