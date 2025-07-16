@@ -4,43 +4,167 @@
 	<body>
 		<div class="wrapper">
 			<!-- header -->
-			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
 			<!-- main -->
 			<main class="main">
-				<div class="breadcrumbs breadcrumbs--white">
+				<!-- page-top -->
+				<div class="top">
 					<div class="container">
-						<a href="#">Главная</a>⭢ <a href="#">Мероприятия</a>⭢
-						<span>Всероссийский жилищный конгресс в Сочи</span>
+						<h1 class="page-title top__title">Мероприятия</h1>
+
+						<div class="top__text">Члены Гильдии Риэлторов Москвы</div>
 					</div>
 				</div>
-				<div class="event-card">
+
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs">
 					<div class="container">
-						<div class="row g-5">
-							<div class="col-lg-6 order-2 order-lg-1">
-								<div class="event-card-content">
-									<h1 class="page-title event-card__title">Всероссийский жилищный конгресс в Сочи</h1>
-									<div class="event-card__info">
-										<p>11 апреля 2025</p>
-										<p>конгресс</p>
+						<a href="#">Главная</a>⭢ <a href="#">Мероприятия Гильдии Риэлторов Москвы </a>⭢
+						<span>Внеочередное Общее собрание членов НП «ГРМ» </span>
+					</div>
+				</div>
+				<section class="event-card">
+					<div class="container">
+						<div class="row gy-4 pb-5">
+							<div class="col-lg-7">
+								<div class="event-card-info">
+									<div class="event-card-top row">
+										<div class="col-md-8">
+											<div class="event-card-tags">
+												<div class="event-card-tags__title">Форма участия:</div>
+												<div class="event-card-tags__item">#очная</div>
+												<div class="event-card-tags__item">#онлайн</div>
+												<div class="event-card-tags__item">#смешанная</div>
+												<div class="event-card-tags__item">#очная</div>
+												<div class="event-card-tags__item">#онлайн</div>
+												<div class="event-card-tags__item">#смешанная</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="event-card-top__date">23 июля 16:00</div>
+										</div>
 									</div>
-									<p>Приглашаем вас принять участие во Всероссийском жилищном конгрессе 7-11 апреля 2025 году в Сириусе — в одном из самых масштабных и значимых событий рынкa недвижимости.</p>
-									<p>ТЕМА ГРЯДУЩЕГО ФОРУМА: «КОНГРЕСС — ЭТО БУДУЩЕЕ!»</p>
-									<p>Будущее девелоперского и риэлторского бизнеса, ипотечных продуктов, инвестиций. Лейтмотивом Жилищного конгресса в Сириусе также станут инновации и цифровизация в недвижимости.</p>
-									<p>
-										В мероприятии примут участие руководители федеральных органов власти, владельцы крупнейших девелоперских компаний России, агентств недвижимости, банков и агрегаторов. Вас ждут 5 насыщенных дней — мероприятия для девелоперов и риэлторов, темы которых подобраны на злобу дня, отвечают современным трендам и тенденциям первичного и вторичного рынков, инвестиционных проектов, ИЖС.
-									</p>
-									<p>Подробности по ссылке: <a href="https://russiacongress.ru/about/news/67243.html">https://russiacongress.ru/about/news/67243.html</a></p>
-									<p>Регистрация на Конгресс в Сириусе здесь: <a href="https://russiacongress.ru/congress/registration.html">https://russiacongress.ru/congress/registration.html</a></p>
+									<div class="event-card__title">Внеочередное Общее собрание членов НП «ГРМ»</div>
+									<div class="event-card__text content">
+										<p>По инициативе Председателя Совета Партнерства НП «ГРМ» в связи с необходимостью принятия решений в рамках компетенции Общего собрания.</p>
+										<p>По инициативе Председателя Совета Партнерства НП «ГРМ» в связи с необходимостью принятия решений в рамках компетенции Общего собрания.</p>
+									</div>
+
+									<div class="event-card__doc documents-item">
+										<img class="documents-item__image" src="img/icons/pdf.svg" alt="" />
+										<p class="documents-item__title">Lorem, ipsum dolor.</p>
+										<a href="#" class="documents-item__link red" target="_blank">Открыть PDF </a>
+									</div>
+									<div class="event-card-bottom row gy-4">
+										<div class="col-md-6">
+											<!-- Указать адрес в data-adress для работы карты .  -->
+											<div class="event-card-bottom__text" id="address" data-address="г. Москва, ул. Спартаковская, д.5 стр.1">Место: г. Москва, <br />ул. Спартаковская, д.5 стр.1</div>
+										</div>
+										<div class="col-md-6"><a href="#event-popup" data-title="Внеочередное Общее собрание членов НП «ГРМ»" class="event-card__btn btn" data-fancybox>Зарегистрироваться</a></div>
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 order-1 order-lg-2">
-								<div class="event-card__image">
-									<img src="img/event.png" alt="" />
+							<div class="col-lg-5">
+								<div class="event-card-image">
+									<img src="img/event-card.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="row gy-4 py-5">
+							<div class="col-lg-6">
+								<!-- data-image url изображения для онлайн если нет адреса -->
+								<div id="place" class="event-card-place" data-image="img/online.png"></div>
+							</div>
+							<div class="col-lg-6">
+								<div class="event-card-gallery">
+									<a href="img/event-card.jpg" data-fancybox="gallery" class="event-card-gallery__item"><img src="img/event-card.jpg" alt="" /></a>
+									<a href="img/event-card.jpg" data-fancybox="gallery" class="event-card-gallery__item"><img src="img/event-card.jpg" alt="" /></a>
+									<a href="img/event-card.jpg" data-fancybox="gallery" class="event-card-gallery__item"><img src="img/event-card.jpg" alt="" /></a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						const api_key = "1e1edbbf-2150-471a-818d-baa3b14662bf";
+						const addressElement = document.getElementById("address");
+
+						// Проверяем, есть ли элемент с адресом
+						if (addressElement && addressElement.dataset.address) {
+							const address = addressElement.dataset.address;
+
+							// Динамически подключаем API Яндекс.Карт
+							const script = document.createElement("script");
+							script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=" + api_key;
+							document.head.appendChild(script);
+
+							script.onload = () => initMap(address);
+						} else {
+							showImage();
+						}
+					});
+					function showImage() {
+						const img = document.createElement("img");
+						const place = document.querySelector("#place");
+						if (place && place.dataset.image) {
+							img.src = place.dataset.image;
+							place.appendChild(img);
+						}
+					}
+					// Инициализация карты после загрузки API
+					function initMap(address) {
+						if (!window.ymaps) {
+							showError("API Яндекс.Карт не загрузился!");
+							return;
+						}
+
+						ymaps.ready(() => {
+							const geocoder = ymaps.geocode(address, { results: 1 });
+
+							geocoder.then(
+								(res) => {
+									const firstGeoObject = res.geoObjects.get(0);
+									const MAP_ELEMENT_ID = "place";
+
+									if (!firstGeoObject) {
+										showError("Адрес не найден. Попробуйте уточнить запрос.");
+										return;
+									}
+
+									// Получаем координаты и точный адрес
+									const coordinates = firstGeoObject.geometry.getCoordinates();
+									const exactAddress = firstGeoObject.getAddressLine();
+
+									// Создаем карту
+									const map = new ymaps.Map(MAP_ELEMENT_ID, {
+										center: coordinates,
+										zoom: 15,
+										controls: ["zoomControl"],
+									});
+
+									// Добавляем метку
+									const placemark = new ymaps.Placemark(
+										coordinates,
+										{
+											balloonContent: exactAddress,
+											iconCaption: address,
+										},
+										{ preset: "islands#redDotIcon" }
+									);
+
+									map.geoObjects.add(placemark);
+									placemark.balloon.open(); // Автоматически открываем балун
+								},
+								(error) => {
+									console.error("Ошибка геокодера:", error);
+									showError("Ошибка при поиске адреса. Проверьте подключение к интернету.");
+								}
+							);
+						});
+					}
+				</script>
 			</main>
 			<!-- popup -->
 			@@include('components/page-blocks/_popup.html')

@@ -415,25 +415,7 @@
 		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
 	</form>
 </div>
-<div class="popup" id="event-popup">
-	<div class="popup-title">Регистрация на мероприятие</div>
-	<div class="popup-text">Оставляйте заявку и мы свяжемся с вами!</div>
 
-	<form class="popup-form form">
-		<div class="form__field">
-			<input class="form__input" type="text" placeholder="Имя" required name="username" />
-		</div>
-		<div class="form__field">
-			<input class="form__input" type="email" placeholder="Почта" required name="email" />
-		</div>
-		<div class="form__field">
-			<input class="form__input" type="tel" placeholder="Телефон" required name="phone" />
-		</div>
-		<input type="hidden" name="event_name" />
-		<button class="form__btn btn">Отправить</button>
-		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
-	</form>
-</div>
 <div class="popup" id="sertificate-feedback">
 	<div class="popup-title">Остались вопросы</div>
 	<div class="popup-text">О сертификации?</div>
@@ -1411,6 +1393,58 @@
 		</div>
 		<button class="form__btn btn">Отправить</button>
 		<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+	</form>
+</div>
+
+<div class="popup" id="event-popup">
+	<div class="quiz-title">
+		Регистрация на Кейсориум <br />
+		25 июня 2025, среда
+	</div>
+	<div class="quiz-text">Москва, Спартаковская улица, 5с1 (Банк ВТБ)</div>
+
+	<form class="quiz-form form">
+		<div class="row">
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Фамилия" name="surname" />
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Имя" name="username" />
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form__field">
+					<input class="form__input" type="text" placeholder="Отчество" name="father_name" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="email" required placeholder="E-mail" name="email" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Наименование компании/ИП" name="org_name" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__checkbox">
+					<input type="checkbox" name="acceptance" required checked />
+					<span>Регистрируясь на мероприятие, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности.</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="quiz-bottom">
+			<button type="submit" class="quiz__btn btn submit mx-auto">Зарегистрироваться</button>
+		</div>
 	</form>
 </div>
 

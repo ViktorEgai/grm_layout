@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day online",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -36,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day online",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -50,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day online",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -64,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day online",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -78,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day online",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -92,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "09:00",
@@ -106,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "11:00",
@@ -280,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p class="event-content__title">${event.title}</p>
                             <p class="event-content__description">${event.extendedProps.description}</p>
                            <div class="event-content-bottom">
-                           	 <p class="event-content__place">${event.extendedProps.place}</p>
+                           	 <a href="${event.extendedProps.url}<" class="event-content__btn btn btn--white">О мероприятии</a>
 	                            <a href="#event-popup" data-title="${event.title}" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
                            </div>
                         </div>
@@ -365,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <p class="event-content__title">${event.title}</p>
                 <p class="event-content__description">${event.extendedProps.description}</p>
-                <p class="event-content__place">${event.extendedProps.place}</p>
+                <a href="${event.extendedProps.url}<" class="event-content__btn btn btn--white">О мероприятии</a>
                 <a href="#popup" class="event-content__btn btn btn--white" data-fancybox>Зарегистрироваться</a>
             </div>
         `

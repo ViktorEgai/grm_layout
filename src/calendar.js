@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day offline",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "14",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "8",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			className: "event-day",
 			display: "background",
 			extendedProps: {
+				url: "#",
 				date: "1",
 				place: "Место: Aenean commodo ligula eget ",
 				time: "08:00",
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			display: "background",
 
 			extendedProps: {
+				url: "#",
 				date: "6",
 
 				place: "Место: Aenean commodo ligula eget ",
@@ -169,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 										</div>
                         <p class="event-content__title">${arg.event.title}</p>
 												<p class="event-content__description">${arg.event.extendedProps.description}</p>
-                        <p class="event-content__place">${arg.event.extendedProps.place}</p>
+                       <a href="${arg.event.extendedProps.url}<" class="event-content__btn btn btn--white">О мероприятии</a>
 												<a href="#popup" data-fancybox class="event-content__btn btn btn--white">Зарегистрироваться</a>
                     </div>
 										

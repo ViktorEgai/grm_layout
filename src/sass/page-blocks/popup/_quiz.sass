@@ -51,6 +51,9 @@
     justify-content: space-between
     margin-top: 4.4rem
     gap: 2rem
+    .form__checkbox
+      max-width: 60%
+      font-size: 1.2rem
   &-bottom-text
     color: $accent-color
     text-align: center
@@ -127,6 +130,7 @@
   small
     font-size: 1.2rem
     font-weight: 300
+
 @media screen and ( max-width: 992px )
   .quiz
     &-popup
@@ -162,6 +166,7 @@
     &__btn
       background: $btn-gradient
       height: 40px
+      min-width: 40px
       border: none
       color: #fff
       img
@@ -192,3 +197,6 @@
     font-size: 16px
     small
       font-size: 10px
+  .quiz-bottom .form__checkbox
+    font-size: 12px
+    max-width: 48%

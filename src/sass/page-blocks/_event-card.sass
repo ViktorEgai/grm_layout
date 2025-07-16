@@ -1,48 +1,119 @@
 .event-card
-  padding: 9.5rem 0 8.7rem
-  &-content
-    font-size: 2.1rem
-    font-weight: 600
-    color: #060606
-    p, ul, ol
-      margin-bottom: 1em
-    ul, ol
-      padding-left: 1.2em
-    ul
-      list-style: disc
-    ol
-      list-style: number
-    a
-      color: #4b8ecc
-  &__title
-    margin-bottom: 1.5rem
-    font-size: 5rem
-  &__info
+  padding: 9rem 0
+  &-info
+    background-color: #f9f9f9
+    border-radius: 2.6rem
+    padding: 4.3rem 3.7rem 5.7rem
     display: flex
-    align-items: center
-    gap: 3rem
-    color: $light-green
+    flex-direction: column
+    height: 100%
+  &-top
+  &-tags
+    display: flex
+    flex-wrap: wrap
+    gap: 1rem
     font-size: 2.1rem
-    font-weight: 500
-    margin-bottom: 2.6rem
-  &__image
+    padding-top: .8rem
+  &-tags__title
+    color: $light-green
+
+  &-tags__item
+    background-color: $light-green
+    padding: 0 1rem
+    border-radius: 3rem
+    color: #fff
+    min-height: 3rem
+    padding-top: 0.05em
+  &-top__date
+    color: $light-green
+    font-size: 3.5rem
+    font-weight: 600
+  &__title
+    font-size: 3.5rem
+    line-height: 1
+    font-weight: 600
+    margin-top: 5.7rem
+    margin-bottom: 2.4rem
+  &__text
+    font-size: 2.1rem
+    margin-bottom: 5.7rem
+  &__doc
+    border: none
+
+    padding: 0
+  &-bottom
+    margin-top: auto
+  &-bottom__text
+    font-size: 2.1rem
+    font-weight: 700
+  &-image
     img
       width: 100%
-      object-fit: contain
+      object-fit: cover
       border-radius: 2.6rem
-@media ( hover: hover )
-  .event-card  a:hover
-    text-decoration: underline
-
+  &-place
+    border-radius: 2.6rem
+    overflow: hidden
+    height: 100%
+    .ymaps-2-1-79-map
+      filter: grayscale(1)
+  &-gallery
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    gap: 2rem
+    height: 100%
+  &-gallery__item
+    display: block
+    border-radius: 2.6rem
+    overflow: hidden
+    background-color: #c4c4c4
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &:first-child
+      grid-row: span 2
+    &:last-child
+      img
+        aspect-ratio: 42/27
 @media screen and ( max-width: 992px )
   .event-card
     padding: 40px 0
-    &-content
+    &-info
+      border-radius: 10px
+      padding: 40px 20px
+    &-tags
+      gap: 8px
+      font-size: 12px
+      padding-top: 0
+      margin-bottom: 20px
+
+    &-tags__item
+      padding: 0 6px
+      border-radius: 20px
+      min-height: 0
+    &-top__date
       font-size: 16px
+      font-weight: 600
     &__title
-      margin-bottom: 16px
-      font-size: 35px
-    &__info
-      font-size: 14px
-      margin-bottom: 17px
+      font-size: 24px
+      margin-top: 30px
+      margin-bottom: 20px
+    &__text
+      font-size: 12px
+      margin-bottom: 40px
+    &__doc
+      margin-bottom: 30px
+    &-bottom__text
+      font-size: 12px
+      font-weight: 700
+    &-image
+      img
+        border-radius: 10px
+    &-place
+      border-radius: 10px
+      min-height: 300px
+    &-gallery
+      gap: 10px
+    &-gallery__item
       border-radius: 10px
