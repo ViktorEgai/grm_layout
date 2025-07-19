@@ -1,0 +1,196 @@
+.nomination
+  &-popup
+    max-width: 100%
+    width: 100%
+    font-size: 2.1rem
+    background-color: #fff
+    padding: 10.5rem 0
+  &-block
+    background-color: #f9f9f9
+    border-radius: 2.6rem
+    padding: 4.3rem 3.7rem 5.2rem
+    height: 100%
+  &-block-top
+    padding-bottom: 6.2rem
+    border-bottom: 1px solid rgba(#000,.2)
+  &-block__title
+    font-size: 3.5rem
+    font-weight: 600
+    margin-bottom: 2.4rem
+  &-block__text
+    font-size: 2.1rem
+  &-block-list
+    padding-top: 5.1rem
+  &-block-list__title
+    font-weight: 700
+    margin-bottom: 1.6rem
+    color: $light-green
+
+  &-block-list__text
+    p,ul, ol
+      margin-bottom: 1em
+    & *:last-child
+      margin: 0
+
+  &-info
+    background-color: #f9f9f9
+    border-radius: 2.6rem
+    display: flex
+    flex-direction: column
+    height: 100%
+  &-info-top
+    padding: 4.3rem 3.4rem 8.9rem
+    flex-grow: 1
+  &-tag
+    display: flex
+    flex-wrap: wrap
+    gap: 1.3rem
+    margin-bottom: 3rem
+  &-tag__title
+    color: $light-green
+  &-tag__item
+    background-color: $light-green
+    border-radius: 3rem
+    color: #fff
+    padding: 0 1rem
+  &-price-block
+    margin-top: 6.2rem
+    padding-top: 5rem
+    border-top: 1px solid rgba(#000,.2)
+  &-price__title
+    position: relative
+    width: fit-content
+    margin-bottom: 6.2rem
+    .notice
+      width: 1.8rem
+      height: 1.8rem
+      border-radius: 50%
+      background-color: #cc4b4c
+      color: #fff
+      font-size: 1rem
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 0
+      right: 0
+      cursor: pointer
+      &::before
+        content: attr(data-text)
+        position: absolute
+        font-size: 2.1rem
+        font-weight: 400
+        padding: 1.6rem
+        background-color: #fff
+        color: #000
+        text-align: center
+        width: 28rem
+        bottom: 3.5rem
+        left: 50%
+        transform: translateX(-50%)
+        box-shadow: 0 0 1.5rem rgba(#000,.15)
+        opacity: 0
+        visibility: hidden
+        transition: .3s
+      &::after
+        content: ''
+        position: absolute
+        bottom: .8rem
+        left: 50%
+        transform: translateX(-50%)
+        border: 1.6rem solid transparent
+        border-top: 1.3rem solid #fff
+        opacity: 0
+        visibility: hidden
+        transition: .3s
+      &.active
+        &::before, &::after
+          opacity: 1
+          visibility: visible
+
+  &-price-items
+    display: flex
+    gap: 3.2rem
+  &-price-item
+    &:last-child
+      padding-left: 4rem
+      border-left: 1px solid $accent-color
+  &-price-item__num
+    color: $accent-color
+    font-size: 7rem
+  &-price-item__text
+    margin-top: -0.5em
+  &-info-middle
+    svg
+      width: 100%
+  &-info-bottom
+    padding: 2.3rem 3.7rem 5.2rem
+  &__btn
+@media   ( hover: hover  )
+  .nomination-popup .notice:hover
+    &::before, &::after
+      opacity: 1
+      visibility: visible
+
+@media screen and ( max-width: 992px )
+
+  .nomination
+    &-popup
+      font-size: 12px
+      padding: 40px 0
+    &-block
+      border-radius: 10px
+      padding: 40px 20px
+    &-block-top
+      padding-bottom: 40px
+    &-block__title
+      font-size: 20px
+      margin-bottom: 1em
+    &-block__text
+      font-size: 12px
+    &-block-list
+      padding-top: 30px
+    &-block-list__title
+      margin-bottom: 10px
+
+    &-info
+      border-radius: 10px
+    &-info-top
+      padding: 40px 20px
+      flex-grow: 1
+    &-tag
+      gap: 10px
+      margin-bottom: 20px
+    &-tag__item
+      border-radius: 20px
+      padding: 0 10px
+    &-price-block
+      margin-top: 30px
+      padding-top: 30px
+    &-price__title
+      margin-bottom: 30px
+      .notice
+        width: 16px
+        height: 16px
+        font-size: 10px
+        &::before
+          font-size: 12px
+          padding: 12px
+          width: 280px
+          bottom: 35px
+          box-shadow: 0 0 10px rgba(#000,.15)
+        &::after
+          bottom: 8px
+          border: 16px solid transparent
+          border-top: 13px solid #fff
+
+    &-price-items
+      gap: 20px
+    &-price-item
+      &:last-child
+        padding-left: 20px
+    &-price-item__num
+      font-size: 34px
+    &-info-bottom
+      padding: 20px 20px 30px
+    &__btn
