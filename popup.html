@@ -1,0 +1,163 @@
+<div class="popup" id="event-popup">
+	<div class="quiz-title">
+		Регистрация на Кейсориум <br />
+		25 июня 2025, среда
+	</div>
+	<div class="quiz-text">Москва, Спартаковская улица, 5с1 (Банк ВТБ)</div>
+
+	<form class="quiz-form form">
+		<div class="row">
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Фамилия" name="surname" />
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Имя" name="username" />
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form__field">
+					<input class="form__input" type="text" placeholder="Отчество" name="father_name" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="email" required placeholder="E-mail" name="email" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form__field">
+					<input class="form__input" type="text" required placeholder="Наименование компании/ИП" name="org_name" />
+				</div>
+			</div>
+			<!-- обновление начало -->
+			<div class="col-md-6 mb-4">
+				<label class="form__checkbox center">
+					<input type="radio" name="grm_member" />
+					<span>Я являюсь членом ГРМ</span>
+				</label>
+			</div>
+			<div class="col-md-6 mb-4">
+				<label class="form__checkbox center">
+					<input type="radio" name="grm_member" />
+					<span>Не являюсь членом ГРМ</span>
+				</label>
+			</div>
+			<!-- обновление конец -->
+			<div class="col-12">
+				<div class="form__checkbox">
+					<input type="checkbox" name="acceptance" required checked />
+					<span>Регистрируясь на мероприятие, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности.</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="quiz-bottom">
+			<button type="submit" class="quiz__btn btn submit mx-auto">Зарегистрироваться</button>
+		</div>
+	</form>
+</div>
+
+<div class="popup" id="event-keysorium-popup">
+	<div class="quiz" data-quiz>
+		<div class="pagination"></div>
+		<div class="quiz-title">
+			Регистрация на Кейсориум <br />
+			25 июня 2025, среда
+		</div>
+		<div class="quiz-text">Москва, Спартаковская улица, 5с1 (Банк ВТБ)</div>
+		<form class="quiz-form form">
+			<div class="step active">
+				<div class="row">
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Фамилия" name="surname" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Имя" name="username" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Отчество" name="father_name" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="email" required placeholder="E-mail" name="email" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="tel" required placeholder="Телефон" name="phone" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Наименование компании/ИП" name="org_name" />
+						</div>
+					</div>
+					<!-- обновление начало -->
+					<div class="col-md-6 mb-4">
+						<label class="form__checkbox center">
+							<input type="radio" name="grm_member" />
+							<span>Я являюсь членом ГРМ</span>
+						</label>
+					</div>
+					<div class="col-md-6 mb-4">
+						<label class="form__checkbox center">
+							<input type="radio" name="grm_member" />
+							<span>Не являюсь членом ГРМ</span>
+						</label>
+					</div>
+					<!-- обновление конец -->
+				</div>
+				<div class="quiz-bottom">
+					<div class="quiz-bottom-text red">Вход в зал строго до 10:15. При себе иметь паспорт!</div>
+					<button type="button" class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="row">
+					<div class="col-12 mb-4">
+						<div class="form__field-text-red">Для допуска на мероприятие необходимо указать паспортные данные (требование площадки)</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Паспорт серия" name="passport_series" required="" />
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Паспорт номер" name="passport_number" required="" />
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form__checkbox">
+							<input type="checkbox" name="acceptance" required checked />
+							<span>Регистрируясь на мероприятие, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности.</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn prev btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+					<button type="submit" class="quiz__btn btn submit">Зарегистрироваться</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
