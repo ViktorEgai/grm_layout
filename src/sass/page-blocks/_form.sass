@@ -21,10 +21,16 @@
       margin-bottom: 2rem
       font-size: 2.1rem
       color: rgba(#000, .8)
+  &__field-text-green
+    font-size: 1.8rem
+    color: $light-green
+    font-weight: 300
   &__field-text-red
     font-size: 3rem
     color: $red
     text-align: center
+  &__field-text
+    font-size: 1.2rem
 
   &__title
     @include font (3.5rem, 120%, 600)
@@ -60,7 +66,7 @@
     color: rgba(#000,.2)
   &__checkbox
     display: flex
-
+    position: relative
     gap: 1.5rem
     cursor: pointer
     font-size: 2.1rem
@@ -99,6 +105,10 @@
 
       input
         margin: 0
+    label.error
+      position: absolute
+      bottom: -1.5em
+      left: 0
   &__file
     color: #005d62
     font-size: 1.7rem
@@ -244,6 +254,15 @@
   &__btn
     width: 100%
     margin-top: 4.4rem
+  &-checkbox-columns
+    column-count: 2
+  &-checkbox-columns__item
+    margin-bottom: 1.2rem
+    break-inside: avoid
+  #selectAll
+    border-color: $light-green
+    & + span
+      color: $light-green
 @media  (hover: hover  )
   .form__file:hover
     background-color: rgba($light-green,.1)
@@ -304,3 +323,7 @@
         border-radius: 5px
       &.center
         font-size: 12px
+    &__field-text
+      font-size: 12px
+    &__field-text-green
+      font-size: 12px

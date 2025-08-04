@@ -37,6 +37,29 @@
       background-color: #316067
       path
         fill: #fff
+.popup-contacts-list
+  margin-top: 3.5rem
+.popup-contacts-item
+  padding: 3.2rem 0
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 4.4rem
+    height: 0.3rem
+    background-color: $light-green
+  &:last-child
+    padding-bottom: 0
+    &::before
+      display: none
+
+  &__phone
+    margin-top: 1em
+    color: $light-green
+
 #subscribe
   padding: 0
 @media  ( hover: hover  )

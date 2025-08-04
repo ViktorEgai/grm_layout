@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">Прокачай свою эффективность на максимум!</h1>
+
+						<div class="top__text">Здесь собраны ключевые инструменты и ресурсы, которые помогут вам расти, расти и открывать новые возможности в сфере недвижимости.</div>
+						<a href="#" class="top__btn btn">Получить консультацию</a>
+					</div>
+				</div>
+
+				<!-- cards -->
+				<section class="cards cards--white">
+					<div class="container">
+						<div class="cards__title cards__title--left section-title">
+							<h2>Кураторы застройщиков Гильдии</h2>
+						</div>
+						<div class="row gy-3">
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--no-back">
+											<div class="cards-item__title cards-item__title--small m-0">Кортрос</div>
+											<hr class="cards-item__line" />
+											<div class="cards-item__text mb-4">
+												<span>Куратора от застройщика:</span> <br />
+												Виталия Кулева
+											</div>
+
+											<a href="#contact-popup" data-fancybox class="cards-item__link cards-item__link--big link mt-auto">Связаться</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--no-back">
+											<div class="cards-item__title cards-item__title--small m-0">Брусника</div>
+											<hr class="cards-item__line" />
+											<div class="cards-item__text mb-4">
+												<span>Куратора от застройщика:</span> <br />
+												Сергей Филин <br />Софья Татунова
+											</div>
+
+											<a href="#contact-popup" data-fancybox class="cards-item__link cards-item__link--big link mt-auto">Связаться</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--no-back">
+											<div class="cards-item__title cards-item__title--small m-0">Неометрия</div>
+											<hr class="cards-item__line" />
+											<div class="cards-item__text mb-4">
+												<span>Куратора от застройщика:</span> <br />
+												Георгий Черняк
+											</div>
+
+											<a href="#contact-popup" data-fancybox class="cards-item__link cards-item__link--big link mt-auto">Связаться</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--no-back">
+											<div class="cards-item__title cards-item__title--small m-0">А101</div>
+
+											<hr class="cards-item__line" />
+											<div class="cards-item__text mb-4">
+												<span>Куратора от застройщика:</span> <br />
+												Инна <br />Евгений Чачаев
+											</div>
+
+											<a href="#contact-popup" data-fancybox class="cards-item__link cards-item__link--big link mt-auto">Связаться</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="popup" id="contact-popup">
+					<div class="popup-title">Брусника</div>
+					<div class="popup-text">ГРМ ответственный - Плаксина</div>
+					<div class="popup-contacts-list popup-contacts-info">
+						<div class="popup-contacts-item">
+							<p class="popup-contacts-item__title">
+								Софья Татунова <br />
+								<span>(Рук-ль партнерских продаж)</span>
+							</p>
+
+							<p class="popup-contacts-item__phone"><a href="tel:+7 932 475-08-60">+7 932 475-08-60</a></p>
+						</div>
+						<div class="popup-contacts-item">
+							<p class="popup-contacts-item__title">Сергей Филин</p>
+
+							<p class="popup-contacts-item__phone"><a href="tel:+7 962 908-12-06">+7 962 908-12-06</a></p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

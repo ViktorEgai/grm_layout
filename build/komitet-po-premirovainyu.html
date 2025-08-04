@@ -784,7 +784,7 @@
 						<div class="form__field">
 							<input class="form__input" type="text" required placeholder="Юридическое наименование компании" name="company_name" />
 						</div>
-						<label for="" class="form__checkbox">
+						<label class="form__checkbox">
 							<input type="checkbox" name="grm_member" id="" />
 							<span>Агенство является участником ГРМ</span>
 						</label>
@@ -943,7 +943,7 @@
 						<div class="form__field">
 							<input class="form__input" type="text" required placeholder="Юридическое наименование компании" name="company_name" />
 						</div>
-						<label for="" class="form__checkbox">
+						<label class="form__checkbox">
 							<input type="checkbox" name="grm_member" id="" />
 							<span>Агенство/специалист является участником ГРМ</span>
 						</label>
@@ -1181,7 +1181,7 @@
 						<div class="form__field">
 							<input class="form__input" type="text" required placeholder="Юридическое наименование компании" name="company_name" />
 						</div>
-						<label for="" class="form__checkbox">
+						<label class="form__checkbox">
 							<input type="checkbox" name="grm_member" id="" />
 							<span>Агенство/специалист является участником ГРМ</span>
 						</label>
@@ -1403,6 +1403,7 @@
 		</form>
 	</div>
 </div>
+
 <div class="popup big-quiz-popup" id="statement">
 	<div class="row">
 		<div class="col-lg-5 col-md-4 order-md-1 order-2">
@@ -1438,7 +1439,7 @@
 									<div class="form__field-title">Откуда узнали о ГРМ</div>
 									<input class="form__input" type="text" required placeholder="Например, соцсети, форум FreshUp, коллеги и т.д" name="kak_uznali" />
 								</div>
-								<label for="" class="form__checkbox">
+								<label class="form__checkbox">
 									<input type="checkbox" name="drugie_chlenstva" id="" />
 									<span>Членство в иных объединениях</span>
 								</label>
@@ -1856,6 +1857,335 @@
 						<img src="img/icons/next.svg" alt="" />
 					</button>
 					<button type="submit" class="quiz__btn btn submit">Зарегистрироваться</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="popup quiz-popup" id="zayavka-na-attestaciyu">
+	<div class="quiz" data-quiz>
+		<div class="pagination"></div>
+		<div class="quiz-title">Заявка на аттестацию специалиста</div>
+		<form class="quiz-form form">
+			<div class="step active">
+				<div class="quiz-text">Ознакосьтесь с Инструкцией, подготовьте необходимые документы,скачайте, заполните и подпишите Согласие на обработку персональных данных</div>
+				<div class="row">
+					<div class="col-12 mb-5">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Фамилия Имя Отчество" name="username" />
+						</div>
+						<label class="form__checkbox">
+							<input type="checkbox" name="agreement" required id="" />
+							<span>Я ознакомился с <a href="#">Инструкцией</a> и Порядком проведения аттестации специалистов</span>
+						</label>
+					</div>
+
+					<div class="col-12">
+						<div class="form__field">
+							<label for="education-field" class="form__file"
+								><span class="default small"> <img src="img/icons/upload.svg" alt="" /> <span>Документ об образовании</span></span> <span class="file-name"></span>
+							</label>
+							<input type="file" name="education-file" id="education-field" required />
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form__field">
+							<div class="form__field-title m-0">Аттестация на квалификацию</div>
+							<div class="form__field-text">Для аттестации на квалификацию Брокер необходимо в/о, стаж более цх лет</div>
+							<div class="mt-5">
+								<label class="form__radio"> <input type="radio" name="kvalifikaciya" value="Агент" /> <span>Агент</span></label>
+
+								<label class="form__radio"> <input type="radio" name="kvalifikaciya" value="Брокер" /> <span>Брокер</span></label>
+
+								<label class="form__radio"> <input type="radio" name="kvalifikaciya" value="Эксперт" /> <span>Эксперт</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="step">
+				<div class="row">
+					<div class="col-12">
+						<div class="form__field">
+							<div class="form__field-title m-0">Место работы</div>
+
+							<div class="mt-5">
+								<label class="form__radio"> <input type="radio" name="word_place" value="Сотрудник компании" /> <span>Сотрудник компании</span></label>
+
+								<label class="form__radio"> <input type="radio" name="word_place" value="Индивидуальный предприниматель" /> <span>Индивидуальный предприниматель</span></label>
+
+								<label class="form__radio"> <input type="radio" name="word_place" value="Самозанятый" /> <span>Самозанятый</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 my-5">
+						<label class="form__checkbox">
+							<input type="checkbox" class="m-0" name="chlen-grm" value="1" id="" />
+							<span>Вы/Ваше агенство являетесь участником ГРМ</span>
+						</label>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<input class="form__input" type="text" required placeholder="Ваш личный ИНН" name="inn" />
+						</div>
+					</div>
+					<div class="row gy-4">
+						<div class="col-12">
+							<div class="form__field-text-green">Стаж работы в недвижимости. Приложите Справку с места работы или сканы страниц трудовой книжки, подтверждающие работу в недвижимости. Самозанятые прилагают Справку о постановке на учет физического лица в качестве налогоплательщика налога на профессиональный доход (КНД 1122035)</div>
+						</div>
+						<div class="col-6">
+							<div class="form__field">
+								<input class="form__input" type="text" placeholder="Количество полных лет" name="age" />
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form__field">
+								<label for="staj-file-field" class="form__file"
+									><span class="default small"> <img src="img/icons/upload.svg" alt="" /> <span>Документ подтверждающий стаж</span></span> <span class="file-name"></span>
+								</label>
+								<input type="file" name="staj-file" id="staj-file-field" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn prev btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+					<button type="button" class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="step">
+				<div class="quiz-text">Персональная информация о специалисте для размещения на странице Единого реестра</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form__field">
+							<textarea class="form__input form__textarea" placeholder="Информация о специалисте" name="specialist_info"></textarea>
+						</div>
+					</div>
+					<div class="col-12 mt-5">
+						<div class="form__field">
+							<div class="form__field-title">Специализация:</div>
+
+							<div class="form-checkbox-columns">
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Выбрать все" id="selectAll" />
+										<span>Выбрать все</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Квартиры, вторичка" />
+										<span>Квартиры, вторичка</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Элитное жильё" />
+										<span>Элитное жильё</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Офисные помещения" />
+										<span>Офисные помещения</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Производ. помещения" />
+										<span>Производ. помещения</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Помещения общепита" />
+										<span>Помещения общепита</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Комнаты" />
+										<span>Комнаты</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Земельные участки" />
+										<span>Земельные участки</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Гаражи и стоянки" />
+										<span>Гаражи и стоянки</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Квартиры в новостройках" />
+										<span>Квартиры в новостройках</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Коттеджи, дачи, дома" />
+										<span>Коттеджи, дачи, дома</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Складские помещения" />
+										<span>Складские помещения</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Торговые помещения" />
+										<span>Торговые помещения</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Управление АН" />
+										<span>Управление АН</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Коммерческая недвижимость" />
+										<span>Коммерческая недвижимость</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Оценка недвижимости" />
+										<span>Оценка недвижимости</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Маркетинг на рынке недвижимости" />
+										<span>Маркетинг на рынке недвижимости</span>
+									</label>
+								</div>
+								<div class="form-checkbox-columns__item">
+									<label class="form__checkbox">
+										<input type="checkbox" class="m-0" name="specializaciya" value="Помещения свободного назначения" />
+										<span>Помещения свободного назначения</span>
+									</label>
+								</div>
+							</div>
+							<script>
+								document.addEventListener("DOMContentLoaded", function () {
+									const selectAllCheckbox = document.getElementById("selectAll");
+									const checkboxes = document.querySelectorAll('input[name="specializaciya"]:not(#selectAll)');
+
+									// При клике на "Выбрать все" — отмечаем/снимаем все чекбоксы
+									selectAllCheckbox.addEventListener("change", function () {
+										checkboxes.forEach((checkbox) => {
+											checkbox.checked = selectAllCheckbox.checked;
+										});
+									});
+
+									// Если вручную отметили все чекбоксы — активируем "Выбрать все"
+									checkboxes.forEach((checkbox) => {
+										checkbox.addEventListener("change", function () {
+											const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+											selectAllCheckbox.checked = allChecked;
+										});
+									});
+								});
+							</script>
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn prev btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+					<button type="button" class="quiz__btn next btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+
+			<div class="step">
+				<div class="quiz-text">Персональная информация о специалисте для размещения на странице Единого реестра</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="tel" placeholder="Телефон" name="contact_phone" required />
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="email" placeholder="Почта" name="contact_email" required />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<label for="photo-field" class="form__file"
+								><span class="default small"> <img src="img/icons/upload.svg" alt="" /> <span>Фотография</span></span> <span class="file-name"></span>
+							</label>
+							<input type="file" name="photo" id="photo-field" />
+						</div>
+						<div class="form__field-text-green">(Фото в деловой обстановке, не менее 400px, название файла = фамилия специалиста)</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<label for="agree-file-field" class="form__file"
+								><span class="default small"> <img src="img/icons/upload.svg" alt="" /> <span>Согласие</span></span> <span class="file-name"></span>
+							</label>
+							<input type="file" name="agree-file" id="agree-file-field" />
+						</div>
+						<div class="form__field-text-green">Оригинал Согласия на обработку персональных данных принести на аттестацию</div>
+					</div>
+					<div class="col-12 mt-5"><div class="form__field-title">Профиль в социальной сети</div></div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="VK" name="company_vk" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Telegram" name="company_tg" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="YouTube" name="company_youtube" />
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form__field">
+							<input class="form__input" type="text" placeholder="Одноклассники" name="company_щk" />
+						</div>
+					</div>
+				</div>
+				<div class="quiz-bottom">
+					<button type="button" class="quiz__btn prev btn">
+						<img src="img/icons/next.svg" alt="" />
+					</button>
+					<button type="submit" class="quiz__btn btn submit">Отправить</button>
+				</div>
+				<div class="form-acceptance">
+					<span class="mx-auto">
+						Нажимая кнопку “Отправить”, вы даете согласие на обработку <br />
+						персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+					</span>
 				</div>
 			</div>
 		</form>
