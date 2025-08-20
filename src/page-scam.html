@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white ' })
+			<!-- main -->
+			<!-- класс main-grey для добавления фона #f9f9f9 -->
+			<main class="main main-grey">
+				<!-- page-top -->
+
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">
+							Сообщить <br />
+							о потенциальной жертве мошенничества
+						</h1>
+					</div>
+				</div>
+				<!-- breadcrumbs -->
+				<div class="breadcrumbs breadcrumbs--white">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Сообщить о потенциальной жертве мошенничества</span>
+					</div>
+				</div>
+				<div class="alert-info">
+					<div class="container">
+						<div class="alert-info-wrapper">
+							<div class="row align-items-lg-center gy-5">
+								<div class="col-lg-8">
+									<h2 class="alert-info__title">
+										Сообщите о потенциальной жертве — <br />
+										помогите предотвратить преступление
+									</h2>
+									<div class="alert-info__text">Безопасный рынок начинается с вашей ответственности</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#form" class="alert-info__btn btn btn--red">Сообщить о потенциальной жертве</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="alert-why">
+					<div class="container">
+						<div class="alert-why-wrapper">
+							<h2 class="alert-why__title section-title">Зачем это нужно</h2>
+							<div class="row gy-5 gy-lg-0">
+								<div class="col-lg-8 m-0">
+									<div class="alert-why-left">
+										<div class="alert-why-left__text">Гильдия риэлторов Москвы совместно с Уголовным розыском ведет работу с так называемыми «ведомыми» гражданами — теми, кого могут вовлечь в преступные схемы.</div>
+										<img src="img/gerb.png" alt="" class="alert-why-left__image" />
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="alert-why-right">
+										<div class="alert-why-right__text">Каждое сообщение проходит проверку, проводится беседа, а вы получаете качественную обратную связь.</div>
+										<img src="img/alert-mes.png" alt="" class="alert-why-right__image" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="useful">
+					<div class="container">
+						<div class="useful-top">
+							<div class="row align-items-center">
+								<div class="col-6">
+									<h2 class="useful__title section-title">Кому полезно</h2>
+								</div>
+								<div class="col-6"><a href="#" class="useful__btn btn btn--red ms-auto">Проверить сделку</a></div>
+							</div>
+						</div>
+						<div class="row gy-4">
+							<div class="col-lg-6">
+								<div class="useful-block">
+									<div class="useful-block__title">Риэлторам</div>
+									<div class="useful-block-list">
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'comment-check'})</div>
+											<div class="useful-block-list__text">Защита репутации</div>
+										</div>
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'holding-heart'})</div>
+											<div class="useful-block-list__text">Помощь клиенту</div>
+										</div>
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'flame'})</div>
+											<div class="useful-block-list__text">Помощь клиенту</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="useful-block">
+									<div class="useful-block__title">Частным лицам</div>
+									<div class="useful-block-list">
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'bulb'})</div>
+											<div class="useful-block-list__text">Подозреваете, что близкий — жертва?</div>
+										</div>
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'bell-ring'})</div>
+											<div class="useful-block-list__text">Не уверены в прозрачности сделки?</div>
+										</div>
+										<div class="useful-block-list__item">
+											<div class="useful-block-list__icon">@@include('components/bem-blocks/_sprite.html', {'id': 'briefcase'})</div>
+											<div class="useful-block-list__text">Получите консультацию и поддержку</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="cards cards--grey">
+					<div class="container">
+						<div class="cards__title cards__title--left section-title">
+							<h2>Как это работает</h2>
+						</div>
+						<div class="row gy-3">
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--small">
+											<div class="cards-item__title">01</div>
+
+											<div class="cards-item__subtitle cards-item__subtitle--small">Вы заполняете форму обращения</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--small">
+											<div class="cards-item__title">02</div>
+
+											<div class="cards-item__subtitle cards-item__subtitle--small">Рабочая группа изучает ситуацию</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--small">
+											<div class="cards-item__title">03</div>
+
+											<div class="cards-item__subtitle cards-item__subtitle--small">При необходимости проводится беседа с человеком</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-6">
+								<div class="cards-item">
+									<div class="cards-item-front">
+										<div class="cards-item-front__inner cards-item--small">
+											<div class="cards-item__title">04</div>
+
+											<div class="cards-item__subtitle cards-item__subtitle--small">
+												Вы получаете обратную <br />
+												связь
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="cards__btn btn mx-auto btn-dark">Показать все</a>
+					</div>
+				</section>
+				<div class="alert-form" id="form">
+					<img class="letter-bg" src="img/letter-decor.svg" alt="" />
+					<div class="container">
+						<div class="alert-form-wrapper">
+							<div class="alert-form-inner">
+								<form action="" class="form">
+									<div class="alert-form__title">Сообщение о потенциальной жертве</div>
+									<div class="alert-form__text">Информация о персональных данных авторов обращений, направленных в форме электронного документа, хранится и обрабатывается с соблюдением требований российского законодательства о персональных данных.</div>
+									<div class="row gy-4">
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="text" class="form__input" placeholder="Фамилимя" required name="surname" />
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="text" class="form__input" placeholder="Имя" required name="username" />
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="text" class="form__input" placeholder="Отчество" name="father_name" />
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="email" class="form__input" placeholder="Почта" name="email" />
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="email" class="form__input" placeholder="Телефон" name="phone" required />
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<input type="text" class="form__input" placeholder="Местоположение или район" name="place" />
+											</div>
+										</div>
+									</div>
+									<div class="alert-form__text my-5">Скачайте и заполните <a href="#">бланк сведений о потенциальной жертве</a>, затем прикрепите его к вашему сообщению.</div>
+									<div class="row gy-4 mb-5">
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<select name="descr" id="" class="form__input form__select">
+													<option value="1">1</option>
+													<option value="2">2</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6">
+											<div class="form__field m-0">
+												<label for="blank" class="form__file"
+													><span class="default small"> <img src="img/icons/upload.svg" alt="" /> <span>Прикрепить бланк сведений</span></span> <span class="file-name"></span>
+												</label>
+												<input type="file" name="blank" id="blank" required />
+											</div>
+										</div>
+									</div>
+									<textarea name="message" id="" class="form__input form__textarea no-resize mb-3" placeholder="Что вызывает подозрение?"></textarea>
+
+									<div class="row align-items-end mt-5 gy-4">
+										<div class="col-md-6">
+											<div class="alert-form-notice">⚠️ Ваше сообщение - вклад в безопасность!</div>
+											<div class="form__checkbox">
+												<input type="checkbox" name="subscribe_accept" required checked />
+												<span>Соглачие на получение рассылок (уведомление о продлении, информация по работе с личным кабинетом, анонсы обучающих мероприятий)</span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<button class="form__btn btn mt-0">Отправить сообщение</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

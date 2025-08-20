@@ -1,0 +1,108 @@
+.alert-block
+  &-wrapper
+    border-radius: 2.6rem
+    overflow: hidden
+  &-top
+    background-color: #c3202b
+    padding: 5rem 7rem
+    display: flex
+    align-items: center
+    gap: 2.8rem
+  &-top__icon
+    width: 13.3rem
+    height: 12rem
+    svg
+      width: 100%
+      height: 100%
+  &-top__info
+  &-top__title
+    font-size: 3.5rem
+    line-height: 1.05
+    font-weight: 600
+    color: #fff
+    margin-bottom: 1.6rem
+  &-top__text
+    font-size: 2.1rem
+    color: rgba(#fff,.7)
+  &-middle
+    color: #fff
+    background-color: #E12D39
+    padding: 4.7rem 7rem
+    position: relative
+    z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      background-image: url(../img/alert.svg)
+      background-size: contain
+      width: 79.2rem
+      z-index: -1
+      height: 69.5rem
+      opacity: 0.1
+
+  &-middle__text
+    font-size: 3.5rem
+    margin-bottom: 7.3rem
+  &-middle-list
+    margin-right: 9rem
+    font-size: 2.1rem
+    ul
+      padding-left: 1em
+      li
+        margin-bottom: 1em
+  &-middle-list__title
+    font-size: 2.1rem
+    font-weight: 700
+    margin-bottom: 2.2rem
+  &-bottom
+    background-color: #ffe8da
+    padding: 6.2rem 7rem
+  &__btn
+    width: fit-content
+@media screen and ( max-width: 992px )
+  .alert-block
+    &-wrapper
+      border-radius: 10px
+    &-top
+      padding: 20px 30px
+      gap: 20px
+      align-items: flex-start
+    &-top__icon
+      width: 80px
+      height: 80px
+      svg
+        width: 100%
+        height: 100%
+    &-top__info
+    &-top__title
+      font-size: 16px
+      margin-bottom: 10px
+    &-top__text
+      font-size: 12px
+    &-middle
+      padding: 20px 30px
+
+      &::after
+        display: none
+    &-middle__text
+      font-size: 16px
+      margin-bottom: 20px
+    &-middle-list
+      margin-right: 30px
+      font-size: 12px
+    &-middle-list__title
+      font-size: 14px
+
+      margin-bottom: 10px
+    &-bottom
+      background-color: #ffe8da
+      padding: 20px 30px
+    &__btn
+      width: fit-content
+@media screen and ( max-width: 576px )
+  .alert-block-middle-list
+    margin: 0 0 20px
+    &:last-child
+      margin: 0

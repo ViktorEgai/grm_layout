@@ -1,0 +1,39 @@
+.alert-info
+  padding-bottom: 11.2rem
+  &-wrapper
+    background-color: #ffe8da
+    padding: 8rem 3.5rem 8rem 7.5rem
+    position: relative
+    overflow: hidden
+    border-radius: 2.6rem
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 1.5rem
+      height: 100%
+      background-color: #c3202b
+  &__title
+    font-size: 3.5rem
+    font-weight: 600
+    line-height: 1.05
+    margin-bottom: 1.6rem
+  &__text
+    font-size: 2.1rem
+    color: rgba(#000,.7)
+  &__btn
+@media screen and ( max-width: 992px )
+  .alert-info
+    padding-bottom: 6rem
+    &-wrapper
+      padding: 30px 40px
+      border-radius: 10px
+      &::before
+        width: 10px
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 12px
+    &__btn
+      width: fit-content

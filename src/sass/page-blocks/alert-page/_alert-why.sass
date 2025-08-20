@@ -1,0 +1,83 @@
+.alert-why
+  padding: 9.2rem 0
+  &-wrapper
+    position: relative
+  &__title
+    position: absolute
+    top: 0
+    left: 0
+    &::before
+      background-color: #D72834
+  &-left
+    padding: 38.2rem 4rem 23.3rem
+    position: relative
+    background-image: url(../img/alert-why-left.png)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    z-index: 1
+    height: 100%
+  &-left__text
+    font-size: 2.6rem
+    color: #fff
+    max-width: 64.5rem
+  &-left__image
+    position: absolute
+    bottom: 0
+    right: 0
+    object-fit: contain
+    width: 100rem
+    height: 74rem
+    z-index: -1
+  &-right
+    background-color: #40689c
+    border-radius: 2.6rem
+    height: 100%
+    padding: 6.2rem 4.2rem 50rem
+    position: relative
+  &-right__text
+    font-size: 2.6rem
+
+    color: #fff
+  &-right__image
+    bottom: 0
+    right: 0
+
+    position: absolute
+    width: 100%
+    object-fit: contain
+@media screen and ( max-width: 992px )
+  .alert-why
+    padding: 40px 0
+    &-wrapper
+    &__title
+
+    &-left
+      padding: 160px 30px
+      overflow: hidden
+    &-left__text
+      font-size: 16px
+      max-width: 75%
+    &-left__image
+      bottom: -70px
+      width: 70%
+      height: auto
+    &-right
+      border-radius: 10px
+      height: 100%
+      padding: 40px 30px 400px
+      position: relative
+    &-right__text
+      font-size: 16px
+
+      color: #fff
+    &-right__image
+      right: 50%
+      transform: translateX(50%)
+@media screen and ( max-width: 768px )
+
+  .alert-why
+
+    &-left__text
+      max-width: 100%
+    &-left__image
+      bottom: -30px

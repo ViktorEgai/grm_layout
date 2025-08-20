@@ -1,0 +1,63 @@
+.alert-form
+  overflow: hidden
+  position: relative
+  z-index: 1
+  padding: 9.2rem 0
+  &-wrapper
+    max-width: 130rem
+    margin: 0 auto
+    background: linear-gradient(0deg,#1cab98 0,#2b2826 100%)
+    padding: 3px
+    border-radius: 2.6rem
+  &-inner
+    padding: 5.4rem 6.7rem 10.4rem
+    background-color: #fff
+    border-radius: 2.6rem
+
+  &__title
+    text-align: center
+    font-size: 3.5rem
+    font-weight: 700
+    margin-bottom: 1.7rem
+  &__text
+    text-align: center
+    font-size: 1.6rem
+    margin-bottom: 5rem
+    a
+      color: #c5212c
+      &:hover
+        text-decoration: underline
+  &-notice
+    color: #cc4b4c
+    font-size: 1.6rem
+    margin-bottom: 2.8rem
+  .form__checkbox
+    font-size: 1.3rem
+  .form__btn
+    max-width: 37.6rem
+
+    margin-left: auto
+@media screen and ( max-width: 992px )
+  .alert-form
+    padding: 40px 0
+    &-wrapper
+      max-width: 100%
+      border-radius: 10px
+    &-inner
+      padding: 40px 40px 60px
+      background-color: #fff
+      border-radius: 10px
+
+    &__title
+      font-size: 20px
+      margin-bottom: 16px
+    &__text
+      font-size: 12px
+      margin-bottom: 40px
+    &-notice
+      font-size: 12px
+      margin-bottom: 20px
+    .form__checkbox
+      font-size: 12px
+    .form__btn
+      max-width: 370px

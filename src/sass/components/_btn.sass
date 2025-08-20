@@ -43,6 +43,8 @@
   &:disabled
     opacity: 0.3
     cursor: not-allowed
+  &--red
+    background: $btn-red-gradient
 @media  ( hover: hover  )
   .btn:not([disabled]):hover:before
     box-shadow: 0 5px 10px $dark-green
@@ -66,3 +68,7 @@
     &--trans
       background: none
       box-shadow: none
+    &--red
+      background: $btn-red-gradient
+      color: #fff
+      border: none
