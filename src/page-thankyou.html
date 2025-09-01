@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-black' })
+			<!-- main -->
+			<main class="main">
+				<!-- breadcrumbs -->
+				<div class="thankyou">
+					<div class="container">
+						<div class="thankyou-wrapper">
+							<div class="thankyou-body">
+								<div class="circle-block thankyou-circle thankyou-circle-top"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+								<div class="circle-block thankyou-circle thankyou-circle-bottom"><img src="img/circle/1.svg" alt="" /><img src="img/circle/2.svg" alt="" /><img src="img/circle/3.svg" alt="" /><img src="img/circle/4.svg" alt="" /></div>
+								<h1 class="thankyou__title">
+									благодарим <br />
+									за оплату!
+								</h1>
+								<div class="thankyou__text content">
+									Регистрация на мероприятие <br />
+									КЕЙСОРИУМ 27 СЕНТЯБРЯ
+								</div>
+								<div class="thankyou__date">
+									<p>Дата и время</p>
+
+									<span>27 СЕНТЯБРЯ, 10:00-16:00</span>
+								</div>
+								<a href="/" class="thankyou__btn btn">Вернуться на страницу мероприятия</a>
+							</div>
+							<div class="thankyou-bottom">
+								<p>По вопросам обращайтесь в администрацию Гильдии Риэлторов Москвы</p>
+								<p>Адрес: РОССИЯ, г Москва, г Москва, ул Николоямская, д 40, стр 1, тел.: +74993220164, email: info@grmos.ru</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
