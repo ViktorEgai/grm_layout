@@ -1,0 +1,26 @@
+.freshup-block
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  justify-content: center
+  color: #fff
+  text-align: center
+  &__title
+    font-size: 4.5rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 2rem
+  &__text
+    font-size: 2.8rem
+  &__btn
+    margin-top: 6rem
+@media screen and ( max-width: 992px )
+  .freshup-block
+    color: $text-color
+    &__title
+      font-size: 24px
+      margin-bottom: 20px
+    &__text
+      font-size: 16px
+    &__btn
+      margin-top: 30px

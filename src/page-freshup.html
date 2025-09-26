@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('components/page-blocks/_head.html',{ "title":"ГРМ" })
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			@@include('components/page-blocks/_header.html', { "class" : 'header-white' })
+			<!-- main -->
+			<main class="main masin--grey">
+				<!-- breadcrumbs -->
+				<div class="top">
+					<div class="container">
+						<h1 class="page-title top__title">Fresh Up 2026</h1>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<div class="container">
+						<a href="#">Главная</a>⭢
+						<span>Fresh up 2026</span>
+					</div>
+				</div>
+				<div class="form-section">
+					<div class="container">
+						<div class="form-section-wrapper col-lg-5 mx-auto col-sm-10">
+							<div class="form-section-text">Пройдите короткий опрос и получите скидку на участие</div>
+							<form class="form">
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Имя" required name="username" />
+								</div>
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Фамилия" required name="usersurname" />
+								</div>
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Название компании" required name="company_name" />
+								</div>
+								<div class="form__field">
+									<input class="form__input" type="text" placeholder="Город" required name="city" />
+								</div>
+								<div class="form__field">
+									<input class="form__input" type="email" placeholder="Почта" required name="email" />
+								</div>
+								<div class="form__field">
+									<input class="form__input" type="tel" placeholder="Телефон" required name="phone" />
+								</div>
+								<button class="form__btn btn">Получить скидку</button>
+								<div class="form-acceptance">Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- popup -->
+			@@include('components/page-blocks/_popup.html')
+			<!-- footer -->
+			@@include('components/page-blocks/_footer.html')
+			<!-- scripts -->
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>

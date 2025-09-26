@@ -143,6 +143,17 @@ $(document).ready(function () {
 		}
 	});
 
+	function switchDownloadFields() {
+		const downloadFields = $('.download-field');
+		downloadFields.hide();
+
+		let val = $('[name="download_type"]:checked').val();
+		$('#'+ val).toggle()
+		
+	}
+	switchDownloadFields()
+	$('[name="download_type"]').on('change', switchDownloadFields)
+
 	$(".form").each(function () {
 		$(this).validate({
 			submitHandler: function (form) {
@@ -242,21 +253,20 @@ $(document).ready(function () {
 			showStep(currentStep);
 		});
 
-		// form.submit(function (e) {
-		// 	e.preventDefault();
-		// 	if (form.valid()) successMessage();
-		// });
-
+ 
 		showStep(currentStep);
 	});
 
 	function toggleDocs() {
+		$('[data-for="Действительный член ГРМ"], [data-for="Деловой клуб ГРМ"]').addClass('d-none');
 		if ($('[name="vid_chlenstva"]:checked').val() == "Действительный член ГРМ") {
 			$(".quiz .doc-link").removeClass("active");
 			$("#doc-for-grm").addClass("active");
+			$('[data-for="Действительный член ГРМ"]').removeClass('d-none');
 		} else {
 			$(".quiz .doc-link").removeClass("active");
 			$("#doc-for-club").addClass("active");
+			$('[data-for="Деловой клуб ГРМ"]').removeClass('d-none');
 		}
 		console.log($('[name="vid_chlenstva"]:checked').val());
 	}

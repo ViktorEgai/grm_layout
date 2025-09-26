@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Логин</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/libs.min.css?v=1.2.2" />
+		<link rel="stylesheet" href="css/account.min.css?v=1.2.2" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="account">
+				<div class="container">
+					<header class="account-header">
+						<a href="#" class="account-header-back"
+							><svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 26L4 14.5L15 2" stroke="white" stroke-opacity="0.5" stroke-width="5" />
+							</svg>
+						</a>
+						<a href="#" class="account-header__logo"><img src="img/logo-white.svg" alt="" /></a>
+					</header>
+					<form class="account-form form">
+						<h1 class="account-title">вход в аккаунт</h1>
+
+						<div class="form__field mb-4">
+							<input type="email" class="form__input" placeholder="Почта" required />
+						</div>
+
+						<div class="form__field mb-4">
+							<input type="password" class="form__input" placeholder="Пароль" required />
+							<span class="password-switch"> @@include('components/bem-blocks/_sprite.html', {"id":"fi-rr-eye"}) </span>
+						</div>
+						<button class="form__btn btn">Войти</button>
+					</form>
+					<span class="account-cant-access">Не получается войти?</span>
+					<a href="#" class="account-btn btn">Восстановить доступ</a>
+					<div class="form-acceptance">
+						<p>Нажимая кнопку “Войти”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
