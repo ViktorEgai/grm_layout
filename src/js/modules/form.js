@@ -144,15 +144,14 @@ $(document).ready(function () {
 	});
 
 	function switchDownloadFields() {
-		const downloadFields = $('.download-field');
+		const downloadFields = $(".download-field");
 		downloadFields.hide();
 
 		let val = $('[name="download_type"]:checked').val();
-		$('#'+ val).toggle()
-		
+		$("#" + val).toggle();
 	}
-	switchDownloadFields()
-	$('[name="download_type"]').on('change', switchDownloadFields)
+	switchDownloadFields();
+	$('[name="download_type"]').on("change", switchDownloadFields);
 
 	$(".form").each(function () {
 		$(this).validate({
@@ -253,20 +252,19 @@ $(document).ready(function () {
 			showStep(currentStep);
 		});
 
- 
 		showStep(currentStep);
 	});
 
 	function toggleDocs() {
-		$('[data-for="Действительный член ГРМ"], [data-for="Деловой клуб ГРМ"]').addClass('d-none');
+		$('[data-for="Действительный член ГРМ"], [data-for="Деловой клуб ГРМ"]').addClass("d-none");
 		if ($('[name="vid_chlenstva"]:checked').val() == "Действительный член ГРМ") {
 			$(".quiz .doc-link").removeClass("active");
 			$("#doc-for-grm").addClass("active");
-			$('[data-for="Действительный член ГРМ"]').removeClass('d-none');
+			$('[data-for="Действительный член ГРМ"]').removeClass("d-none");
 		} else {
 			$(".quiz .doc-link").removeClass("active");
 			$("#doc-for-club").addClass("active");
-			$('[data-for="Деловой клуб ГРМ"]').removeClass('d-none');
+			$('[data-for="Деловой клуб ГРМ"]').removeClass("d-none");
 		}
 		console.log($('[name="vid_chlenstva"]:checked').val());
 	}
@@ -291,4 +289,61 @@ $(document).ready(function () {
 		});
 		$(".btn").css("--deg", "68deg");
 	}
+
+	$(".password-switch").on("click", function () {
+		const passwordInput = $(this).prev(".password__input");
+
+		passwordInput.toggleClass("visible");
+
+		if (passwordInput.hasClass("visible")) {
+			passwordInput.attr("type", "text");
+		} else {
+			passwordInput.attr("type", "password");
+		}
+	});
+
+	function timer() {
+		let timeLeft = 120; // 2 минуты в секундах
+		const timerElement = $("#timer");
+		const sendAgainButton = $("#send_again");
+		const myForm = $("#form");
+
+		// Функция обновления таймера
+		function updateTimer() {
+			const minutes = Math.floor(timeLeft / 60);
+			const seconds = timeLeft % 60;
+
+			// Форматирование времени в формат MM:SS
+			const formattedTime = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+			timerElement.text(formattedTime);
+
+			if (timeLeft > 0) {
+				timeLeft--;
+				setTimeout(updateTimer, 1000);
+			} else {
+				// Таймер завершен
+				timerElement.hide();
+				sendAgainButton.prop("disabled", false);
+			}
+		}
+
+		// Запуск таймера при загрузке страницы
+		updateTimer();
+
+		// Обработчик клика по кнопке
+		// sendAgainButton.on("click", function () {
+		// 	if (!$(this).prop("disabled")) {
+		// 		// Сброс таймера
+		// 		timeLeft = 120;
+		// 		updateTimer();
+
+		// 		// Блокировка кнопки
+		// 		$(this).prop("disabled", true);
+
+		// 	}
+		// });
+
+		 
+	}
+	timer()
 });

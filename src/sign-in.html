@@ -28,15 +28,12 @@
 							<h1 class="account-title">вход в аккаунт</h1>
 
 							<div class="form__field mb-4">
-								<input type="email" class="form__input" placeholder="Почта" required />
+								<input type="email" class="form__input" name="login" placeholder="Почта" required />
 							</div>
 
 							<div class="form__field mb-4">
-								<input type="password" class="form__input password__input" placeholder="Пароль" required />
-								<span class="password-switch"> <svg class="@@class">
-	<use class="use" xlink:href="img/sprite.svg#sprite--fi-rr-eye" />
-</svg>
- </span>
+								<input type="password" class="form__input password__input" name="password" placeholder="Пароль" required />
+								<span class="password-switch"> @@include('components/bem-blocks/_sprite.html', {"id":"fi-rr-eye"}) </span>
 							</div>
 							<button class="form__btn btn">Войти</button>
 						</form>
@@ -49,14 +46,6 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script>
-	const searchApiUrl = "http://212.193.30.89:8000/api/news_api/?format=json";
-</script>
-<script src="js/libs.min.js?v=1.2.2"></script>
-<script src="js/main.min.js?v=1.2.2"></script>
-<script src="js/calendar.js?v=1.2.2"></script>
-<script src="js/custom.js?v=1.2.2"></script>
-
+		@@include('components/page-blocks/_scripts.html')
 	</body>
 </html>

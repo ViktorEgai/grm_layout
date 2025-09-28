@@ -14,7 +14,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="account">
-				<div class="container">
+				<div class="account-wrapper">
 					<header class="account-header">
 						<a href="#" class="account-header-back"
 							><svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,27 +23,29 @@
 						</a>
 						<a href="#" class="account-header__logo"><img src="img/logo-white.svg" alt="" /></a>
 					</header>
-					<form class="account-form form">
-						<h1 class="account-title">вход в аккаунт</h1>
+					<div class="account-body">
+						<form class="account-form form" id="form">
+							<h1 class="account-title mb-5">Проверьте почту</h1>
 
-						<div class="form__field mb-4">
-							<input type="email" class="form__input" placeholder="Почта" required />
-						</div>
+							<div class="message">
+								<p><span>Мы отправили письмо на ko*****75@gmail.com. </span> Чтобы задать новый пароль, перейдите по ссылке в письме.</p>
+							</div>
+							<button class="form__btn account-btn btn mt-5" id="send_again" disabled>Отправить письмо повторно</button>
+						</form>
 
-						<div class="form__field mb-4">
-							<input type="password" class="form__input" placeholder="Пароль" required />
-							<span class="password-switch"> @@include('components/bem-blocks/_sprite.html', {"id":"fi-rr-eye"}) </span>
-						</div>
-						<button class="form__btn btn">Войти</button>
-					</form>
-					<span class="account-cant-access">Не получается войти?</span>
-					<a href="#" class="account-btn btn">Восстановить доступ</a>
-					<div class="form-acceptance">
-						<p>Нажимая кнопку “Войти”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+						<span class="timer" id="timer">2:00</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		@@include('components/page-blocks/_scripts.html')
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+	const searchApiUrl = "http://212.193.30.89:8000/api/news_api/?format=json";
+</script>
+<script src="js/libs.min.js?v=1.2.2"></script>
+<script src="js/main.min.js?v=1.2.2"></script>
+<script src="js/calendar.js?v=1.2.2"></script>
+<script src="js/custom.js?v=1.2.2"></script>
+
 	</body>
 </html>

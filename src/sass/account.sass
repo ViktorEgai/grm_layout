@@ -1,12 +1,186 @@
 @import 'vars', 'mixin', 'reset', 'global', 'components/btn', 'page-blocks/form'
+
 .account
   background-color: #005d62
   min-height: 100vh
-.aсcount-header
-.account-header-back
-.account-header__logo
-.account-form
-.account-title
+  position: relative
+  z-index: 1
+  padding: 6rem 0
+  display: flex
+  &::before, &::after
 
-.account-cant-access
-.account-btn
+    content: ''
+    position: absolute
+    top: 0
+    width: 49rem
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    mix-blend-mode: multiply
+    background-position: center
+    z-index: -1
+    opacity: 0.2
+  &::before
+    background-image: url(../img/sing-in-bg-left.png)
+    left: 0
+    // background-position: right center
+
+  &::after
+    background-image: url(../img/sing-in-bg-right.png)
+    // background-position: left center
+
+    right: 0
+  &-wrapper
+    max-width: 64rem
+    margin: 0 auto
+    padding: 0 1rem
+    display: flex
+    flex-direction: column
+    min-height: 100%
+    position: relative
+    color: #fff
+    width: 100%
+  &-header
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    width: 100%
+  &-header-back
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    width: 2.4rem
+    height: 1.1rem
+    svg
+      width: 100%
+      height: 100%
+  &-header__logo
+    max-width: 21.6rem
+  &-body
+    width: 100%
+    padding-top: 5rem
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &-form
+
+    .form__input
+      background-color: rgba(#EFEFEF, .1)
+      color: inherit
+    .password-switch
+      display: block
+      width: 2.4rem
+      height: 2.4rem
+      position: absolute
+      top: 50%
+      right: 3.2rem
+      transform: translateY(-50%)
+      z-index: 2
+      cursor: pointer
+      svg
+        width: 100%
+        height: 100%
+  &-title
+    color: #fff
+    text-transform: uppercase
+    font-size: 6rem
+    font-weight: 600
+    line-height: 1.05
+    text-align: center
+    margin-bottom: 4.6rem
+  &-cant-access
+    margin: 5.5rem 0
+    text-align: center
+    font-size: 1.8rem
+    font-weight: 300
+    color: rgba(#fff,.5)
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+
+    span
+      background-color: #005d62
+      display: block
+      width: fit-content
+      padding: 0 2.4rem
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 100%
+      height: 1px
+      z-index: -1
+      background-color: rgba(#fff,.5)
+
+  &-btn
+    background: #186c70
+  .form-acceptance
+    max-width: 51rem
+    margin: 3rem auto 0
+  .message
+    font-size: 1.8rem
+    text-align: center
+    line-height: 1.2
+    span
+      color: rgba(#fff,.5)
+      display: block
+  .timer
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 2.1rem
+    font-weight: 600
+    line-height: 1.2
+.password__input.visible
+  background-color: rgba(#AD1C1C,.5)
+@media screen and ( max-width: 992px )
+  .account
+    padding: 60px 0
+    &::before, &::after
+      display: none
+
+    &-wrapper
+      max-width: 400px
+      padding: 0 10px
+    &-header-back
+      width: 24px
+      height: 11px
+    &-header__logo
+      max-width: 210px
+    &-body
+      padding-top: 80px
+    &-form
+
+      .password-switch
+        width: 16px
+        height: 16px
+        right: 15px
+      .form__btn
+        max-width: 100%
+    &-title
+      font-size: 30px
+      margin-bottom: 40px
+    &-cant-access
+      margin: 40px 0
+      font-size: 14px
+
+      span
+        padding: 0 20px
+
+    &-btn
+      color: #fff
+    .form-acceptance
+      max-width: 100%
+      margin-top: 20px
+    .message
+      font-size: 12px

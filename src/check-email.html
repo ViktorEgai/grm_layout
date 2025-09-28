@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Логин</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/libs.min.css?v=1.2.2" />
+		<link rel="stylesheet" href="css/account.min.css?v=1.2.2" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="account">
+				<div class="account-wrapper">
+					<header class="account-header">
+						<a href="#" class="account-header-back"
+							><svg width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 26L4 14.5L15 2" stroke="white" stroke-opacity="0.5" stroke-width="5" />
+							</svg>
+						</a>
+						<a href="#" class="account-header__logo"><img src="img/logo-white.svg" alt="" /></a>
+					</header>
+					<div class="account-body">
+						<form class="account-form form" id="form">
+							<h1 class="account-title mb-5">Проверьте почту</h1>
+
+							<div class="message">
+								<p><span>Мы отправили письмо на ko*****75@gmail.com. </span> Чтобы задать новый пароль, перейдите по ссылке в письме.</p>
+							</div>
+							<button class="form__btn account-btn btn mt-5" id="send_again" disabled>Отправить письмо повторно</button>
+						</form>
+
+						<span class="timer" id="timer">2:00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('components/page-blocks/_scripts.html')
+	</body>
+</html>
